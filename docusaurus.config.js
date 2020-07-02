@@ -1,11 +1,11 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://mother.github.io',
+  baseUrl: '/gns3-docs',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mother', // Usually your GitHub org/user name.
+  projectName: 'gns3-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',

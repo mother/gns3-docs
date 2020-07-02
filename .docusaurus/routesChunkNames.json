@@ -1,0 +1,101 @@
+{
+  "/gns3-docs": {
+    "component": "c4f5d8e4"
+  },
+  "/gns3-docs/blog": {
+    "component": "a6aa9e1f",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      },
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "71f7b2f3"
+  },
+  "/gns3-docs/blog/hello-world": {
+    "component": "ccc49370",
+    "content": "d610846f"
+  },
+  "/gns3-docs/blog/hola": {
+    "component": "ccc49370",
+    "content": "bdd709f1"
+  },
+  "/gns3-docs/blog/tags": {
+    "component": "01a85c17",
+    "tags": "faa986c9"
+  },
+  "/gns3-docs/blog/tags/docusaurus": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      },
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "6f611ed6"
+  },
+  "/gns3-docs/blog/tags/facebook": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "af172acd"
+      }
+    ],
+    "metadata": "4022feca"
+  },
+  "/gns3-docs/blog/tags/hello": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      }
+    ],
+    "metadata": "8133e687"
+  },
+  "/gns3-docs/blog/tags/hola": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "7caae5f2"
+  },
+  "/gns3-docs/blog/welcome": {
+    "component": "ccc49370",
+    "content": "2868cdab"
+  },
+  "/gns3-docs/docs": {
+    "component": "1be78505",
+    "docsMetadata": "6bded35c"
+  },
+  "/gns3-docs/docs/": {
+    "component": "17896441",
+    "content": "b2f90839"
+  },
+  "/gns3-docs/docs/doc2": {
+    "component": "17896441",
+    "content": "df361e2b"
+  },
+  "/gns3-docs/docs/doc3": {
+    "component": "17896441",
+    "content": "616665f6"
+  },
+  "/gns3-docs/docs/mdx": {
+    "component": "17896441",
+    "content": "ce3e42ad"
+  }
+}
