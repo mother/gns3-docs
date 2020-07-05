@@ -9,7 +9,7 @@
           {
             "type": "link",
             "label": "What is GNS3?",
-            "href": "/gns3-docs/docs/getting-started/what-is-gns3"
+            "href": "/gns3-docs/docs/"
           },
           {
             "collapsed": true,
@@ -94,67 +94,19 @@
             "collapsed": true,
             "type": "category",
             "label": "GNS3 Administration",
-            "items": [
-              {
-                "type": "link",
-                "label": "Style Guide",
-                "href": "/gns3-docs/docs/"
-              },
-              {
-                "type": "link",
-                "label": "Document Number 2",
-                "href": "/gns3-docs/docs/doc2"
-              },
-              {
-                "type": "link",
-                "label": "This is Document Number 3",
-                "href": "/gns3-docs/docs/doc3"
-              }
-            ]
+            "items": []
           },
           {
             "collapsed": true,
             "type": "category",
             "label": "GNS3 Design",
-            "items": [
-              {
-                "type": "link",
-                "label": "Style Guide",
-                "href": "/gns3-docs/docs/"
-              },
-              {
-                "type": "link",
-                "label": "Document Number 2",
-                "href": "/gns3-docs/docs/doc2"
-              },
-              {
-                "type": "link",
-                "label": "This is Document Number 3",
-                "href": "/gns3-docs/docs/doc3"
-              }
-            ]
+            "items": []
           },
           {
             "collapsed": true,
             "type": "category",
             "label": "Emulators",
-            "items": [
-              {
-                "type": "link",
-                "label": "Style Guide",
-                "href": "/gns3-docs/docs/"
-              },
-              {
-                "type": "link",
-                "label": "Document Number 2",
-                "href": "/gns3-docs/docs/doc2"
-              },
-              {
-                "type": "link",
-                "label": "This is Document Number 3",
-                "href": "/gns3-docs/docs/doc3"
-              }
-            ]
+            "items": []
           }
         ]
       },
@@ -162,23 +114,7 @@
         "collapsed": true,
         "type": "category",
         "label": "How-to Guides",
-        "items": [
-          {
-            "type": "link",
-            "label": "Style Guide",
-            "href": "/gns3-docs/docs/"
-          },
-          {
-            "type": "link",
-            "label": "Document Number 2",
-            "href": "/gns3-docs/docs/doc2"
-          },
-          {
-            "type": "link",
-            "label": "This is Document Number 3",
-            "href": "/gns3-docs/docs/doc3"
-          }
-        ]
+        "items": []
       },
       {
         "collapsed": true,
@@ -188,17 +124,7 @@
           {
             "type": "link",
             "label": "Style Guide",
-            "href": "/gns3-docs/docs/"
-          },
-          {
-            "type": "link",
-            "label": "Document Number 2",
-            "href": "/gns3-docs/docs/doc2"
-          },
-          {
-            "type": "link",
-            "label": "This is Document Number 3",
-            "href": "/gns3-docs/docs/doc3"
+            "href": "/gns3-docs/docs/doc1"
           }
         ]
       }
@@ -206,11 +132,9 @@
   },
   "permalinkToSidebar": {
     "/gns3-docs/docs/": "someSidebar",
-    "/gns3-docs/docs/doc2": "someSidebar",
-    "/gns3-docs/docs/doc3": "someSidebar",
+    "/gns3-docs/docs/doc1": "someSidebar",
     "/gns3-docs/docs/getting-started/setup-gns3-vm": "someSidebar",
     "/gns3-docs/docs/getting-started/setup-local-server": "someSidebar",
-    "/gns3-docs/docs/getting-started/what-is-gns3": "someSidebar",
     "/gns3-docs/docs/getting-started/your-first-cisco-topology": "someSidebar",
     "/gns3-docs/docs/getting-started/your-first-topology": "someSidebar",
     "/gns3-docs/docs/installation/download-32-bit": "someSidebar",

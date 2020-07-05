@@ -102,7 +102,7 @@ module.exports = {
            showReadingTime: true,
           // path: 'haha',
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'getting-started/what-is-gns3',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

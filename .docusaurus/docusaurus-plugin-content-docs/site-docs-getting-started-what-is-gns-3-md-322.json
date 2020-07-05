@@ -1,10 +1,10 @@
 {
   "id": "getting-started/what-is-gns3",
-  "isDocsHomePage": false,
+  "isDocsHomePage": true,
   "title": "Getting Started with GNS3",
   "description": "Introduction",
   "source": "@site/docs/getting-started/what-is-gns3.md",
-  "permalink": "/gns3-docs/docs/getting-started/what-is-gns3",
+  "permalink": "/gns3-docs/docs/",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/what-is-gns3.md",
   "sidebar_label": "What is GNS3?",
   "sidebar": "someSidebar",

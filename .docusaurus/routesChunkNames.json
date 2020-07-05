@@ -87,6 +87,10 @@
   },
   "/gns3-docs/docs/": {
     "component": "17896441",
+    "content": "322a49c4"
+  },
+  "/gns3-docs/docs/doc1": {
+    "component": "17896441",
     "content": "b2f90839"
   },
   "/gns3-docs/docs/doc2": {
@@ -104,10 +108,6 @@
   "/gns3-docs/docs/getting-started/setup-local-server": {
     "component": "17896441",
     "content": "46e9b62f"
-  },
-  "/gns3-docs/docs/getting-started/what-is-gns3": {
-    "component": "17896441",
-    "content": "322a49c4"
   },
   "/gns3-docs/docs/getting-started/your-first-cisco-topology": {
     "component": "17896441",

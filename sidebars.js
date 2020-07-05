@@ -25,37 +25,19 @@ module.exports = {
    'Using GNS3': [{
       type: 'category',
       label: 'GNS3 Administration',
-      items: [
-         'doc1',
-         'doc2',
-         'doc3'
-      ],
+      items: [],
    }, {
       type: 'category',
       label: 'GNS3 Design',
-      items: [
-          'doc1',
-          'doc2',
-          'doc3'
-      ],
+      items: [],
    }, {
     type: 'category',
     label: 'Emulators',
-    items: [
-        'doc1',
-        'doc2',
-        'doc3'
-    ],
+    items: [],
    }],
-   'How-to Guides': [
-      'doc1',
-      'doc2',
-      'doc3'
-   ],
+   'How-to Guides': [],
    'Troubleshooting & FAQ': [
-      'doc1',
-      'doc2',
-      'doc3'
+      'doc1'
    ]
   },
 }

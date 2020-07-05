@@ -57,7 +57,7 @@ export default {
       {
         "docs": {
           "showReadingTime": true,
-          "homePageId": "doc1",
+          "homePageId": "getting-started/what-is-gns3",
           "sidebarPath": "/Users/stevenyuen/Sites/gns3-docs/sidebars.js",
           "editUrl": "https://github.com/mother/gns3-docs/blob/master/"
         },

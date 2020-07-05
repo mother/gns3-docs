@@ -82,6 +82,12 @@ export default [
   
 },
 {
+  path: '/gns3-docs/docs/doc1',
+  component: ComponentCreator('/gns3-docs/docs/doc1'),
+  exact: true,
+  
+},
+{
   path: '/gns3-docs/docs/doc2',
   component: ComponentCreator('/gns3-docs/docs/doc2'),
   exact: true,
@@ -102,12 +108,6 @@ export default [
 {
   path: '/gns3-docs/docs/getting-started/setup-local-server',
   component: ComponentCreator('/gns3-docs/docs/getting-started/setup-local-server'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/getting-started/what-is-gns3',
-  component: ComponentCreator('/gns3-docs/docs/getting-started/what-is-gns3'),
   exact: true,
   
 },
