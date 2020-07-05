@@ -1,0 +1,19 @@
+{
+  "id": "installation/esxi",
+  "isDocsHomePage": false,
+  "title": "Install the GNS3 VM on ESXi",
+  "description": "VMware ESXi and VMware workstation are two totally different products. If you want instructions for VMware Workstation or VMware Fusion read this document.",
+  "source": "@site/docs/installation/esxi.md",
+  "permalink": "/gns3-docs/docs/installation/esxi",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/installation/esxi.md",
+  "sidebar_label": "ESXi",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "GNS3 Linux Install",
+    "permalink": "/gns3-docs/docs/installation/linux"
+  },
+  "next": {
+    "title": "Install GNS3 on a remote server",
+    "permalink": "/gns3-docs/docs/installation/remote-server"
+  }
+}

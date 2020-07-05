@@ -1,0 +1,15 @@
+{
+  "id": "getting-started/getting-started",
+  "isDocsHomePage": false,
+  "title": "Getting Started with GNS3",
+  "description": "Introduction",
+  "source": "@site/docs/getting-started/getting-started.md",
+  "permalink": "/gns3-docs/docs/getting-started/getting-started",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/getting-started.md",
+  "sidebar_label": "What is GNS3?",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "GNS3 Windows Install",
+    "permalink": "/gns3-docs/docs/installation/windows"
+  }
+}
