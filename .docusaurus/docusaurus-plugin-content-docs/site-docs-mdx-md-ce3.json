@@ -5,10 +5,5 @@
   "description": "You can write JSX and use React components within your Markdown thanks to MDX.",
   "source": "@site/docs/mdx.md",
   "permalink": "/gns3-docs/docs/mdx",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/mdx.md",
-  "sidebar": "someSidebar",
-  "previous": {
-    "title": "This is Document Number 3",
-    "permalink": "/gns3-docs/docs/doc3"
-  }
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/mdx.md"
 }

@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #14b4fc;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -15,6 +15,110 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+}
+
+/* Header Navbar */
+
+.navbar {
+   background: #21252f !important;
+}
+
+.navbar .navbar__link {
+   color: #fff;
+}
+
+.navbar__items--right .navbar__link {
+   font-size: 0.85em !important;
+}
+
+.currentColor {
+   stroke: #fff;
+}
+
+.navbar .react-toggle {
+   display: none;
+}
+
+.navbar__toggle svg path {
+   stroke: #eee !important;
+}
+
+/* Sidebar Menu */
+.menu {
+   background: #f6f9fb !important;
+   padding: 6px;
+}
+
+.menu__link {
+   color: #666;
+}
+
+.menu__list-item--collapsed .menu__list {
+   display: none;
+}
+
+.menu__link--active {
+   color: #14b4fc;
+   font-weight: bold !important;
+}
+
+.menu__link--active:hover {
+   color: #14b4fc !important;
+}
+
+/* .menu__list-item {
+   border-bottom: 1px solid #eee;
+} */
+
+.menu__list-item:last-child {
+   border-bottom: none;
+}
+
+.menu__list .menu__list .menu__link {
+   padding-left: 30px !important;
+}
+
+.menu__list .menu__list .menu__list .menu__link {
+   padding-left: 60px !important;
+}
+
+h1 {
+   font-size: 45px !important;
+   color: #333;
+   line-height: 100%;
+   letter-spacing: -1px;
+   margin-top: 20px;
+   margin-bottom: 20px !important;
+   padding: 0;
+}
+
+h2 {
+   font-size: 30px !important;
+   color: #14b4fc;
+   margin-bottom: 10px !important;
+}
+
+h3 {
+   font-size: 20px !important;
+   color: #222;
+   margin: 10px 0 !important;
+   margin-bottom: 20px !important;
+   padding: 10px 0px !important;
+   border-bottom: 1px solid #ddd;
+}
+
+p {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   margin: 10px 0px !important;
+}
+
+li {
+   margin: 0px !important;
+   padding: 0 !important;
 }
 
 .docusaurus-highlight-code-line {

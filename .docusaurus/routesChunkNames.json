@@ -1,7 +1,4 @@
 {
-  "/gns3-docs": {
-    "component": "c4f5d8e4"
-  },
   "/gns3-docs/blog": {
     "component": "a6aa9e1f",
     "items": [
@@ -78,6 +75,12 @@
     "component": "ccc49370",
     "content": "2868cdab"
   },
+  "/gns3-docs/go": {
+    "component": "fe312ac9"
+  },
+  "/gns3-docs/search": {
+    "component": "7fd43b69"
+  },
   "/gns3-docs/docs": {
     "component": "1be78505",
     "docsMetadata": "6bded35c"
@@ -93,6 +96,62 @@
   "/gns3-docs/docs/doc3": {
     "component": "17896441",
     "content": "616665f6"
+  },
+  "/gns3-docs/docs/getting-started/setup-gns3-vm": {
+    "component": "17896441",
+    "content": "a5bc9368"
+  },
+  "/gns3-docs/docs/getting-started/setup-local-server": {
+    "component": "17896441",
+    "content": "46e9b62f"
+  },
+  "/gns3-docs/docs/getting-started/what-is-gns3": {
+    "component": "17896441",
+    "content": "322a49c4"
+  },
+  "/gns3-docs/docs/getting-started/your-first-cisco-topology": {
+    "component": "17896441",
+    "content": "ae444171"
+  },
+  "/gns3-docs/docs/getting-started/your-first-topology": {
+    "component": "17896441",
+    "content": "0134b1da"
+  },
+  "/gns3-docs/docs/installation/download-32-bit": {
+    "component": "17896441",
+    "content": "e3be3c3b"
+  },
+  "/gns3-docs/docs/installation/download-gns3-vm": {
+    "component": "17896441",
+    "content": "d587f9fd"
+  },
+  "/gns3-docs/docs/installation/esxi": {
+    "component": "17896441",
+    "content": "6a4a493e"
+  },
+  "/gns3-docs/docs/installation/linux": {
+    "component": "17896441",
+    "content": "b59d577e"
+  },
+  "/gns3-docs/docs/installation/mac": {
+    "component": "17896441",
+    "content": "fab227bb"
+  },
+  "/gns3-docs/docs/installation/one-server-multiple-clients": {
+    "component": "17896441",
+    "content": "494a40cf"
+  },
+  "/gns3-docs/docs/installation/remote-server": {
+    "component": "17896441",
+    "content": "ec5960f4"
+  },
+  "/gns3-docs/docs/installation/upgrade-gns3": {
+    "component": "17896441",
+    "content": "2aa673de"
+  },
+  "/gns3-docs/docs/installation/windows": {
+    "component": "17896441",
+    "content": "975c1e12"
   },
   "/gns3-docs/docs/mdx": {
     "component": "17896441",
