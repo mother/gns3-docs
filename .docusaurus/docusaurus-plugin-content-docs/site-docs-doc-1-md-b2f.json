@@ -6,10 +6,5 @@
   "source": "@site/docs/doc1.md",
   "permalink": "/gns3-docs/docs/doc1",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/doc1.md",
-  "sidebar_label": "Style Guide",
-  "sidebar": "someSidebar",
-  "previous": {
-    "title": "Your First Cisco Topology",
-    "permalink": "/gns3-docs/docs/getting-started/your-first-cisco-topology"
-  }
+  "sidebar_label": "Style Guide"
 }

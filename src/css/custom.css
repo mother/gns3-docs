@@ -46,11 +46,12 @@
 /* Sidebar Menu */
 .menu {
    background: #f6f9fb !important;
-   padding: 6px;
+   padding: 0px !important;
 }
 
 .menu__link {
    color: #666;
+   font-size: 15px;
 }
 
 .menu__list-item--collapsed .menu__list {
@@ -66,20 +67,21 @@
    color: #14b4fc !important;
 }
 
-/* .menu__list-item {
+.menu__list-item {
+   padding: 2px 0px !important;
    border-bottom: 1px solid #eee;
-} */
+}
 
 .menu__list-item:last-child {
    border-bottom: none;
 }
 
 .menu__list .menu__list .menu__link {
-   padding-left: 30px !important;
+   padding-left: 35px !important;
 }
 
 .menu__list .menu__list .menu__list .menu__link {
-   padding-left: 60px !important;
+   padding-left: 70px !important;
 }
 
 h1 {

@@ -9,8 +9,8 @@
   "sidebar_label": "Setup wizard for local server",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Upgrade GNS3",
-    "permalink": "/gns3-docs/docs/installation/upgrade-gns3"
+    "title": "GNS3 on Packet",
+    "permalink": "/gns3-docs/docs/installation/packet"
   },
   "next": {
     "title": "GNS3 Setup wizard with the GNS3 VM",
