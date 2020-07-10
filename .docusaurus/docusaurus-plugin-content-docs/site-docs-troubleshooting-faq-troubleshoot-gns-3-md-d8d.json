@@ -1,0 +1,19 @@
+{
+  "id": "troubleshooting-faq/troubleshoot-gns3",
+  "isDocsHomePage": false,
+  "title": "Troubleshoot GNS3",
+  "description": "Installation Problems",
+  "source": "@site/docs/troubleshooting-faq/troubleshoot-gns3.md",
+  "permalink": "/gns3-docs/docs/troubleshooting-faq/troubleshoot-gns3",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/troubleshooting-faq/troubleshoot-gns3.md",
+  "sidebar_label": "Troubleshoot GNS3",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "How to use applications with the GNS3 Web interface",
+    "permalink": "/gns3-docs/docs/how-to/how-to-use-console-applications-with-the-web-ui"
+  },
+  "next": {
+    "title": "General FAQ",
+    "permalink": "/gns3-docs/docs/troubleshooting-faq/general-faq"
+  }
+}

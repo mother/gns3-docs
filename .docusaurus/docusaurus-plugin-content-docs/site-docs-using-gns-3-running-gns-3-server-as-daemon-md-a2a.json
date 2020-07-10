@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/running-gns3-server-as-daemon",
+  "isDocsHomePage": false,
+  "title": "Running the GNS3 server as a daemon",
+  "description": "You will find a sample init script for various systems inside the init directory of the gns3-server project//github.com/GNS3/gns3-server/tree/master/init",
+  "source": "@site/docs/using-gns3/running-gns3-server-as-daemon.md",
+  "permalink": "/gns3-docs/docs/using-gns3/running-gns3-server-as-daemon",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/running-gns3-server-as-daemon.md",
+  "sidebar_label": "Running the GNS3 server as a daemon",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "GNS3 server configuration file",
+    "permalink": "/gns3-docs/docs/using-gns3/gns3-server-configuration-file"
+  },
+  "next": {
+    "title": "GNS3 Security",
+    "permalink": "/gns3-docs/docs/using-gns3/gns3-security"
+  }
+}

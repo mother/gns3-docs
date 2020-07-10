@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/gns3-styles",
+  "isDocsHomePage": false,
+  "title": "GNS3 Styles",
+  "description": "Introduction",
+  "source": "@site/docs/using-gns3/gns3-styles.md",
+  "permalink": "/gns3-docs/docs/using-gns3/gns3-styles",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/gns3-styles.md",
+  "sidebar_label": "GNS3 Styles",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Use custom symbols in GNS3",
+    "permalink": "/gns3-docs/docs/using-gns3/change-node-symbol"
+  },
+  "next": {
+    "title": "Switching and GNS3",
+    "permalink": "/gns3-docs/docs/using-gns3/switching-and-gns3"
+  }
+}

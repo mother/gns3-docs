@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/gns3-server-configuration-file",
+  "isDocsHomePage": false,
+  "title": "GNS3 server configuration file",
+  "description": "If you want to run the GNS3 server without the GUI, you can configure it with via an ini file.",
+  "source": "@site/docs/using-gns3/gns3-server-configuration-file.md",
+  "permalink": "/gns3-docs/docs/using-gns3/gns3-server-configuration-file",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/gns3-server-configuration-file.md",
+  "sidebar_label": "GNS3 server configuration file",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Port name formatting",
+    "permalink": "/gns3-docs/docs/using-gns3/port-name-formatting"
+  },
+  "next": {
+    "title": "Running the GNS3 server as a daemon",
+    "permalink": "/gns3-docs/docs/using-gns3/running-gns3-server-as-daemon"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "how-to/development-of-gns3",
+  "isDocsHomePage": false,
+  "title": "Development of GNS3",
+  "description": "Using the GNS3 API",
+  "source": "@site/docs/how-to/development-of-gns3.md",
+  "permalink": "/gns3-docs/docs/how-to/development-of-gns3",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/how-to/development-of-gns3.md",
+  "sidebar_label": "Development of GNS3"
+}

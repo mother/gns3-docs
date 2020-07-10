@@ -1,0 +1,10 @@
+{
+  "id": "how-to/contribute-to-gns3",
+  "isDocsHomePage": false,
+  "title": "Contribute to GNS3",
+  "description": "The GNS3 community welcomes new contributors. Don’t be afraid to make mistakes - we are here to help.",
+  "source": "@site/docs/how-to/contribute-to-gns3.md",
+  "permalink": "/gns3-docs/docs/how-to/contribute-to-gns3",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/how-to/contribute-to-gns3.md",
+  "sidebar_label": "Contribute to GNS3"
+}

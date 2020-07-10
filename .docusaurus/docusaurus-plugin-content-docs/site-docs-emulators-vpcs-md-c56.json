@@ -1,0 +1,19 @@
+{
+  "id": "emulators/vpcs",
+  "isDocsHomePage": false,
+  "title": "VPCS",
+  "description": "Virtual PC Simulator is a program written by Paul Meng, which allows you to simulate a lightweight PC supporting DHCP and ping. It consumes only 2MB of RAM per instance,  and does not require an additional image.",
+  "source": "@site/docs/emulators/vpcs.md",
+  "permalink": "/gns3-docs/docs/emulators/vpcs",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/vpcs.md",
+  "sidebar_label": "VPCS",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Adding VMware VMs to GNS3 Topologies",
+    "permalink": "/gns3-docs/docs/emulators/adding-vmware-vms-to-gns3-topologies"
+  },
+  "next": {
+    "title": "Qemu system UUID",
+    "permalink": "/gns3-docs/docs/emulators/qemu-system-uuid"
+  }
+}
