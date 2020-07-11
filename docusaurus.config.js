@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'GNS3 Docs',
-  tagline: 'The tagline of my site',
+  title: 'GNS3 Documentation',
+  tagline: 'The official guide and reference for GNS3',
   url: 'https://mother.github.io',
   baseUrl: '/gns3-docs/',
   favicon: 'img/favicon.ico',
@@ -12,8 +12,8 @@ module.exports = {
          indexName: 'gns3',
          algoliaOptions: {}, // Optional, if provided by Algolia
      },
+     disableDarkMode: true,
     navbar: {
-      // title: 'My Site',
       logo: {
         alt: 'GNS3 Docs',
         src: 'img/logocolour.png',
@@ -25,18 +25,6 @@ module.exports = {
           label: 'Documentation',
           position: 'left',
        },
-       {
-         to: 'docs/',
-         activeBasePath: 'docs',
-         label: 'Contribute',
-         position: 'left',
-      },
-      {
-        to: 'docs/',
-        activeBasePath: 'docs',
-        label: 'Appliances',
-        position: 'left',
-     },
         {
           href: 'https://gns3.com',
           label: 'GNS3.com',
@@ -46,51 +34,43 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Style Guide',
-      //         to: 'docs/',
-      //       },
-      //       {
-      //         label: 'Second Doc',
-      //         to: 'docs/doc2/',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: 'blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //     ],
-      //   },
-      // ],
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Documentation',
+              to: 'docs/',
+            }
+          ],
+        },
+        {
+          title: 'Visit Us',
+          items: [
+            {
+              label: 'GNS3 Community',
+              href: 'https://gns3.com/community',
+            },
+            {
+              label: 'GNS3 Academy',
+              href: 'https://academy.gns3.com',
+            },
+            {
+              label: 'GNS3 Certification',
+              href: 'https://gns3.com/training',
+            },
+          ],
+        },
+        {
+          title: 'Connect',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/facebook/docusaurus',
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Galaxy Technologies LLC.`,
     },
   },
@@ -100,20 +80,10 @@ module.exports = {
       {
         docs: {
            showReadingTime: true,
-          // path: 'haha',
-          // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'getting-started/what-is-gns3',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            // 'https://github.com/facebook/docusaurus/edit/master/website/',
             'https://github.com/mother/gns3-docs/blob/master/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

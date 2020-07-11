@@ -35,10 +35,6 @@
    stroke: #fff;
 }
 
-.navbar .react-toggle {
-   display: none;
-}
-
 .navbar__toggle svg path {
    stroke: #eee !important;
 }

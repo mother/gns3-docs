@@ -54,6 +54,7 @@ export default {
   'bdd709f1': [() => import(/* webpackChunkName: 'bdd709f1' */ "@site/blog/2019-05-28-hola.md"), "@site/blog/2019-05-28-hola.md", require.resolveWeak("@site/blog/2019-05-28-hola.md")],
   'c36fddde': [() => import(/* webpackChunkName: 'c36fddde' */ "@site/docs/emulators/qemu-system-uuid.md"), "@site/docs/emulators/qemu-system-uuid.md", require.resolveWeak("@site/docs/emulators/qemu-system-uuid.md")],
   'c41a2b3c': [() => import(/* webpackChunkName: 'c41a2b3c' */ "@site/docs/using-gns3/the-console-terminal.md"), "@site/docs/using-gns3/the-console-terminal.md", require.resolveWeak("@site/docs/using-gns3/the-console-terminal.md")],
+  'c4f5d8e4': [() => import(/* webpackChunkName: 'c4f5d8e4' */ "@site/src/pages/index.js"), "@site/src/pages/index.js", require.resolveWeak("@site/src/pages/index.js")],
   'c561a9f7': [() => import(/* webpackChunkName: 'c561a9f7' */ "@site/docs/emulators/vpcs.md"), "@site/docs/emulators/vpcs.md", require.resolveWeak("@site/docs/emulators/vpcs.md")],
   'ccc49370': [() => import(/* webpackChunkName: 'ccc49370' */ "@theme/BlogPostPage"), "@theme/BlogPostPage", require.resolveWeak("@theme/BlogPostPage")],
   'ce3e42ad': [() => import(/* webpackChunkName: 'ce3e42ad' */ "@site/docs/mdx.md"), "@site/docs/mdx.md", require.resolveWeak("@site/docs/mdx.md")],
@@ -73,5 +74,4 @@ export default {
   'f83f376b': [() => import(/* webpackChunkName: 'f83f376b' */ "@site/docs/installation/packet.md"), "@site/docs/installation/packet.md", require.resolveWeak("@site/docs/installation/packet.md")],
   'faa986c9': [() => import(/* webpackChunkName: 'faa986c9' */ "~blog/gns-3-docs-blog-tags-tags-14b.json"), "~blog/gns-3-docs-blog-tags-tags-14b.json", require.resolveWeak("~blog/gns-3-docs-blog-tags-tags-14b.json")],
   'fab227bb': [() => import(/* webpackChunkName: 'fab227bb' */ "@site/docs/installation/mac.md"), "@site/docs/installation/mac.md", require.resolveWeak("@site/docs/installation/mac.md")],
-  'fc3861b9': [() => import(/* webpackChunkName: 'fc3861b9' */ "@site/docs/using-gns3/gns3-server-configuration-file.md"), "@site/docs/using-gns3/gns3-server-configuration-file.md", require.resolveWeak("@site/docs/using-gns3/gns3-server-configuration-file.md")],
-  'fe312ac9': [() => import(/* webpackChunkName: 'fe312ac9' */ "@site/src/pages/go.js"), "@site/src/pages/go.js", require.resolveWeak("@site/src/pages/go.js")],};
+  'fc3861b9': [() => import(/* webpackChunkName: 'fc3861b9' */ "@site/docs/using-gns3/gns3-server-configuration-file.md"), "@site/docs/using-gns3/gns3-server-configuration-file.md", require.resolveWeak("@site/docs/using-gns3/gns3-server-configuration-file.md")],};

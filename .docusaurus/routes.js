@@ -5,6 +5,12 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   
 {
+  path: '/gns3-docs/',
+  component: ComponentCreator('/gns3-docs/'),
+  exact: true,
+  
+},
+{
   path: '/gns3-docs/blog',
   component: ComponentCreator('/gns3-docs/blog'),
   exact: true,
@@ -55,12 +61,6 @@ export default [
 {
   path: '/gns3-docs/blog/welcome',
   component: ComponentCreator('/gns3-docs/blog/welcome'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/go',
-  component: ComponentCreator('/gns3-docs/go'),
   exact: true,
   
 },

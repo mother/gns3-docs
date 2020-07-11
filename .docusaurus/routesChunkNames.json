@@ -1,4 +1,7 @@
 {
+  "/gns3-docs/": {
+    "component": "c4f5d8e4"
+  },
   "/gns3-docs/blog": {
     "component": "a6aa9e1f",
     "items": [
@@ -74,9 +77,6 @@
   "/gns3-docs/blog/welcome": {
     "component": "ccc49370",
     "content": "2868cdab"
-  },
-  "/gns3-docs/go": {
-    "component": "fe312ac9"
   },
   "/gns3-docs/search": {
     "component": "7fd43b69"

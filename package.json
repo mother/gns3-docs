@@ -1,6 +1,6 @@
 {
   "name": "gns-3-docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
