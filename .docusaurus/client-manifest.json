@@ -154,10 +154,10 @@
     "@site/docs/using-gns3/move-from-iouvm-gns3-vm.md": [
       25
     ],
-    "@site/docs/using-gns3/the-gns3-gui.md": [
+    "@site/docs/using-gns3/client-server-ssl-encryption.md": [
       26
     ],
-    "@site/docs/using-gns3/client-server-ssl-encryption.md": [
+    "@site/docs/using-gns3/beginners/the-gns3-gui.md": [
       27
     ],
     "@site/docs/emulators/adding-vmware-vms-to-gns3-topologies.md": [
@@ -593,18 +593,18 @@
     "26": {
       "js": [
         {
-          "file": "4c293e51.d8e9766c.js",
-          "hash": "c3c90d457e4e46b9e364",
-          "publicPath": "/gns3-docs/4c293e51.d8e9766c.js"
+          "file": "4f9bda06.d2756053.js",
+          "hash": "dafc758eb85bbce222df",
+          "publicPath": "/gns3-docs/4f9bda06.d2756053.js"
         }
       ]
     },
     "27": {
       "js": [
         {
-          "file": "4f9bda06.d45acb58.js",
-          "hash": "ca7d2dcf39296f3eb984",
-          "publicPath": "/gns3-docs/4f9bda06.d45acb58.js"
+          "file": "5c632b0c.395afb8c.js",
+          "hash": "b7da26cd633c2e5732ae",
+          "publicPath": "/gns3-docs/5c632b0c.395afb8c.js"
         }
       ]
     },
@@ -665,18 +665,18 @@
     "34": {
       "js": [
         {
-          "file": "6bded35c.7292b8ae.js",
-          "hash": "0a7964829c638192e7d1",
-          "publicPath": "/gns3-docs/6bded35c.7292b8ae.js"
+          "file": "6bded35c.e879919c.js",
+          "hash": "922797eef831afa67dab",
+          "publicPath": "/gns3-docs/6bded35c.e879919c.js"
         }
       ]
     },
     "35": {
       "js": [
         {
-          "file": "6cd15ae3.48ffe3f9.js",
-          "hash": "290ddb3619efc5aa0676",
-          "publicPath": "/gns3-docs/6cd15ae3.48ffe3f9.js"
+          "file": "6cd15ae3.34d5c877.js",
+          "hash": "6356cd9b8ef3b4117afa",
+          "publicPath": "/gns3-docs/6cd15ae3.34d5c877.js"
         }
       ]
     },
@@ -818,9 +818,9 @@
     "51": {
       "js": [
         {
-          "file": "ae444171.96bccfdc.js",
-          "hash": "8ba48fda74df306cd565",
-          "publicPath": "/gns3-docs/ae444171.96bccfdc.js"
+          "file": "ae444171.464cba5d.js",
+          "hash": "40efe76eec5a2a6a8db4",
+          "publicPath": "/gns3-docs/ae444171.464cba5d.js"
         }
       ]
     },
@@ -942,9 +942,9 @@
     "64": {
       "js": [
         {
-          "file": "ce3e42ad.7b5ad652.js",
-          "hash": "b930e51286d082d5364f",
-          "publicPath": "/gns3-docs/ce3e42ad.7b5ad652.js"
+          "file": "ce3e42ad.90ce0f84.js",
+          "hash": "83e6ad8da9429c278f8c",
+          "publicPath": "/gns3-docs/ce3e42ad.90ce0f84.js"
         }
       ]
     },
@@ -1104,18 +1104,18 @@
     "82": {
       "js": [
         {
-          "file": "main.80ac4fdf.js",
-          "hash": "02845de9738f2e088b50",
-          "publicPath": "/gns3-docs/main.80ac4fdf.js"
+          "file": "main.165bf6a8.js",
+          "hash": "b4f400edd4d95e4614fd",
+          "publicPath": "/gns3-docs/main.165bf6a8.js"
         }
       ]
     },
     "83": {
       "js": [
         {
-          "file": "runtime~main.dd5d2667.js",
-          "hash": "20eb9b844edbf8ead820",
-          "publicPath": "/gns3-docs/runtime~main.dd5d2667.js"
+          "file": "runtime~main.bcf42fac.js",
+          "hash": "dcfbe7255463826c4e39",
+          "publicPath": "/gns3-docs/runtime~main.bcf42fac.js"
         }
       ]
     },

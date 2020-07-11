@@ -280,6 +280,12 @@ export default [
   
 },
 {
+  path: '/gns3-docs/docs/using-gns3/beginners/the-gns3-gui',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/the-gns3-gui'),
+  exact: true,
+  
+},
+{
   path: '/gns3-docs/docs/using-gns3/change-node-symbol',
   component: ComponentCreator('/gns3-docs/docs/using-gns3/change-node-symbol'),
   exact: true,
@@ -384,12 +390,6 @@ export default [
 {
   path: '/gns3-docs/docs/using-gns3/the-console-terminal',
   component: ComponentCreator('/gns3-docs/docs/using-gns3/the-console-terminal'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/the-gns3-gui',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/the-gns3-gui'),
   exact: true,
   
 },

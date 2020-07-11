@@ -27,7 +27,7 @@ module.exports = {
       type: 'category',
       label: 'Beginners',
       items: [
-         'using-gns3/the-gns3-gui',
+         'using-gns3/beginners/the-gns3-gui',
          'using-gns3/change-node-symbol',
          'using-gns3/gns3-styles',
          'using-gns3/switching-and-gns3',

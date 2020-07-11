@@ -221,6 +221,10 @@
     "component": "17896441",
     "content": "d2ea6308"
   },
+  "/gns3-docs/docs/using-gns3/beginners/the-gns3-gui": {
+    "component": "17896441",
+    "content": "5c632b0c"
+  },
   "/gns3-docs/docs/using-gns3/change-node-symbol": {
     "component": "17896441",
     "content": "6cd15ae3"
@@ -292,10 +296,6 @@
   "/gns3-docs/docs/using-gns3/the-console-terminal": {
     "component": "17896441",
     "content": "c41a2b3c"
-  },
-  "/gns3-docs/docs/using-gns3/the-gns3-gui": {
-    "component": "17896441",
-    "content": "4c293e51"
   },
   "/gns3-docs/docs/using-gns3/the-nat-node": {
     "component": "17896441",

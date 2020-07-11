@@ -103,7 +103,7 @@
               {
                 "type": "link",
                 "label": "The GNS3 GUI",
-                "href": "/gns3-docs/docs/using-gns3/the-gns3-gui"
+                "href": "/gns3-docs/docs/using-gns3/beginners/the-gns3-gui"
               },
               {
                 "type": "link",
@@ -366,6 +366,7 @@
     "/gns3-docs/docs/troubleshooting-faq/troubleshoot-gns3": "someSidebar",
     "/gns3-docs/docs/troubleshooting-faq/where-do-i-get-ios-images": "someSidebar",
     "/gns3-docs/docs/using-gns3/architecture": "someSidebar",
+    "/gns3-docs/docs/using-gns3/beginners/the-gns3-gui": "someSidebar",
     "/gns3-docs/docs/using-gns3/change-node-symbol": "someSidebar",
     "/gns3-docs/docs/using-gns3/client-server-ssl-encryption": "someSidebar",
     "/gns3-docs/docs/using-gns3/connect-gns3-internet": "someSidebar",
@@ -384,7 +385,6 @@
     "/gns3-docs/docs/using-gns3/special-ip-addresses": "someSidebar",
     "/gns3-docs/docs/using-gns3/switching-and-gns3": "someSidebar",
     "/gns3-docs/docs/using-gns3/the-console-terminal": "someSidebar",
-    "/gns3-docs/docs/using-gns3/the-gns3-gui": "someSidebar",
     "/gns3-docs/docs/using-gns3/the-nat-node": "someSidebar",
     "/gns3-docs/docs/using-gns3/why-gns3-uses-uuid": "someSidebar"
   }
