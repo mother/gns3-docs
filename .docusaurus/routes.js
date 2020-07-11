@@ -11,12 +11,6 @@ export default [
   
 },
 {
-  path: '/gns3-docs/__docusaurus/debug',
-  component: ComponentCreator('/gns3-docs/__docusaurus/debug'),
-  exact: true,
-  
-},
-{
   path: '/gns3-docs/blog',
   component: ComponentCreator('/gns3-docs/blog'),
   exact: true,
