@@ -4,6 +4,8 @@ title: The GNS3 GUI
 sidebar_label: The GNS3 GUI
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Introduction
 This document explains various options in the GNS3 Graphical User Interface (GUI) which help you create and manage GNS3 projects.
 
@@ -14,7 +16,7 @@ This guide applies to both the Local Server and GNS3 VM installations. Both inst
 ## Screen Layout
 The following figure shows a screenshot of the version 2.2.0 GNS3 GUI:
 
-![screenshot](/static/img/the-gns3-gui/1.jpg)
+<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/the-gns3-gui/1.jpg')} />
 
 The GUI is subdivided into several sections:  The Workspace, Toolbar, Devices Toolbar, Topology Summary, Servers Summary, and the Console.
 

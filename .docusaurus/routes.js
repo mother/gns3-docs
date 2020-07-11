@@ -11,6 +11,12 @@ export default [
   
 },
 {
+  path: '/gns3-docs/__docusaurus/debug',
+  component: ComponentCreator('/gns3-docs/__docusaurus/debug'),
+  exact: true,
+  
+},
+{
   path: '/gns3-docs/blog',
   component: ComponentCreator('/gns3-docs/blog'),
   exact: true,
@@ -100,20 +106,26 @@ export default [
   
 },
 {
-  path: '/gns3-docs/docs/doc1',
-  component: ComponentCreator('/gns3-docs/docs/doc1'),
+  path: '/gns3-docs/docs/docusaurus-reference/doc1',
+  component: ComponentCreator('/gns3-docs/docs/docusaurus-reference/doc1'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/doc2',
-  component: ComponentCreator('/gns3-docs/docs/doc2'),
+  path: '/gns3-docs/docs/docusaurus-reference/doc2',
+  component: ComponentCreator('/gns3-docs/docs/docusaurus-reference/doc2'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/doc3',
-  component: ComponentCreator('/gns3-docs/docs/doc3'),
+  path: '/gns3-docs/docs/docusaurus-reference/doc3',
+  component: ComponentCreator('/gns3-docs/docs/docusaurus-reference/doc3'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/docusaurus-reference/mdx',
+  component: ComponentCreator('/gns3-docs/docs/docusaurus-reference/mdx'),
   exact: true,
   
 },
@@ -246,12 +258,6 @@ export default [
 {
   path: '/gns3-docs/docs/installation/windows',
   component: ComponentCreator('/gns3-docs/docs/installation/windows'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/mdx',
-  component: ComponentCreator('/gns3-docs/docs/mdx'),
   exact: true,
   
 },
