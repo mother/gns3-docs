@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.58">
-<link rel="search" type="application/opensearchdescription+xml" title="GNS3 Docs" href="/gns3-docs/opensearch.xml"><title data-react-helmet="true">GNS3 server configuration file | GNS3 Docs</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="GNS3 server configuration file | GNS3 Docs"><meta data-react-helmet="true" name="description" content="If you want to run the GNS3 server without the GUI, you can configure it with via an ini file."><meta data-react-helmet="true" property="og:description" content="If you want to run the GNS3 server without the GUI, you can configure it with via an ini file."><meta data-react-helmet="true" property="og:url" content="https://mother.github.io/gns3-docs/docs/using-gns3/gns3-server-configuration-file"><link data-react-helmet="true" rel="shortcut icon" href="/gns3-docs/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://mother.github.io/gns3-docs/docs/using-gns3/gns3-server-configuration-file"><link rel="stylesheet" href="/gns3-docs/styles.3a4eb52a.css">
-<link rel="preload" href="/gns3-docs/styles.c1eab222.js" as="script">
-<link rel="preload" href="/gns3-docs/runtime~main.3e81f298.js" as="script">
-<link rel="preload" href="/gns3-docs/main.f98e8614.js" as="script">
-<link rel="preload" href="/gns3-docs/1.964da8fe.js" as="script">
-<link rel="preload" href="/gns3-docs/2.022f238e.js" as="script">
-<link rel="preload" href="/gns3-docs/84.72359e41.js" as="script">
-<link rel="preload" href="/gns3-docs/85.cc5d44c5.js" as="script">
-<link rel="preload" href="/gns3-docs/6bded35c.a6a27fff.js" as="script">
-<link rel="preload" href="/gns3-docs/17896441.23420b26.js" as="script">
-<link rel="preload" href="/gns3-docs/fc3861b9.dd8862bf.js" as="script">
+<link rel="search" type="application/opensearchdescription+xml" title="GNS3 Documentation" href="/gns3-docs/opensearch.xml"><title data-react-helmet="true">GNS3 server configuration file | GNS3 Documentation</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="GNS3 server configuration file | GNS3 Documentation"><meta data-react-helmet="true" name="description" content="If you want to run the GNS3 server without the GUI, you can configure it with via an ini file."><meta data-react-helmet="true" property="og:description" content="If you want to run the GNS3 server without the GUI, you can configure it with via an ini file."><meta data-react-helmet="true" property="og:url" content="https://mother.github.io/gns3-docs/docs/using-gns3/gns3-server-configuration-file"><link data-react-helmet="true" rel="shortcut icon" href="/gns3-docs/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://mother.github.io/gns3-docs/docs/using-gns3/gns3-server-configuration-file"><link rel="stylesheet" href="/gns3-docs/styles.835d9a96.css">
+<link rel="preload" href="/gns3-docs/styles.74c11a10.js" as="script">
+<link rel="preload" href="/gns3-docs/runtime~main.eb183dfc.js" as="script">
+<link rel="preload" href="/gns3-docs/main.4ceeaede.js" as="script">
+<link rel="preload" href="/gns3-docs/1.b88f154d.js" as="script">
+<link rel="preload" href="/gns3-docs/2.6b9c8c76.js" as="script">
+<link rel="preload" href="/gns3-docs/3.f7d7c5e2.js" as="script">
+<link rel="preload" href="/gns3-docs/1be78505.26d04226.js" as="script">
+<link rel="preload" href="/gns3-docs/85.4d642381.js" as="script">
+<link rel="preload" href="/gns3-docs/6bded35c.7292b8ae.js" as="script">
+<link rel="preload" href="/gns3-docs/17896441.1e712644.js" as="script">
+<link rel="preload" href="/gns3-docs/fc3861b9.a6eaced9.js" as="script">
 </head>
 <body>
 <div id="__docusaurus">
@@ -24,15 +25,16 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">[IOU]</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Path of the iouyap binary</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">iouyap_path = /usr/local/bin/iouyap</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Path of your .iourc file. If empty we search in $HOME/.iourc</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">iourc_path = /home/gns3/.iourc</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Validate if the iourc is correct. If you turn off and your licence is invalid iou will crash without errors</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">license_check = True</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">[VirtualBox]</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Path of the VBoxManage command</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">vboxmanage_path = /usr/local/bin/VBoxManage</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Run VirtualBox with sudo as vbox_user</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">vbox_user =</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">[VMware]</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Type of Virtualization product (fusion, player, workstation)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">host_type = fusion</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; First vmnet adapter controlled by GNS3</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">vmnet_start_range = 2</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Last vmnet adapter controlled by GNS3</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">vmnet_end_range = 50</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">; Path of the vmrun executable</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">vmrun_path = /Applications/VMware Fusion.app/Contents/Library/vmrun</span></div></div></div></div></div></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/gns3-server-configuration-file.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/gns3-docs/docs/using-gns3/port-name-formatting"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Port name formatting</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/gns3-docs/docs/using-gns3/running-gns3-server-as-daemon"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Running the GNS3 server as a daemon »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#file-location" class="table-of-contents__link">File Location</a><ul><li><a href="#linux" class="table-of-contents__link">Linux</a></li><li><a href="#mac-os-x" class="table-of-contents__link">Mac OS X</a></li><li><a href="#windows" class="table-of-contents__link">Windows</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 Galaxy Technologies LLC.</div></div></div></footer></div>
-<script src="/gns3-docs/styles.c1eab222.js"></script>
-<script src="/gns3-docs/runtime~main.3e81f298.js"></script>
-<script src="/gns3-docs/main.f98e8614.js"></script>
-<script src="/gns3-docs/1.964da8fe.js"></script>
-<script src="/gns3-docs/2.022f238e.js"></script>
-<script src="/gns3-docs/84.72359e41.js"></script>
-<script src="/gns3-docs/85.cc5d44c5.js"></script>
-<script src="/gns3-docs/6bded35c.a6a27fff.js"></script>
-<script src="/gns3-docs/17896441.23420b26.js"></script>
-<script src="/gns3-docs/fc3861b9.dd8862bf.js"></script>
+<script src="/gns3-docs/styles.74c11a10.js"></script>
+<script src="/gns3-docs/runtime~main.eb183dfc.js"></script>
+<script src="/gns3-docs/main.4ceeaede.js"></script>
+<script src="/gns3-docs/1.b88f154d.js"></script>
+<script src="/gns3-docs/2.6b9c8c76.js"></script>
+<script src="/gns3-docs/3.f7d7c5e2.js"></script>
+<script src="/gns3-docs/1be78505.26d04226.js"></script>
+<script src="/gns3-docs/85.4d642381.js"></script>
+<script src="/gns3-docs/6bded35c.7292b8ae.js"></script>
+<script src="/gns3-docs/17896441.1e712644.js"></script>
+<script src="/gns3-docs/fc3861b9.a6eaced9.js"></script>
 </body>
 </html>
