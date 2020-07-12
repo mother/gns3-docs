@@ -29,6 +29,10 @@ module.exports = {
                label: 'Documentation',
                position: 'left'
             }, {
+               href: 'https://gns3.com/marketplace/appliances',
+               label: 'Appliances',
+               position: 'right'
+            }, {
                href: 'https://gns3.com',
                label: 'GNS3.com',
                position: 'right'
