@@ -1,8 +1,14 @@
 export default {
-  "plugins": [],
+  "plugins": [
+    "@docusaurus/plugin-google-analytics"
+  ],
   "themes": [],
   "customFields": {},
   "themeConfig": {
+    "googleAnalytics": {
+      "trackingID": "UA-55817127-4",
+      "anonymizeIP": false
+    },
     "algolia": {
       "apiKey": "a83755c0872ca3a1d4a8af1ad443d037",
       "indexName": "gns3",
