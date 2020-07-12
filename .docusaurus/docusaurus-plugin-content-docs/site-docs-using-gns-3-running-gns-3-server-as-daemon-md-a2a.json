@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 server configuration file",
-    "permalink": "/gns3-docs/docs/using-gns3/gns3-server-configuration-file"
+    "permalink": "/gns3-docs/docs/using-gns3/administration/gns3-server-configuration-file"
   },
   "next": {
     "title": "GNS3 Security",

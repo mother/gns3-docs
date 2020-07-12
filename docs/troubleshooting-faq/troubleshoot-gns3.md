@@ -4,6 +4,8 @@ title: Troubleshoot GNS3
 sidebar_label: Troubleshoot GNS3
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Installation Problems
 
 ### On MacOSX
@@ -54,7 +56,7 @@ QT_SCALE_FACTOR=1 gns3
 ```
 
 ## Dynamips
-If you have any issue with Dynamips make sure you are using one of the recommended images listed [here](https://docs.gns3.com/1-kBrTplBltp9P3P-AigoMzlDO-ISyL1h3bYpOl5Q8mQ/index.html) CHECKLINK
+If you have any issue with Dynamips make sure you are using one of the recommended images listed [here](../emulators/cisco-ios-images-for-dynamips)
 
 ### My IOS configuration is not saving
 Like a real hardware you need to save the configuration before the device is powered off. You can do that with write memory command.
@@ -210,7 +212,7 @@ It’s a limitation of VirtualBox. If you want to use KVM in a VM you need VMwar
 ### Error while executing VMware command
 If you see a dialog like that:
 
-![screenshot](../../img/troubleshoot-gns3/1.jpg)
+<img alt="screenshot" src={useBaseUrl('img/troubleshooting-faq/troubleshoot-gns3/1.jpg')} />
 
 This mean GNS3 try to send a command to VMware but it’s doesn’t work due to an issue with your VMware installation.
 

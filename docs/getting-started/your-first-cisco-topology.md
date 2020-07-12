@@ -4,6 +4,8 @@ title: Your First Cisco Topology
 sidebar_label: Your first Cisco topology
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Introduction
 This document explains how to configure a simple GNS3 topology consisting of two Cisco routers. The set up shown here is the same when using either a local GNS3 installation or a GNS3 VM environment.
 
@@ -17,40 +19,40 @@ This document assumes that you already have GNS3 installed and a Cisco IOS route
 
 1. To create a new GNS3 topology, select a group of devices in the Devices Toolbar by clicking the device type button. In this example the Routers group was selected:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/1.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/1.jpg')} />
 
 2. In this example, a c3725 IOS image has already been imported, so we’ll use it.
 3. Drag and drop the selected node (device) to the GNS3 **Workspace**. An instance of the node becomes available in the **Workspace**. In this example a router is now available:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/2.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/2.jpg')} />
 
 4. Drag and drop the node again into the GNS3 **Workspace**, which will result in routers R1 and R2 appearing in both the **Workspace**, and the **Topology Summary**:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/3.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/3.jpg')} />
 
 5. Click the **Toolbar Device** button again (or the X in the corner of it) to collapse the group:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/4.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/4.jpg')} />
 
 6. Click the **Add a Link** button to start adding links to your topology. The mouse cursor will change to indicate that links can be added:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/5.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/5.jpg')} />
 
 7. Click on a device in your topology to display available interfaces. In this example we’ll use FastEthernet0/0 of each router to connect them together:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/6.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/6.jpg')} />
 
 8. Left click FastEthernet0/0 of R1, and connect it to FastEthernet0/0 of R2.
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/7.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/7.jpg')} />
 
 9. Click the Interface Names icon (this is optional), to display the interfaces on each device, that have been connected together.
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/8.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/8.jpg')} />
 
 Below, the green **Start** button (marked #1) and the **Console** button (marked #2) have been selected. This powers on all devices in the **Workspace**, as well as launches Solar-Putty and creates tabs for each device:
 
-![screenshot](../../img/getting-started/your-first-cisco-topology/9.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/your-first-cisco-topology/9.jpg')} />
 
 Now let’s configure the routers!
 

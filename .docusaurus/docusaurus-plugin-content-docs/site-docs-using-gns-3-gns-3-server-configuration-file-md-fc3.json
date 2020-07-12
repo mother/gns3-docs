@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Port name formatting",
-    "permalink": "/gns3-docs/docs/using-gns3/port-name-formatting"
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/port-name-formatting"
   },
   "next": {
     "title": "Running the GNS3 server as a daemon",

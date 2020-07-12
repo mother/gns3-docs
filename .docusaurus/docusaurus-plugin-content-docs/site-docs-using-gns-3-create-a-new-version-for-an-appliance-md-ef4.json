@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Settings profiles",
-    "permalink": "/gns3-docs/docs/using-gns3/settings-profiles"
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/settings-profiles"
   },
   "next": {
     "title": "Port name formatting",

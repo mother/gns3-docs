@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 Security",
-    "permalink": "/gns3-docs/docs/using-gns3/gns3-security"
+    "permalink": "/gns3-docs/docs/using-gns3/administration/gns3-security"
   },
   "next": {
     "title": "Scale GNS3",

@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Link Control",
-    "permalink": "/gns3-docs/docs/using-gns3/link-control"
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/link-control"
   },
   "next": {
     "title": "The NAT node",

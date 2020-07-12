@@ -9,8 +9,8 @@
   "sidebar_label": "VPCS",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Adding VMware VMs to GNS3 Topologies",
-    "permalink": "/gns3-docs/docs/emulators/adding-vmware-vms-to-gns3-topologies"
+    "title": "Create a docker container for GNS3",
+    "permalink": "/gns3-docs/docs/emulators/create-a-docker-container-for-gns3"
   },
   "next": {
     "title": "Qemu system UUID",

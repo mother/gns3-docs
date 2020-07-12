@@ -11,60 +11,6 @@ export default [
   
 },
 {
-  path: '/gns3-docs/blog',
-  component: ComponentCreator('/gns3-docs/blog'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/hello-world',
-  component: ComponentCreator('/gns3-docs/blog/hello-world'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/hola',
-  component: ComponentCreator('/gns3-docs/blog/hola'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/tags',
-  component: ComponentCreator('/gns3-docs/blog/tags'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/tags/docusaurus',
-  component: ComponentCreator('/gns3-docs/blog/tags/docusaurus'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/tags/facebook',
-  component: ComponentCreator('/gns3-docs/blog/tags/facebook'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/tags/hello',
-  component: ComponentCreator('/gns3-docs/blog/tags/hello'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/tags/hola',
-  component: ComponentCreator('/gns3-docs/blog/tags/hola'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/blog/welcome',
-  component: ComponentCreator('/gns3-docs/blog/welcome'),
-  exact: true,
-  
-},
-{
   path: '/gns3-docs/search',
   component: ComponentCreator('/gns3-docs/search'),
   exact: true,
@@ -130,6 +76,24 @@ export default [
   
 },
 {
+  path: '/gns3-docs/docs/emulators/cisco-ios-images-for-dynamips',
+  component: ComponentCreator('/gns3-docs/docs/emulators/cisco-ios-images-for-dynamips'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/emulators/create-a-docker-container-for-gns3',
+  component: ComponentCreator('/gns3-docs/docs/emulators/create-a-docker-container-for-gns3'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/emulators/docker-support-in-gns3',
+  component: ComponentCreator('/gns3-docs/docs/emulators/docker-support-in-gns3'),
+  exact: true,
+  
+},
+{
   path: '/gns3-docs/docs/emulators/non-native-iou-for-windows-and-osx',
   component: ComponentCreator('/gns3-docs/docs/emulators/non-native-iou-for-windows-and-osx'),
   exact: true,
@@ -154,14 +118,74 @@ export default [
   
 },
 {
-  path: '/gns3-docs/docs/getting-started/setup-gns3-vm',
-  component: ComponentCreator('/gns3-docs/docs/getting-started/setup-gns3-vm'),
+  path: '/gns3-docs/docs/getting-started/installation/download-32-bit',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/download-32-bit'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/getting-started/setup-local-server',
-  component: ComponentCreator('/gns3-docs/docs/getting-started/setup-local-server'),
+  path: '/gns3-docs/docs/getting-started/installation/download-gns3-vm',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/download-gns3-vm'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/esxi',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/esxi'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/gns3-on-packet',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/gns3-on-packet'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/linux',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/linux'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/mac',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/mac'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/one-server-multiple-clients',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/one-server-multiple-clients'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/remote-server',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/remote-server'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/upgrade-gns3',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/upgrade-gns3'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/installation/windows',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/installation/windows'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/setup-wizard-gns3-vm',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/setup-wizard-gns3-vm'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/getting-started/setup-wizard-local-server',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/setup-wizard-local-server'),
   exact: true,
   
 },
@@ -172,86 +196,32 @@ export default [
   
 },
 {
-  path: '/gns3-docs/docs/getting-started/your-first-topology',
-  component: ComponentCreator('/gns3-docs/docs/getting-started/your-first-topology'),
+  path: '/gns3-docs/docs/getting-started/your-first-gns3-topology',
+  component: ComponentCreator('/gns3-docs/docs/getting-started/your-first-gns3-topology'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/how-to/cisco-asa',
-  component: ComponentCreator('/gns3-docs/docs/how-to/cisco-asa'),
+  path: '/gns3-docs/docs/how-to-guides/cisco-asa',
+  component: ComponentCreator('/gns3-docs/docs/how-to-guides/cisco-asa'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/how-to/how-to-use-console-applications-with-the-web-ui',
-  component: ComponentCreator('/gns3-docs/docs/how-to/how-to-use-console-applications-with-the-web-ui'),
+  path: '/gns3-docs/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server',
+  component: ComponentCreator('/gns3-docs/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/how-to/importing-vmx-and-vqfx-into-gns3',
-  component: ComponentCreator('/gns3-docs/docs/how-to/importing-vmx-and-vqfx-into-gns3'),
+  path: '/gns3-docs/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui',
+  component: ComponentCreator('/gns3-docs/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/installation/download-32-bit',
-  component: ComponentCreator('/gns3-docs/docs/installation/download-32-bit'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/download-gns3-vm',
-  component: ComponentCreator('/gns3-docs/docs/installation/download-gns3-vm'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/esxi',
-  component: ComponentCreator('/gns3-docs/docs/installation/esxi'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/linux',
-  component: ComponentCreator('/gns3-docs/docs/installation/linux'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/mac',
-  component: ComponentCreator('/gns3-docs/docs/installation/mac'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/one-server-multiple-clients',
-  component: ComponentCreator('/gns3-docs/docs/installation/one-server-multiple-clients'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/packet',
-  component: ComponentCreator('/gns3-docs/docs/installation/packet'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/remote-server',
-  component: ComponentCreator('/gns3-docs/docs/installation/remote-server'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/upgrade-gns3',
-  component: ComponentCreator('/gns3-docs/docs/installation/upgrade-gns3'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/installation/windows',
-  component: ComponentCreator('/gns3-docs/docs/installation/windows'),
+  path: '/gns3-docs/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3',
+  component: ComponentCreator('/gns3-docs/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3'),
   exact: true,
   
 },
@@ -274,8 +244,116 @@ export default [
   
 },
 {
-  path: '/gns3-docs/docs/using-gns3/architecture',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/architecture'),
+  path: '/gns3-docs/docs/using-gns3/administration/client-server-ssl-encryption',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/administration/client-server-ssl-encryption'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/administration/gns3-security',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/administration/gns3-security'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/administration/gns3-server-configuration-file',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/administration/gns3-server-configuration-file'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/administration/running-gns3-server-as-daemon',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/administration/running-gns3-server-as-daemon'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/administration/scale-gns3',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/administration/scale-gns3'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/connect-gns3-internet',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/connect-gns3-internet'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/create-a-new-version-for-an-appliance',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/create-a-new-version-for-an-appliance'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/move-from-iouvm-gns3-vm',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/move-from-iouvm-gns3-vm'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/port-name-formatting',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/port-name-formatting'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/settings-profiles',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/settings-profiles'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/special-ip-addresses',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/special-ip-addresses'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/advanced/the-nat-node',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/advanced/the-nat-node'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/change-node-symbol',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/change-node-symbol'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/gns3-styles',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/gns3-styles'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/import-gns3-appliance',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/import-gns3-appliance'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/install-from-marketplace',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/install-from-marketplace'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/link-control',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/link-control'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/switching-and-gns3',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/switching-and-gns3'),
+  exact: true,
+  
+},
+{
+  path: '/gns3-docs/docs/using-gns3/beginners/the-console-terminal',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/beginners/the-console-terminal'),
   exact: true,
   
 },
@@ -286,122 +364,14 @@ export default [
   
 },
 {
-  path: '/gns3-docs/docs/using-gns3/change-node-symbol',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/change-node-symbol'),
+  path: '/gns3-docs/docs/using-gns3/design/architecture',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/design/architecture'),
   exact: true,
   
 },
 {
-  path: '/gns3-docs/docs/using-gns3/client-server-ssl-encryption',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/client-server-ssl-encryption'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/connect-gns3-internet',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/connect-gns3-internet'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/create-a-new-version-for-an-appliance',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/create-a-new-version-for-an-appliance'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/gns3-security',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/gns3-security'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/gns3-server-configuration-file',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/gns3-server-configuration-file'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/gns3-styles',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/gns3-styles'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/import-gns3-appliance',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/import-gns3-appliance'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/install-from-marketplace',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/install-from-marketplace'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/link-control',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/link-control'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/move-from-iouvm-gns3-vm',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/move-from-iouvm-gns3-vm'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/port-name-formatting',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/port-name-formatting'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/running-gns3-server-as-daemon',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/running-gns3-server-as-daemon'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/scale-gns3',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/scale-gns3'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/settings-profiles',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/settings-profiles'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/special-ip-addresses',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/special-ip-addresses'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/switching-and-gns3',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/switching-and-gns3'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/the-console-terminal',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/the-console-terminal'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/the-nat-node',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/the-nat-node'),
-  exact: true,
-  
-},
-{
-  path: '/gns3-docs/docs/using-gns3/why-gns3-uses-uuid',
-  component: ComponentCreator('/gns3-docs/docs/using-gns3/why-gns3-uses-uuid'),
+  path: '/gns3-docs/docs/using-gns3/design/why-gns3-uses-uuid',
+  component: ComponentCreator('/gns3-docs/docs/using-gns3/design/why-gns3-uses-uuid'),
   exact: true,
   
 }],

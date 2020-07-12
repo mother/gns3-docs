@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Import GNS3 appliance",
-    "permalink": "/gns3-docs/docs/using-gns3/import-gns3-appliance"
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/import-gns3-appliance"
   },
   "next": {
     "title": "Connect GNS3 to the Internet (local server)",

@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Move from IOUVM to GNS3 VM",
-    "permalink": "/gns3-docs/docs/using-gns3/move-from-iouvm-gns3-vm"
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/move-from-iouvm-gns3-vm"
   },
   "next": {
     "title": "Create a new version for an appliance",

@@ -1,0 +1,19 @@
+{
+  "id": "getting-started/installation/download-gns3-vm",
+  "isDocsHomePage": false,
+  "title": "Downloading the GNS3 VM",
+  "description": "Which Virtualization Software? VirtualBox or VMware?",
+  "source": "@site/docs/getting-started/installation/download-vm.md",
+  "permalink": "/gns3-docs/docs/getting-started/installation/download-gns3-vm",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/download-vm.md",
+  "sidebar_label": "Download the GNS3 VM",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Install GNS3 on a remote server",
+    "permalink": "/gns3-docs/docs/getting-started/installation/remote-server"
+  },
+  "next": {
+    "title": "Download GNS3 for Windows 32 bit",
+    "permalink": "/gns3-docs/docs/getting-started/installation/download-32-bit"
+  }
+}

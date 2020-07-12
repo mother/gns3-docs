@@ -1,0 +1,9 @@
+{
+  "id": "emulators/ciscoios-images-for-dynamips",
+  "isDocsHomePage": false,
+  "title": "ciscoios-images-for-dynamips",
+  "description": "",
+  "source": "@site/docs/emulators/ciscoios-images-for-dynamips.md",
+  "permalink": "/gns3-docs/docs/emulators/ciscoios-images-for-dynamips",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/ciscoios-images-for-dynamips.md"
+}

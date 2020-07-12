@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "The NAT node",
-    "permalink": "/gns3-docs/docs/using-gns3/the-nat-node"
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/the-nat-node"
   },
   "next": {
     "title": "Move from IOUVM to GNS3 VM",

@@ -13,7 +13,7 @@
     "permalink": "/gns3-docs/docs/emulators/non-native-iou-for-windows-and-osx"
   },
   "next": {
-    "title": "VPCS",
-    "permalink": "/gns3-docs/docs/emulators/vpcs"
+    "title": "Docker support in GNS3",
+    "permalink": "/gns3-docs/docs/emulators/docker-support-in-gns3"
   }
 }

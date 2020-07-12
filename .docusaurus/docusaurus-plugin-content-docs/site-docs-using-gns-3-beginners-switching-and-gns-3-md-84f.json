@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/beginners/switching-and-gns3",
+  "isDocsHomePage": false,
+  "title": "Switching and GNS3",
+  "description": "Introduction",
+  "source": "@site/docs/using-gns3/beginners/switching-and-gns3.md",
+  "permalink": "/gns3-docs/docs/using-gns3/beginners/switching-and-gns3",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/switching-and-gns3.md",
+  "sidebar_label": "Switching and GNS3",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "GNS3 Styles",
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/gns3-styles"
+  },
+  "next": {
+    "title": "The console terminal",
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/the-console-terminal"
+  }
+}

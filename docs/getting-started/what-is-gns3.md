@@ -4,6 +4,8 @@ title: Getting Started with GNS3
 sidebar_label: What is GNS3?
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Introduction
 
 GNS3 is used by hundreds of thousands of network engineers worldwide to emulate, configure, test and troubleshoot virtual and real networks. GNS3 allows you to run a small topology consisting of only a few devices on your laptop, to those that have many devices hosted on multiple servers or even hosted in the cloud.
@@ -39,7 +41,7 @@ GNS3-all-in-one:
 
 This is the client part of GNS3 and is graphical user interface (GUI). You install the all-in-one software on your local PC (Windows, MAC, Linux) and create your topologies using this software. This is what you usually see show in screenshots such as the following:
 
-![GNS3-all-in-one](../../img/getting-started/fc3928eaa09a030179d0828ce8d4e327.jpg)
+<img alt="screenshot" src={useBaseUrl('img/getting-started/what-is-gns3/1.jpg')} />
 
 Server options:
 
@@ -234,10 +236,9 @@ Additional platforms that can run the GNS3 VM:
 
 ## Supported Appliances
 GNS3 supports multiple operating systems and appliances and emulators.
-[Which emulator should I use?](CHECKLINK)
+[Which emulator should I use?](emulators/which-emulators-should-i-use)
 
 ## Should you use the GNS3 VM?
-
 The GNS3 VM is recommended for most situations when you are using Windows or Mac OS. The GNS3 development team have worked hard to create a lightweight, robust way of creating GNS3 topologies that avoids multiple common issues experienced when using a local install of GNS3. This includes the lack of proper Qemu support when running VIRL natively on Windows (not recommended).
 
 However, if you only want to create basic GNS3 topologies using Cisco IOS routers, a local (Dynamips) install will suffice. This means that you only install the GNS3 GUI (all-in-one) and don’t use the GNS3 VM.

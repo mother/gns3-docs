@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Create a new version for an appliance",
-    "permalink": "/gns3-docs/docs/using-gns3/create-a-new-version-for-an-appliance"
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/create-a-new-version-for-an-appliance"
   },
   "next": {
     "title": "GNS3 server configuration file",

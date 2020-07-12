@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Running the GNS3 server as a daemon",
-    "permalink": "/gns3-docs/docs/using-gns3/running-gns3-server-as-daemon"
+    "permalink": "/gns3-docs/docs/using-gns3/administration/running-gns3-server-as-daemon"
   },
   "next": {
     "title": "Client server SSL encryption",

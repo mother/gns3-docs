@@ -4,6 +4,8 @@ title: Contribute to GNS3
 sidebar_label: Contribute to GNS3
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 The GNS3 community welcomes new contributors. Don’t be afraid to make mistakes - we are here to help.
 
 ## Help Users
@@ -35,18 +37,18 @@ You can find the GNS3 source code on http://github.com/GNS3/.
 The GNS3 software is licensed via the GNU General Public License (GPLV3). GNS3 welcomes new code contributors. If you have an idea that you want to implement, don’t hesitate to open an issue (we will guide you if needed).
 
 For the first step with the code read this documentation:
-[Development of GNS3](https://docs.gns3.com/1EYTxujuTGa9sT-d2S3Dhs57olk-MzWWB0PYoZkzSDl8/index.html) CHECKLINK
+[Development of GNS3](./development-of-gns3)
 
 ## Documentation
 ### Typos, mistakes
 
 You can suggest changes on any documentation by clicking on the Edit this article button on each documentation.
 
-![screenshot](../../img/contribute-to-gns3/1.jpg)
+<img alt="screenshot" src={useBaseUrl('img/contribute/contribute-to-gns3/1.jpg')} />
 
 This will open Google Doc where you can suggest your modifications:
 
-![screenshot](../../img/contribute-to-gns3/2.jpg)
+<img alt="screenshot" src={useBaseUrl('img/contribute/contribute-to-gns3/2.jpg')} />
 
 ### New documentation
 If you want to contribute to the documentation you can send emails to docs@gns3.net with your suggested document. You can also send us a Google Docs document which will make the integration easier. Don’t worry about formatting - just use standard styles (Heading 1, Heading 2, Normal text).

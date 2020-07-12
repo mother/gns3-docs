@@ -4,6 +4,8 @@ title: VPCS
 sidebar_label: VPCS
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Virtual PC Simulator is a program written by Paul Meng, which allows you to simulate a lightweight PC supporting DHCP and ping. It consumes only 2MB of RAM per instance,  and does not require an additional image.
 
 The official website:
@@ -13,16 +15,16 @@ https://sourceforge.net/projects/vpcs/?source=directory
 
 The VPCS node is included with GNS3 by default.  No additional configuration is required. It will be located in the End devices category in the Devices list:
 
-![screenshot](../../img/vpcs/1.jpg)
+<img alt="screenshot" src={useBaseUrl('img/emulators/vpcs/1.jpg')} />
 
 Drag and drop an instance of VPCS into the workspace. You’ll be prompted which server type will run this VPCS instance:
 
-![screenshot](../../img/vpcs/2.jpg)
+<img alt="screenshot" src={useBaseUrl('img/emulators/vpcs/2.jpg')} />
 
 (for this article, “GNS3 VM” was selected for the server type)
 An instance of VPCS will now appear in the workspace:
 
-![screenshot](../../img/vpcs/3.jpg)
+<img alt="screenshot" src={useBaseUrl('img/emulators/vpcs/3.jpg')} />
 
 After you start the VPCS node, you can access its console:
 

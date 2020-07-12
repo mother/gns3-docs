@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Scale GNS3",
-    "permalink": "/gns3-docs/docs/using-gns3/scale-gns3"
+    "permalink": "/gns3-docs/docs/using-gns3/administration/scale-gns3"
   },
   "next": {
     "title": "Why does GNS3 use UUIDs?",

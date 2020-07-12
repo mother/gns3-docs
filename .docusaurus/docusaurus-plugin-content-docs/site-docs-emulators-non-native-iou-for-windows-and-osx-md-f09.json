@@ -9,8 +9,8 @@
   "sidebar_label": "Non-Native IOU for Windows and OSX",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Which emulator should I use?",
-    "permalink": "/gns3-docs/docs/emulators/which-emulators-should-i-use"
+    "title": "Cisco IOS images for Dynamips",
+    "permalink": "/gns3-docs/docs/emulators/cisco-ios-images-for-dynamips"
   },
   "next": {
     "title": "Adding VMware VMs to GNS3 Topologies",

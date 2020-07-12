@@ -10,10 +10,10 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Why does GNS3 use UUIDs?",
-    "permalink": "/gns3-docs/docs/using-gns3/why-gns3-uses-uuid"
+    "permalink": "/gns3-docs/docs/using-gns3/design/why-gns3-uses-uuid"
   },
   "next": {
-    "title": "Non-Native IOU for Windows and OSX",
-    "permalink": "/gns3-docs/docs/emulators/non-native-iou-for-windows-and-osx"
+    "title": "Cisco IOS images for Dynamips",
+    "permalink": "/gns3-docs/docs/emulators/cisco-ios-images-for-dynamips"
   }
 }

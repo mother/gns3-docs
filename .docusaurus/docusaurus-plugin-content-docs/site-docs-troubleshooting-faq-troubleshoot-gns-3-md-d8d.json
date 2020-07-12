@@ -9,8 +9,8 @@
   "sidebar_label": "Troubleshoot GNS3",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "How to use applications with the GNS3 Web interface",
-    "permalink": "/gns3-docs/docs/how-to/how-to-use-console-applications-with-the-web-ui"
+    "title": "Configure GNS3 to use an additional remote server",
+    "permalink": "/gns3-docs/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server"
   },
   "next": {
     "title": "General FAQ",

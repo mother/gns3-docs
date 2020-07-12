@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 Setup wizard with the GNS3 VM",
-    "permalink": "/gns3-docs/docs/getting-started/setup-gns3-vm"
+    "permalink": "/gns3-docs/docs/getting-started/setup-wizard-gns3-vm"
   },
   "next": {
     "title": "Your First Cisco Topology",

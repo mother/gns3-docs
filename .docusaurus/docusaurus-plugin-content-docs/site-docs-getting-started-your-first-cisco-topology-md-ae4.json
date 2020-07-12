@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Your First GNS3 Topology",
-    "permalink": "/gns3-docs/docs/getting-started/your-first-topology"
+    "permalink": "/gns3-docs/docs/getting-started/your-first-gns3-topology"
   },
   "next": {
     "title": "The GNS3 GUI",

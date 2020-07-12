@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Client server SSL encryption",
-    "permalink": "/gns3-docs/docs/using-gns3/client-server-ssl-encryption"
+    "permalink": "/gns3-docs/docs/using-gns3/administration/client-server-ssl-encryption"
   },
   "next": {
     "title": "Architecture",

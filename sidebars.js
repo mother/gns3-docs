@@ -6,21 +6,21 @@ module.exports = {
            type: 'category',
            label: 'Installation',
            items: [
-              'installation/windows',
-              'installation/mac',
-              'installation/linux',
-              'installation/esxi',
-              'installation/remote-server',
-              'installation/download-gns3-vm',
-              'installation/download-32-bit',
-              'installation/one-server-multiple-clients',
-              'installation/upgrade-gns3',
-              'installation/packet'
+              'getting-started/installation/windows',
+              'getting-started/installation/mac',
+              'getting-started/installation/linux',
+              'getting-started/installation/esxi',
+              'getting-started/installation/remote-server',
+              'getting-started/installation/download-gns3-vm',
+              'getting-started/installation/download-32-bit',
+              'getting-started/installation/one-server-multiple-clients',
+              'getting-started/installation/upgrade-gns3',
+              'getting-started/installation/gns3-on-packet'
            ],
          },
-         'getting-started/setup-local-server',
-         'getting-started/setup-gns3-vm',
-         'getting-started/your-first-topology',
+         'getting-started/setup-wizard-local-server',
+         'getting-started/setup-wizard-gns3-vm',
+         'getting-started/your-first-gns3-topology',
          'getting-started/your-first-cisco-topology'
       ],
    'Using GNS3': [{
@@ -28,48 +28,51 @@ module.exports = {
       label: 'Beginners',
       items: [
          'using-gns3/beginners/the-gns3-gui',
-         'using-gns3/change-node-symbol',
-         'using-gns3/gns3-styles',
-         'using-gns3/switching-and-gns3',
-         'using-gns3/the-console-terminal',
-         'using-gns3/install-from-marketplace',
-         'using-gns3/import-gns3-appliance',
-         'using-gns3/link-control'
+         'using-gns3/beginners/change-node-symbol',
+         'using-gns3/beginners/gns3-styles',
+         'using-gns3/beginners/switching-and-gns3',
+         'using-gns3/beginners/the-console-terminal',
+         'using-gns3/beginners/install-from-marketplace',
+         'using-gns3/beginners/import-gns3-appliance',
+         'using-gns3/beginners/link-control'
       ],
    }, {
       type: 'category',
       label: 'Advanced',
       items: [
-         'using-gns3/connect-gns3-internet',
-         'using-gns3/the-nat-node',
-         'using-gns3/special-ip-addresses',
-         'using-gns3/move-from-iouvm-gns3-vm',
-         'using-gns3/settings-profiles',
-         'using-gns3/create-a-new-version-for-an-appliance',
-         'using-gns3/port-name-formatting'
+         'using-gns3/advanced/connect-gns3-internet',
+         'using-gns3/advanced/the-nat-node',
+         'using-gns3/advanced/special-ip-addresses',
+         'using-gns3/advanced/move-from-iouvm-gns3-vm',
+         'using-gns3/advanced/settings-profiles',
+         'using-gns3/advanced/create-a-new-version-for-an-appliance',
+         'using-gns3/advanced/port-name-formatting'
       ],
    }, {
       type: 'category',
       label: 'GNS3 Administration',
       items: [
-         'using-gns3/gns3-server-configuration-file',
-         'using-gns3/running-gns3-server-as-daemon',
-         'using-gns3/gns3-security',
-         'using-gns3/client-server-ssl-encryption',
-         'using-gns3/scale-gns3'
+         'using-gns3/administration/gns3-server-configuration-file',
+         'using-gns3/administration/running-gns3-server-as-daemon',
+         'using-gns3/administration/gns3-security',
+         'using-gns3/administration/client-server-ssl-encryption',
+         'using-gns3/administration/scale-gns3'
       ],
    }, {
       type: 'category',
       label: 'GNS3 Design',
       items: [
-         'using-gns3/architecture',
-         'using-gns3/why-gns3-uses-uuid'
+         'using-gns3/design/architecture',
+         'using-gns3/design/why-gns3-uses-uuid'
       ],
    }],
    'Emulators': [
       'emulators/which-emulators-should-i-use',
+      'emulators/cisco-ios-images-for-dynamips',
       'emulators/non-native-iou-for-windows-and-osx',
       'emulators/adding-vmware-vms-to-gns3-topologies',
+      'emulators/docker-support-in-gns3',
+      'emulators/create-a-docker-container-for-gns3',
       'emulators/vpcs',
       'emulators/qemu-system-uuid'
    ],
@@ -79,9 +82,10 @@ module.exports = {
       'contribute/how-to-debug-web-ui-guide'
    ],
    'How-to Guides': [
-      'how-to/cisco-asa',
-      'how-to/importing-vmx-and-vqfx-into-gns3',
-      'how-to/how-to-use-console-applications-with-the-web-ui'
+      'how-to-guides/cisco-asa',
+      'how-to-guides/importing-vmx-and-vqfx-into-gns3',
+      'how-to-guides/how-to-use-console-applications-with-the-web-ui',
+      'how-to-guides/configure-gns3-to-use-an-additional-remote-server'
    ],
    'Troubleshooting & FAQ': [
       'troubleshooting-faq/troubleshoot-gns3',

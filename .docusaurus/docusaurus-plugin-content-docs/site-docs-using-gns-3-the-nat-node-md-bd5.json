@@ -10,7 +10,7 @@
   "sidebar": "someSidebar",
   "previous": {
     "title": "Connect GNS3 to the Internet (local server)",
-    "permalink": "/gns3-docs/docs/using-gns3/connect-gns3-internet"
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/connect-gns3-internet"
   },
   "next": {
     "title": "Special IP addresses in GNS3",

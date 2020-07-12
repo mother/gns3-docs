@@ -1,9 +1,0 @@
-{
-  "id": "doc2",
-  "isDocsHomePage": false,
-  "title": "Document Number 2",
-  "description": "This is a link to another document. This is a link to an external page.",
-  "source": "@site/docs/doc2.md",
-  "permalink": "/gns3-docs/docs/doc2",
-  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/doc2.md"
-}

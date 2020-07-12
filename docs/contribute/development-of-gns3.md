@@ -4,6 +4,8 @@ title: Development of GNS3
 sidebar_label: Development of GNS3
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Using the GNS3 API
 
 http://api.gns3.net/en/latest/
@@ -99,7 +101,7 @@ We will start by a simple modification by adding your name to the thanks to in t
 
 In the gns3-gui folder open with the Qt Designer the file gns3/ui/about_dialog.ui click on Thanks to and add your name to the list:
 
-![screenshot](../../img/development-of-gns3/1.jpg)
+<img alt="screenshot" src={useBaseUrl('img/contribute/development-of-gns3/1.jpg')} />
 
 Click on About (otherwise the dialog will open the Thanks to tab) and save.
 Now you need to export the dialog to python code.

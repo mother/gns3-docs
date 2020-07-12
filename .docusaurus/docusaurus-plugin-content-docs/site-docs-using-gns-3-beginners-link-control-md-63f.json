@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/beginners/link-control",
+  "isDocsHomePage": false,
+  "title": "Link Control",
+  "description": "available in GNS3 version 2.1 and later.",
+  "source": "@site/docs/using-gns3/beginners/link-control.md",
+  "permalink": "/gns3-docs/docs/using-gns3/beginners/link-control",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/link-control.md",
+  "sidebar_label": "Link Control",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Import GNS3 appliance",
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/import-gns3-appliance"
+  },
+  "next": {
+    "title": "Connect GNS3 to the Internet (local server)",
+    "permalink": "/gns3-docs/docs/using-gns3/advanced/connect-gns3-internet"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/beginners/change-node-symbol",
+  "isDocsHomePage": false,
+  "title": "Use custom symbols in GNS3",
+  "description": "Beginning with GNS3 1.4 you have been able to change the symbol for a node (or supply your own).  Starting with GNS3 2.2.0, additional style types of symbols for the various device types are included by default. You can still add your own custom symbols if you wish (that hasn’t changed).",
+  "source": "@site/docs/using-gns3/beginners/change-node-symbol.md",
+  "permalink": "/gns3-docs/docs/using-gns3/beginners/change-node-symbol",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/change-node-symbol.md",
+  "sidebar_label": "Change node symbol",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "The GNS3 GUI",
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/the-gns3-gui"
+  },
+  "next": {
+    "title": "GNS3 Styles",
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/gns3-styles"
+  }
+}
