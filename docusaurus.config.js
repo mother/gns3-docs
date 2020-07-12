@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'mother', // Usually your GitHub org/user name.
   projectName: 'gns3-docs', // Usually your repo name.
+  gaTrackingId: 'UA-55817127-4',
   themeConfig: {
      algolia: {
          apiKey: 'a83755c0872ca3a1d4a8af1ad443d037',
