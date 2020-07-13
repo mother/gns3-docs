@@ -17,7 +17,7 @@
   --ifm-code-font-size: 95%;
 }
 
-html, body, , article {
+html, body, article {
    font-family: courier !important;
 }
 
