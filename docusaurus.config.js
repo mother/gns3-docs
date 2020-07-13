@@ -1,8 +1,8 @@
 module.exports = {
    title: 'GNS3 Documentation',
    tagline: 'The official guide and reference for GNS3',
-   url: 'https://docs.gns3.com',
-   baseUrl: '../',
+   url: 'https://mother.github.io/gns3-docs',
+   baseUrl: '/',
    favicon: 'img/favicon.ico',
    organizationName: 'mother', // Usually your GitHub org/user name.
    projectName: 'gns3-docs', // Usually your repo name.

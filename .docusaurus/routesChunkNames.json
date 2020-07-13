@@ -1,247 +1,247 @@
 {
-  "../": {
+  "/": {
     "component": "c4f5d8e4"
   },
-  "../search": {
+  "/search": {
     "component": "7fd43b69"
   },
-  "../docs": {
+  "/docs": {
     "component": "1be78505",
-    "docsMetadata": "42a35a66"
+    "docsMetadata": "20ac7829"
   },
-  "../docs/": {
+  "/docs/": {
     "component": "17896441",
     "content": "322a49c4"
   },
-  "../docs/contribute/contribute-to-gns3": {
+  "/docs/contribute/contribute-to-gns3": {
     "component": "17896441",
     "content": "058140c7"
   },
-  "../docs/contribute/development-of-gns3": {
+  "/docs/contribute/development-of-gns3": {
     "component": "17896441",
     "content": "3dbbbf4c"
   },
-  "../docs/contribute/how-to-debug-web-ui-guide": {
+  "/docs/contribute/how-to-debug-web-ui-guide": {
     "component": "17896441",
     "content": "0fa70dcc"
   },
-  "../docs/docusaurus-reference/doc1": {
+  "/docs/docusaurus-reference/doc1": {
     "component": "17896441",
     "content": "cd180604"
   },
-  "../docs/docusaurus-reference/doc2": {
+  "/docs/docusaurus-reference/doc2": {
     "component": "17896441",
     "content": "b38459e8"
   },
-  "../docs/docusaurus-reference/doc3": {
+  "/docs/docusaurus-reference/doc3": {
     "component": "17896441",
     "content": "2f261fb5"
   },
-  "../docs/docusaurus-reference/mdx": {
+  "/docs/docusaurus-reference/mdx": {
     "component": "17896441",
     "content": "fff7c774"
   },
-  "../docs/emulators/adding-vmware-vms-to-gns3-topologies": {
+  "/docs/emulators/adding-vmware-vms-to-gns3-topologies": {
     "component": "17896441",
     "content": "5d09215c"
   },
-  "../docs/emulators/cisco-ios-images-for-dynamips": {
+  "/docs/emulators/cisco-ios-images-for-dynamips": {
     "component": "17896441",
     "content": "c0738d6f"
   },
-  "../docs/emulators/create-a-docker-container-for-gns3": {
+  "/docs/emulators/create-a-docker-container-for-gns3": {
     "component": "17896441",
     "content": "f1f73209"
   },
-  "../docs/emulators/docker-support-in-gns3": {
+  "/docs/emulators/docker-support-in-gns3": {
     "component": "17896441",
     "content": "a72e2c34"
   },
-  "../docs/emulators/non-native-iou-for-windows-and-osx": {
+  "/docs/emulators/non-native-iou-for-windows-and-osx": {
     "component": "17896441",
     "content": "f09f0737"
   },
-  "../docs/emulators/qemu-system-uuid": {
+  "/docs/emulators/qemu-system-uuid": {
     "component": "17896441",
     "content": "c36fddde"
   },
-  "../docs/emulators/vpcs": {
+  "/docs/emulators/vpcs": {
     "component": "17896441",
     "content": "c561a9f7"
   },
-  "../docs/emulators/which-emulators-should-i-use": {
+  "/docs/emulators/which-emulators-should-i-use": {
     "component": "17896441",
     "content": "6dc9a2ef"
   },
-  "../docs/getting-started/installation/download-32-bit": {
+  "/docs/getting-started/installation/download-32-bit": {
     "component": "17896441",
     "content": "0d02c885"
   },
-  "../docs/getting-started/installation/download-gns3-vm": {
+  "/docs/getting-started/installation/download-gns3-vm": {
     "component": "17896441",
     "content": "d907171e"
   },
-  "../docs/getting-started/installation/esxi": {
+  "/docs/getting-started/installation/esxi": {
     "component": "17896441",
     "content": "d5a0d1e6"
   },
-  "../docs/getting-started/installation/gns3-on-packet": {
+  "/docs/getting-started/installation/gns3-on-packet": {
     "component": "17896441",
     "content": "d608d527"
   },
-  "../docs/getting-started/installation/linux": {
+  "/docs/getting-started/installation/linux": {
     "component": "17896441",
     "content": "f37eaf51"
   },
-  "../docs/getting-started/installation/mac": {
+  "/docs/getting-started/installation/mac": {
     "component": "17896441",
     "content": "3d5a80f7"
   },
-  "../docs/getting-started/installation/one-server-multiple-clients": {
+  "/docs/getting-started/installation/one-server-multiple-clients": {
     "component": "17896441",
     "content": "f2fb7d9a"
   },
-  "../docs/getting-started/installation/remote-server": {
+  "/docs/getting-started/installation/remote-server": {
     "component": "17896441",
     "content": "1be23e60"
   },
-  "../docs/getting-started/installation/upgrade-gns3": {
+  "/docs/getting-started/installation/upgrade-gns3": {
     "component": "17896441",
     "content": "d1a25e88"
   },
-  "../docs/getting-started/installation/windows": {
+  "/docs/getting-started/installation/windows": {
     "component": "17896441",
     "content": "65700f29"
   },
-  "../docs/getting-started/setup-wizard-gns3-vm": {
+  "/docs/getting-started/setup-wizard-gns3-vm": {
     "component": "17896441",
     "content": "cb052573"
   },
-  "../docs/getting-started/setup-wizard-local-server": {
+  "/docs/getting-started/setup-wizard-local-server": {
     "component": "17896441",
     "content": "a94aed5d"
   },
-  "../docs/getting-started/your-first-cisco-topology": {
+  "/docs/getting-started/your-first-cisco-topology": {
     "component": "17896441",
     "content": "ae444171"
   },
-  "../docs/getting-started/your-first-gns3-topology": {
+  "/docs/getting-started/your-first-gns3-topology": {
     "component": "17896441",
     "content": "79bc4fa4"
   },
-  "../docs/how-to-guides/cisco-asa": {
+  "/docs/how-to-guides/cisco-asa": {
     "component": "17896441",
     "content": "3cd311f2"
   },
-  "../docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server": {
+  "/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server": {
     "component": "17896441",
     "content": "de112a60"
   },
-  "../docs/how-to-guides/how-to-use-console-applications-with-the-web-ui": {
+  "/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui": {
     "component": "17896441",
     "content": "f95c72e9"
   },
-  "../docs/how-to-guides/importing-vmx-and-vqfx-into-gns3": {
+  "/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3": {
     "component": "17896441",
     "content": "830399a1"
   },
-  "../docs/troubleshooting-faq/general-faq": {
+  "/docs/troubleshooting-faq/general-faq": {
     "component": "17896441",
     "content": "90d7c7d0"
   },
-  "../docs/troubleshooting-faq/troubleshoot-gns3": {
+  "/docs/troubleshooting-faq/troubleshoot-gns3": {
     "component": "17896441",
     "content": "d8d6327f"
   },
-  "../docs/troubleshooting-faq/where-do-i-get-ios-images": {
+  "/docs/troubleshooting-faq/where-do-i-get-ios-images": {
     "component": "17896441",
     "content": "25877efd"
   },
-  "../docs/using-gns3/administration/client-server-ssl-encryption": {
+  "/docs/using-gns3/administration/client-server-ssl-encryption": {
     "component": "17896441",
     "content": "6c7f686e"
   },
-  "../docs/using-gns3/administration/gns3-security": {
+  "/docs/using-gns3/administration/gns3-security": {
     "component": "17896441",
     "content": "ecc29b0a"
   },
-  "../docs/using-gns3/administration/gns3-server-configuration-file": {
+  "/docs/using-gns3/administration/gns3-server-configuration-file": {
     "component": "17896441",
     "content": "9cda237f"
   },
-  "../docs/using-gns3/administration/running-gns3-server-as-daemon": {
+  "/docs/using-gns3/administration/running-gns3-server-as-daemon": {
     "component": "17896441",
     "content": "f24bf796"
   },
-  "../docs/using-gns3/administration/scale-gns3": {
+  "/docs/using-gns3/administration/scale-gns3": {
     "component": "17896441",
     "content": "7df75973"
   },
-  "../docs/using-gns3/advanced/connect-gns3-internet": {
+  "/docs/using-gns3/advanced/connect-gns3-internet": {
     "component": "17896441",
     "content": "e20c0e82"
   },
-  "../docs/using-gns3/advanced/create-a-new-version-for-an-appliance": {
+  "/docs/using-gns3/advanced/create-a-new-version-for-an-appliance": {
     "component": "17896441",
     "content": "1aacdf1a"
   },
-  "../docs/using-gns3/advanced/move-from-iouvm-gns3-vm": {
+  "/docs/using-gns3/advanced/move-from-iouvm-gns3-vm": {
     "component": "17896441",
     "content": "079cfff5"
   },
-  "../docs/using-gns3/advanced/port-name-formatting": {
+  "/docs/using-gns3/advanced/port-name-formatting": {
     "component": "17896441",
     "content": "89f8e59d"
   },
-  "../docs/using-gns3/advanced/settings-profiles": {
+  "/docs/using-gns3/advanced/settings-profiles": {
     "component": "17896441",
     "content": "0ba241d4"
   },
-  "../docs/using-gns3/advanced/special-ip-addresses": {
+  "/docs/using-gns3/advanced/special-ip-addresses": {
     "component": "17896441",
     "content": "76e08b6a"
   },
-  "../docs/using-gns3/advanced/the-nat-node": {
+  "/docs/using-gns3/advanced/the-nat-node": {
     "component": "17896441",
     "content": "c1bbe575"
   },
-  "../docs/using-gns3/beginners/change-node-symbol": {
+  "/docs/using-gns3/beginners/change-node-symbol": {
     "component": "17896441",
     "content": "a0fedaae"
   },
-  "../docs/using-gns3/beginners/gns3-styles": {
+  "/docs/using-gns3/beginners/gns3-styles": {
     "component": "17896441",
     "content": "0874f9a4"
   },
-  "../docs/using-gns3/beginners/import-gns3-appliance": {
+  "/docs/using-gns3/beginners/import-gns3-appliance": {
     "component": "17896441",
     "content": "aa11fbf4"
   },
-  "../docs/using-gns3/beginners/install-from-marketplace": {
+  "/docs/using-gns3/beginners/install-from-marketplace": {
     "component": "17896441",
     "content": "7bf20783"
   },
-  "../docs/using-gns3/beginners/link-control": {
+  "/docs/using-gns3/beginners/link-control": {
     "component": "17896441",
     "content": "63f216fb"
   },
-  "../docs/using-gns3/beginners/switching-and-gns3": {
+  "/docs/using-gns3/beginners/switching-and-gns3": {
     "component": "17896441",
     "content": "84f53706"
   },
-  "../docs/using-gns3/beginners/the-console-terminal": {
+  "/docs/using-gns3/beginners/the-console-terminal": {
     "component": "17896441",
     "content": "fc549e88"
   },
-  "../docs/using-gns3/beginners/the-gns3-gui": {
+  "/docs/using-gns3/beginners/the-gns3-gui": {
     "component": "17896441",
     "content": "5c632b0c"
   },
-  "../docs/using-gns3/design/architecture": {
+  "/docs/using-gns3/design/architecture": {
     "component": "17896441",
     "content": "9bd9ba21"
   },
-  "../docs/using-gns3/design/why-gns3-uses-uuid": {
+  "/docs/using-gns3/design/why-gns3-uses-uuid": {
     "component": "17896441",
     "content": "48d9d6a9"
   }

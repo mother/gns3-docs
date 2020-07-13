@@ -4,16 +4,16 @@
   "title": "The NAT node",
   "description": "Starting with GNS3 2.0,  the NAT node became available. This node allows you to connect a topology to internet via NAT. The Internet node was deprecated in favor of this node, and the Cloud node.",
   "source": "@site/docs/using-gns3/advanced/the-nat-node.md",
-  "permalink": "../docs/using-gns3/advanced/the-nat-node",
+  "permalink": "/docs/using-gns3/advanced/the-nat-node",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/the-nat-node.md",
   "sidebar_label": "The NAT node",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Connect GNS3 to the Internet (local server)",
-    "permalink": "../docs/using-gns3/advanced/connect-gns3-internet"
+    "permalink": "/docs/using-gns3/advanced/connect-gns3-internet"
   },
   "next": {
     "title": "Special IP addresses in GNS3",
-    "permalink": "../docs/using-gns3/advanced/special-ip-addresses"
+    "permalink": "/docs/using-gns3/advanced/special-ip-addresses"
   }
 }

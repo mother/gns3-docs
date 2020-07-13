@@ -4,16 +4,16 @@
   "title": "Non-Native IOU for Windows and OSX",
   "description": "IOU is IOS on Unix (Solaris, if you want to be specific). It's a version of IOS compiled to run on workstations. It's faster and lighter than emulation. Cisco transitioned to IOL images, which are x86-64 compatible versions of IOS that natively run in Linux. Since everyone and their kid brother still refers to IOL images as “IOU”, that convention is used for the remainder of this document.",
   "source": "@site/docs/emulators/non-native-iou-for-windows-and-osx.md",
-  "permalink": "../docs/emulators/non-native-iou-for-windows-and-osx",
+  "permalink": "/docs/emulators/non-native-iou-for-windows-and-osx",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/non-native-iou-for-windows-and-osx.md",
   "sidebar_label": "Non-Native IOU for Windows and OSX",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Cisco IOS images for Dynamips",
-    "permalink": "../docs/emulators/cisco-ios-images-for-dynamips"
+    "permalink": "/docs/emulators/cisco-ios-images-for-dynamips"
   },
   "next": {
     "title": "Adding VMware VMs to GNS3 Topologies",
-    "permalink": "../docs/emulators/adding-vmware-vms-to-gns3-topologies"
+    "permalink": "/docs/emulators/adding-vmware-vms-to-gns3-topologies"
   }
 }

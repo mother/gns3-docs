@@ -4,16 +4,16 @@
   "title": "Connect GNS3 to the Internet (local server)",
   "description": "Introduction",
   "source": "@site/docs/using-gns3/advanced/connect-gns3-internet.md",
-  "permalink": "../docs/using-gns3/advanced/connect-gns3-internet",
+  "permalink": "/docs/using-gns3/advanced/connect-gns3-internet",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/connect-gns3-internet.md",
   "sidebar_label": "Connect GNS3 to the Internet",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Link Control",
-    "permalink": "../docs/using-gns3/beginners/link-control"
+    "permalink": "/docs/using-gns3/beginners/link-control"
   },
   "next": {
     "title": "The NAT node",
-    "permalink": "../docs/using-gns3/advanced/the-nat-node"
+    "permalink": "/docs/using-gns3/advanced/the-nat-node"
   }
 }

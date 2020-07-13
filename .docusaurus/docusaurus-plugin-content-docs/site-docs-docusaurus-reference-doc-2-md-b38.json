@@ -4,6 +4,6 @@
   "title": "Document Number 2",
   "description": "This is a link to another document. This is a link to an external page.",
   "source": "@site/docs/docusaurus-reference/doc2.md",
-  "permalink": "../docs/docusaurus-reference/doc2",
+  "permalink": "/docs/docusaurus-reference/doc2",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/docusaurus-reference/doc2.md"
 }
