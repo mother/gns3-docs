@@ -17,6 +17,10 @@
   --ifm-code-font-size: 95%;
 }
 
+html, body {
+   font-family: courier, -apple-system, Helvetica Neue, Helvetica, Arial !important;
+}
+
 /* Header Navbar */
 
 .navbar {
@@ -78,10 +82,6 @@
 
 .menu__list .menu__list .menu__list .menu__link {
    padding-left: 70px !important;
-}
-
-body {
-   font-family: -apple-system, Helvetica Neue, Helvetica, Arial !important;
 }
 
 h1 {
