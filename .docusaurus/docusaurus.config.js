@@ -10,7 +10,8 @@ export default {
       "anonymizeIP": false
     },
     "algolia": {
-      "apiKey": "a83755c0872ca3a1d4a8af1ad443d037",
+      "apiKey": "6d6ea1a0fd210184b95ba9a589e11b17",
+      "appId": "RM22375DTG",
       "indexName": "gns3",
       "algoliaOptions": {}
     },
