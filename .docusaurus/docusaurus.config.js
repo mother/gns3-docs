@@ -83,7 +83,7 @@ export default {
   },
   "title": "GNS3 Documentation",
   "tagline": "The official guide and reference for GNS3",
-  "url": "https://mother.github.io/gns3-docs",
+  "url": "https://mother.github.io",
   "baseUrl": "/",
   "favicon": "img/favicon.ico",
   "organizationName": "mother",
