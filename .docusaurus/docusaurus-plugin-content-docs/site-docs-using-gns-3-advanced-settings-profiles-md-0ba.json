@@ -4,16 +4,16 @@
   "title": "Settings profiles",
   "description": "This documentation is only for GNS3 2.0 and later",
   "source": "@site/docs/using-gns3/advanced/settings-profiles.md",
-  "permalink": "/gns3-docs/docs/using-gns3/advanced/settings-profiles",
+  "permalink": "/docs/using-gns3/advanced/settings-profiles",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/settings-profiles.md",
   "sidebar_label": "Settings profiles",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Move from IOUVM to GNS3 VM",
-    "permalink": "/gns3-docs/docs/using-gns3/advanced/move-from-iouvm-gns3-vm"
+    "permalink": "/docs/using-gns3/advanced/move-from-iouvm-gns3-vm"
   },
   "next": {
     "title": "Create a new version for an appliance",
-    "permalink": "/gns3-docs/docs/using-gns3/advanced/create-a-new-version-for-an-appliance"
+    "permalink": "/docs/using-gns3/advanced/create-a-new-version-for-an-appliance"
   }
 }

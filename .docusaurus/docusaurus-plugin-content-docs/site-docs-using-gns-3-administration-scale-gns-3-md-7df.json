@@ -4,16 +4,16 @@
   "title": "Scale GNS3",
   "description": "GNS3 itself doesn’t have limitation on the number of nodes you can run into it. The limitation will be your hardware.",
   "source": "@site/docs/using-gns3/administration/scale-gns3.md",
-  "permalink": "/gns3-docs/docs/using-gns3/administration/scale-gns3",
+  "permalink": "/docs/using-gns3/administration/scale-gns3",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/administration/scale-gns3.md",
   "sidebar_label": "Scale GNS3",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Client server SSL encryption",
-    "permalink": "/gns3-docs/docs/using-gns3/administration/client-server-ssl-encryption"
+    "permalink": "/docs/using-gns3/administration/client-server-ssl-encryption"
   },
   "next": {
     "title": "Architecture",
-    "permalink": "/gns3-docs/docs/using-gns3/design/architecture"
+    "permalink": "/docs/using-gns3/design/architecture"
   }
 }
