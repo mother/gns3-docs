@@ -4,8 +4,8 @@ module.exports = {
    url: 'https://mother.github.io',
    baseUrl: '/gns3-docs/',
    favicon: 'img/favicon.ico',
-   organizationName: 'mother', // Usually your GitHub org/user name.
-   projectName: 'gns3-docs', // Usually your repo name.
+   organizationName: 'mother',
+   projectName: 'gns3-docs',
    themeConfig: {
       googleAnalytics: {
          trackingID: 'UA-55817127-4',
@@ -14,7 +14,7 @@ module.exports = {
       algolia: {
          apiKey: 'a83755c0872ca3a1d4a8af1ad443d037',
          indexName: 'gns3',
-         algoliaOptions: {}, // Optional, if provided by Algolia
+         algoliaOptions: {},
       },
       disableDarkMode: true,
       navbar: {
