@@ -4,16 +4,16 @@
   "title": "Port name formatting",
   "description": "Some nodes (like QEMU VMs) will allow you to personalize the name of its ports, in order to match the name of the interfaces inside the emulator.",
   "source": "@site/docs/using-gns3/advanced/port-name-formatting.md",
-  "permalink": "/docs/using-gns3/advanced/port-name-formatting",
+  "permalink": "https://docs.gns3.com/docs/using-gns3/advanced/port-name-formatting",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/port-name-formatting.md",
   "sidebar_label": "Port name formatting",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Create a new version for an appliance",
-    "permalink": "/docs/using-gns3/advanced/create-a-new-version-for-an-appliance"
+    "permalink": "https://docs.gns3.com/docs/using-gns3/advanced/create-a-new-version-for-an-appliance"
   },
   "next": {
     "title": "GNS3 server configuration file",
-    "permalink": "/docs/using-gns3/administration/gns3-server-configuration-file"
+    "permalink": "https://docs.gns3.com/docs/using-gns3/administration/gns3-server-configuration-file"
   }
 }

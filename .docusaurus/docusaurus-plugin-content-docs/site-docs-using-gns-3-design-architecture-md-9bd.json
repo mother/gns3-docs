@@ -4,16 +4,16 @@
   "title": "Architecture",
   "description": "GNS3 can be divided in four parts:",
   "source": "@site/docs/using-gns3/design/architecture.md",
-  "permalink": "/docs/using-gns3/design/architecture",
+  "permalink": "https://docs.gns3.com/docs/using-gns3/design/architecture",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/design/architecture.md",
   "sidebar_label": "Architecture",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Scale GNS3",
-    "permalink": "/docs/using-gns3/administration/scale-gns3"
+    "permalink": "https://docs.gns3.com/docs/using-gns3/administration/scale-gns3"
   },
   "next": {
     "title": "Why does GNS3 use UUIDs?",
-    "permalink": "/docs/using-gns3/design/why-gns3-uses-uuid"
+    "permalink": "https://docs.gns3.com/docs/using-gns3/design/why-gns3-uses-uuid"
   }
 }

@@ -4,16 +4,16 @@
   "title": "Your First GNS3 Topology",
   "description": "Introduction",
   "source": "@site/docs/getting-started/your-first-gns3-topology.md",
-  "permalink": "/docs/getting-started/your-first-gns3-topology",
+  "permalink": "https://docs.gns3.com/docs/getting-started/your-first-gns3-topology",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/your-first-gns3-topology.md",
   "sidebar_label": "Your first GNS3 topology",
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 Setup wizard with the GNS3 VM",
-    "permalink": "/docs/getting-started/setup-wizard-gns3-vm"
+    "permalink": "https://docs.gns3.com/docs/getting-started/setup-wizard-gns3-vm"
   },
   "next": {
     "title": "Your First Cisco Topology",
-    "permalink": "/docs/getting-started/your-first-cisco-topology"
+    "permalink": "https://docs.gns3.com/docs/getting-started/your-first-cisco-topology"
   }
 }

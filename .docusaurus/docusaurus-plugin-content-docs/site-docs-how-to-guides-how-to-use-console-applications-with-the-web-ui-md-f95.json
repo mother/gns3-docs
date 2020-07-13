@@ -4,16 +4,16 @@
   "title": "How to use applications with the GNS3 Web interface",
   "description": "A web client pack must be installed on your operating system in order to launch local applications needed to work with the GNS3 Web interface. We currently support Telnet, VNC, SPICE and packet capture applications.",
   "source": "@site/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui.md",
-  "permalink": "/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui",
+  "permalink": "https://docs.gns3.com/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui.md",
   "sidebar_label": "How to use applications with the GNS3 Web interface",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Importing vMX and vQFX into GNS3",
-    "permalink": "/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3"
+    "permalink": "https://docs.gns3.com/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3"
   },
   "next": {
     "title": "Configure GNS3 to use an additional remote server",
-    "permalink": "/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server"
+    "permalink": "https://docs.gns3.com/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server"
   }
 }

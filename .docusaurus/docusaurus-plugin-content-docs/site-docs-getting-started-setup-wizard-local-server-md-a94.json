@@ -4,16 +4,16 @@
   "title": "GNS3 Setup Wizard - Local server",
   "description": "Introduction",
   "source": "@site/docs/getting-started/setup-wizard-local-server.md",
-  "permalink": "/docs/getting-started/setup-wizard-local-server",
+  "permalink": "https://docs.gns3.com/docs/getting-started/setup-wizard-local-server",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/setup-wizard-local-server.md",
   "sidebar_label": "Setup wizard for local server",
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 on Packet",
-    "permalink": "/docs/getting-started/installation/gns3-on-packet"
+    "permalink": "https://docs.gns3.com/docs/getting-started/installation/gns3-on-packet"
   },
   "next": {
     "title": "GNS3 Setup wizard with the GNS3 VM",
-    "permalink": "/docs/getting-started/setup-wizard-gns3-vm"
+    "permalink": "https://docs.gns3.com/docs/getting-started/setup-wizard-gns3-vm"
   }
 }

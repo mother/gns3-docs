@@ -4,16 +4,16 @@
   "title": "One GNS3 server, multiple clients",
   "description": "This documentation is only for GNS3 2.0 and later",
   "source": "@site/docs/getting-started/installation/one-server-multiple-clients.md",
-  "permalink": "/docs/getting-started/installation/one-server-multiple-clients",
+  "permalink": "https://docs.gns3.com/docs/getting-started/installation/one-server-multiple-clients",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/one-server-multiple-clients.md",
   "sidebar_label": "One GNS3 server, multiple clients",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Download GNS3 for Windows 32 bit",
-    "permalink": "/docs/getting-started/installation/download-32-bit"
+    "permalink": "https://docs.gns3.com/docs/getting-started/installation/download-32-bit"
   },
   "next": {
     "title": "Upgrade GNS3",
-    "permalink": "/docs/getting-started/installation/upgrade-gns3"
+    "permalink": "https://docs.gns3.com/docs/getting-started/installation/upgrade-gns3"
   }
 }

@@ -4,16 +4,16 @@
   "title": "Docker support in GNS3",
   "description": "Docker container support was added as a feature starting with GNS3 1.5. Work on this feature was started by Goran Cetusic during the Google Summer Of Code and finished by the GNS3 core team.",
   "source": "@site/docs/emulators/docker-support-in-gns3.md",
-  "permalink": "/docs/emulators/docker-support-in-gns3",
+  "permalink": "https://docs.gns3.com/docs/emulators/docker-support-in-gns3",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/docker-support-in-gns3.md",
   "sidebar_label": "Docker support in GNS3",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Adding VMware VMs to GNS3 Topologies",
-    "permalink": "/docs/emulators/adding-vmware-vms-to-gns3-topologies"
+    "permalink": "https://docs.gns3.com/docs/emulators/adding-vmware-vms-to-gns3-topologies"
   },
   "next": {
     "title": "Create a docker container for GNS3",
-    "permalink": "/docs/emulators/create-a-docker-container-for-gns3"
+    "permalink": "https://docs.gns3.com/docs/emulators/create-a-docker-container-for-gns3"
   }
 }

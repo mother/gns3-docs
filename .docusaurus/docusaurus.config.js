@@ -84,7 +84,7 @@ export default {
   "title": "GNS3 Documentation",
   "tagline": "The official guide and reference for GNS3",
   "url": "https://docs.gns3.com",
-  "baseUrl": "/",
+  "baseUrl": "https://docs.gns3.com/",
   "favicon": "img/favicon.ico",
   "organizationName": "mother",
   "projectName": "gns3-docs",

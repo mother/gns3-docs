@@ -4,16 +4,16 @@
   "title": "GNS3 Styles",
   "description": "Introduction",
   "source": "@site/docs/using-gns3/beginners/gns3-styles.md",
-  "permalink": "/docs/using-gns3/beginners/gns3-styles",
+  "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/gns3-styles",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/gns3-styles.md",
   "sidebar_label": "GNS3 Styles",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Use custom symbols in GNS3",
-    "permalink": "/docs/using-gns3/beginners/change-node-symbol"
+    "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/change-node-symbol"
   },
   "next": {
     "title": "Switching and GNS3",
-    "permalink": "/docs/using-gns3/beginners/switching-and-gns3"
+    "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/switching-and-gns3"
   }
 }
