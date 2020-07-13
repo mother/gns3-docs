@@ -17,8 +17,12 @@
   --ifm-code-font-size: 95%;
 }
 
-html, body {
-   font-family: courier, -apple-system, Helvetica Neue, Helvetica, Arial !important;
+html, body, , article {
+   font-family: courier !important;
+}
+
+#__docusaurus {
+   font-family: times !important;
 }
 
 /* Header Navbar */

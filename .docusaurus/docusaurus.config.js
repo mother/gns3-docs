@@ -35,7 +35,7 @@ export default {
         },
         {
           "href": "https://gns3.com",
-          "label": "GNS3.com",
+          "label": "Community",
           "position": "right"
         }
       ]
