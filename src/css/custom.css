@@ -17,12 +17,8 @@
   --ifm-code-font-size: 95%;
 }
 
-html, body, article {
-   font-family: courier !important;
-}
-
 #__docusaurus {
-   font-family: times !important;
+   font-family: -apple-system, 'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
 }
 
 /* Header Navbar */
