@@ -4,16 +4,16 @@
   "title": "Client server SSL encryption",
   "description": "It’s no longer supported and will be removed in GNS3 2.1. We recommend using a VPN in order to protect all communications.",
   "source": "@site/docs/using-gns3/administration/client-server-ssl-encryption.md",
-  "permalink": "/gns3-docs/docs/using-gns3/administration/client-server-ssl-encryption",
+  "permalink": "/docs/using-gns3/administration/client-server-ssl-encryption",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/administration/client-server-ssl-encryption.md",
   "sidebar_label": "Client server SSL encryption",
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 Security",
-    "permalink": "/gns3-docs/docs/using-gns3/administration/gns3-security"
+    "permalink": "/docs/using-gns3/administration/gns3-security"
   },
   "next": {
     "title": "Scale GNS3",
-    "permalink": "/gns3-docs/docs/using-gns3/administration/scale-gns3"
+    "permalink": "/docs/using-gns3/administration/scale-gns3"
   }
 }
