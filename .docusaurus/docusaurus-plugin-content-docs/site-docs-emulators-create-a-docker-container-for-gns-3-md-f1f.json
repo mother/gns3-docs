@@ -4,16 +4,16 @@
   "title": "Create a docker container for GNS3",
   "description": "This tutorial is for users who never used Docker, and would like to create a Docker container for GNS3.",
   "source": "@site/docs/emulators/create-a-docker-container-for-gns3.md",
-  "permalink": "/docs/emulators/create-a-docker-container-for-gns3",
+  "permalink": "/gns3-docs/docs/emulators/create-a-docker-container-for-gns3",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/create-a-docker-container-for-gns3.md",
   "sidebar_label": "Create a docker container for GNS3",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Docker support in GNS3",
-    "permalink": "/docs/emulators/docker-support-in-gns3"
+    "permalink": "/gns3-docs/docs/emulators/docker-support-in-gns3"
   },
   "next": {
     "title": "VPCS",
-    "permalink": "/docs/emulators/vpcs"
+    "permalink": "/gns3-docs/docs/emulators/vpcs"
   }
 }

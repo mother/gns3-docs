@@ -4,16 +4,16 @@
   "title": "Troubleshoot GNS3",
   "description": "Installation Problems",
   "source": "@site/docs/troubleshooting-faq/troubleshoot-gns3.md",
-  "permalink": "/docs/troubleshooting-faq/troubleshoot-gns3",
+  "permalink": "/gns3-docs/docs/troubleshooting-faq/troubleshoot-gns3",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/troubleshooting-faq/troubleshoot-gns3.md",
   "sidebar_label": "Troubleshoot GNS3",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Configure GNS3 to use an additional remote server",
-    "permalink": "/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server"
+    "permalink": "/gns3-docs/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server"
   },
   "next": {
     "title": "General FAQ",
-    "permalink": "/docs/troubleshooting-faq/general-faq"
+    "permalink": "/gns3-docs/docs/troubleshooting-faq/general-faq"
   }
 }

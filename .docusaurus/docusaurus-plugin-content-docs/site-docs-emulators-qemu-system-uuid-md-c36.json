@@ -4,16 +4,16 @@
   "title": "Qemu system UUID",
   "description": "Like any real computer, Qemu attributes a UUID to the system. This is stored in the SMBIOS:",
   "source": "@site/docs/emulators/qemu-system-uuid.md",
-  "permalink": "/docs/emulators/qemu-system-uuid",
+  "permalink": "/gns3-docs/docs/emulators/qemu-system-uuid",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/qemu-system-uuid.md",
   "sidebar_label": "Qemu system UUID",
   "sidebar": "someSidebar",
   "previous": {
     "title": "VPCS",
-    "permalink": "/docs/emulators/vpcs"
+    "permalink": "/gns3-docs/docs/emulators/vpcs"
   },
   "next": {
     "title": "Contribute to GNS3",
-    "permalink": "/docs/contribute/contribute-to-gns3"
+    "permalink": "/gns3-docs/docs/contribute/contribute-to-gns3"
   }
 }

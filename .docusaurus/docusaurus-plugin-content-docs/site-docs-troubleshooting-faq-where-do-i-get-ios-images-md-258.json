@@ -4,12 +4,12 @@
   "title": "Where do I get IOS images?",
   "description": "Introduction",
   "source": "@site/docs/troubleshooting-faq/where-do-i-get-ios-images.md",
-  "permalink": "/docs/troubleshooting-faq/where-do-i-get-ios-images",
+  "permalink": "/gns3-docs/docs/troubleshooting-faq/where-do-i-get-ios-images",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/troubleshooting-faq/where-do-i-get-ios-images.md",
   "sidebar_label": "Where do I get IOS images?",
   "sidebar": "someSidebar",
   "previous": {
     "title": "General FAQ",
-    "permalink": "/docs/troubleshooting-faq/general-faq"
+    "permalink": "/gns3-docs/docs/troubleshooting-faq/general-faq"
   }
 }

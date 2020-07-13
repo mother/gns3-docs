@@ -4,16 +4,16 @@
   "title": "GNS3 Windows Install",
   "description": "Introduction",
   "source": "@site/docs/getting-started/installation/windows.md",
-  "permalink": "/docs/getting-started/installation/windows",
+  "permalink": "/gns3-docs/docs/getting-started/installation/windows",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/windows.md",
   "sidebar_label": "Windows",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Getting Started with GNS3",
-    "permalink": "/docs/"
+    "permalink": "/gns3-docs/docs/"
   },
   "next": {
     "title": "GNS3 Mac Install",
-    "permalink": "/docs/getting-started/installation/mac"
+    "permalink": "/gns3-docs/docs/getting-started/installation/mac"
   }
 }

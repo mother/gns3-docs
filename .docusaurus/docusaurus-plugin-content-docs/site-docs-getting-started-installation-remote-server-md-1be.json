@@ -4,16 +4,16 @@
   "title": "Install GNS3 on a remote server",
   "description": "If you need more resources for bigger topologies, you can install GNS3 on a remote server. This could be on:",
   "source": "@site/docs/getting-started/installation/remote-server.md",
-  "permalink": "/docs/getting-started/installation/remote-server",
+  "permalink": "/gns3-docs/docs/getting-started/installation/remote-server",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/remote-server.md",
   "sidebar_label": "Remote Server",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Install the GNS3 VM on ESXi",
-    "permalink": "/docs/getting-started/installation/esxi"
+    "permalink": "/gns3-docs/docs/getting-started/installation/esxi"
   },
   "next": {
     "title": "Downloading the GNS3 VM",
-    "permalink": "/docs/getting-started/installation/download-gns3-vm"
+    "permalink": "/gns3-docs/docs/getting-started/installation/download-gns3-vm"
   }
 }

@@ -4,16 +4,16 @@
   "title": "Import GNS3 appliance",
   "description": "This document assumes that you already have both the GNS3 Graphical User Interface installed (GNS3-all-in-one) and the GNS3 VM integrated with GNS3. Please refer to other guides for more details on how to install the GNS3 all-in-one package and how to download and configure the GNS3 VM.",
   "source": "@site/docs/using-gns3/beginners/import-gns3-appliance.md",
-  "permalink": "/docs/using-gns3/beginners/import-gns3-appliance",
+  "permalink": "/gns3-docs/docs/using-gns3/beginners/import-gns3-appliance",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/import-gns3-appliance.md",
   "sidebar_label": "Import GNS3 appliance",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Install an appliance from the GNS3 Marketplace",
-    "permalink": "/docs/using-gns3/beginners/install-from-marketplace"
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/install-from-marketplace"
   },
   "next": {
     "title": "Link Control",
-    "permalink": "/docs/using-gns3/beginners/link-control"
+    "permalink": "/gns3-docs/docs/using-gns3/beginners/link-control"
   }
 }

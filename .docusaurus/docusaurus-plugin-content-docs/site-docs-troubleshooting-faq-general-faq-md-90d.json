@@ -4,16 +4,16 @@
   "title": "General FAQ",
   "description": "IOU",
   "source": "@site/docs/troubleshooting-faq/general-faq.md",
-  "permalink": "/docs/troubleshooting-faq/general-faq",
+  "permalink": "/gns3-docs/docs/troubleshooting-faq/general-faq",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/troubleshooting-faq/general-faq.md",
   "sidebar_label": "General FAQ",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Troubleshoot GNS3",
-    "permalink": "/docs/troubleshooting-faq/troubleshoot-gns3"
+    "permalink": "/gns3-docs/docs/troubleshooting-faq/troubleshoot-gns3"
   },
   "next": {
     "title": "Where do I get IOS images?",
-    "permalink": "/docs/troubleshooting-faq/where-do-i-get-ios-images"
+    "permalink": "/gns3-docs/docs/troubleshooting-faq/where-do-i-get-ios-images"
   }
 }

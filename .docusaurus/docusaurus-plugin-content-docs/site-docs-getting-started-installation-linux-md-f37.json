@@ -4,16 +4,16 @@
   "title": "GNS3 Linux Install",
   "description": "Installation from Packages",
   "source": "@site/docs/getting-started/installation/linux.md",
-  "permalink": "/docs/getting-started/installation/linux",
+  "permalink": "/gns3-docs/docs/getting-started/installation/linux",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/linux.md",
   "sidebar_label": "Linux",
   "sidebar": "someSidebar",
   "previous": {
     "title": "GNS3 Mac Install",
-    "permalink": "/docs/getting-started/installation/mac"
+    "permalink": "/gns3-docs/docs/getting-started/installation/mac"
   },
   "next": {
     "title": "Install the GNS3 VM on ESXi",
-    "permalink": "/docs/getting-started/installation/esxi"
+    "permalink": "/gns3-docs/docs/getting-started/installation/esxi"
   }
 }
