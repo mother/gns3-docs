@@ -4,7 +4,7 @@
   "title": "Style Guide",
   "description": "You can write content using GitHub-flavored Markdown syntax.",
   "source": "@site/docs/docusaurus-reference/doc1.md",
-  "permalink": "https://docs.gns3.com/docs/docusaurus-reference/doc1",
+  "permalink": "../docs/docusaurus-reference/doc1",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/docusaurus-reference/doc1.md",
   "sidebar_label": "Style Guide"
 }

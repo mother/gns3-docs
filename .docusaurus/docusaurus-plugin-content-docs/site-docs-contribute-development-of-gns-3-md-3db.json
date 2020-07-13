@@ -4,16 +4,16 @@
   "title": "Development of GNS3",
   "description": "Using the GNS3 API",
   "source": "@site/docs/contribute/development-of-gns3.md",
-  "permalink": "https://docs.gns3.com/docs/contribute/development-of-gns3",
+  "permalink": "../docs/contribute/development-of-gns3",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/contribute/development-of-gns3.md",
   "sidebar_label": "Development of GNS3",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Contribute to GNS3",
-    "permalink": "https://docs.gns3.com/docs/contribute/contribute-to-gns3"
+    "permalink": "../docs/contribute/contribute-to-gns3"
   },
   "next": {
     "title": "How to debug Web UI Guide",
-    "permalink": "https://docs.gns3.com/docs/contribute/how-to-debug-web-ui-guide"
+    "permalink": "../docs/contribute/how-to-debug-web-ui-guide"
   }
 }

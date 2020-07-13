@@ -4,16 +4,16 @@
   "title": "Importing vMX and vQFX into GNS3",
   "description": "Important edit - see bottom of the document!",
   "source": "@site/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3.md",
-  "permalink": "https://docs.gns3.com/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3",
+  "permalink": "../docs/how-to-guides/importing-vmx-and-vqfx-into-gns3",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3.md",
   "sidebar_label": "Importing vMX and vQFX into GNS3",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Cisco ASA",
-    "permalink": "https://docs.gns3.com/docs/how-to-guides/cisco-asa"
+    "permalink": "../docs/how-to-guides/cisco-asa"
   },
   "next": {
     "title": "How to use applications with the GNS3 Web interface",
-    "permalink": "https://docs.gns3.com/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui"
+    "permalink": "../docs/how-to-guides/how-to-use-console-applications-with-the-web-ui"
   }
 }

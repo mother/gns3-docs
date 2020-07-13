@@ -4,16 +4,16 @@
   "title": "Move from IOUVM to GNS3 VM",
   "description": "Starting with GNS3 v1.4,  the IOUVM was deprecated in favor of the GNS3 VM.",
   "source": "@site/docs/using-gns3/advanced/move-from-iouvm-gns3-vm.md",
-  "permalink": "https://docs.gns3.com/docs/using-gns3/advanced/move-from-iouvm-gns3-vm",
+  "permalink": "../docs/using-gns3/advanced/move-from-iouvm-gns3-vm",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/move-from-iouvm-gns3-vm.md",
   "sidebar_label": "Move from IOUVM to GNS3 VM",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Special IP addresses in GNS3",
-    "permalink": "https://docs.gns3.com/docs/using-gns3/advanced/special-ip-addresses"
+    "permalink": "../docs/using-gns3/advanced/special-ip-addresses"
   },
   "next": {
     "title": "Settings profiles",
-    "permalink": "https://docs.gns3.com/docs/using-gns3/advanced/settings-profiles"
+    "permalink": "../docs/using-gns3/advanced/settings-profiles"
   }
 }

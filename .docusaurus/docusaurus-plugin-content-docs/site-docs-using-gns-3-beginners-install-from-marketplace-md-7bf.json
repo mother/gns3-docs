@@ -4,16 +4,16 @@
   "title": "Install an appliance from the GNS3 Marketplace",
   "description": "Introduction",
   "source": "@site/docs/using-gns3/beginners/install-from-marketplace.md",
-  "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/install-from-marketplace",
+  "permalink": "../docs/using-gns3/beginners/install-from-marketplace",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/install-from-marketplace.md",
   "sidebar_label": "Install an appliance from the GNS3 Marketplace",
   "sidebar": "someSidebar",
   "previous": {
     "title": "The console terminal",
-    "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/the-console-terminal"
+    "permalink": "../docs/using-gns3/beginners/the-console-terminal"
   },
   "next": {
     "title": "Import GNS3 appliance",
-    "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/import-gns3-appliance"
+    "permalink": "../docs/using-gns3/beginners/import-gns3-appliance"
   }
 }

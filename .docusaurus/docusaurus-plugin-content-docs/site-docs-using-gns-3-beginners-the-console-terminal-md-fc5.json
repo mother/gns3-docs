@@ -4,16 +4,16 @@
   "title": "The console terminal",
   "description": "GNS3 uses Solar-PuTTY as the default console terminal in Windows* (see note), and will attempt to use the default system terminal in other operating systems (gnome-terminal, for example, in vanilla Ubuntu).",
   "source": "@site/docs/using-gns3/beginners/the-console-terminal.md",
-  "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/the-console-terminal",
+  "permalink": "../docs/using-gns3/beginners/the-console-terminal",
   "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/the-console-terminal.md",
   "sidebar_label": "The console terminal",
   "sidebar": "someSidebar",
   "previous": {
     "title": "Switching and GNS3",
-    "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/switching-and-gns3"
+    "permalink": "../docs/using-gns3/beginners/switching-and-gns3"
   },
   "next": {
     "title": "Install an appliance from the GNS3 Marketplace",
-    "permalink": "https://docs.gns3.com/docs/using-gns3/beginners/install-from-marketplace"
+    "permalink": "../docs/using-gns3/beginners/install-from-marketplace"
   }
 }
