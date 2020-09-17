@@ -27,8 +27,8 @@ Their is no user isolation, all users can view all projects and modify them
 First you need to install the GNS3 server.
 
 Two options:
-- [Install on a remote server](remote-server)
-- [Use the GNS3 VM for ESXi as your server](esxi)
+- [Install on a remote server](./remote-server)
+- [Use the GNS3 VM for ESXi as your server](./esxi)
 
 If you use the GNS3 VM for ESXi it’s your remote server, you don’t need a remote server and the GNS3 VM.
 
