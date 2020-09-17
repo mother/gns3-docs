@@ -59,13 +59,13 @@ Here’s an example of the list:
 To change the branch used, you’ll use this command:
 
 ```
-git checkout -b branch_version
+git checkout tags/branch_version -b branch_version
 ```
 
 For example, if the clients have GNS3 2.2.1 installed, you’ll use this command to build v2.2.1 of the gns3-server:
 
 ```
-git checkout -b v2.2.1
+git checkout tags/v2.2.1 -b v2.2.1
 ```
 
 Next, you’ll use this command to build the gns3-server daemon:
