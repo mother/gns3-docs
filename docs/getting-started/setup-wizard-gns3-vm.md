@@ -15,10 +15,8 @@ VMware is a better option because it’s faster and supports nested virtualizati
 GNS3 supports both VMware Workstation Pro and VMware Fusion (Paid software), as well as VMware Player (Free software).
 
 :::note
-VMware Player requires the installation of additional free software ([VMware VIX](https://www.vmware.com/support/developer/vix-api/)). If you forget to install this, GNS3 will prompt you to do so (and open a browser to the link on VMware’s website). The option for “VIX version 1.15 and later” is sufficient for VMware Workstation Player version 12.x and 14.x. For older versions of Player, you’ll need to select a previous version of VIX that matches your version of Player.
+VMware Player requires the installation of additional free software ([VMware VIX](https://www.vmware.com/support/developer/vix-api/)). If you forget to install this, GNS3 will prompt you to do so (and open a browser to the link on VMware’s website). The option for “VIX version 1.17 and later” is sufficient for VMware Workstation Player version 16.x. For older versions of Player, you’ll need to select a previous version of VIX that matches your version of Player.
 :::
-
-Important -  VMware decided to not release a standalone VIX SDK download for Workstation 15.x (the necessary files are still included with WS Pro 15.x).   It’s currently recommended that Player 15.x users add the GNS3 VM as a remote server, or to use VIX 1.17, and edit the vixwrapper-config.txt file, [as shown in this GNS3 forum thread](https://gns3.com/community/discussion/gns3-with-workstation-player-15-).
 
 :::note
 You can get 20% off [VMware Workstation Pro](https://gns3.com/marketplace/software/workstation-pro-15) and [VMware Fusion](https://gns3.com/marketplace/software/fusion-8) thanks to our deal with VMware.
@@ -252,7 +250,7 @@ The GNS3 workspace displays:
 [Continue here for a basic GNS3 topology](your-first-gns3-topology)
 
 :::note
-The Virtualbox developers announced that nested hardware virtualization support was added to Virtualbox 6.0.  However, there’s an important caveat:  this support is only available to users with desktops/laptops that have AMD CPUs. Nested h/w virtualization support for Intel CPUs has been stated to be forthcoming. Questions regarding this should be directed to the Virtualbox user forums, and not the GNS3 community forums!  
+The Virtualbox developers announced that nested hardware virtualization support was added to Virtualbox 6.0 for desktops/laptops that have AMD CPUs and since 6.1 supports also Intel CPUs. Questions regarding Virtualbox  should be directed Virtualbox user forums, and not the GNS3 community forums!  
 :::
 
 :::note
