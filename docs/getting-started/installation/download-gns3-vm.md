@@ -15,7 +15,7 @@ VMware is a better option because it’s faster and supports nested virtualizati
 For GNS3 1.3 please read [this documentation](download-32-bit).
 :::
 
-Users running the GNS3 VM in Workstation Player should look at Note 3 at the end of the article, for a fix with WS Player 15.x versions and VIX 1.17
+Users running the GNS3 VM in Workstation Player should look at Note 3 at the end of the article, for a fix with WS Player 16.x versions and VIX 1.17
 
 ## Downloading the VM
 
@@ -56,13 +56,13 @@ The GNS3 VM has a built in upgrade mechanism so you will not need to download ag
 You can get 20% off [VMware Workstation Pro](https://gns3.com/marketplace/software/workstation-pro-15) and [VMware Fusion](https://gns3.com/marketplace/software/fusion-8) thanks to our deal with VMware.
 
 :::note
-Nested hardware virtualization functionality, and nested paging, were added to Virtualbox starting in version 6.0, but with a caveat: It is currently only available to users with desktops/laptops that have AMD CPUs (such as their recent Ryzen processors).   Support for this feature with Intel CPUs has been stated to be forthcoming.  
+Nested hardware virtualization functionality, and nested paging, were added to Virtualbox starting in version 6.0 with desktops/laptops that have AMD CPUs (such as their recent Ryzen processors) and from 6.1 Also supports with Intel CPUs.  
 
-This means that with supported CPUs, it is viable to run the GNS3 VM in Virtualbox 6.x (Virtualbox 6.0.12 was the latest tested, as of this writing). Questions about when Intel CPU h/w virt will be available for Virtualbox should be directed to the Virtualbox support forums only, not the GNS3 forums!
+This means that with supported CPUs, it is viable to run the GNS3 VM in Virtualbox 6.1 (Virtualbox 6.1.16 was the latest tested, as of this writing). Questions about support of Virtualbox should be directed to the Virtualbox support forums only, not the GNS3 forums!
 :::
 
 Use of Virtualbox to run the GNS3 VM will be covered in a separate article
 
 :::note
-Users running the GNS3 VM in WS Player have been reporting issues with the available versions of VIX and Player 15.x.  A workaround for the problem is located in this  forum thread.
+Users running the GNS3 VM in WS Player have been reporting issues with the versions of VIX 1.17 and Player 15.x.  Please use version 16.x and newer.
 :::
