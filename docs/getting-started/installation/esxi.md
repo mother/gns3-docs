@@ -115,6 +115,9 @@ Why alias the remote server as the GNS3 VM? This allow portability, if you move 
 :::
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/esxi/13.jpg')} />
+:::note
+Default port of GNS3 VM is 80.
+:::
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/esxi/14.jpg')} />
 
 ### Access to the GNS3 VM via internet
