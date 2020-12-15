@@ -45,13 +45,13 @@ The next time you log in you will see this message:
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/remote-server/1.jpg')} />
 
-Download the certificate. You can also find the certificate in /root/client.opvn
+Download the certificate. You can also find the certificate in /root/client.ovpn
 
 ### VPN connection on Linux
 
 ```
 # sudo apt-get install openvpn
-# sudo openvpn client.opvn
+# sudo openvpn client.ovpn
 Tue Apr 25 17:12:48 2017 [OpenVPN] Peer Connection Initiated with [AF_INET]X.X.X.X:1194
 Tue Apr 25 17:12:51 2017 TUN/TAP device tun0 opened
 Tue Apr 25 17:12:51 2017 Initialization Sequence Completed
