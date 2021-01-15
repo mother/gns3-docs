@@ -79,7 +79,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2020 Galaxy Technologies LLC."
+      "copyright": "Copyright © 2021 Galaxy Technologies LLC."
     }
   },
   "title": "GNS3 Documentation",
