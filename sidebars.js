@@ -46,7 +46,8 @@ module.exports = {
          'using-gns3/advanced/move-from-iouvm-gns3-vm',
          'using-gns3/advanced/settings-profiles',
          'using-gns3/advanced/create-a-new-version-for-an-appliance',
-         'using-gns3/advanced/port-name-formatting'
+         'using-gns3/advanced/port-name-formatting',
+         'using-gns3/advanced/configuration-transfer-qemu-vms',
       ],
    }, {
       type: 'category',
