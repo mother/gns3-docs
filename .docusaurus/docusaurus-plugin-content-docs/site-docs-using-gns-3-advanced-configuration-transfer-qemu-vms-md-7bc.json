@@ -1,0 +1,19 @@
+{
+  "id": "using-gns3/advanced/configuration-transfer-qemu-vms",
+  "isDocsHomePage": false,
+  "title": "Configuration transfer to QEMU VMs",
+  "description": "GNS3 v2.2.18 introduces a feature to transfer files,",
+  "source": "@site/docs/using-gns3/advanced/configuration-transfer-qemu-vms.md",
+  "permalink": "/docs/using-gns3/advanced/configuration-transfer-qemu-vms",
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/configuration-transfer-qemu-vms.md",
+  "sidebar_label": "Configuration transfer to QEMU VMs",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Port name formatting",
+    "permalink": "/docs/using-gns3/advanced/port-name-formatting"
+  },
+  "next": {
+    "title": "GNS3 server configuration file",
+    "permalink": "/docs/using-gns3/administration/gns3-server-configuration-file"
+  }
+}

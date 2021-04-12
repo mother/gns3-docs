@@ -11,6 +11,12 @@ export default [
   
 },
 {
+  path: '/__docusaurus/debug',
+  component: ComponentCreator('/__docusaurus/debug'),
+  exact: true,
+  
+},
+{
   path: '/search',
   component: ComponentCreator('/search'),
   exact: true,
@@ -270,6 +276,12 @@ export default [
 {
   path: '/docs/using-gns3/administration/scale-gns3',
   component: ComponentCreator('/docs/using-gns3/administration/scale-gns3'),
+  exact: true,
+  
+},
+{
+  path: '/docs/using-gns3/advanced/configuration-transfer-qemu-vms',
+  component: ComponentCreator('/docs/using-gns3/advanced/configuration-transfer-qemu-vms'),
   exact: true,
   
 },

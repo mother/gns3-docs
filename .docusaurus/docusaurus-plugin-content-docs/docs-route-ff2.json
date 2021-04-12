@@ -181,6 +181,11 @@
                 "type": "link",
                 "label": "Port name formatting",
                 "href": "/docs/using-gns3/advanced/port-name-formatting"
+              },
+              {
+                "type": "link",
+                "label": "Configuration transfer to QEMU VMs",
+                "href": "/docs/using-gns3/advanced/configuration-transfer-qemu-vms"
               }
             ]
           },
@@ -394,6 +399,7 @@
     "/docs/using-gns3/administration/gns3-server-configuration-file": "someSidebar",
     "/docs/using-gns3/administration/running-gns3-server-as-daemon": "someSidebar",
     "/docs/using-gns3/administration/scale-gns3": "someSidebar",
+    "/docs/using-gns3/advanced/configuration-transfer-qemu-vms": "someSidebar",
     "/docs/using-gns3/advanced/connect-gns3-internet": "someSidebar",
     "/docs/using-gns3/advanced/create-a-new-version-for-an-appliance": "someSidebar",
     "/docs/using-gns3/advanced/move-from-iouvm-gns3-vm": "someSidebar",

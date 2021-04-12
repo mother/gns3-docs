@@ -9,8 +9,8 @@
   "sidebar_label": "GNS3 server configuration file",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Port name formatting",
-    "permalink": "/docs/using-gns3/advanced/port-name-formatting"
+    "title": "Configuration transfer to QEMU VMs",
+    "permalink": "/docs/using-gns3/advanced/configuration-transfer-qemu-vms"
   },
   "next": {
     "title": "Running the GNS3 server as a daemon",

@@ -13,7 +13,7 @@
     "permalink": "/docs/using-gns3/advanced/create-a-new-version-for-an-appliance"
   },
   "next": {
-    "title": "GNS3 server configuration file",
-    "permalink": "/docs/using-gns3/administration/gns3-server-configuration-file"
+    "title": "Configuration transfer to QEMU VMs",
+    "permalink": "/docs/using-gns3/advanced/configuration-transfer-qemu-vms"
   }
 }
