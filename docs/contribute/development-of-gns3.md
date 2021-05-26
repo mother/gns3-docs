@@ -49,8 +49,7 @@ python.exe -m pip install -r dev-requirements.txt
 With homebrew:
 ```
 brew install python3
-brew install pyqt5 --with-python3
-brew linkapps qt5
+brew install PyQt5
 ```
 
 Go to both folder (gns3-gui & gns3-server)
