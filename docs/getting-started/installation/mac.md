@@ -93,5 +93,5 @@ The GNS3 Setup Wizard will display:
 You now need to make a decision and then you can return to this document to complete to create an initial GNS topology:
 
 - If you are unsure, [click here](../../../docs)
-- If you are going to only use Cisco IOS images, use the Local server and [click here for instructions](../setup-wizard-local-server)
-- If you are going to use IOSvL2, IOU, ASAv or create complex topologies, then use the GNS3 VM and [click here for instructions](../setup-wizard-gns3-vm).
+- If you are going to only use Cisco IOS images, use the Local server and [click here for instructions](../../setup-wizard-local-server)
+- If you are going to use IOSvL2, IOU, ASAv or create complex topologies, then use the GNS3 VM and [click here for instructions](../../setup-wizard-gns3-vm).
