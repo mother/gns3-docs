@@ -12,7 +12,7 @@ This document explains how to install GNS3 using when a Mac OS X environment. Yo
 - Install the software
 
 ## Supported Operating Systems
-GNS3 supports OS X Lion (version 10.12) and later. GNS3 v2.1.9 is the last version that runs on OS X version 10.11 (El Capitan).
+GNS3 officially supports the 3 latest versions of macOS (currently macOS 10.14 - Mojave to macOS 11.0 - Big Sur).  GNS3 v2.1.9 is the last version that runs on OS X version 10.11 (El Capitan).
 
 - Video: https://www.youtube.com/watch?v=OFjt3jS3Mhg
 
