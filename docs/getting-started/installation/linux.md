@@ -95,8 +95,36 @@ wireshark xtightvncviewer apt-transport-https \
 ca-certificates curl gnupg2 software-properties-common
 ```
 
+## Install GNS3 on ArchLinux Based :
+Install GNS3 on Archlinux based distros ( Arch - EndeavourOS - Garuda - ArcoLinux ) 
+
+**Install YAY package manager :
+
+to install GNS3 on Archlinux you will need **yay** to install from Arch Users Repository ( **AUR** )  , thats if it's not already insttaled , to install yay issue the command :
+
+```
+pacman -Syu yay 
+```
+and follow the setup process choosing the package source and confirm installation .
+**Install Prerequesits + docker :
+
+next we will install pre-requesit packages from the same AUR source , Please note that mixing instllation source may lead to unfuncional application or unstability 
+```
+yay -S qemu docker vpcs dynamips libvirt 
+```
+**Install GNS3 Server and GUI 
+
+```
+yay -S gns3-server gns3-gui 
+```
+**Finalize installation 
+
+finally you we need to add your usrer to the gns3 groups as demonestared later and do reboot . 
+
+```
 Install GNS3 from Pypi:
 ```
+
 pip3 install gns3-server
 pip3 install gns3-gui
 ```
