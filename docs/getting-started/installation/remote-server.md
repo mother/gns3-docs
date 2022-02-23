@@ -19,7 +19,11 @@ Most cloud providers (AWS, Azure...) block  access to the CPU virtualization ins
 Run these instructions only on a server dedicated to GNS3 otherwise you need to manually setup GNS3 on your server.
 :::
 
-The easiest way to install GNS3 on this server is to install it on a fresh Ubuntu 16.04 LTS installation. As root run these commands:
+The easiest way to install GNS3 on this server is to install it on a fresh Ubuntu 18.04 LTS installation. 
+:::note
+Ubuntu 16.04 LTS is deprecated, you will receive a warning similar to the following: 'DEPRECATION WARNING This Linux distribution (ubuntu xenial) reached end-of-life and is no longer supported by this script.'
+
+As root run these commands:
 
 ```
 cd /tmp
