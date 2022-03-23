@@ -215,3 +215,9 @@ Finally, attempt to start gns3 from the command line. If you receive no output e
 :::note
 You may not have to reboot your machine. The reboot worked in my case after much trial and error. You may also have to add the shortcut as it may not automatically populate in your applications menu.  
 :::
+
+
+## To launch the GNS3 Server
+```
+gns3server
+```
