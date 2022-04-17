@@ -12,7 +12,7 @@ A UUID is a 128-bit number. The generation of a UUID doesn’t require a central
 More information about UUIDs can be found here: https://en.wikipedia.org/wiki/Universally_unique_identifier
 
 ## Why use UUIDs?
-Because UUIDs are unique, you can be assured that a UUID for a project or node on your computer is not in use on another computer. This allows the sharing of projects without conflicts Otherwise, it’s highly probable that the same names for nodes or projects will be used, causing potential conflicts.  
+Because UUIDs are unique, you can be assured that a UUID for a project or node on your computer is not in use on another computer. This allows the sharing of projects without conflicts. Otherwise, it’s highly probable that the same names for nodes or projects will be used, causing potential conflicts.  
 
 ## Node UUID in folders
 If you list the files of a project,  you will see that the nodes folder uses UUID:
