@@ -12,53 +12,28 @@ Equinix is a bare metal cloud provider, with datacenter locations 29 datacenters
 
 Unlike AWS or Google Cloud (which provide only Virtual Machines), Equinix Metal gives you full access to a true dedicated server, but with the same automation and flexibility you expect from a public cloud. Since you have direct access to the virtualization instructions on the CPU, running GNS3 on Packet is a great experience.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/1.jpg')} />
+<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-equinix/equinix-metal.jpg')} />
 
 - Video (Part 1): https://www.youtube.com/watch?v=5MzYIh3FK2g
 - Video (Part 2): https://www.youtube.com/watch?v=KyxJ3l7GypU&feature=emb_title
 
 ## Sign up with Equinix Metal
 
-First, you will need to sign up for an account at Equinix Metal. There is sometimes a manual review, which you can help to avoid by using a work email address (if you have one) and disconnecting from any VPN during the signup process.  If you are flagged for manual review, don’t worry! The Equinix Metal team is very responsive and will work with you to get everything squared away.  
+First, you will need to sign up for an account at Equinix Metal [here](https://console.equinix.com/sign-up). Here provide First & Last Name, E-Mail and a passowrd. Then check the "I agree to the Acceptable Use Policy and Privacy Policy" if you do.
+<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-equinix/sign-up.jpg')} />
 
 A few things:
-- Once your account is activated, we recommend activating Two Factor Authentication (2FA).  Simply visit 'Personal Settings' -> 'Security', scroll down to the Two Factor Authentication section, select either “ set up using an app” or “set up using SMS”, and follow the instructions:
+- Once your account is activated, we recommend activating Two Factor Authentication (2FA) (currently only available in the legacy portal).  Simply visit 'My Profile' -> 'Security', scroll down to the Two Factor Authentication section, select either “ set up using an app” or “set up using SMS”, and follow the instructions:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/3.jpg')} />
+<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-equinix/equinix-mfa.jpg')} />
 
 Receiving your 2FA pin via SMS isn’t secure as using an authenticator app, like Google Authenticator.  When using the “set up using an app” option, scan in the QR code with your app, and you’ll receive a 6 digit pin (2FA token) that is only valid for a small amount of time, before a new token appears. Enter the token within that time, and click Enable to finish enabling 2FA for login.
 
-When 2FA is enabled, you will log into your account using your username/password as usual:
-
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/4.jpg')} />
-
-Then you’ll  be presented with the second page, where you’d enter a new 2FA token. You’d open your authenticator app, select the entry that’s associated with your [deploy.equinix.com.net](https://deploy.equinix.com/) user account, and enter the token to finish logging in:
-
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/5.jpg')} />
-
-## Add your SSH Key
-
-Next, add your SSH key to your account, since equinix servers can only be accessed via SSH. [Here is a great article](https://help.packet.net/article/2-deploy-a-server) which will help you get started.
-
-While in the Personal Settings view in the Portal, click “SSH Keys”, and then “Add Key” to open up a sidebar:
-
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/6.jpg')} />
-
-(If you need help creating your public/private key pair, [this article](https://help.packet.net/article/31-ssh-access) will walk you through the steps)
-
-In the sidebar, give your key a title, and then paste the contents of your public key into the box shown below, and click Add:
-
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/7.jpg')} />
-
-Your key will be added to your Portal:
-
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/8.jpg')} />
-
-- Video: https://www.youtube.com/watch?v=nWnxKHmaGNU
+When 2FA is enabled, you will log into your account using your username/password as usual.
 
 ## Deploy your Server
 
-Once you are ready, you can go ahead and deploy a new server with the Ubuntu 18.04  OS in the Equinix Metal location which is closest to you.  
+Once you are ready, you can go ahead and deploy a new server with the Ubuntu 22.04 OS in the Equinix Metal location which is closest to you.  
 
 - While GNS3 works on the [c3.small.x86](https://deploy.equinix.com/product/servers/c3-small/) server, you can allways upgrade to a larger instance.
 - GNS3 is not supported for Equinix’s ARM server offerings..
