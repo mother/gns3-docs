@@ -1,38 +1,27 @@
 ---
-id: gns3-on-packet
-title: GNS3 on Packet
-sidebar_label: GNS3 on Packet
+id: gns3-on-equinix
+title: GNS3 on equinix
+sidebar_label: GNS3 on Equinix Deploy
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## What is Packet?
+## What is Equinix deploy?
 
-Packet.net is a bare metal cloud provider, with datacenter locations near NYC, Silicon Valley, Amsterdam and Tokyo.  
+deploy.equinix.com is a bare metal cloud provider, with datacenter locations near NYC, Silicon Valley, Amsterdam and Tokyo.  
 
-Unlike AWS or Google Cloud (which provide only Virtual Machines), Packet gives you full access to a true dedicated server, but with the same automation and flexibility you expect from a public cloud. Since you have direct access to the virtualization instructions on the CPU, running GNS3 on Packet is a great experience.
+Unlike AWS or Google Cloud (which provide only Virtual Machines), Equinix gives you full access to a true dedicated server, but with the same automation and flexibility you expect from a public cloud. Since you have direct access to the virtualization instructions on the CPU, running GNS3 on Packet is a great experience.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/1.jpg')} />
+<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-equinix/1.jpg')} />
 
 - Video (Part 1): https://www.youtube.com/watch?v=5MzYIh3FK2g
 - Video (Part 2): https://www.youtube.com/watch?v=KyxJ3l7GypU&feature=emb_title
 
+## Sign up with Equinix deploy
 
-### Special offers for GNS3 users only:  
-
-1. **$25 Trial Credit** - Packet is offering $25 in credit for GNS3 users to help them kick the tires. Simply visit the landing page, or use code “GNS3” when signing up.
-2. **Discounted Monthly** - At Packet you pay hourly for real dedicated hardware, with no required long term contracts. However, for those that need a server up ongoing, Packet is making a special 30% discount for commitments on the powerful c1.small.x86 server. To take advantage of the discount, just email help@packet.net and mention the ‘GNS3 Discount’ to arrange.
-
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/2.jpg')} />
-
-(the landing page for the $25 credit available for GNS3 users)
-
-## Sign up with Packet
-
-First, you will need to sign up for an account at Packet.  There is sometimes a manual review, which you can help to avoid by using a work email address (if you have one) and disconnecting from any VPN during the signup process.  If you are flagged for manual review, don’t worry!  The Packet team is very responsive and will work with you to get everything squared away.  
+First, you will need to sign up for an account at Equinix. There is sometimes a manual review, which you can help to avoid by using a work email address (if you have one) and disconnecting from any VPN during the signup process.  If you are flagged for manual review, don’t worry!  The Equinix team is very responsive and will work with you to get everything squared away.  
 
 A few things:
-- A valid payment method is required even if you have a promo code.  For more information about how Packet handles billing, [check out this article](https://help.packet.net/faq/billing).  
 - Once your account is activated, we recommend activating Two Factor Authentication (2FA).  Simply visit 'Personal Settings' -> 'Security', scroll down to the Two Factor Authentication section, select either “ set up using an app” or “set up using SMS”, and follow the instructions:
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/3.jpg')} />
@@ -43,13 +32,13 @@ When 2FA is enabled, you will log into your account using your username/password
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/4.jpg')} />
 
-Then you’ll  be presented with the second page, where you’d enter a new 2FA token. You’d open your authenticator app, select the entry that’s associated with your Packet.net user account, and enter the token to finish logging in:
+Then you’ll  be presented with the second page, where you’d enter a new 2FA token. You’d open your authenticator app, select the entry that’s associated with your [deploy.equinix.com.net](https://deploy.equinix.com/) user account, and enter the token to finish logging in:
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/5.jpg')} />
 
 ## Add your SSH Key
 
-Next, add your SSH key to your account, since Packet servers can only be accessed via SSH. [Here is a great article](https://help.packet.net/article/2-deploy-a-server) which will help you get started.
+Next, add your SSH key to your account, since equinix servers can only be accessed via SSH. [Here is a great article](https://help.packet.net/article/2-deploy-a-server) which will help you get started.
 
 While in the Personal Settings view in the Portal, click “SSH Keys”, and then “Add Key” to open up a sidebar:
 
@@ -69,14 +58,14 @@ Your key will be added to your Portal:
 
 ## Deploy your Server
 
-Once you are ready, you can go ahead and deploy a new server with the Ubuntu 18.04  OS in the Packet location which is closest to you.  
+Once you are ready, you can go ahead and deploy a new server with the Ubuntu 18.04  OS in the equinix location which is closest to you.  
 
 - While GNS3 works on the [t1.small.x86](https://www.packet.com/cloud/servers/t1-small/) server, you need to use at least a [c1.small.x86](https://www.packet.com/cloud/servers/c1-small/) server for a better virtualization support.
-- GNS3 is not supported for Packet’s ARM server offerings..
+- GNS3 is not supported for equinix’s ARM server offerings..
 - A listing of available bare metal servers can be found [here](https://www.packet.com/cloud/servers/).
 
 :::important
-At Packet you are getting your own dedicated bare metal machine that is yours alone from the time you provision it until you actually delete the device from your account.  So even if you were to power it down, it would still accrue usage until you actually delete it completely.
+At equinix you are getting your own dedicated bare metal machine that is yours alone from the time you provision it until you actually delete the device from your account.  So even if you were to power it down, it would still accrue usage until you actually delete it completely.
 :::
 
 - Video: https://www.youtube.com/watch?v=meygA4aEN5I
@@ -131,7 +120,7 @@ If everything is OK, you will see this message:
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-packet/16.jpg')} />
 
-Reboot the server from the Packet portal or by issuing a reboot command on the terminal.
+Reboot the server from the equinix portal or by issuing a reboot command on the terminal.
 That’s it!
 
 
@@ -186,7 +175,7 @@ And put the server settings. The IP needs to be **172.16.253.1**
 
 ## Backup Solutions
 
-If you don’t want to keep your Packet server running continually (hence accruing charges even during the time that you are not actively using GNS3), you can save/backup your GNS3 projects and have them ready when you deploy a new server in the future.
+If you don’t want to keep your equinix server running continually (hence accruing charges even during the time that you are not actively using GNS3), you can save/backup your GNS3 projects and have them ready when you deploy a new server in the future.
 
 If you take a look at the GNS3 server config file at /etc/gns3/gns3_server.conf you will see the following:
 
@@ -221,17 +210,17 @@ cd /opt/gns3/
 tar -xzvf gns3-backup.tar.gz
 ```
 
-As these directories might get bigger, the scp option might become a struggle, so we come to the second option, which would be to take advantage of Packet [Block Storage service](https://packet.kayako.com/article/63-elastic-block-storage).
+As these directories might get bigger, the scp option might become a struggle, so we come to the second option, which would be to take advantage of equinix [Block Storage service](https://packet.kayako.com/article/63-elastic-block-storage).
 
 Block Storage is a network attached storage that can be moved between servers, and it’s a great option to backup your projects. A 100GB Volume of the Standard Tier would cost ~$0.25 for a day or ~$7.5 for the whole month.  
 
-Block Storage is only available in Packet’s EWR1, SJC1, and AMS facilities.  
+Block Storage is only available in equinix’s EWR1, SJC1, and AMS facilities.  
 
 :::note
 This method requires that you have a good working knowledge of the Linux command line, as you will have to work with network attached storage, and manually copy directories around.  
 :::
 
-Packet does not offer any managed services, and you will be responsible for your own data. Here is a [knowledge base article](https://help.packet.net/technical/storage/packet-block-storage-linux) explaining the process of attaching and detaching the volumes on a Packet server.
+equinix does not offer any managed services, and you will be responsible for your own data. Here is a [knowledge base article](https://help.packet.net/technical/storage/packet-block-storage-linux) explaining the process of attaching and detaching the volumes on a equinix server.
 
 In short you would have to do the following, after you create the volume and attach it to the server on the portal.
 
