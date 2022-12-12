@@ -12,8 +12,8 @@ module.exports = {
          anonymizeIP: false
       },
       algolia: {
-         apiKey: '6d6ea1a0fd210184b95ba9a589e11b17',
-         appId: 'RM22375DTG',
+         apiKey: '75bf7dd136b92cb76d52b7ef8de3576f',
+         appId: '1WIL6RAPZV',
          indexName: 'gns3',
          algoliaOptions: {},
       },
