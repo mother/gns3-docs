@@ -10,8 +10,8 @@ export default {
       "anonymizeIP": false
     },
     "algolia": {
-      "apiKey": "6d6ea1a0fd210184b95ba9a589e11b17",
-      "appId": "RM22375DTG",
+      "apiKey": "75bf7dd136b92cb76d52b7ef8de3576f",
+      "appId": "1WIL6RAPZV",
       "indexName": "gns3",
       "algoliaOptions": {}
     },
@@ -79,7 +79,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2021 Galaxy Technologies LLC."
+      "copyright": "Copyright © 2022 Galaxy Technologies LLC."
     }
   },
   "title": "GNS3 Documentation",
