@@ -17,6 +17,10 @@ Unlike AWS or Google Cloud (which provide only Virtual Machines), Equinix Metal 
 - Video (Part 1): https://www.youtube.com/watch?v=5MzYIh3FK2g
 - Video (Part 2): https://www.youtube.com/watch?v=KyxJ3l7GypU&feature=emb_title
 
+### Special offers for GNS3 users only:  
+
+**$25 Trial Credit** - Equinix Metal is offering $25 in credit for GNS3 users to help them kick the tires. Simply use code “GNS3METAL” when signing up.
+
 ## Sign up with Equinix Metal
 
 First, you will need to sign up for an account at Equinix Metal [here](https://console.equinix.com/sign-up). Here provide First & Last Name, E-Mail and a passowrd. Then check the "I agree to the Acceptable Use Policy and Privacy Policy" if you do.
