@@ -13,7 +13,7 @@
     "permalink": "/docs/getting-started/installation/one-server-multiple-clients"
   },
   "next": {
-    "title": "GNS3 on Packet",
-    "permalink": "/docs/getting-started/installation/gns3-on-packet"
+    "title": "GNS3 on equinix",
+    "permalink": "/docs/getting-started/installation/gns3-on-equinix"
   }
 }

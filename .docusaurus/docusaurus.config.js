@@ -96,11 +96,11 @@ export default {
         "docs": {
           "showReadingTime": true,
           "homePageId": "getting-started/what-is-gns3",
-          "sidebarPath": "/Users/stevenyuen/Sites/gns3-docs/sidebars.js",
+          "sidebarPath": "/home/grossmj/PycharmProjects/gns3-docs/sidebars.js",
           "editUrl": "https://github.com/mother/gns3-docs/blob/master/"
         },
         "theme": {
-          "customCss": "/Users/stevenyuen/Sites/gns3-docs/src/css/custom.css"
+          "customCss": "/home/grossmj/PycharmProjects/gns3-docs/src/css/custom.css"
         }
       }
     ]

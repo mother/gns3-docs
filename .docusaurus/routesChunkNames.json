@@ -3,7 +3,7 @@
     "component": "c4f5d8e4"
   },
   "/search": {
-    "component": "7fd43b69"
+    "component": "d05dab79"
   },
   "/docs": {
     "component": "1be78505",
@@ -85,9 +85,9 @@
     "component": "17896441",
     "content": "d5a0d1e6"
   },
-  "/docs/getting-started/installation/gns3-on-packet": {
+  "/docs/getting-started/installation/gns3-on-equinix": {
     "component": "17896441",
-    "content": "d608d527"
+    "content": "6ff99807"
   },
   "/docs/getting-started/installation/linux": {
     "component": "17896441",

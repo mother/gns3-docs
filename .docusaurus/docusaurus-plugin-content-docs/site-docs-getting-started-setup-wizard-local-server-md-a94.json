@@ -9,8 +9,8 @@
   "sidebar_label": "Setup wizard for local server",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "GNS3 on Packet",
-    "permalink": "/docs/getting-started/installation/gns3-on-packet"
+    "title": "GNS3 on equinix",
+    "permalink": "/docs/getting-started/installation/gns3-on-equinix"
   },
   "next": {
     "title": "GNS3 Setup wizard with the GNS3 VM",

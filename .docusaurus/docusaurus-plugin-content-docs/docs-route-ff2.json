@@ -63,8 +63,8 @@
               },
               {
                 "type": "link",
-                "label": "GNS3 on Packet",
-                "href": "/docs/getting-started/installation/gns3-on-packet"
+                "label": "GNS3 on Equinix",
+                "href": "/docs/getting-started/installation/gns3-on-equinix"
               }
             ]
           },
@@ -376,7 +376,7 @@
     "/docs/getting-started/installation/download-32-bit": "someSidebar",
     "/docs/getting-started/installation/download-gns3-vm": "someSidebar",
     "/docs/getting-started/installation/esxi": "someSidebar",
-    "/docs/getting-started/installation/gns3-on-packet": "someSidebar",
+    "/docs/getting-started/installation/gns3-on-equinix": "someSidebar",
     "/docs/getting-started/installation/linux": "someSidebar",
     "/docs/getting-started/installation/mac": "someSidebar",
     "/docs/getting-started/installation/one-server-multiple-clients": "someSidebar",

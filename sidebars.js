@@ -15,7 +15,7 @@ module.exports = {
               'getting-started/installation/download-32-bit',
               'getting-started/installation/one-server-multiple-clients',
               'getting-started/installation/upgrade-gns3',
-              'getting-started/installation/gns3-on-packet'
+              'getting-started/installation/gns3-on-equinix'
            ],
          },
          'getting-started/setup-wizard-local-server',

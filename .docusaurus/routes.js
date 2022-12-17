@@ -136,8 +136,8 @@ export default [
   
 },
 {
-  path: '/docs/getting-started/installation/gns3-on-packet',
-  component: ComponentCreator('/docs/getting-started/installation/gns3-on-packet'),
+  path: '/docs/getting-started/installation/gns3-on-equinix',
+  component: ComponentCreator('/docs/getting-started/installation/gns3-on-equinix'),
   exact: true,
   
 },
