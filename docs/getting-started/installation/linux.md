@@ -121,7 +121,6 @@ yay -S gns3-server gns3-gui
 
 finally you we need to add your usrer to the gns3 groups as demonestared later and do reboot . 
 
-```
 Install GNS3 from Pypi:
 ```
 
