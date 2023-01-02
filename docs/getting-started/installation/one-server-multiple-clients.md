@@ -17,7 +17,7 @@ This is an advanced usage. We recommend that the administrator which setup this 
 :::
 
 :::caution
-Their is no user isolation, all users can view all projects and modify them
+There is no user isolation, all users can view all projects and modify them
 :::
 
 - Video: https://www.youtube.com/watch?v=hVPW5ijvNFo
