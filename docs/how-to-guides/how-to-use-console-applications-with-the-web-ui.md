@@ -12,6 +12,10 @@ Please remember to run the GNS3 Web interface with Chrome or Firefox. Also, plea
 
 Additionally, we have plans for an HTML5 console support so native consoles won’t be required.
 
+### Web-Ui
+
+The Web-ui is bundled with the GNS3 server. After starting the GNS3 server, the web-ui can be accessed on `http://localhost:3080` assuming the default host and port are used or `http://VM_IP_ADDR:80` if using the GNS3 VM.
+
 ### Installation on Windows
 Make sure the GNS3 WebClient option is ticked when installing GNS3 then follow the installation process. Protocol handlers are registered during the installation.
 
