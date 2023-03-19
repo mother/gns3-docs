@@ -94,7 +94,7 @@ http://172.16.253.1:3080/
 ## Configure GNS3 in order to use the new server
 
 You have two ways to use your new server:
-- [As the main server (you can have multiple client connected to it)](one-server-multiple-clients)
-- [As additional compute resources](../../how-to-guides/configure-gns3-to-use-an-additional-remote-server)
+- [As the main server (you can have multiple client connected to it)](one-server-multiple-clients.md)
+- [As additional compute resources](../../how-to-guides/configure-gns3-to-use-an-additional-remote-server.md)
 
 For both methods, if you use the VPN, the host of your GNS3 server will be 172.16.253.1
