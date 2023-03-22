@@ -56,11 +56,13 @@ sudo apt install docker-ce
 ```
 
 Finally, add your user to the following groups:
+
+*ubridge libvirt kvm wireshark docker*
+
 ```
-ubridge libvirt kvm wireshark docker
+sudo usermod -aG ubridge,libvirt,kvm,wireshark,docker $(whoami)
 ```
 
-(use “sudo usermod -aG group user_name” to add your user to each of those groups)
 Restart your user session by logging out and back in, or restarting the system.
 
 ### Debian-based distributions (64-bit only)
@@ -171,11 +173,15 @@ You can also remove that GPG key, if desired:
 sudo apt-key del F88F6D313016330404F710FC9A2FD067A2E3EF7B
 ```
 Add your user to the following groups:
+
+*ubridge libvirt kvm wireshark docker*
+
 ```
-kvm libvirt docker ubridge wireshark
+sudo usermod -aG ubridge,libvirt,kvm,wireshark,docker $(whoami)
 ```
-(use “sudo usermod -aG group your_user” to add your user to an existing group).
-Restart your user session by logging out and back in, or rebooting the system.
+
+Restart your user session by logging out and back in, or restarting the system.
+
 
 :::note
 The reason we currently can’t just install all of the packages (except docker-ce) off launchpad, is due to a python issue
