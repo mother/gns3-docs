@@ -19,7 +19,7 @@ Users running the GNS3 VM in Workstation Player should look at Note 3 at the end
 
 ## Downloading the VM
 
-You can obtain the GNS3-VM in several ways. You can download it via https://gns3.com/software/download-vm. Select either the Virtualbox, VMware Workstation/Fusion, or VMware ESXi versions.
+You can obtain the GNS3-VM in several ways. You can download it via https://gns3.com/software/download-vm. Select either the Virtualbox, VMware Workstation/Fusion, VMware ESXi versions, or HyperV.
 
 These will be .zip archives, so make sure you choose “Save as…” when downloading them, and then extract them for import into your hypervisor of choice.
 
