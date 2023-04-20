@@ -30,6 +30,7 @@ sudo apt install gns3-iou
 Remove any old versions:
 ```
 sudo apt remove docker docker-engine docker.io
+sudo snap remove docker
 ```
 
 Install the following packages:
