@@ -33,12 +33,6 @@ sudo apt remove docker docker-engine docker.io
 sudo snap remove docker
 ```
 
-On Ubuntu, you should remove any Docker version installed from Snap
-
-```
-sudo snap remove docker
-```
-
 Install the following packages:
 ```
 sudo apt-get install apt-transport-https ca-certificates curl \ software-properties-common
