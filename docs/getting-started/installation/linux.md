@@ -116,7 +116,7 @@ and follow the setup process choosing the package source and confirm installatio
 Next we will install pre-requesit packages from the same AUR source. Please note that mixing installation source may lead to unfuncional application or unstability:
 
 ```
-yay -S qemu docker vpcs dynamips libvirt 
+yay -S qemu docker vpcs dynamips libvirt ubridge inetutils
 ```
 
 **Install GNS3 Server and GUI** 
