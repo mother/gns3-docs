@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Virtual PC Simulator is a program written by Paul Meng, which allows you to simulate a lightweight PC supporting DHCP and ping. It consumes only 2MB of RAM per instance,  and does not require an additional image.
 
 The official website:
-https://sourceforge.net/projects/vpcs/?source=directory
+[https://sourceforge.net/projects/vpcs/?source=directory](https://github.com/GNS3/vpcs )
 
 ## Put a VPCS node your topology
 
