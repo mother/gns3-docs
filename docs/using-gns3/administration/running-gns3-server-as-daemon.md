@@ -101,8 +101,8 @@ sudo service gns3 start
 You must copy gns3.service.systemd to /lib/systemd/system/gns3.service and run these commands:
 
 ```
-sudo cp gns3.service.systemd /lib/systemd/system/gns3.service
-sudo chown root /lib/systemd/system/gns3.service
+sudo cp gns3.service.systemd /etc/systemd/system/gns3.service
+sudo systemctl daemon-reload
 ```
 
 Run this command to start the gns3 daemon:
