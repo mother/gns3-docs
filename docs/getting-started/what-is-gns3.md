@@ -2,6 +2,7 @@
 id: what-is-gns3
 title: Getting Started with GNS3
 sidebar_label: What is GNS3?
+slug: /
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
