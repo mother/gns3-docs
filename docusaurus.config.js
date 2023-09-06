@@ -7,23 +7,21 @@ module.exports = {
    organizationName: 'mother',
    projectName: 'gns3-docs',
    themeConfig: {
-      googleAnalytics: {
-         trackingID: 'UA-55817127-4',
-         anonymizeIP: false
-      },
       algolia: {
          apiKey: '75bf7dd136b92cb76d52b7ef8de3576f',
          appId: '1WIL6RAPZV',
          indexName: 'gns3',
          algoliaOptions: {},
       },
-      disableDarkMode: true,
+      colorMode: {
+        disableSwitch: true
+      },
       navbar: {
          logo: {
             alt: 'GNS3 Docs',
             src: 'img/logocolour.png'
          },
-         links: [
+         items: [
             {
                to: 'docs/',
                activeBasePath: 'docs',
@@ -78,13 +76,14 @@ module.exports = {
          copyright: `Copyright © ${new Date().getFullYear()} Galaxy Technologies LLC.`
       }
    },
-   plugins: ['@docusaurus/plugin-google-analytics'],
    presets: [
       [
          '@docusaurus/preset-classic', {
+            gtag: {
+               trackingID: 'G-D2TYZDQ4ZW',
+               anonymizeIP: false,
+            },
             docs: {
-               showReadingTime: true,
-               homePageId: 'getting-started/what-is-gns3',
                sidebarPath: require.resolve('./sidebars.js'),
                editUrl: 'https://github.com/mother/gns3-docs/blob/master/'
             },
