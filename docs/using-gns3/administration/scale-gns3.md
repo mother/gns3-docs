@@ -13,7 +13,7 @@ GNS3 itself doesn’t have limitation on the number of nodes you can run into it
 If your local machine is not enough to let you create the sorts of topologies you want to use,  you can run GNS3 on a bigger machine locally or on a cloud Provider like Packet.
 
 - See [Install on a remote server](../../getting-started/installation/remote-server)
-- See [GNS3 on packet.net](../../getting-started/installation/gns3-on-packet)
+- See [GNS3 on Equinix Metal](../../getting-started/installation/gns3-on-equinix)
 
 ## Split the load on multiple machine
 In order to cross the limitation of your hardware, you can use multiple GNS3 servers for running the same topology.

@@ -39,7 +39,7 @@ This will install all the required packages and setup a VPN. When the installati
 - --help: Show the help
 - --unstable: Use the unstable repository (for installing beta, release candidate…)
 
-The options with-i386-repository is required only for certain providers where the ubuntu mirror doesn't include 32 bits package (example: [packet.net](packet.net)) but you can use it without problem on any host.  The 32 bit package are require for IOU.
+The options with-i386-repository is required only for certain providers where the ubuntu mirror doesn't include 32 bits package (example: [Equinix Metal](gns3-on-equinix)) but you can use it without problem on any host.  The 32 bit package are require for IOU.
 
 ## Why a VPN?
 If the server is exposed on the internet, you need to setup a VPN to avoid anybody taking control of your GNS3 and the emulators. GNS3 itself could be secured via user and password over HTTPS but because you need to be able to telnet on the routers we need to expose their console on the network. That's why we highly recommend to use a VPN to protect the access to the telnet console .

@@ -7,5 +7,5 @@
   <Image width="16" height="16" type="image/x-icon">https://mother.github.io/img/favicon.ico</Image>
   <Url type="text/html" method="get" template="https://mother.github.io/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://mother.github.io/opensearch.xml" />
-  <moz:SearchForm>https://mother.github.io</moz:SearchForm>
+  <moz:SearchForm>https://mother.github.io/</moz:SearchForm>
 </OpenSearchDescription>
