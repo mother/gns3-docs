@@ -32,9 +32,10 @@ Most manufacturers offer Qemu images which can also be used with GNS3. To use Ci
 **GNS3 RECOMMENDATION:**  Qemu is the best choice for creating and using Cisco GNS3 topologies. The topologies are portable and lighter than using native VirtualBox and VMware virtual machines. An ASAv for example can be run natively in VMware or in Qemu. If you are not using Linux it is recommended that you run VIRL appliances directly in the GNS3 VM which leverages Qemu.
 
 :::note
-Qemu (not VIRL) is also used for the emulation of other vendors such as Cumulus Linux. VIRL is Cisco specific, but Qemu is not.IOU
+Qemu (not VIRL) is also used for the emulation of other vendors such as Cumulus Linux. VIRL is Cisco specific, but Qemu is not.
 :::
 
+### IOU
 IOU is a Cisco internal way of running IOS on Unix. It is not CPU and memory resource intensive which makes it a good choice.
 
 IOU supports both routers and switches.
