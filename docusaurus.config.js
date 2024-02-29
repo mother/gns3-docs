@@ -6,6 +6,15 @@ module.exports = {
    favicon: 'img/favicon.ico',
    organizationName: 'mother',
    projectName: 'gns3-docs',
+   headTags: [
+      {
+         tagName: 'meta',
+         attributes: {
+            'http-equiv': 'Content-Security-Policy',
+            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com;`,
+         },
+      },
+   ],
    themeConfig: {
       algolia: {
          apiKey: '75bf7dd136b92cb76d52b7ef8de3576f',
