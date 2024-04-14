@@ -93,13 +93,31 @@ Finally, launch with `gns3`.
 
 ## Arch-based distributions
 
-To install GNS3 on Archlinux you will need `yay` to install from Arch Users Repository ( **AUR** ), thats if it's not already installed, to install `yay` type below command in terminal:
+To install GNS3 on Archlinux you will need yay to install from Arch Users Repository ( AUR ), thats if it's not already installed.
 
-```
-pacman -Syu yay 
+`yay` can be acquired either by compiling it from source or by downloading the pre-built binary version provided by GitHub Actions.
+
+For the source method:
+
+```bash
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 ```
 
-and follow the setup process choosing the package source and confirm installation .
+For the binary option:
+
+```bash
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+```
+
+Then proceed with the setup process and confirm the installation.
+
+For more detailed instructions, you can refer to the [yay repository](https://github.com/Jguer/yay).
 
 **Install Prerequesits + docker:**
 
