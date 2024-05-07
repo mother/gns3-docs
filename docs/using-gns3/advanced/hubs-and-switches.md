@@ -1,5 +1,5 @@
 ---
-id: GNS3-hubs-and-switches
+id: hubs-and-switches
 title: GNS3's built-in Hub and Switch devices
 sidebar_label: Built-in hubs and switches
 ---

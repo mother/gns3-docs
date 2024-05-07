@@ -42,6 +42,7 @@ module.exports = {
       items: [
          'using-gns3/advanced/connect-gns3-internet',
          'using-gns3/advanced/the-nat-node',
+         'using-gns3/advanced/hubs-and-switches',
          'using-gns3/advanced/special-ip-addresses',
          'using-gns3/advanced/move-from-iouvm-gns3-vm',
          'using-gns3/advanced/settings-profiles',
