@@ -33,7 +33,7 @@ sudo snap remove docker
 
 Install the following packages:
 ```
-sudo apt-get install apt-transport-https ca-certificates curl \ software-properties-common
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 ```
 
 Import the official Docker GPG key:
