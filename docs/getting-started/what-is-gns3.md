@@ -202,7 +202,7 @@ GNS3 provides multiple ways for you to get help including:
 
 ### Documentation
 You can access the GNS3 documentation here:
-https://docs.gns3.net
+https://docs.gns3.com
 
 ### Community
 This is one of the best places to get help. Join many thousands of GNS3 users and experts helping each other make the most of GNS3.
