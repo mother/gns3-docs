@@ -245,3 +245,7 @@ https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 ## Windows
 ### QSslSocket: cannot resolve SSL_set_alpn_protos
 You have an old Open SSL installation on your system. This installation take the priority on GNS3 bundled version. You need to upgrade your Open SSL or uinstall it.
+
+## Connection Problems
+### Unable to connect to remote server `error 404 /v3/version`
+You are using a newer version of the GNS3 GUI than the GNS3 Server (V3 GUI and V2 Server), either upgrade the GNS3 Server or use an older version of the GNS3 GUI.
