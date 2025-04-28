@@ -45,7 +45,7 @@ Add the appropriate repo:
 ```
 sudo add-apt-repository \
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) stable"
+   $(. /etc/os-release && echo $VERSION_CODENAME) stable"
 ```
 
 Install Docker-CE:
