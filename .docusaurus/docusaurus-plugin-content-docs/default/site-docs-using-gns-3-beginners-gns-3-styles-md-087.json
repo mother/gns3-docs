@@ -1,0 +1,28 @@
+{
+  "unversionedId": "using-gns3/beginners/gns3-styles",
+  "id": "using-gns3/beginners/gns3-styles",
+  "title": "GNS3 Styles",
+  "description": "Introduction",
+  "source": "@site/docs/using-gns3/beginners/gns3-styles.md",
+  "sourceDirName": "using-gns3/beginners",
+  "slug": "/using-gns3/beginners/gns3-styles",
+  "permalink": "/docs/using-gns3/beginners/gns3-styles",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/gns3-styles.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "gns3-styles",
+    "title": "GNS3 Styles",
+    "sidebar_label": "GNS3 Styles"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Change node symbol",
+    "permalink": "/docs/using-gns3/beginners/change-node-symbol"
+  },
+  "next": {
+    "title": "Switching and GNS3",
+    "permalink": "/docs/using-gns3/beginners/switching-and-gns3"
+  }
+}

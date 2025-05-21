@@ -1,0 +1,28 @@
+{
+  "unversionedId": "using-gns3/beginners/the-gns3-gui",
+  "id": "using-gns3/beginners/the-gns3-gui",
+  "title": "The GNS3 GUI",
+  "description": "Introduction",
+  "source": "@site/docs/using-gns3/beginners/the-gns3-gui.md",
+  "sourceDirName": "using-gns3/beginners",
+  "slug": "/using-gns3/beginners/the-gns3-gui",
+  "permalink": "/docs/using-gns3/beginners/the-gns3-gui",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/beginners/the-gns3-gui.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "the-gns3-gui",
+    "title": "The GNS3 GUI",
+    "sidebar_label": "The GNS3 GUI"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Your first Cisco topology",
+    "permalink": "/docs/getting-started/your-first-cisco-topology"
+  },
+  "next": {
+    "title": "Change node symbol",
+    "permalink": "/docs/using-gns3/beginners/change-node-symbol"
+  }
+}
