@@ -1,0 +1,28 @@
+{
+  "unversionedId": "getting-started/your-first-cisco-topology",
+  "id": "getting-started/your-first-cisco-topology",
+  "title": "Your First Cisco Topology",
+  "description": "Introduction",
+  "source": "@site/docs/getting-started/your-first-cisco-topology.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/your-first-cisco-topology",
+  "permalink": "/docs/getting-started/your-first-cisco-topology",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/your-first-cisco-topology.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "your-first-cisco-topology",
+    "title": "Your First Cisco Topology",
+    "sidebar_label": "Your first Cisco topology"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Your first GNS3 topology",
+    "permalink": "/docs/getting-started/your-first-gns3-topology"
+  },
+  "next": {
+    "title": "The GNS3 GUI",
+    "permalink": "/docs/using-gns3/beginners/the-gns3-gui"
+  }
+}

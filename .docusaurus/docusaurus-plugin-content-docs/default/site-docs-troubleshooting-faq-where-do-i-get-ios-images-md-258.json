@@ -1,0 +1,24 @@
+{
+  "unversionedId": "troubleshooting-faq/where-do-i-get-ios-images",
+  "id": "troubleshooting-faq/where-do-i-get-ios-images",
+  "title": "Where do I get IOS images?",
+  "description": "Introduction",
+  "source": "@site/docs/troubleshooting-faq/where-do-i-get-ios-images.md",
+  "sourceDirName": "troubleshooting-faq",
+  "slug": "/troubleshooting-faq/where-do-i-get-ios-images",
+  "permalink": "/docs/troubleshooting-faq/where-do-i-get-ios-images",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/troubleshooting-faq/where-do-i-get-ios-images.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "where-do-i-get-ios-images",
+    "title": "Where do I get IOS images?",
+    "sidebar_label": "Where do I get IOS images?"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "General FAQ",
+    "permalink": "/docs/troubleshooting-faq/general-faq"
+  }
+}

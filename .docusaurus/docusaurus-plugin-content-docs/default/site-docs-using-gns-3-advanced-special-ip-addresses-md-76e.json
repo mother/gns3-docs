@@ -1,0 +1,28 @@
+{
+  "unversionedId": "using-gns3/advanced/special-ip-addresses",
+  "id": "using-gns3/advanced/special-ip-addresses",
+  "title": "Special IP addresses in GNS3",
+  "description": "GNS3 uses several RFC1918 private IP ranges by default. If possible we recommend to avoid using them in your topology in order to limit conflicts.",
+  "source": "@site/docs/using-gns3/advanced/special-ip-addresses.md",
+  "sourceDirName": "using-gns3/advanced",
+  "slug": "/using-gns3/advanced/special-ip-addresses",
+  "permalink": "/docs/using-gns3/advanced/special-ip-addresses",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/special-ip-addresses.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "special-ip-addresses",
+    "title": "Special IP addresses in GNS3",
+    "sidebar_label": "Special IP addresses in GNS3"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Built-in hubs and switches",
+    "permalink": "/docs/using-gns3/advanced/hubs-and-switches"
+  },
+  "next": {
+    "title": "Move from IOUVM to GNS3 VM",
+    "permalink": "/docs/using-gns3/advanced/move-from-iouvm-gns3-vm"
+  }
+}

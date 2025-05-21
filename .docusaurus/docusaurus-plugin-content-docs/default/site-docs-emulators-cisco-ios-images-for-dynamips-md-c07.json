@@ -1,0 +1,28 @@
+{
+  "unversionedId": "emulators/cisco-ios-images-for-dynamips",
+  "id": "emulators/cisco-ios-images-for-dynamips",
+  "title": "Cisco IOS images for Dynamips",
+  "description": "GNS3 offers multiple ways to emulate IOS. For older images, we use and maintain Dynamips; an emulator dedicated to emulate some Cisco hardware. Dynamips can run unmodified IOS images. In the new GNS3 1.4, there is a way to run a second category of switches and routers. These are classified as Routing and Switching virtual machines (or R+Svms) for short. What are the differences? Here are the major differences:",
+  "source": "@site/docs/emulators/cisco-ios-images-for-dynamips.md",
+  "sourceDirName": "emulators",
+  "slug": "/emulators/cisco-ios-images-for-dynamips",
+  "permalink": "/docs/emulators/cisco-ios-images-for-dynamips",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/cisco-ios-images-for-dynamips.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "cisco-ios-images-for-dynamips",
+    "title": "Cisco IOS images for Dynamips",
+    "sidebar_label": "Cisco IOS images for Dynamips"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Which emulator should I use?",
+    "permalink": "/docs/emulators/which-emulators-should-i-use"
+  },
+  "next": {
+    "title": "Non-Native IOU for Windows and OSX",
+    "permalink": "/docs/emulators/non-native-iou-for-windows-and-osx"
+  }
+}

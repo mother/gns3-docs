@@ -17,8 +17,8 @@ module.exports = {
    ],
    themeConfig: {
       algolia: {
-         apiKey: '75bf7dd136b92cb76d52b7ef8de3576f',
-         appId: '1WIL6RAPZV',
+         apiKey: '878a16b0cf2e2172475efd1da20aa6fc',
+         appId: 'GGI3KOZE2A',
          indexName: 'gns3',
          algoliaOptions: {},
       },
