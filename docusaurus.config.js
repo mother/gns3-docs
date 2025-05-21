@@ -11,7 +11,7 @@ module.exports = {
          tagName: 'meta',
          attributes: {
             'http-equiv': 'Content-Security-Policy',
-            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com;`,
+            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.google-analytics.com; connect-src 'self' https://*.algolia.net https://*.algolianet.com;`,
          },
       },
    ],
