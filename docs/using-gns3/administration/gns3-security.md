@@ -22,10 +22,6 @@ The best is to consider that if someone has access to a running GNS3 server, he 
 
 If you find a security issue please report it to developers@gns3.net
 
-If you want to use PGP, you can also mail:
-
-julien@gns3.net with the PGP key available here: https://keybase.io/jduponchelle
-
 Please give us some time to solve the issue before public publications. The project is partially run by volunteers in their free time, especially the publication of the packages on various distributions.
 
 ## Downloads of GNS3

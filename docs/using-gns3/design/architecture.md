@@ -56,6 +56,6 @@ A node cannot processes multiple requests at the same time. However, multiple re
 HTTP basic authentication can be used to prevent unauthorized API requests. It is recommended to set up a VPN if the communication between clients and the server must be encrypted.
 
 ## Notifications
-Notifications can be received from the server by listening to a HTTP stream or via a Websocket.
+Notifications can be received from the server by listening to an HTTP stream or via a Websocket.
 
-Read [Notifications](https://gns3-server.readthedocs.io/en/latest/notifications.html) for more information
+Read [Notifications](https://gns3-server.readthedocs.io/en/latest/controller_notifications.html) for more information
