@@ -1,0 +1,28 @@
+{
+  "unversionedId": "using-gns3/advanced/hubs-and-switches",
+  "id": "using-gns3/advanced/hubs-and-switches",
+  "title": "GNS3's built-in Hub and Switch devices",
+  "description": "Introduction",
+  "source": "@site/docs/using-gns3/advanced/hubs-and-switches.md",
+  "sourceDirName": "using-gns3/advanced",
+  "slug": "/using-gns3/advanced/hubs-and-switches",
+  "permalink": "/docs/using-gns3/advanced/hubs-and-switches",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/advanced/hubs-and-switches.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "hubs-and-switches",
+    "title": "GNS3's built-in Hub and Switch devices",
+    "sidebar_label": "Built-in hubs and switches"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "The NAT node",
+    "permalink": "/docs/using-gns3/advanced/the-nat-node"
+  },
+  "next": {
+    "title": "Special IP addresses in GNS3",
+    "permalink": "/docs/using-gns3/advanced/special-ip-addresses"
+  }
+}

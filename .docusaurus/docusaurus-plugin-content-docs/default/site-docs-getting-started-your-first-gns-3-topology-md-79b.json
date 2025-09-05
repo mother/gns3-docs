@@ -1,0 +1,28 @@
+{
+  "unversionedId": "getting-started/your-first-gns3-topology",
+  "id": "getting-started/your-first-gns3-topology",
+  "title": "Your First GNS3 Topology",
+  "description": "Introduction",
+  "source": "@site/docs/getting-started/your-first-gns3-topology.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/your-first-gns3-topology",
+  "permalink": "/docs/getting-started/your-first-gns3-topology",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/your-first-gns3-topology.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "your-first-gns3-topology",
+    "title": "Your First GNS3 Topology",
+    "sidebar_label": "Your first GNS3 topology"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Setup wizard for GNS3 VM",
+    "permalink": "/docs/getting-started/setup-wizard-gns3-vm"
+  },
+  "next": {
+    "title": "Your first Cisco topology",
+    "permalink": "/docs/getting-started/your-first-cisco-topology"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "unversionedId": "docusaurus-reference/doc1",
+  "id": "docusaurus-reference/doc1",
+  "title": "Style Guide",
+  "description": "You can write content using GitHub-flavored Markdown syntax.",
+  "source": "@site/docs/docusaurus-reference/doc1.md",
+  "sourceDirName": "docusaurus-reference",
+  "slug": "/docusaurus-reference/doc1",
+  "permalink": "/docs/docusaurus-reference/doc1",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/docusaurus-reference/doc1.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "doc1",
+    "title": "Style Guide",
+    "sidebar_label": "Style Guide"
+  }
+}

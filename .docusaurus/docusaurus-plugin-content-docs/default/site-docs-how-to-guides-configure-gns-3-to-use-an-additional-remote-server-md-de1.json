@@ -1,0 +1,28 @@
+{
+  "unversionedId": "how-to-guides/configure-gns3-to-use-an-additional-remote-server",
+  "id": "how-to-guides/configure-gns3-to-use-an-additional-remote-server",
+  "title": "Configure GNS3 to use an additional remote server",
+  "description": "Configure GNS3 to use an additional remote server",
+  "source": "@site/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server.md",
+  "sourceDirName": "how-to-guides",
+  "slug": "/how-to-guides/configure-gns3-to-use-an-additional-remote-server",
+  "permalink": "/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/how-to-guides/configure-gns3-to-use-an-additional-remote-server.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "configure-gns3-to-use-an-additional-remote-server",
+    "title": "Configure GNS3 to use an additional remote server",
+    "sidebar_label": "Configure GNS3 to use an additional remote server"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "How to use applications with the GNS3 Web interface",
+    "permalink": "/docs/how-to-guides/how-to-use-console-applications-with-the-web-ui"
+  },
+  "next": {
+    "title": "Troubleshoot GNS3",
+    "permalink": "/docs/troubleshooting-faq/troubleshoot-gns3"
+  }
+}

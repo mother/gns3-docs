@@ -4,12 +4,12 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/search',
-    component: ComponentCreator('/search', '6df'),
+    component: ComponentCreator('/search', '9aa'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'dc4'),
+    component: ComponentCreator('/docs', '6d6'),
     routes: [
       {
         path: '/docs/',
@@ -278,6 +278,12 @@ export default [
         sidebar: "someSidebar"
       },
       {
+        path: '/docs/using-gns3/advanced/hubs-and-switches',
+        component: ComponentCreator('/docs/using-gns3/advanced/hubs-and-switches', '3bf'),
+        exact: true,
+        sidebar: "someSidebar"
+      },
+      {
         path: '/docs/using-gns3/advanced/move-from-iouvm-gns3-vm',
         component: ComponentCreator('/docs/using-gns3/advanced/move-from-iouvm-gns3-vm', '9cf'),
         exact: true,
@@ -371,7 +377,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '8a6'),
+    component: ComponentCreator('/', '151'),
     exact: true
   },
   {
