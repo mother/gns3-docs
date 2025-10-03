@@ -208,7 +208,7 @@ https://docs.gns3.com
 
 ### Community
 This is one of the best places to get help. Join many thousands of GNS3 users and experts helping each other make the most of GNS3.
-//gns3.com/community
+https://gns3.com/community
 
 **DO**: Do report bugs and ask questions on the GNS3 community.
 
