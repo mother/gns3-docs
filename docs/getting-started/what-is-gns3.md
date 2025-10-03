@@ -11,13 +11,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 GNS3 is used by hundreds of thousands of network engineers worldwide to emulate, configure, test and troubleshoot virtual and real networks. GNS3 allows you to run a small topology consisting of only a few devices on your laptop, to those that have many devices hosted on multiple servers or even hosted in the cloud.
 
-GNS3 is open source, free software that you can download from http://gns3.com
+GNS3 is open source, free software that you can download from https://gns3.com/.
 
 It is actively developed and supported and has a growing community of over 800,000 members. By joining the GNS3 community you will be joining fellow students, network engineers, architects and others that have downloaded GNS3 over 10 million times to date. GNS3 is used in companies all over the world including Fortune 500 companies.
 
-GNS3 can help you prepare for certification exams such as the Cisco CCNA, but also help you test and verify real world deployments. Jeremy Grossman, the original developer of GNS3 originally created the software to help him study for his CCNP certifications. Because of that original work, you can today use to help you do the same without paying for expensive hardware.
+GNS3 can help you prepare for certification exams such as the Cisco CCNA, but also help you test and verify real world deployments. Jeremy Grossman, the original developer of GNS3 originally created the software to help him study for his CCNP certifications. Because of that original work, you can today use it to help you do the same without paying for expensive hardware.
 
- GNS3 has allowed network engineers to virtualize real hardware devices  for over 10 years. Originally only emulating Cisco devices using software called Dynamips, GNS3 has now evolved and supports many devices from multiple network vendors  including Cisco virtual switches, Cisco ASAs, Brocade vRouters, Cumulus Linux switches, Docker instances, HPE VSRs, multiple Linux appliances and many others. Go here to see a list of appliances available: https://gns3.com/marketplace/appliances
+GNS3 has allowed network engineers to virtualize real hardware devices  for over 10 years. Originally only emulating Cisco devices using software called Dynamips, GNS3 has now evolved and supports many devices from multiple network vendors  including Cisco virtual switches, Cisco ASAs, Brocade vRouters, Cumulus Linux switches, Docker instances, HPE VSRs, multiple Linux appliances and many others. Go here to see a list of appliances available: https://gns3.com/marketplace/appliances
 
 :::note
 GNS3 has been around for over 10 years. Some information you will find on the Internet is outdated or unfortunately entirely incorrect. This document will hopefully help answer questions and help you get started on your journey with GNS3.
@@ -61,8 +61,10 @@ You are able to use GNS3 without using the GNS3 VM. This is a good way to get st
 :::
 
 :::note
-Start a basic GNS3 topology using only the GNS3-all-in-one software and once you have got that working, refer to additional documentation for the setup of a local GNS3 VM.Emulation versus Simulation:
+Start a basic GNS3 topology using only the GNS3-all-in-one software and once you have got that working, refer to additional documentation for the setup of a local GNS3 VM.
 :::
+
+### Emulation versus Simulation
 
 GNS3 supports both emulated and simulated devices.
 
@@ -146,10 +148,10 @@ Cisco VIRL is a closer product in comparison to GNS3 allowing network engineers 
 :::
 
 **Advantages:**
-- Supports Cisco router, switch, firewall and PC simulations (IOSv, IOSvL2, ASAv,
+- Supports Cisco router, switch, firewall and PC simulations (IOSv, IOSvL2, ASAv)
 - Good for CCNA, CCNP and CCIE studies
 - Supports Cisco Firewalls (ASAv)
-- Large number of protocols and features supported: RPVST+, Etherchannel, Port Security, MPLS, VRFs and more. Full list is here: http://virl.cisco.com/work/
+- Large number of protocols and features supported: RPVST+, Etherchannel, Port Security, MPLS, VRFs and more. Full list is here: https://learningnetwork.cisco.com/s/virl
 - Latest versions of Cisco IOS supported (15.X)
 
 **Disadvantages:**
@@ -206,7 +208,7 @@ https://docs.gns3.com
 
 ### Community
 This is one of the best places to get help. Join many thousands of GNS3 users and experts helping each other make the most of GNS3.
-http://gns3.com/community
+https://gns3.com/community
 
 **DO**: Do report bugs and ask questions on the GNS3 community.
 
@@ -218,7 +220,7 @@ https://www.youtube.com/playlist?list=PLhfrWIlLOoKPTPPv6ZiNHFM2FKAZ96f-r
 
 ### GNS3 courses
 Learn about GNS3 by enrolling in GNS3 courses available in the GNS3 Academy:
-http://academy.gns3.com
+https://gns3.teachable.com/
 
 ## Supported Operating Systems
 
