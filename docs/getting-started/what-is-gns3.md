@@ -56,7 +56,7 @@ The local GNS3 server runs locally on the same PC where you installed the GNS3 a
 
 If you decide to use the GNS3 VM (recommended), you can either run the GNS3 VM locally on your PC using virtualization software such as VMware Workstation, Virtualbox or Hyper-V; or you can run the GNS3 VM remotely on a server using VMware ESXi or even in the cloud.
 
-:::
+:::note
 You are able to use GNS3 without using the GNS3 VM. This is a good way to get started initially, but this setup is limited and does not provide as many choices with regards to topology size and devices supported. If you want to create more advanced GNS3 topologies, or want to include devices such as the Cisco VIRL devices (IOSvL2, IOSvL3, ASAv) or other other devices that require Qemu, the GNS3 VM is recommended (and is often required).
 :::
 
