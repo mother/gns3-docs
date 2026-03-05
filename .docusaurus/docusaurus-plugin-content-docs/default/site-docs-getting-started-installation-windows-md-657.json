@@ -1,0 +1,28 @@
+{
+  "unversionedId": "getting-started/installation/windows",
+  "id": "getting-started/installation/windows",
+  "title": "GNS3 Windows Install",
+  "description": "Introduction",
+  "source": "@site/docs/getting-started/installation/windows.md",
+  "sourceDirName": "getting-started/installation",
+  "slug": "/getting-started/installation/windows",
+  "permalink": "/docs/getting-started/installation/windows",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/windows.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "windows",
+    "title": "GNS3 Windows Install",
+    "sidebar_label": "Windows"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "What is GNS3?",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Mac",
+    "permalink": "/docs/getting-started/installation/mac"
+  }
+}

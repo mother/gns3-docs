@@ -1,0 +1,28 @@
+{
+  "unversionedId": "contribute/contribute-to-gns3",
+  "id": "contribute/contribute-to-gns3",
+  "title": "Contribute to GNS3",
+  "description": "The GNS3 community welcomes new contributors. Don’t be afraid to make mistakes - we are here to help.",
+  "source": "@site/docs/contribute/contribute-to-gns3.md",
+  "sourceDirName": "contribute",
+  "slug": "/contribute/contribute-to-gns3",
+  "permalink": "/docs/contribute/contribute-to-gns3",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/contribute/contribute-to-gns3.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "contribute-to-gns3",
+    "title": "Contribute to GNS3",
+    "sidebar_label": "Contribute to GNS3"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Qemu system UUID",
+    "permalink": "/docs/emulators/qemu-system-uuid"
+  },
+  "next": {
+    "title": "Development of GNS3",
+    "permalink": "/docs/contribute/development-of-gns3"
+  }
+}
