@@ -1,0 +1,28 @@
+{
+  "unversionedId": "getting-started/installation/linux",
+  "id": "getting-started/installation/linux",
+  "title": "GNS3 Linux Install",
+  "description": "Ubuntu-based distributions (64-bit only)",
+  "source": "@site/docs/getting-started/installation/linux.md",
+  "sourceDirName": "getting-started/installation",
+  "slug": "/getting-started/installation/linux",
+  "permalink": "/docs/getting-started/installation/linux",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/installation/linux.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "linux",
+    "title": "GNS3 Linux Install",
+    "sidebar_label": "Linux"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Mac",
+    "permalink": "/docs/getting-started/installation/mac"
+  },
+  "next": {
+    "title": "ESXi",
+    "permalink": "/docs/getting-started/installation/esxi"
+  }
+}
