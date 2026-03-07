@@ -265,11 +265,11 @@ export default {
           "anonymizeIP": false
         },
         "docs": {
-          "sidebarPath": "/home/akmal/gns3-docs2/gns3-docs/sidebars.js",
+          "sidebarPath": "/home/grossmj/PycharmProjects/gns3-docs/sidebars.js",
           "editUrl": "https://github.com/mother/gns3-docs/blob/master/"
         },
         "theme": {
-          "customCss": "/home/akmal/gns3-docs2/gns3-docs/src/css/custom.css"
+          "customCss": "/home/grossmj/PycharmProjects/gns3-docs/src/css/custom.css"
         }
       }
     ]
