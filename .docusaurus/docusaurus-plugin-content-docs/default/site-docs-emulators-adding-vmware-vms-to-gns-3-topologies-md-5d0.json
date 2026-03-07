@@ -1,0 +1,28 @@
+{
+  "unversionedId": "emulators/adding-vmware-vms-to-gns3-topologies",
+  "id": "emulators/adding-vmware-vms-to-gns3-topologies",
+  "title": "Adding VMware VMs to GNS3 Topologies",
+  "description": "Introduction",
+  "source": "@site/docs/emulators/adding-vmware-vms-to-gns3-topologies.md",
+  "sourceDirName": "emulators",
+  "slug": "/emulators/adding-vmware-vms-to-gns3-topologies",
+  "permalink": "/docs/emulators/adding-vmware-vms-to-gns3-topologies",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/emulators/adding-vmware-vms-to-gns3-topologies.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "adding-vmware-vms-to-gns3-topologies",
+    "title": "Adding VMware VMs to GNS3 Topologies",
+    "sidebar_label": "Adding VMware VMs to GNS3 Topologies"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Non-Native IOU for Windows and OSX",
+    "permalink": "/docs/emulators/non-native-iou-for-windows-and-osx"
+  },
+  "next": {
+    "title": "Docker support in GNS3",
+    "permalink": "/docs/emulators/docker-support-in-gns3"
+  }
+}

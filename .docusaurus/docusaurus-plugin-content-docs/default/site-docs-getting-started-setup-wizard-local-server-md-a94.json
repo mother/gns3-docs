@@ -1,0 +1,28 @@
+{
+  "unversionedId": "getting-started/setup-wizard-local-server",
+  "id": "getting-started/setup-wizard-local-server",
+  "title": "GNS3 Setup Wizard - Local server",
+  "description": "Introduction",
+  "source": "@site/docs/getting-started/setup-wizard-local-server.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/setup-wizard-local-server",
+  "permalink": "/docs/getting-started/setup-wizard-local-server",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/setup-wizard-local-server.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "setup-wizard-local-server",
+    "title": "GNS3 Setup Wizard - Local server",
+    "sidebar_label": "Setup wizard for local server"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "GNS3 on Equinix",
+    "permalink": "/docs/getting-started/installation/gns3-on-equinix"
+  },
+  "next": {
+    "title": "Setup wizard for GNS3 VM",
+    "permalink": "/docs/getting-started/setup-wizard-gns3-vm"
+  }
+}

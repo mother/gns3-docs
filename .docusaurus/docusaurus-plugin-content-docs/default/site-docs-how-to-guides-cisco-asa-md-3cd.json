@@ -1,0 +1,28 @@
+{
+  "unversionedId": "how-to-guides/cisco-asa",
+  "id": "how-to-guides/cisco-asa",
+  "title": "Cisco ASA",
+  "description": "ASA 8",
+  "source": "@site/docs/how-to-guides/cisco-asa.md",
+  "sourceDirName": "how-to-guides",
+  "slug": "/how-to-guides/cisco-asa",
+  "permalink": "/docs/how-to-guides/cisco-asa",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/how-to-guides/cisco-asa.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "cisco-asa",
+    "title": "Cisco ASA",
+    "sidebar_label": "Cisco ASA"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "How to debug Web UI Guide",
+    "permalink": "/docs/contribute/how-to-debug-web-ui-guide"
+  },
+  "next": {
+    "title": "Importing vMX and vQFX into GNS3",
+    "permalink": "/docs/how-to-guides/importing-vmx-and-vqfx-into-gns3"
+  }
+}

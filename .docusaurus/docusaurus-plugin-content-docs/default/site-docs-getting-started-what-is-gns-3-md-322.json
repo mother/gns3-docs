@@ -1,0 +1,25 @@
+{
+  "unversionedId": "getting-started/what-is-gns3",
+  "id": "getting-started/what-is-gns3",
+  "title": "Getting Started with GNS3",
+  "description": "Introduction",
+  "source": "@site/docs/getting-started/what-is-gns3.md",
+  "sourceDirName": "getting-started",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/getting-started/what-is-gns3.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "what-is-gns3",
+    "title": "Getting Started with GNS3",
+    "sidebar_label": "What is GNS3?",
+    "slug": "/"
+  },
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Windows",
+    "permalink": "/docs/getting-started/installation/windows"
+  }
+}

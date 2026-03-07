@@ -75,7 +75,12 @@ sudo apt update
 
 Install python and the required emulation & gui packages:
 ```bash
-sudo apt install python3 python3-pip pipx python3-pyqt5 python3-pyqt5.qtwebsockets python3-pyqt5.qtsvg qemu-kvm qemu-utils libvirt-clients libvirt-daemon-system virtinst dynamips software-properties-common ca-certificates curl gnupg2 
+sudo apt install python3 python3-pip pipx python3-pyqt6 python3-pyqt6.qtwebsockets python3-pyqt6.qtsvg qemu-kvm qemu-utils libvirt-clients libvirt-daemon-system virtinst dynamips software-properties-common ca-certificates curl gnupg2 
+```
+
+In Debian 13 and distribution based on Debian 13, dynamips and software-properties-common are removed from the `apt` repository, so we can install without dynamips and install the dynamips separately:
+```bash
+sudo apt install python3 python3-pip pipx python3-pyqt6 python3-pyqt6.qtwebsockets python3-pyqt6.qtsvg qemu-kvm qemu-utils libvirt-clients libvirt-daemon-system virtinst ca-certificates curl gnupg2 
 ```
 
 Use pipx to install gns3:
@@ -86,7 +91,32 @@ pipx install gns3-gui
 
 To launch the GUI, we will need to prepare the virtual environment. Inject the GNS server and QT elements:
 ```bash
-pipx inject gns3-gui gns3-server PyQt5
+pipx inject gns3-gui gns3-server PyQt6
+```
+
+**To Install Dynamips (For Debian 13 and Distributions Based on Debian 13)**
+
+Install build-essential for GCC Compilers, GNU Make and install CMake
+```
+sudo apt update
+sudo apt install build-essential
+sudo apt install cmake
+```
+
+Install required dependencies
+```
+sudo apt update
+sudo apt install libelf-dev libpcap0.8-dev
+```
+
+Clone the dynamips repository and build it using CMake and `make install`
+```
+git clone https://github.com/GNS3/dynamips.git
+cd dynamips
+mkdir build
+cd build
+cmake ..
+make install
 ```
 
 Finally, launch with `gns3`.

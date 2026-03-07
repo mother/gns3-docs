@@ -1,0 +1,18 @@
+{
+  "unversionedId": "docusaurus-reference/doc2",
+  "id": "docusaurus-reference/doc2",
+  "title": "Document Number 2",
+  "description": "This is a link to another document. This is a link to an external page.",
+  "source": "@site/docs/docusaurus-reference/doc2.md",
+  "sourceDirName": "docusaurus-reference",
+  "slug": "/docusaurus-reference/doc2",
+  "permalink": "/docs/docusaurus-reference/doc2",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/docusaurus-reference/doc2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "doc2",
+    "title": "Document Number 2"
+  }
+}

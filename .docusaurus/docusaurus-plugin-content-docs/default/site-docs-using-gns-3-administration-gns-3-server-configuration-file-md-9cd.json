@@ -1,0 +1,28 @@
+{
+  "unversionedId": "using-gns3/administration/gns3-server-configuration-file",
+  "id": "using-gns3/administration/gns3-server-configuration-file",
+  "title": "GNS3 server configuration file",
+  "description": "If you want to run the GNS3 server without the GUI, you can configure it with via an ini file.",
+  "source": "@site/docs/using-gns3/administration/gns3-server-configuration-file.md",
+  "sourceDirName": "using-gns3/administration",
+  "slug": "/using-gns3/administration/gns3-server-configuration-file",
+  "permalink": "/docs/using-gns3/administration/gns3-server-configuration-file",
+  "draft": false,
+  "editUrl": "https://github.com/mother/gns3-docs/blob/master/docs/using-gns3/administration/gns3-server-configuration-file.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "gns3-server-configuration-file",
+    "title": "GNS3 server configuration file",
+    "sidebar_label": "GNS3 server configuration file"
+  },
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Configuration transfer to QEMU VMs",
+    "permalink": "/docs/using-gns3/advanced/configuration-transfer-qemu-vms"
+  },
+  "next": {
+    "title": "Running the GNS3 server as a daemon",
+    "permalink": "/docs/using-gns3/administration/running-gns3-server-as-daemon"
+  }
+}
