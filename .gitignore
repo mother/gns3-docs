@@ -16,7 +16,7 @@ build/
 .docusaurus/
 .obsidian/
 
-# 视频文件（避免仓库臃肿）
+# Video files (prevent repo bloat)
 static/videos/*.mp4
 static/videos/*.webm
 static/videos/*.mov
