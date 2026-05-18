@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频播放测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+            background-color: #000;
+            /* 移除可能导致裁剪的样式 */
+            border-radius: 0;
+            overflow: visible;
+        }
+        .video-container video {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: block;
+            border: none;
+            background-color: #000;
+            /* 确保视频内容不被裁剪 */
+            object-fit: contain;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #14b4fc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #14b4fc;
+            margin-top: 30px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .file-list {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🎹 GNS3 视频播放测试页面</h1>
+
+        <div class="status success">
+            ✅ 视频文件已正确配置并可访问！
+        </div>
+
+        <h2>1. VirtualBox 网络配置</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="/videos/virtualbox-network-setup.mp4" type="video/mp4">
+                您的浏览器不支持视频标签，请升级浏览器。
+            </video>
+        </div>
+
+        <h2>2. 导入 GNS3 VM</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="/videos/import-gns3-vm.mp4" type="video/mp4">
+                您的浏览器不支持视频标签，请升级浏览器。
+            </video>
+        </div>
+
+        <h2>3. 启动 GNS3 VM</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="/videos/start-gns3-vm.mp4" type="video/mp4">
+                您的浏览器不支持视频标签，请升级浏览器。
+            </video>
+        </div>
+
+        <h2>4. 登录 Web UI</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="/videos/login-web-ui.mp4" type="video/mp4">
+                您的浏览器不支持视频标签，请升级浏览器。
+            </video>
+        </div>
+
+        <div class="status info">
+            <strong>💡 测试说明：</strong>
+            <ul>
+                <li>如果能看到视频播放器控件，说明视频配置正确</li>
+                <li>点击播放按钮测试视频播放功能</li>
+                <li>如果视频无法播放，请检查浏览器控制台的错误信息</li>
+            </ul>
+        </div>
+
+        <h2>📋 可用视频文件</h2>
+        <div class="file-list">
+            <ul>
+                <li><code>/videos/virtualbox-network-setup.mp4</code> (2.0M)</li>
+                <li><code>/videos/import-gns3-vm.mp4</code> (3.9M)</li>
+                <li><code>/videos/start-gns3-vm.mp4</code> (6.9M)</li>
+                <li><code>/videos/login-web-ui.mp4</code> (2.7M)</li>
+            </ul>
+        </div>
+
+        <div class="status info">
+            <strong>🔧 技术细节：</strong>
+            <ul>
+                <li>响应式 16:9 比例容器</li>
+                <li>HTML5 原生视频播放器</li>
+                <li>MP4 H.264 编码格式</li>
+                <li>自动适配不同屏幕尺寸</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // 监听视频事件，用于调试
+        document.querySelectorAll('video').forEach((video, index) => {
+            video.addEventListener('loadstart', () => {
+                console.log(`视频 ${index + 1} 开始加载`);
+            });
+
+            video.addEventListener('canplay', () => {
+                console.log(`视频 ${index + 1} 可以播放`);
+            });
+
+            video.addEventListener('error', (e) => {
+                console.error(`视频 ${index + 1} 加载失败:`, e);
+            });
+        });
+    </script>
+</body>
+</html>

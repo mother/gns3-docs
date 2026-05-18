@@ -11,7 +11,7 @@ module.exports = {
          tagName: 'meta',
          attributes: {
             'http-equiv': 'Content-Security-Policy',
-            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com;`,
+            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com; frame-src 'self' https://player.bilibili.com; img-src 'self' data: https: https://*.bilibili.com;`,
          },
       },
    ],
@@ -35,6 +35,16 @@ module.exports = {
                to: 'docs/',
                activeBasePath: 'docs',
                label: 'Documentation',
+               position: 'left'
+            }, {
+               to: 'docs-3.10-cn/',
+               activeBasePath: 'docs-3.10-cn',
+               label: '3.10 文档',
+               position: 'left'
+            }, {
+               to: 'docs-3.10-en/',
+               activeBasePath: 'docs-3.10-en',
+               label: '3.10 Docs',
                position: 'left'
             }, {
                href: 'https://gns3.com/marketplace/appliances',
@@ -101,5 +111,27 @@ module.exports = {
             }
          }
       ]
-   ]
+   ],
+   plugins: [
+      [
+         '@docusaurus/plugin-content-docs',
+         {
+            id: 'docs-310-cn',
+            path: 'docs-3.10-cn',
+            routeBasePath: 'docs-3.10-cn',
+            sidebarPath: require.resolve('./sidebars-3.10-cn.js'),
+            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.10-new-features/',
+         },
+      ],
+      [
+         '@docusaurus/plugin-content-docs',
+         {
+            id: 'docs-310-en',
+            path: 'docs-3.10-en',
+            routeBasePath: 'docs-3.10-en',
+            sidebarPath: require.resolve('./sidebars-3.10-en.js'),
+            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.10-new-features/',
+         },
+      ],
+   ],
 };

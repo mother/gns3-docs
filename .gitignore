@@ -10,3 +10,19 @@ website/build/
 website/yarn.lock
 website/node_modules
 website/i18n/*
+
+# Docusaurus build cache
+build/
+.docusaurus/
+.obsidian/
+
+# 视频文件（避免仓库臃肿）
+static/videos/*.mp4
+static/videos/*.webm
+static/videos/*.mov
+static/videos/*.avi
+static/videos/*.mkv
+.claude/zhipu-settings.json
+.claude/minmax-settings.json
+.claude/deepseek-settings.json
+.claude/settings.json

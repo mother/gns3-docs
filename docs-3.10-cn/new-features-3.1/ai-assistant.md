@@ -1,0 +1,76 @@
+---
+title: AI 助手
+功能标签: [新特性]
+难度: 入门
+预计阅读时间: 10 分钟
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+:::tip 项目出处
+
+GNS3 AI Assistant（GNS3 Copilot）最初作为独立项目开发，详见 [github.com/yueguobin/gns3-copilot](https://github.com/yueguobin/gns3-copilot)。该项目由社区开发者 YueGuobin 创建，是一个基于大语言模型的网络自动化助手，支持通过自然语言管理网络设备、诊断故障和自动化配置，已合入 GNS3 3.1 版本。
+:::
+
+# AI 助手
+
+AI 助手（GNS3 Copilot）是 GNS3 3.1 的智能助手功能，通过大语言模型（LLM）提供智能化的网络拓扑管理、故障诊断和自动化配置功能。
+
+## 配置 AI 模型接入
+
+在项目首页点击左上角的 GNS3 Logo，选择"Management"（用户管理），进入管理页面。
+
+<img style={{ width: '100%' }} alt="管理页面入口" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
+
+- 如下图所示，在 Users 页面点击管理员右侧的大脑图标。
+
+<img style={{ width: '100%' }} alt="管理员大脑图标" src={useBaseUrl('img/web-ui/zh/ai-admin-brain.jpeg')} />
+
+- 在 AI Profile 界面，为 admin 用户添加 AI 配置，点击"New Configuration"按钮。
+
+<img style={{ width: '100%' }} alt="新建配置" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
+
+- 在"Create LLM Model Configuration"页面，选择"Base Models"标签页，按照步骤输入：
+
+1. **Configuration Name** — 配置名称
+2. **Select LLM provider** — 选择 LLM 提供商（提供 OpenRouter 和 DeepSeek 两个选项）
+3. **Model Name** — 模型名称
+   - OpenRouter 支持 x-ai / z-ai / openai / google / anthropic 的快速选择
+   - DeepSeek 支持 deepseek-v4-flash / deepseek-v4-pro 的快速选择
+4. **API Key** — 输入你的 API Key
+5. **Copilot Mode** — AI 助手模式
+   - Teaching Assistant（教学助手）
+   - Lab Automation Assistant（实验自动化）
+
+:::note
+Custom Mode 有更多的配置选项可以定义，适合有一定基础的用户操作，该页面有 field documentation 帮助。
+:::
+
+填选后，点击"Create"按钮。
+
+<img style={{ width: '100%' }} alt="创建配置" src={useBaseUrl('img/web-ui/zh/ai-create-config.jpeg')} />
+
+创建完成后，如下图所示。
+
+<img style={{ width: '100%' }} alt="配置完成" src={useBaseUrl('img/web-ui/zh/ai-config-ready.jpeg')} />
+
+
+## 在项目拓扑中使用 AI 助手
+
+- 在项目拓扑页面，点击左侧的 AI 按钮，打开 AI 助手。在 AI 助手页面的输入框旁边，可以点击选择配置的模型和助手模式。
+
+<img style={{ width: '100%' }} alt="AI助手面板" src={useBaseUrl('img/web-ui/zh/ai-assistant-panel.jpeg')} />
+
+- AI 助手的侧边栏显示历史会话消息。
+
+<img style={{ width: '100%' }} alt="历史会话" src={useBaseUrl('img/web-ui/zh/ai-session-history.jpeg')} />
+
+## 模拟器配置
+
+需要为模拟器配置 Tags。以 Cisco IOS 为例，必须添加标签 `device_type:cisco_ios_telnet`，AI 助手通过这个标签来区分设备类型。
+
+:::note
+目前主要使用 Cisco IOS 镜像进行测试，其他设备类型的兼容性可能有限。
+:::
+
+<img style={{ width: '100%' }} alt="设备Tags配置" src={useBaseUrl('img/web-ui/zh/ai-device-tags.png')} />
