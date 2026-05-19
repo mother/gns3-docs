@@ -47,6 +47,7 @@ Browser -> GNS3 Server -> Docker Container -> xpra + Xvfb -> Wireshark -> pcap d
 - Opens Web Wireshark in a separate browser tab
 - Good for full-screen analysis and multi-monitor work
 - Does not take space in the project map
+- Note: If the window exceeds 1920x1080px, mouse clicks will not work in the area beyond 1080px height; this can be mitigated by zooming the webpage
 
 **Inline window mode:**
 - Shows as a floating window in the project map
