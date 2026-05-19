@@ -6,6 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Cisco IOS Template
 
+:::tip Video Tutorial
+
+📺 **[Watch the Video Tutorial](https://www.youtube.com/watch?v=59k-f5qhHO0)** - Follow along step-by-step to create a Cisco IOS template
+
+:::
+
 This guide uses the Cisco IOS 7200 as an example to show how to create an IOS template.
 
 1. In the new template wizard, click the "Next" button.

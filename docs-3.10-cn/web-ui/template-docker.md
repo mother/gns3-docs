@@ -10,6 +10,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Docker 模板
 
+:::tip 视频教程
+
+📺 **[观看视频教程](https://www.zhihu.com/pin/2040072357298041327?page=video_pin&scene=share)** - 跟随视频一步步创建 Docker 模板
+
+:::
+
 以 Ubuntu 为例，介绍如何创建 Docker 模板。
 
 1. 在新建模板向导中点击"Next"按钮。

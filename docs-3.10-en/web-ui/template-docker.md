@@ -6,6 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Docker Template
 
+:::tip Video Tutorial
+
+📺 **[Watch the Video Tutorial](https://www.youtube.com/watch?v=XPpaZNtaA5k)** - Follow along step-by-step to create a Docker template
+
+:::
+
 This guide uses Ubuntu as an example to show how to create a Docker template.
 
 1. In the new template wizard, click the "Next" button.

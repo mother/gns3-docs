@@ -6,6 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # QEMU Template
 
+:::tip Video Tutorial
+
+📺 **[Watch the Video Tutorial](https://www.youtube.com/watch?v=pe1lgF-a9XU)** - Follow along step-by-step to create a QEMU template
+
+:::
+
 This guide uses the Cisco IOSv as an example to show how to create a QEMU template.
 
 1. In the new template wizard, click the "Next" button.

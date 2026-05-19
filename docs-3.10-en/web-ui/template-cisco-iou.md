@@ -6,6 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Cisco IOU Template
 
+:::tip Video Tutorial
+
+📺 **[Watch the Video Tutorial](https://www.youtube.com/watch?v=tDSHn0Qds5o)** - Follow along step-by-step to create a Cisco IOU template
+
+:::
+
 This guide uses the Cisco IOU L3 as an example to show how to create an IOU template.
 
 1. In the new template wizard, click the "Next" button.
