@@ -95,8 +95,6 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 **Send clipboard:**
 - Paste local text into the VNC device
 
-<img style={{ width: '100%' }} alt="Send Clipboard" src={useBaseUrl('img/web-ui/zh/web-vnc-clipboard-send.jpeg')} />
-
 <img style={{ width: '100%' }} alt="Send Text to VNC Device" src={useBaseUrl('img/web-ui/zh/web-vnc-clipboard-recv.jpeg')} />
 
 :::note
