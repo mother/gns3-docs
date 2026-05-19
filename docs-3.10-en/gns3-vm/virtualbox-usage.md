@@ -6,6 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # VirtualBox Guide
 
+:::tip Video Tutorial
+
+📺 **[Watch the Video Tutorial](https://www.youtube.com/watch?v=9sql9jCSo_E)** - Follow along step-by-step to import GNS3 VM to VirtualBox
+
+:::
+
 Run GNS3 VM in VirtualBox. This is good for personal use and learning.
 
 ## Before You Start

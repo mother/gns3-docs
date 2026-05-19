@@ -9,6 +9,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # VirtualBox 使用指南
 
+:::tip 视频教程
+
+📺 **[观看视频教程](https://www.zhihu.com/pin/2040037987967358300?page=video_pin&scene=share)** - 跟随视频一步步导入 GNS3 VM 到 VirtualBox
+
+:::
+
 在 VirtualBox 中运行 GNS3 VM，适合个人使用和学习环境。
 
 ## 前置条件
