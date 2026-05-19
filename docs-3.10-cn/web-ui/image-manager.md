@@ -62,14 +62,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 **第一步：询问是否自动安装 appliances**
 
 选择 Yes 或 No，点击 Next。
-
 <img style={{ width: '100%' }} alt="第一步" src={useBaseUrl('img/web-ui/zh/image-mgr-08-add-step1.jpeg')} />
 
 **第二步：选择文件上传**
 
 选择要上传的镜像文件，上传在后台运行。
 <img style={{ width: '100%' }} alt="第二步" src={useBaseUrl('img/web-ui/zh/image-mgr-09-add-step2.jpeg')} />
-
 
 特点：
 - **后台上传**：文件上传在后台进行，可以离开页面
