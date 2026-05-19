@@ -16,6 +16,36 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img style={{ width: '100%' }} alt="新建模板向导" src={useBaseUrl('img/web-ui/zh/template-wizard-start.jpeg')} />
 
+## 模板更新
+
+从 GitHub 下载最新的 appliances 文件。
+
+- 在 Add new template 对话框，如下图所示，点击 Next 按钮。
+<img style={{ width: '100%' }} alt="新建模板向导" src={useBaseUrl('img/web-ui/zh/template-wizard-update-01-start.jpeg')} />
+
+- 然后点击下图所示位置的”Update from online registry”按钮，从 GitHub (https://api.github.com/repos/GNS3/gns3-registry/contents/appliances) 下载最新的 appliances 文件。
+<img style={{ width: '100%' }} alt="更新在线注册表" src={useBaseUrl('img/web-ui/zh/template-wizard-update-02-registry-button.jpeg')} />
+
+:::note
+
+**Appliance 文件**就是某个网络设备的"制作说明书"。
+
+**有无 appliance 文件的区别：**
+
+- **没有 appliance 文件**：需要手动填写几十个配置参数（用什么镜像、多少内存、几个接口、什么系统架构...）
+- **有 appliance 文件**：就像点菜一样，选择设备类型，系统自动按照说明书帮你配置好所有参数
+
+**Appliance 文件包含的信息：**
+
+- 设备名称和描述
+- 需要的镜像文件
+- 内存、CPU、接口数量配置
+- 设备图标样式
+
+
+**简单说**：别人已经帮你研究好这个设备该怎么配置，你直接用就行，不用从零开始折腾。
+
+:::
 ## 模板类型
 
 根据您的设备类型选择对应的创建指南：
