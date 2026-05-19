@@ -13,6 +13,8 @@ GNS3 AI Assistant (GNS3 Copilot) started as a separate project. See [github.com/
 
 The AI Assistant (GNS3 Copilot) is a smart assistant feature in GNS3 3.1. It uses large language models (LLMs) to provide intelligent network topology management, fault diagnosis, and automated configuration.
 
+**Technical Architecture**: The backend is built with LangChain/LangGraph for intelligent workflow orchestration, and device configuration tools use Nornir/Netmiko for automated network device management.
+
 ## Configure AI Model Access
 
 On the project home page, click the GNS3 Logo in the top-left corner. Select "Management" to go to the management page.
@@ -63,10 +65,16 @@ After creation, it will look like the image below.
 
 ## Emulator Configuration
 
-You need to add Tags to your emulators. For example, with Cisco IOS, you must add the tag `device_type:cisco_ios_telnet`. The AI Assistant uses this tag to know what type of device it is.
+You need to add Tags to your emulators. The AI Assistant uses the `device_type` tag to identify device types and call appropriate configuration skills.
 
 :::note
-We mainly use Cisco IOS images for testing right now. Support for other device types may be limited.
+We mainly test with the following device types:
+- **Cisco IOS** — `device_type:cisco_ios_telnet` — Configuration command generation is most mature and smooth
+- **Huawei CE** — `device_type:gns3_huawei_telnet_ce` — Requires accurate skills configuration
+- **Ruijie** — `device_type:gns3_ruijie_telnet` — Requires accurate skills configuration
+- **VPCS** — `device_type:gns3_vpcs_telnet` — Requires accurate skills configuration
+
+For more supported Telnet device types, see: [GNS3 Server - Netmiko Supported Devices](https://github.com/GNS3/gns3-server/blob/ca2004e715cd1f9b860b28bc371fd814b554a93d/docs/gns3-copilot/netmiko_devices.md)
 :::
 
 <img style={{ width: '100%' }} alt="Device Tags Configuration" src={useBaseUrl('img/web-ui/zh/ai-device-tags.png')} />
