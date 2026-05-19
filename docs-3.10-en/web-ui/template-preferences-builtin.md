@@ -255,7 +255,9 @@ These templates already exist in the system by default. You usually do not need 
     - Symbol
     - Choose Symbol
     - Tags
-    - Category — these fields are not actually used
+    - Category 
+
+    **these fields are not actually used**
     - Console Type
     - Console Host
     - Console Port
