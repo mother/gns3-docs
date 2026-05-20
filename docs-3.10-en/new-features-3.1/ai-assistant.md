@@ -17,6 +17,8 @@ The AI Assistant (GNS3 Copilot) is a smart assistant feature in GNS3 3.1. It use
 
 ## Configure AI Model Access
 
+**Development Testing Note:** During the development and testing phase, this feature was primarily tested using DeepSeek models. The former `deepseek-chat` is now renamed to `deepseek-v4-flash` or `deepseek-v4-pro`.
+
 On the project home page, click the GNS3 Logo in the top-left corner. Select "Management" to go to the management page.
 
 <img style={{ width: '100%' }} alt="Management Page Entry" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
