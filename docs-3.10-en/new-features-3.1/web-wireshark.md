@@ -10,7 +10,15 @@ Web Wireshark lets you analyze network packets directly in your browser. You do 
 
 <img style={{ width: '100%' }} alt="Web Wireshark Interface" src={useBaseUrl('img/web-ui/zh/web-wireshark-hero.jpeg')} />
 
-## 1. Core Architecture
+## 1. Installation Prerequisites
+
+As shown in the figure below, select Web Wireshark in the GNS3 VM interface, then select the OK button and press Enter. The system will first try to pull the `gns3/web-wireshark:latest` container from Docker Hub.
+
+<img style={{ width: '100%' }} alt="Web Wireshark installation selection interface" src={useBaseUrl('img/web-ui/zh/web-wireshark-install.jpeg')} />
+
+If the pull from Docker Hub fails, it will try to build the `gns3/web-wireshark:latest` container locally. During the build process, it needs to pull the Debian 13 base image from Docker Hub, and the subsequent software package installation will automatically switch to the Alibaba Cloud mirror source.
+
+## 2. Core Architecture
 
 ### How It Works
 
@@ -39,7 +47,7 @@ Browser -> GNS3 Server -> Docker Container -> xpra + Xvfb -> Wireshark -> pcap d
 - CPU: 0.5-2% (idle to active)
 - Threads: about 30
 
-## 2. Main Features
+## 3. Main Features
 
 ### 2.1 Two Display Modes
 
@@ -100,7 +108,7 @@ Settings in the start capture dialog:
 
 <img style={{ width: '100%' }} alt="Capture Configuration Dialog" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-config.jpeg')} />
 
-## 3. Multi-Session Management
+## 4. Multi-Session Management
 
 ### Project-Level Container
 
@@ -119,7 +127,7 @@ Settings in the start capture dialog:
 - Later starts: about 5 seconds (container is already running)
 - Stop and clean up: about 2 seconds
 
-## 4. Configuration File Settings
+## 5. Configuration File Settings
 
 You can change Web Wireshark performance settings in the `gns3_server.conf` file.
 
@@ -157,7 +165,7 @@ pids_limit = 1000
 | cpus | 1.0 | Container CPU cores (can be a decimal, like 1.5) |
 | pids_limit | 1000 | Process limit inside the container |
 
-## 5. Performance Tuning
+## 6. Performance Tuning
 
 ### Memory Settings
 
@@ -177,7 +185,7 @@ Adjust memory based on how many Web Wireshark instances you use at the same time
 | Frequent use | cpus = 2.0 | Better response |
 | Many instances at once | cpus = 4.0 | Dedicated server for large projects |
 
-## 6. Configuration Examples
+## 7. Configuration Examples
 
 ### Standard Configuration
 
@@ -199,7 +207,7 @@ cpus = 2.0
 pids_limit = 2000
 ```
 
-## 7. Network Configuration
+## 8. Network Configuration
 
 ### Change the Default Network Subnet
 
@@ -225,7 +233,7 @@ In GNS3 VM, the configuration file is at `/opt/gns3/server/gns3_server.conf`. Fo
 1. After changing the configuration file, restart the GNS3 server to apply the changes
 2. New containers will use the new settings
 
-## 8. Troubleshooting
+## 9. Troubleshooting
 
 ### Network Connection Issues
 
