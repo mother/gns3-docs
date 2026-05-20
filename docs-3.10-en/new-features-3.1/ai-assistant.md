@@ -15,6 +15,10 @@ The AI Assistant (GNS3 Copilot) is a smart assistant feature in GNS3 3.1. It use
 
 **Technical Architecture**: The backend is built with LangChain/LangGraph for intelligent workflow orchestration, and device configuration tools use Nornir/Netmiko for automated network device management.
 
+:::note Testing Scope Note
+Currently, this feature has been primarily tested with Cisco IOS images that do not have a console login password set.
+:::
+
 ## Configure AI Model Access
 
 **Development Testing Note:** During the development and testing phase, this feature was primarily tested using DeepSeek models. The former `deepseek-chat` is now renamed to `deepseek-v4-flash` or `deepseek-v4-pro`.
