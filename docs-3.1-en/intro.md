@@ -1,13 +1,13 @@
 ---
 id: intro
-title: GNS3 3.10 Documentation
+title: GNS3 3.1 Documentation
 sidebar_label: Introduction
 slug: /
 ---
 
-# GNS3 3.10 Documentation
+# GNS3 3.1 Documentation
 
-Welcome to the GNS3 3.10 documentation. This guide explains the main features of GNS3 3.10 and how to use it.
+Welcome to the GNS3 3.1 documentation. This guide explains the main features of GNS3 3.1 and how to use it.
 
 ## Main New Features
 

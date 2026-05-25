@@ -31,16 +31,16 @@ The development server supports hot-reloading for most changes.
 
 ```
 ├── docs/                    # Main documentation (legacy)
-├── docs-3.10-cn/            # Chinese documentation for version 3.10
-├── docs-3.10-en/            # English documentation for version 3.10
+├── docs-3.1-cn/            # Chinese documentation for version 3.1
+├── docs-3.1-en/            # English documentation for version 3.1
 ├── static/                  # Static assets
 │   └── img/
 │       └── web-ui/
 │           └── zh/          # Chinese UI screenshots
 ├── src/css/                 # Custom styles
 ├── sidebars.js              # Main sidebar configuration
-├── sidebars-3.10-cn.js      # Chinese 3.10 sidebar
-├── sidebars-3.10-en.js      # English 3.10 sidebar
+├── sidebars-3.1-cn.js      # Chinese 3.1 sidebar
+├── sidebars-3.1-en.js      # English 3.1 sidebar
 └── docusaurus.config.js     # Docusaurus configuration
 ```
 
@@ -123,8 +123,8 @@ Danger content
 
 The site supports multiple documentation versions:
 - `docs/` - Legacy documentation
-- `docs-3.10-cn/` - Version 3.10 Chinese (active development)
-- `docs-3.10-en/` - Version 3.10 English (active development)
+- `docs-3.1-cn/` - Version 3.1 Chinese (active development)
+- `docs-3.1-en/` - Version 3.1 English (active development)
 
 When adding new features or updating content, work in the appropriate versioned directory.
 
@@ -143,7 +143,7 @@ When adding new features or updating content, work in the appropriate versioned 
 1. Create the markdown file in the appropriate `docs-*/` directory
 2. Add required frontmatter
 3. Include `import useBaseUrl from '@docusaurus/useBaseUrl';`
-4. Add the page to the appropriate sidebar file (`sidebars-3.10-cn.js` or `sidebars-3.10-en.js`)
+4. Add the page to the appropriate sidebar file (`sidebars-3.1-cn.js` or `sidebars-3.1-en.js`)
 
 ### Updating Screenshots
 
@@ -186,7 +186,7 @@ When committing changes:
 
 ## Language Considerations
 
-- Chinese documentation (`docs-3.10-cn/`) uses Simplified Chinese
-- English documentation (`docs-3.10-en/`) uses US English
+- Chinese documentation (`docs-3.1-cn/`) uses Simplified Chinese
+- English documentation (`docs-3.1-en/`) uses US English
 - Image alt text should match the documentation language
 - Code examples and technical terms remain in English

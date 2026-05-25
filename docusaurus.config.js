@@ -37,14 +37,14 @@ module.exports = {
                label: 'Documentation',
                position: 'left'
             }, {
-               to: 'docs-3.10-cn/',
-               activeBasePath: 'docs-3.10-cn',
-               label: '3.10 文档',
+               to: 'docs-3.1-cn/',
+               activeBasePath: 'docs-3.1-cn',
+               label: '3.1 文档',
                position: 'left'
             }, {
-               to: 'docs-3.10-en/',
-               activeBasePath: 'docs-3.10-en',
-               label: '3.10 Docs',
+               to: 'docs-3.1-en/',
+               activeBasePath: 'docs-3.1-en',
+               label: '3.1 Docs',
                position: 'left'
             }, {
                href: 'https://gns3.com/marketplace/appliances',
@@ -117,20 +117,20 @@ module.exports = {
          '@docusaurus/plugin-content-docs',
          {
             id: 'docs-310-cn',
-            path: 'docs-3.10-cn',
-            routeBasePath: 'docs-3.10-cn',
-            sidebarPath: require.resolve('./sidebars-3.10-cn.js'),
-            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.10-new-features/',
+            path: 'docs-3.1-cn',
+            routeBasePath: 'docs-3.1-cn',
+            sidebarPath: require.resolve('./sidebars-3.1-cn.js'),
+            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/',
          },
       ],
       [
          '@docusaurus/plugin-content-docs',
          {
             id: 'docs-310-en',
-            path: 'docs-3.10-en',
-            routeBasePath: 'docs-3.10-en',
-            sidebarPath: require.resolve('./sidebars-3.10-en.js'),
-            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.10-new-features/',
+            path: 'docs-3.1-en',
+            routeBasePath: 'docs-3.1-en',
+            sidebarPath: require.resolve('./sidebars-3.1-en.js'),
+            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/',
          },
       ],
    ],

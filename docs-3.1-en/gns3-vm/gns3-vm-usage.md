@@ -51,5 +51,5 @@ No matter which platform you choose, make sure your system meets these basic req
 - **Network**: A stable internet connection
 
 ---
-**Document Version**: 3.10.0
+**Document Version**: 3.1.0
 **Last Updated**: 2026-05-13

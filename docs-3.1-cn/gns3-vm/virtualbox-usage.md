@@ -69,5 +69,5 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <img style={{ width: '100%' }} alt="Web UI 概览" src={useBaseUrl('img/gns3-vm/virtualbox/zh/08-dashboard-overview.jpeg')} />
 
 ---
-**文档版本**: 3.10.0
+**文档版本**: 3.1.0
 **最后更新**: 2026-05-15
