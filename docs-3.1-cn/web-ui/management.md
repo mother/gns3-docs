@@ -45,7 +45,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 使用场景：用户项目隔离
 
-管理员创建用户张三和李四，属于 users 用户组。创建 ACE 规则将 users 用户组与 users 角色及 all endpoints 关联。配置完成后，张三和李四各自只能看到自己创建的项目，admin 管理员可以看到所有项目。
+管理员创建用户张三和李四，属于 users 用户组。创建 ACE 规则将 users 用户组与 users 角色及 all endpoints 关联。配置完成后，张三和李四各自只能看到自己创建的项目，`admin` 管理员可以看到所有项目。
 
 ### 操作步骤
 
@@ -67,10 +67,42 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **3. 验证隔离效果**
 
-zhangsan 登录后只能看到自己创建的项目，lisi 同理：
+`zhangsan` 登录后只能看到自己创建的项目，`lisi` 同理：
 <img style={{ width: '100%' }} alt="张三项目视图" src={useBaseUrl('img/web-ui/zh/mgmt-11-project-zhangsan.jpeg')} />
 <img style={{ width: '100%' }} alt="李四项目视图" src={useBaseUrl('img/web-ui/zh/mgmt-12-project-lisi.jpeg')} />
 
 ## 使用场景：项目共享
 
 如果张三想要将项目共享给李四，管理员可在 Pools 中创建资源池，添加张三的项目，然后在 ACL 中创建 ACE 规则，将包含该项目的资源池授权给李四并赋予 users 角色权限。这样张三和李四就可以同时操作同一个项目。
+
+### 操作步骤
+
+**1. 创建资源池**
+
+在 Controller Management 页面点击 Pools → Add Resource Pool，输入资源池名称（如 `zhangsan-projects`），点击 Add Resource Pool 完成创建：
+<img style={{ width: '100%' }} alt="创建资源池" src={useBaseUrl('img/web-ui/zh/mgmt-13-create-pool.jpeg')} />
+
+点击刚才创建的资源池名称进入配置页面：
+<img style={{ width: '100%' }} alt="资源池配置" src={useBaseUrl('img/web-ui/zh/mgmt-14-pool-detail.jpeg')} />
+
+选择要共享的项目，点击添加按钮：
+<img style={{ width: '100%' }} alt="添加项目到资源池" src={useBaseUrl('img/web-ui/zh/mgmt-15-pool-add-project.jpeg')} />
+
+添加完成后，项目出现在资源池中：
+<img style={{ width: '100%' }} alt="项目已添加" src={useBaseUrl('img/web-ui/zh/mgmt-16-pool-project-added.jpeg')} />
+
+**2. 创建 ACL 规则**
+
+在 Controller Management 页面点击 ACL → Add ACE，选择 Resource pool 选项：
+<img style={{ width: '100%' }} alt="选择资源池选项" src={useBaseUrl('img/web-ui/zh/mgmt-17-create-ace-pool.jpeg')} />
+
+选择刚才创建的资源池 `zhangsan-projects`，然后在右侧设置共享类型为 `users`，用户为 `lisi`，角色为 `User`，点击 Add ACE：
+<img style={{ width: '100%' }} alt="配置ACE规则" src={useBaseUrl('img/web-ui/zh/mgmt-18-ace-pool-config.jpeg')} />
+
+创建完成后的 ACE 规则列表：
+<img style={{ width: '100%' }} alt="ACE规则列表" src={useBaseUrl('img/web-ui/zh/mgmt-19-ace-pool-list.jpeg')} />
+
+**3. 验证共享效果**
+
+使用 `lisi` 的账号登录系统，可以在项目列表中看到 `zhangsan` 共享的项目：
+<img style={{ width: '100%' }} alt="李四看到共享项目" src={useBaseUrl('img/web-ui/zh/mgmt-20-shared-project-view.jpeg')} />
