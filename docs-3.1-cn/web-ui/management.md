@@ -45,31 +45,29 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 使用场景：用户项目隔离
 
-管理员创建用户张三和李四，属于 users 用户组。创建 ACE 规则，将 users 用户组与 users 角色及 all endpoints 关联。配置完成后，张三登录系统创建的项目只有张三和 admin 管理员可见，李四同理。
+管理员创建用户张三和李四，属于 users 用户组。创建 ACE 规则将 users 用户组与 users 角色及 all endpoints 关联。配置完成后，张三和李四各自只能看到自己创建的项目，admin 管理员可以看到所有项目。
 
 ### 操作步骤
 
 **1. 创建用户**
 
-在 Controller Management 页面点击 Users，然后点击 Add Users 按钮。在 Create new users 对话框中依次输入：Username / Full name / Email / Password / Confirm Password，然后 Add user to groups 选择 Users 用户组，点击 Add user 完成添加。以用户 zhangsan 的创建为例：
+在 Controller Management 页面点击 Users → Add Users，在对话框中输入用户信息并选择 Users 用户组，点击 Add user 完成创建：
 <img style={{ width: '100%' }} alt="创建用户" src={useBaseUrl('img/web-ui/zh/mgmt-07-create-user.jpeg')} />
 
-创建两个用户张三和李四，如下图所示：
+创建张三和李四两个用户：
 <img style={{ width: '100%' }} alt="用户列表" src={useBaseUrl('img/web-ui/zh/mgmt-08-user-list.jpeg')} />
 
 **2. 创建 ACL 规则**
 
-将新创建的用户所属的 users 用户组与 all endpoints 及 users 角色进行关联。
-
-在 Controller Management 页面点击 ACL 标签，点击 Add ACE 按钮。在弹出的 Create new ACE 对话框中依次选择 All endpoints，然后选择 Users 用户组，角色选择 Users，点击 Add ACE 完成添加：
+在 Controller Management 页面点击 ACL → Add ACE，依次选择 All endpoints、Users 用户组、Users 角色，点击 Add ACE：
 <img style={{ width: '100%' }} alt="创建ACE规则" src={useBaseUrl('img/web-ui/zh/mgmt-09-create-ace.jpeg')} />
 
-ACE 规则添加完成后，如下图所示：
+添加完成后的 ACE 规则列表：
 <img style={{ width: '100%' }} alt="ACE规则列表" src={useBaseUrl('img/web-ui/zh/mgmt-10-ace-list.jpeg')} />
 
 **3. 验证隔离效果**
 
-用户 zhangsan 登录系统后只能看到自己创建的项目，看不到其他用户的项目。用户 lisi 同理：
+zhangsan 登录后只能看到自己创建的项目，lisi 同理：
 <img style={{ width: '100%' }} alt="张三项目视图" src={useBaseUrl('img/web-ui/zh/mgmt-11-project-zhangsan.jpeg')} />
 <img style={{ width: '100%' }} alt="李四项目视图" src={useBaseUrl('img/web-ui/zh/mgmt-12-project-lisi.jpeg')} />
 
