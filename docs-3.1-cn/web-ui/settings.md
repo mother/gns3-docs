@@ -52,7 +52,7 @@ Settings 页面分为三个可折叠的部分。
 此部分提供软件更新和 AI 功能更新检查：
 
 - **Check for updates**：检查 GNS3 软件更新，打开 GNS3 官网显示最新版本信息
-- **Check for update AI skills**：检查 AI 技能包更新，从 GitHub 仓库（https://github.com/yueguobin/GNS3-Skills）下载并重新加载最新的 AI 技能包
+- **Check for update AI skills**：检查 AI 技能包更新，从 GitHub 仓库（https://github.com/gns3/gns3-skills）下载并重新加载最新的 AI 技能包
 
 <img style={{ width: '100%' }} alt="更新检查" src={useBaseUrl('img/web-ui/zh/settings-04-updates.jpeg')} />
 

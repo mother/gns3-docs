@@ -23,6 +23,6 @@ GNS3 Skills is a repository of network troubleshooting skills. It is used to exp
 
 ## Repository Address
 
-[https://github.com/yueguobin/GNS3-Skills](https://github.com/yueguobin/GNS3-Skills)
+[https://github.com/gns3/gns3-skills](https://github.com/gns3/gns3-skills)
 
 This is for network engineers to use in labs, troubleshooting training, and automated testing scenarios.

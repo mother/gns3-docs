@@ -54,6 +54,6 @@ The Web UI project was upgraded from Angular 14 to Angular 21. AI helped a lot w
 
 - **What it does**: An online AI skills package repository that is easy to update.
 - **Content**: Prompts and skill definitions.
-- **Location**: On GitHub at [gns3-skills](https://github.com/yueguobin/GNS3-Skills).
+- **Location**: On GitHub at [gns3-skills](https://github.com/gns3/gns3-skills).
 - **Use case**: Expand the AI Assistant's capabilities.
 

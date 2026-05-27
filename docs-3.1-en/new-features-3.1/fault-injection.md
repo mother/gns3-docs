@@ -45,4 +45,4 @@ Fault injection is a feature of the GNS3 AI Assistant. It simulates network prob
 
 ### Skills Repository
 
-The fault injection skills are defined in the [GNS3-Skills](https://github.com/yueguobin/GNS3-Skills) repository, inside the `injection/` folder. It supports fault types for protocols like OSPF, BGP, VLAN, and STP.
+The fault injection skills are defined in the [GNS3-Skills](https://github.com/gns3/gns3-skills) repository, inside the `injection/` folder. It supports fault types for protocols like OSPF, BGP, VLAN, and STP.

@@ -48,4 +48,4 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### 技能仓库
 
-故障注入技能定义在 [GNS3-Skills](https://github.com/yueguobin/GNS3-Skills) 仓库的 `injection/` 目录下，支持 OSPF、BGP、VLAN、STP 等协议的故障类型。
+故障注入技能定义在 [GNS3-Skills](https://github.com/gns3/gns3-skills) 仓库的 `injection/` 目录下，支持 OSPF、BGP、VLAN、STP 等协议的故障类型。
