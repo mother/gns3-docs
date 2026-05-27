@@ -18,6 +18,7 @@ GNS3 Web UI is a browser-based network simulation management interface. After yo
 <img style={{ width: '100%' }} alt="Main menu" src={useBaseUrl('img/web-ui/zh/main-menu.jpeg')} />
 - **Top right corner**: More menu (three dots). Click it to open a menu with these items:
   - `System Status`
+  - `AI Profile`
   - `Settings`
   - `Management`
   - `Help`
