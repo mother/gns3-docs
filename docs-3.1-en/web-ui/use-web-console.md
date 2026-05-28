@@ -8,7 +8,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Web Console is a new feature in GNS3 3.1. It lets you access the command-line terminal of your devices directly in the browser. You do not need to install extra software or open many windows.
 
-## 1. Device Management Sidebar
+## Quick Start
+
+**Open Web Console**
+
+Right-click on a device that supports serial console (like routers or switches) in the project topology and select "Web console" to open the console window in your browser.
+
+<img style={{ width: '100%' }} alt="Right-click device to open Web Console" src={useBaseUrl('img/web-ui/zh/web-console-right-click.jpeg')} />
+
+The console window supports dragging, resizing, minimizing, and other operations. You can manage multiple devices conveniently in your browser.
+
+## Features
+
+### Device Management Sidebar
 
 The left side of the console window shows a list of all devices you can connect to in the current project.
 
@@ -22,7 +34,7 @@ The left side of the console window shows a list of all devices you can connect 
 
 <img style={{ width: '100%' }} alt="Device Management Sidebar" src={useBaseUrl('img/web-ui/zh/web-console-sidebar.jpeg')} />
 
-## 2. Multi-Tab Console Window
+### Multi-Tab Console Window
 
 **Window actions:**
 - Drag: Hold the title bar to move the window
@@ -38,7 +50,7 @@ The left side of the console window shows a list of all devices you can connect 
 
 <img style={{ width: '100%' }} alt="Multi-Tab Console Window" src={useBaseUrl('img/web-ui/zh/web-console-tabs.jpeg')} />
 
-## 3. Shortcuts
+### Shortcuts
 
 | Shortcut | Function |
 |----------|----------|
@@ -51,7 +63,7 @@ The left side of the console window shows a list of all devices you can connect 
 Shortcuts only work when the console window is active (click on the window first).
 :::
 
-## 4. GNS3 Log Console
+### GNS3 Log Console
 
 The last tab in the console window (Alt+9) shows GNS3 project logs. These include:
 - Project events
@@ -70,3 +82,9 @@ You can use this for troubleshooting and project monitoring.
 | Window management | Browser tabs | Many separate windows |
 | Shortcuts | Alt+1-9 to switch | Need to switch windows manually |
 | Cross-platform | Any browser | Depends on the operating system |
+
+## Feature Contributor
+
+Web Console feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
+
+- **LinkedIn:** [Guobin Yue](https://www.linkedin.com/in/guobin-yue/)
