@@ -122,7 +122,15 @@ Cannot get an IP address on same subnet: No common subnet for compute X (control
 2. Check the controller's `/v3/version` endpoint. If `controller_host` shows `127.0.0.1`, this is the problem.
 3. Set the controller's `host` to its real LAN IP address (for example `192.168.1.104`).
 4. Make sure both machines are on the same network and can ping each other.
-5. Check firewall rules to allow TCP/UDP communication on the required ports.
+5. Check firewall rules to allow TCP/UDP communication on the required ports:
+
+**GNS3 Server Port Usage**
+- Main service port: 80 (GNS3 VM default) / 443 (HTTPS) / 3080 (default)
+- Console ports: 5000-10000
+- VNC ports: 5900-10000
+- UDP communication ports: 10000-30000
+
+> All port ranges can be customized in the `gns3_server.conf` configuration file
 
 ### WebSocket Console Authentication Failure
 

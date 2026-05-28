@@ -126,7 +126,15 @@ Cannot get an IP address on same subnet: No common subnet for compute X (control
 2. 检查控制器的 `/v3/version` 端点，如果 `controller_host` 显示 `127.0.0.1`，这就是问题所在
 3. 将控制器的 `host` 设置为其实际的 LAN IP 地址（例如 `192.168.1.104`）
 4. 验证两台机器在同一网络上且可以互相 ping 通
-5. 检查防火墙规则允许所需端口上的 TCP/UDP 通信
+5. 检查防火墙规则允许所需端口上的 TCP/UDP 通信：
+
+**GNS3 Server 端口使用**
+- 主服务端口：80（GNS3 VM默认）/ 443（HTTPS）/ 3080（默认）
+- Console 端口：5000-10000
+- VNC 端口：5900-10000
+- UDP 通信端口：10000-30000
+
+> 所有端口范围可在 `gns3_server.conf` 配置文件中自定义修改
 
 ### WebSocket 控制台认证失败
 
