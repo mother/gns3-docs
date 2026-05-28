@@ -31,10 +31,6 @@ On the project home page, click the three dots at the top right and select "AI P
 
 <img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
 
-- In the AI Profile screen, add an AI configuration for the admin user. Click the "New Configuration" button.
-
-<img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
-
 On the "Create LLM Model Configuration" page, select the "Base Models" tab. Follow the steps and enter:
 
 1. **Configuration Name** — The name of your configuration
@@ -52,6 +48,12 @@ Custom Mode has more configuration options. It is good for users with some exper
 :::
 
 After filling in the fields, click the "Create" button.
+
+:::note API Key Security
+- Encrypted using Python's `cryptography.fernet` module (AES-128-CBC algorithm), with the key file in the same directory as the configuration file
+- API Key is encrypted before being stored in the database. All API query endpoints return `api_key: null`
+- The system only decrypts the key internally when the AI Assistant needs to make an API call
+:::
 
 <img style={{ width: '100%' }} alt="Create Configuration" src={useBaseUrl('img/web-ui/zh/ai-create-config.jpeg')} />
 
