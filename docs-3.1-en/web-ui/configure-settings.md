@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: How to configure settings
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

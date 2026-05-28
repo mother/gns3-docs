@@ -1,5 +1,5 @@
 ---
-title: Fault Injection
+title: How to inject faults for testing
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

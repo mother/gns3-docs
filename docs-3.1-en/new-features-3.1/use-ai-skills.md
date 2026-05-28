@@ -1,5 +1,5 @@
 ---
-title: GNS3 Skills Repository
+title: How to use AI Skills
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

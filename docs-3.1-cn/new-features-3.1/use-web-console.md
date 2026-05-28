@@ -1,5 +1,5 @@
 ---
-title: Web Console
+title: 如何使用 Web 控制台
 功能标签: [新特性]
 难度: 入门
 预计阅读时间: 5 分钟

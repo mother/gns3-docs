@@ -1,5 +1,5 @@
 ---
-title: System Status
+title: How to monitor system status
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

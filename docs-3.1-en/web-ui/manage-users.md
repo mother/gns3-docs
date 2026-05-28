@@ -1,5 +1,5 @@
 ---
-title: User Management
+title: How to manage users and permissions
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

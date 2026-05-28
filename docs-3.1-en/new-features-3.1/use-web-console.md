@@ -1,5 +1,5 @@
 ---
-title: Web Console
+title: How to use Web Console
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

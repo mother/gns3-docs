@@ -1,5 +1,5 @@
 ---
-title: Web VNC
+title: How to use Web VNC
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

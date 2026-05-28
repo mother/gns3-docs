@@ -1,5 +1,5 @@
 ---
-title: Compute Node Management
+title: How to add compute nodes
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

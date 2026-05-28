@@ -1,5 +1,5 @@
 ---
-title: GNS3 Skills 仓库
+title: 如何使用 AI Skills
 功能标签: [新特性]
 难度: 入门
 预计阅读时间: 5 分钟

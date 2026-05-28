@@ -1,5 +1,5 @@
 ---
-title: AI Assistant
+title: How to configure and use AI Assistant
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
