@@ -60,13 +60,15 @@ Fault injection is a feature of the GNS3 AI Assistant. It simulates network prob
 
 ### GNS3PacketFilterTool Link Filters
 
+Simulates network impairment at the link layer by applying delay, packet loss, corruption, or dropping matching traffic to disrupt link quality. The `bpf` filter matches packets using BPF expressions and drops them, enabling precise link interference.
+
 | Filter Type | Function | Parameters |
 |---|---|---|
 | `delay` | Latency + jitter | `[latency(0-32767), jitter(0-32767)]` |
 | `packet_loss` | Packet loss rate | `[chance(0-100)]` |
 | `corrupt` | Packet corruption rate | `[chance(0-100)]` |
 | `frequency_drop` | Drop every Nth packet | `[frequency(-1~32767)]` |
-| `bpf` | Berkeley Packet Filter | Text expression |
+| `bpf` | Berkeley Packet Filter (standard BPF syntax) | Text expression, supports protocol (arp/icmp/tcp), port (port 80), host (host 10.0.0.1), net (net 192.168.0.0/16), logical combos (and/or/not), same as tcpdump syntax |
 
 ### Agent Workflow (LangGraph)
 

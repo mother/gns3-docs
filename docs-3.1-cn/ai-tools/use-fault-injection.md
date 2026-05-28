@@ -63,13 +63,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### GNS3PacketFilterTool 链路滤波器
 
+用于在链路层模拟网络损伤，通过对指定流量施加延迟、丢包、损坏或丢弃来破坏链路通信质量。其中 `bpf` 过滤器根据 BPF 表达式匹配报文并丢弃，实现精准的链路干扰。
+
 | 滤波器类型 | 功能 | 参数 |
 |---|---|---|
 | `delay` | 延迟 + 抖动 | `[latency(0-32767), jitter(0-32767)]` |
 | `packet_loss` | 丢包率 | `[chance(0-100)]` |
 | `corrupt` | 包损坏率 | `[chance(0-100)]` |
 | `frequency_drop` | 每 N 包丢弃一个 | `[frequency(-1~32767)]` |
-| `bpf` | Berkeley Packet Filter | 表达式文本 |
+| `bpf` | Berkeley Packet Filter（标准 BPF 语法） | 表达式文本，支持协议（arp/icmp/tcp）、端口（port 80）、主机（host 10.0.0.1）、网段（net 192.168.0.0/16）、逻辑组合（and/or/not）等，与 tcpdump 语法一致 |
 
 ### Agent 工作流（LangGraph）
 
