@@ -1,5 +1,5 @@
 ---
-title: Cisco IOU 模板
+title: 如何创建 Cisco IOU 模板
 功能标签: [操作]
 难度: 入门
 前置知识: "拥有 Cisco IOU 镜像文件（.iol）"

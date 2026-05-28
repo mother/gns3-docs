@@ -31,10 +31,12 @@ module.exports = {
         'web-ui/template-qemu',
         'web-ui/template-docker',
       ],
+      collapsible: true,
+      collapsed: false,
     },
     {
       type: 'category',
-      label: '模板首选项',
+      label: '配置模板首选项',
       link: { type: 'doc', id: 'web-ui/template-preferences' },
       items: [
         'web-ui/template-preferences-builtin',
@@ -44,6 +46,8 @@ module.exports = {
         'web-ui/template-preferences-qemu',
         'web-ui/template-preferences-docker',
       ],
+      collapsible: true,
+      collapsed: true,
     },
     {
       type: 'category',

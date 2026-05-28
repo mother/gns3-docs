@@ -1,5 +1,5 @@
 ---
-title: Cisco IOS Template
+title: How to create a Cisco IOS template
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

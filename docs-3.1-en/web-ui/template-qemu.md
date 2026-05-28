@@ -1,5 +1,5 @@
 ---
-title: QEMU Template
+title: How to create a QEMU template
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

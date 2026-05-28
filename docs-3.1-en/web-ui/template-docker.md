@@ -1,5 +1,5 @@
 ---
-title: Docker Template
+title: How to create a Docker template
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
