@@ -1,5 +1,5 @@
 ---
-title: 如何配置设置
+title: 如何使用设置页面
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 10 分钟
@@ -7,7 +7,7 @@ title: 如何配置设置
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 设置
+# 如何使用设置页面
 
 在项目首页点击右上角的三个点按钮，选择"Settings"进入设置页面。
 

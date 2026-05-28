@@ -1,10 +1,10 @@
 ---
-title: How to configure settings
+title: How to use settings page
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Settings
+# How to use settings page
 
 On the project home page, click the three-dot button at the top right and select "Settings".
 
