@@ -83,6 +83,12 @@ Simulates network impairment at the link layer by applying delay, packet loss, c
 5. **Safety First** — BPF syntax pre-validated via tshark; config commands restricted by `command_filter`
 6. **Context Filtering** — `InjectionSkillsTool` requires `context` parameter, returns only faults matching the topology protocol
 
+## Feature Contributor
+
+Fault Injection feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
+
+- **LinkedIn:** [Guobin Yue](https://www.linkedin.com/in/guobin-yue/)
+
 ## License
 
 This document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

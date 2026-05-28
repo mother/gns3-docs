@@ -44,7 +44,7 @@ slug: /
 ### 模板和配置
 
 - **[新建模板](web-ui/new-template.md)** - 创建设备模板
-- **[如何配置模板首选项](web-ui/template-preferences.md)** - 配置各类模板参数
+- **[如何配置模板](web-ui/template-preferences.md)** - 配置各类模板参数
 - **[如何配置 Built-in 模板](web-ui/template-preferences-builtin.md)** - 内置模板配置
 - **[如何配置 Dynamips 模板](web-ui/template-preferences-dynamips.md)** - Dynamips 路由器/交换机模板
 - **[如何配置 IOU 模板](web-ui/template-preferences-iou.md)** - Cisco IOU 模板

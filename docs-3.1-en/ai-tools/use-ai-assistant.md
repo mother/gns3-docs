@@ -173,6 +173,12 @@ The mode is selected in the `llm_call` node via `copilot_mode`, which picks the 
 5. **Hot Reload** — System Prompt, Skills, Protocols all support runtime reload
 6. **Mode-based Tool Sets** — Three copilot modes bind different tools, safely isolated by scenario
 
+## Feature Contributor
+
+AI Assistant feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
+
+- **LinkedIn:** [Guobin Yue](https://www.linkedin.com/in/guobin-yue/)
+
 ## License
 
 This document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

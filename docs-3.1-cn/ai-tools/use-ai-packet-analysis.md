@@ -53,6 +53,12 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 3. **双重知识源** — 外部仓库提供协议预定义知识，本地 tshark field registry 提供精确字段名
 4. **安全前置** — tshark 字段名预验证，避免无效字段导致执行失败
 
+## 功能贡献者
+
+AI 实时数据包分析功能由 [YueGuobin](https://github.com/yueguobin) 开发和贡献。
+
+- **知乎：** [蛋炒饭](https://www.zhihu.com/people/qin-lao-de-cai-niao)
+
 ## License
 
 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议。

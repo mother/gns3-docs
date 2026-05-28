@@ -50,6 +50,12 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 3. **Dual Knowledge Sources** — External repository provides protocol-specific knowledge; local tshark field registry provides exact field names
 4. **Safety First** — Pre-validation of tshark field names prevents execution failures from invalid fields
 
+## Feature Contributor
+
+AI Real-time Packet Analysis feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
+
+- **LinkedIn:** [Guobin Yue](https://www.linkedin.com/in/guobin-yue/)
+
 ## License
 
 This document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

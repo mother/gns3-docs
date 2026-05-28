@@ -86,6 +86,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 5. **安全前置** — BPF 语法通过 tshark 预验证，配置命令受 `command_filter` 限制
 6. **上下文过滤** — `InjectionSkillsTool` 强制要求传入 `context` 参数，只返回与拓扑协议匹配的故障
 
+## 功能贡献者
+
+故障注入功能由 [YueGuobin](https://github.com/yueguobin) 开发和贡献。
+
+- **知乎：** [蛋炒饭](https://www.zhihu.com/people/qin-lao-de-cai-niao)
+
 ## License
 
 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议。

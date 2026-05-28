@@ -44,7 +44,7 @@ Welcome to the GNS3 3.1 documentation. This guide explains the main features of 
 ### Templates and Configuration
 
 - **[New Template](web-ui/new-template.md)** - Create device templates
-- **[How to configure template preferences](web-ui/template-preferences.md)** - Configure template parameters
+- **[How to configure templates](web-ui/template-preferences.md)** - Configure template parameters
 - **[How to configure Built-in template](web-ui/template-preferences-builtin.md)** - Built-in template configuration
 - **[How to configure Dynamips template](web-ui/template-preferences-dynamips.md)** - Dynamips router/switch templates
 - **[How to configure IOU template](web-ui/template-preferences-iou.md)** - Cisco IOU templates
