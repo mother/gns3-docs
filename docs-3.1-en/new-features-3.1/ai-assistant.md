@@ -23,19 +23,19 @@ Currently, this feature has been primarily tested with Cisco IOS images that do 
 
 **Development Testing Note:** During the development and testing phase, this feature was primarily tested using DeepSeek models. The former `deepseek-chat` is now renamed to `deepseek-v4-flash` or `deepseek-v4-pro`.
 
-On the project home page, click the GNS3 Logo in the top-left corner. Select "Management" to go to the management page.
+On the project home page, click the three dots at the top right and select "AI Profile" to go to the configuration page.
 
-<img style={{ width: '100%' }} alt="Management Page Entry" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
+<img style={{ width: '100%' }} alt="AI Configuration Entry" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
 
-- On the Users page, click the brain icon on the right side of the admin user, as shown below.
+- On the AI Profile screen, add an AI configuration for the user. Click the "New Configuration" button.
 
-<img style={{ width: '100%' }} alt="Admin Brain Icon" src={useBaseUrl('img/web-ui/zh/ai-admin-brain.jpeg')} />
+<img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
 
 - In the AI Profile screen, add an AI configuration for the admin user. Click the "New Configuration" button.
 
 <img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
 
-- On the "Create LLM Model Configuration" page, select the "Base Models" tab. Follow the steps and enter:
+On the "Create LLM Model Configuration" page, select the "Base Models" tab. Follow the steps and enter:
 
 1. **Configuration Name** — The name of your configuration
 2. **Select LLM provider** — Choose an LLM provider (options are OpenRouter and DeepSeek)
