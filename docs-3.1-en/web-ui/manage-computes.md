@@ -4,7 +4,7 @@ title: How to add compute nodes
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Compute Node Management
+# How to add compute nodes
 
 This document describes the minimum setup needed for GNS3 controller and remote compute nodes.
 

@@ -7,7 +7,7 @@ title: 如何监控系统状态
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 系统状态
+# 如何监控系统状态
 
 在项目首页点击右上角的三个点按钮，选择"System Status"进入系统状态页面。
 

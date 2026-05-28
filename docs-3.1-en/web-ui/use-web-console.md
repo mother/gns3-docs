@@ -4,7 +4,7 @@ title: How to use Web Console
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Web Console
+# How to use Web Console
 
 Web Console is a new feature in GNS3 3.1. It lets you access the command-line terminal of your devices directly in the browser. You do not need to install extra software or open many windows.
 

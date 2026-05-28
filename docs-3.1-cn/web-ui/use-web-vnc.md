@@ -7,7 +7,7 @@ title: 如何使用 Web VNC
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Web VNC
+# 如何使用 Web VNC
 
 Web VNC 让您直接在浏览器中访问 VNC 类型的设备（如 QEMU 虚拟机、docker等带有桌面的模拟设备），无需安装 VNC 客户端软件。
 

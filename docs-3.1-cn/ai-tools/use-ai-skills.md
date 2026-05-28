@@ -7,7 +7,7 @@ title: 如何使用 AI Skills
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# GNS3 Skills 仓库
+# 如何使用 AI Skills
 
 GNS3 Skills 是一个网络故障排查技能库仓库，用于扩展 AI 助手能力。包含 50 个 YAML 技能文件、815 个故障注入场景，覆盖 60+ 种网络协议和技术（从 PPP 到 SRv6、EVPN），集成到 GNS3 网络仿真环境中，提供自动化故障诊断和学习辅助。
 

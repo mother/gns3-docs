@@ -4,7 +4,7 @@ title: How to inject faults for testing
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Fault Injection
+# How to inject faults for testing
 
 Fault injection is a feature of the GNS3 AI Assistant. It simulates network problems in your topology. This helps you practice your network troubleshooting skills. The feature uses AI to automatically analyze your network topology, choose the right fault type, and inject it into the project.
 

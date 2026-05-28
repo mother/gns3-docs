@@ -8,7 +8,7 @@ title: 如何创建 QEMU 模板
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# QEMU 模板
+# 如何创建 QEMU 模板
 
 :::tip 视频教程
 

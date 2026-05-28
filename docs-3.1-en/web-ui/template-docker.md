@@ -4,7 +4,7 @@ title: How to create a Docker template
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Docker Template
+# How to create a Docker template
 
 :::tip Video Tutorial
 

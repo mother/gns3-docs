@@ -4,7 +4,7 @@ title: How to manage users and permissions
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# User Management
+# How to manage users and permissions
 
 On the project home page, click the GNS3 Logo at the top left and select "Management".
 

@@ -7,7 +7,7 @@ title: 如何管理用户和权限
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 用户管理
+# 如何管理用户和权限
 
 在项目首页点击左上角的 GNS3 Logo，选择"Management"（用户管理），进入管理页面。
 

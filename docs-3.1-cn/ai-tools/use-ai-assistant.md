@@ -7,6 +7,8 @@ title: 如何配置和使用 AI 助手
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+# 如何配置和使用 AI 助手
+
 :::tip 项目出处
 
 GNS3 AI Assistant（GNS3 Copilot）最初作为独立项目开发，详见 [github.com/yueguobin/gns3-copilot](https://github.com/yueguobin/gns3-copilot)。该项目由社区开发者 YueGuobin 创建，是一个基于大语言模型的网络自动化助手，支持通过自然语言管理网络设备、诊断故障和自动化配置，已合入 GNS3 3.1 版本。

@@ -4,7 +4,7 @@ title: How to create a QEMU template
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# QEMU Template
+# How to create a QEMU template
 
 :::tip Video Tutorial
 

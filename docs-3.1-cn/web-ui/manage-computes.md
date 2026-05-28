@@ -7,7 +7,7 @@ title: 如何添加计算节点
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 计算节点管理
+# 如何添加计算节点
 
 本文档描述设置 GNS3 控制器与远程计算节点所需的最低配置。
 

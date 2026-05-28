@@ -4,7 +4,7 @@ title: How to create a Cisco IOS template
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Cisco IOS Template
+# How to create a Cisco IOS template
 
 :::tip Video Tutorial
 

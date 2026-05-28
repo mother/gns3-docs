@@ -7,7 +7,7 @@ title: 如何使用 Web 控制台
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Web Console
+# 如何使用 Web 控制台
 
 Web Console 是 GNS3 3.1 的新功能，让您直接在浏览器中访问设备的命令行终端，无需安装额外软件或打开多个窗口。
 

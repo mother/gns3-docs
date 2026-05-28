@@ -22,8 +22,8 @@ module.exports = {
     {
       type: 'category',
       label: '管理项目',
+      link: { type: 'doc', id: 'web-ui/project-management' },
       items: [
-        'web-ui/intro',
         'web-ui/project-topology',
         'web-ui/use-web-console',
         'web-ui/use-web-vnc',
@@ -82,6 +82,7 @@ module.exports = {
         'ai-tools/use-ai-assistant',
         'ai-tools/use-ai-skills',
         'ai-tools/use-fault-injection',
+        'ai-tools/use-ai-packet-analysis',
       ],
     },
   ],

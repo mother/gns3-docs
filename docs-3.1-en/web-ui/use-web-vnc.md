@@ -4,7 +4,7 @@ title: How to use Web VNC
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Web VNC
+# How to use Web VNC
 
 Web VNC lets you access VNC-type devices (like QEMU virtual machines, Docker, and other emulated devices with a desktop) directly in your browser. You do not need to install VNC client software.
 

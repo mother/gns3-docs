@@ -7,7 +7,7 @@ title: 如何进行故障注入测试
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 故障注入
+# 如何进行故障注入测试
 
 故障注入是 GNS3 AI Assistant 的一项功能，用于在网络拓扑中模拟网络故障，帮助用户练习网络故障排查技能。该功能通过 AI 自动分析您的网络拓扑，选择合适的故障类型并注入到项目中。
 

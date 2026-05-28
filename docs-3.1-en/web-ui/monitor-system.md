@@ -4,7 +4,7 @@ title: How to monitor system status
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# System Status
+# How to monitor system status
 
 On the project home page, click the three-dot button at the top right and select "System Status".
 
