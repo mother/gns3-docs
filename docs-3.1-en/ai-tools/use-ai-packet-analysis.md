@@ -20,7 +20,7 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 
 ## Core Flow
 
-<img style={{ width: '480px', maxWidth: '100%' }} alt="Core Flow" src={useBaseUrl('img/web-ui/zh/ai-packet-core-flow-en.jpeg')} />
+<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="Core Flow" src={useBaseUrl('img/web-ui/zh/ai-packet-core-flow-en.svg')} />
 
 ## Tool Overview
 
@@ -31,7 +31,7 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 
 ## Agent Workflow (LangGraph)
 
-<img style={{ width: '774px', maxWidth: '100%' }} alt="Agent Workflow" src={useBaseUrl('img/web-ui/zh/ai-packet-agent-workflow-en.jpeg')} />
+<img style={{ width: '100%' }} alt="Agent Workflow" src={useBaseUrl('img/web-ui/zh/ai-packet-agent-workflow-en.svg')} />
 
 ## Server Capture API
 

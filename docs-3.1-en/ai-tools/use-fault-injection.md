@@ -34,15 +34,54 @@ Fault injection is a feature of the GNS3 AI Assistant. It simulates network prob
 
    <img style={{ width: '100%' }} alt="View Details in AI Assistant" src={useBaseUrl('img/web-ui/zh/fault-injection-details.jpeg')} />
 
-## Technical Reference
+## Architecture Overview
 
-### Workflow
+### Core Flow
 
-1. **Topology analysis** — AI analyzes the current topology. It finds device types, routing protocols, and services.
-2. **Fault selection** — AI matches the current topology and recommends the right fault types.
-3. **Fault injection** — AI connects to the target devices and changes their configuration.
-4. **Result feedback** — AI creates a fault description, diagnosis steps, and troubleshooting tips.
+<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="Fault Injection Core Flow" src={useBaseUrl('img/web-ui/zh/fault-injection-core-flow-en.svg')} />
 
-### Skills Repository
+### Tool Overview
 
-The fault injection skills are defined in the [GNS3-Skills](https://github.com/gns3/gns3-skills) repository, inside the `injection/` folder. It supports fault types for protocols like OSPF, BGP, VLAN, and STP.
+| Tool | Source File | Purpose | Available Modes |
+|---|---|---|---|
+| `InjectionSkillsTool` | `registry.py` (skills module) | Query protocol-level fault definitions (config change commands) | troubleshooting_injection |
+| `GNS3PacketFilterTool` | `gns3_packet_filter.py` | Link-layer fault injection (delay, loss, corruption, BPF) | troubleshooting_injection |
+| `ExecuteMultipleDeviceConfigCommands` | `config_tools_nornir.py` | Batch execute device config changes | troubleshooting_injection |
+| `ExecuteMultipleDeviceCommands` | `display_tools_nornir.py` | Read device configuration (read-only) | troubleshooting_injection |
+| `GNS3TopologyTool` | `gns3_client` | Get project topology info | troubleshooting_injection |
+
+### Fault Injection API
+
+| Endpoint | Function |
+|---|---|
+| `POST /v3/projects/{pid}/chat/inject` | Trigger fault injection, set troubleshooting_injection mode and start Agent |
+
+**Prerequisite**: Project must be in `opened` state, otherwise returns 403.
+
+### GNS3PacketFilterTool Link Filters
+
+| Filter Type | Function | Parameters |
+|---|---|---|
+| `delay` | Latency + jitter | `[latency(0-32767), jitter(0-32767)]` |
+| `packet_loss` | Packet loss rate | `[chance(0-100)]` |
+| `corrupt` | Packet corruption rate | `[chance(0-100)]` |
+| `frequency_drop` | Drop every Nth packet | `[frequency(-1~32767)]` |
+| `bpf` | Berkeley Packet Filter | Text expression |
+
+### Agent Workflow (LangGraph)
+
+<img style={{ width: '100%' }} alt="Fault Injection Agent Workflow" src={useBaseUrl('img/web-ui/zh/fault-injection-agent-workflow-en.svg')} />
+
+### Key Design Points
+
+1. **Dedicated API Endpoint** — `POST /chat/inject` is specifically for fault injection, automatically switches to `troubleshooting_injection` mode
+2. **LLM-driven Fault Selection** — LLM analyzes topology, queries matching protocol faults via `InjectionSkillsTool`, no hardcoded scenarios
+3. **Dual-layer Injection** — Device-level config changes + link-level network impairment for complete troubleshooting coverage
+4. **Reversible Faults** — Each injection includes recovery commands; link filters can be cleared with `action: clear`
+5. **Safety First** — BPF syntax pre-validated via tshark; config commands restricted by `command_filter`
+6. **Context Filtering** — `InjectionSkillsTool` requires `context` parameter, returns only faults matching the topology protocol
+
+## License
+
+This document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Author: YueGuobin

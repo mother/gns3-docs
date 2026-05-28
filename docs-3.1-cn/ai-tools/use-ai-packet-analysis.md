@@ -23,7 +23,7 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 
 ## 核心流程
 
-<img style={{ width: '480px', maxWidth: '100%' }} alt="核心流程图" src={useBaseUrl('img/web-ui/zh/ai-packet-core-flow-cn.jpeg')} />
+<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="核心流程图" src={useBaseUrl('img/web-ui/zh/ai-packet-core-flow-cn.svg')} />
 
 ## 工具总览
 
@@ -34,7 +34,7 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 
 ## Agent 工作流（LangGraph）
 
-<img style={{ width: '889px', maxWidth: '100%' }} alt="Agent 工作流" src={useBaseUrl('img/web-ui/zh/ai-packet-agent-workflow-cn.jpeg')} />
+<img style={{ width: '100%' }} alt="Agent 工作流" src={useBaseUrl('img/web-ui/zh/ai-packet-agent-workflow-cn.svg')} />
 
 ## 服务端 Capture API
 
