@@ -1,5 +1,5 @@
 ---
-title: QEMU（虚拟机）
+title: 如何配置 QEMU 模板
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 15 分钟
@@ -7,7 +7,7 @@ title: QEMU（虚拟机）
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# QEMU（虚拟机）
+# 如何配置 QEMU 模板
 
 QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完整的硬件虚拟化。
 

@@ -1,10 +1,10 @@
 ---
-title: IOS on Unix (IOU)
+title: How to configure IOU template preferences
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# IOS on Unix (IOU)
+# How to configure IOU template preferences
 
 IOU is a native Cisco IOS ELF binary (.iol) that runs directly on Linux. It does not need Dynamips hardware simulation. Its performance is much higher than Dynamips.
 

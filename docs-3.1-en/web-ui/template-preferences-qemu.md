@@ -1,10 +1,10 @@
 ---
-title: QEMU (Virtual Machines)
+title: How to configure QEMU template preferences
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# QEMU (Virtual Machines)
+# How to configure QEMU template preferences
 
 QEMU is the most complex node type in GNS3. It has the most configuration options. It supports full hardware virtualization.
 

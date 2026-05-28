@@ -36,7 +36,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Configuring Template Preferences',
+      label: 'Configuring Templates',
       link: { type: 'doc', id: 'web-ui/template-preferences' },
       items: [
         'web-ui/template-preferences-builtin',

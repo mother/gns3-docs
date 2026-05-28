@@ -1,5 +1,5 @@
 ---
-title: IOS on Unix（IOU）
+title: 如何配置 IOU 模板
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 10 分钟
@@ -7,7 +7,7 @@ title: IOS on Unix（IOU）
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# IOS on Unix（IOU）
+# 如何配置 IOU 模板
 
 IOU 是直接运行在 Linux 上的原生 Cisco IOS ELF 二进制文件（.iol），无需 Dynamips 硬件模拟，性能远高于 Dynamips。
 

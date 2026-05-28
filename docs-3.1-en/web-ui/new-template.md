@@ -47,7 +47,7 @@ Download the latest appliances files from GitHub.
 
 Choose the guide that matches your device type:
 
-- [Cisco IOS Template](template-cisco-ios) — using Cisco 7200 as an example
-- [Cisco IOU Template](template-cisco-iou) — using IOU L3 as an example
-- [QEMU Template](template-qemu) — using Cisco IOSv as an example
-- [Docker Template](template-docker) — using Ubuntu as an example
+- [How to create a Cisco IOS template](template-cisco-ios) — using Cisco 7200 as an example
+- [How to create a Cisco IOU template](template-cisco-iou) — using IOU L3 as an example
+- [How to create a QEMU template](template-qemu) — using Cisco IOSv as an example
+- [How to create a Docker template](template-docker) — using Ubuntu as an example

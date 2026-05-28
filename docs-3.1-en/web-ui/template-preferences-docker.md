@@ -1,10 +1,10 @@
 ---
-title: Docker (Containers)
+title: How to configure Docker template preferences
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Docker (Containers)
+# How to configure Docker template preferences
 
 Docker is a node type in GNS3 based on container technology. Unlike QEMU/Dynamips virtual machines, Docker shares the host machine kernel. It starts very fast.
 

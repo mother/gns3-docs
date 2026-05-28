@@ -1,10 +1,10 @@
 ---
-title: Dynamips (IOS Routers)
+title: How to configure Dynamips template preferences
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Dynamips (IOS Routers)
+# How to configure Dynamips template preferences
 
 Dynamips is the engine in GNS3 that uses IOS images to simulate Cisco routers. Unlike built-in templates, Dynamips IOS router templates need to be created by the user. You must select the IOS image, choose the platform, configure slots, and so on.
 

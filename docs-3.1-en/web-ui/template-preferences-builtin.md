@@ -1,10 +1,10 @@
 ---
-title: Built-in Templates
+title: How to configure Built-in template preferences
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Built-in Templates
+# How to configure Built-in template preferences
 
 Click the "Built-in" option to enter.
 

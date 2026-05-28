@@ -1,10 +1,10 @@
 ---
-title: VPCS (Virtual PC)
+title: How to configure VPCS template preferences
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# VPCS (Virtual PC)
+# How to configure VPCS template preferences
 
 VPCS (Virtual PC Simulator) is a lightweight tool in GNS3 that simulates a PC. Unlike routers or switches, VPCS only simulates a very simple virtual PC environment. It is used to test network connectivity.
 

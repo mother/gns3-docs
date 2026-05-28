@@ -1,5 +1,5 @@
 ---
-title: Docker（容器）
+title: 如何配置 Docker 模板
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 10 分钟
@@ -7,7 +7,7 @@ title: Docker（容器）
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Docker（容器）
+# 如何配置 Docker 模板
 
 Docker 是 GNS3 中基于容器技术的节点类型，与 QEMU/Dynamips 等虚拟机不同，它共享宿主机内核，启动速度极快。
 

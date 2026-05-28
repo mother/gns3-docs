@@ -1,5 +1,5 @@
 ---
-title: Dynamips（IOS 路由器）
+title: 如何配置 Dynamips 模板
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 10 分钟
@@ -7,7 +7,7 @@ title: Dynamips（IOS 路由器）
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Dynamips（IOS 路由器）
+# 如何配置 Dynamips 模板
 
 Dynamips 是 GNS3 中用 IOS 镜像模拟 Cisco 路由器的引擎。与 builtin 模板不同，Dynamips 的 IOS 路由器模板需要用户手动创建——指定 IOS 镜像、选择平台、配置插槽等。
 

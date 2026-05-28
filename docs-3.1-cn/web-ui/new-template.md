@@ -50,7 +50,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 根据您的设备类型选择对应的创建指南：
 
-- [Cisco IOS 模板](template-cisco-ios) — 以 Cisco 7200 为例
-- [Cisco IOU 模板](template-cisco-iou) — 以 IOU L3 为例
-- [QEMU 模板](template-qemu) — 以 Cisco IOSv 为例
-- [Docker 模板](template-docker) — 以 Ubuntu 为例
+- [如何创建 Cisco IOS 模板](template-cisco-ios) — 以 Cisco 7200 为例
+- [如何创建 Cisco IOU 模板](template-cisco-iou) — 以 IOU L3 为例
+- [如何创建 QEMU 模板](template-qemu) — 以 Cisco IOSv 为例
+- [如何创建 Docker 模板](template-docker) — 以 Ubuntu 为例

@@ -1,5 +1,5 @@
 ---
-title: Built-in（内置模板）
+title: 如何配置 Built-in 内置模板
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 10 分钟
@@ -7,7 +7,7 @@ title: Built-in（内置模板）
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Built-in（内置模板）
+# 如何配置 Built-in 内置模板
 
 点击"Built-in"选项进入。
 

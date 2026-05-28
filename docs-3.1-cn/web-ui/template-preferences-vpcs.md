@@ -1,5 +1,5 @@
 ---
-title: VPCS（虚拟 PC）
+title: 如何配置 VPCS 模板
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 10 分钟
@@ -7,7 +7,7 @@ title: VPCS（虚拟 PC）
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# VPCS（虚拟 PC）
+# 如何配置 VPCS 模板
 
 VPCS（Virtual PC Simulator）是 GNS3 中模拟 PC 的轻量级工具。与路由器/交换机不同，VPCS 只模拟一个极简的虚拟 PC 环境，用于测试网络连通性。
 

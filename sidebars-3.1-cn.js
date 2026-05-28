@@ -36,7 +36,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '配置模板首选项',
+      label: '配置模板',
       link: { type: 'doc', id: 'web-ui/template-preferences' },
       items: [
         'web-ui/template-preferences-builtin',
