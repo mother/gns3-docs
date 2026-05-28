@@ -3,13 +3,48 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '581'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '0ee'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', '17c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '02f'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', 'eb9'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '5de'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', 'c21'),
+    exact: true
+  },
+  {
     path: '/search',
-    component: ComponentCreator('/search', '6df'),
+    component: ComponentCreator('/search', '5e3'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '0d3'),
+    component: ComponentCreator('/docs', 'b04'),
     routes: [
       {
         path: '/docs/',
@@ -376,8 +411,416 @@ export default [
     ]
   },
   {
+    path: '/docs-3.1-cn',
+    component: ComponentCreator('/docs-3.1-cn', 'dbe'),
+    routes: [
+      {
+        path: '/docs-3.1-cn/',
+        component: ComponentCreator('/docs-3.1-cn/', '3c8'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/ai-tools/use-ai-assistant',
+        component: ComponentCreator('/docs-3.1-cn/ai-tools/use-ai-assistant', '9a4'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/ai-tools/use-ai-skills',
+        component: ComponentCreator('/docs-3.1-cn/ai-tools/use-ai-skills', '89b'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/ai-tools/use-fault-injection',
+        component: ComponentCreator('/docs-3.1-cn/ai-tools/use-fault-injection', 'ad1'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/gns3-vm/gns3-vm-usage',
+        component: ComponentCreator('/docs-3.1-cn/gns3-vm/gns3-vm-usage', '626'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/gns3-vm/hyperv-usage',
+        component: ComponentCreator('/docs-3.1-cn/gns3-vm/hyperv-usage', '72d'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/gns3-vm/kvm-usage',
+        component: ComponentCreator('/docs-3.1-cn/gns3-vm/kvm-usage', '72e'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/gns3-vm/virtualbox-usage',
+        component: ComponentCreator('/docs-3.1-cn/gns3-vm/virtualbox-usage', 'a8e'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/gns3-vm/vmware-esxi-usage',
+        component: ComponentCreator('/docs-3.1-cn/gns3-vm/vmware-esxi-usage', '777'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/gns3-vm/vmware-workstation-usage',
+        component: ComponentCreator('/docs-3.1-cn/gns3-vm/vmware-workstation-usage', '7c5'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/new-features-3.1/intro',
+        component: ComponentCreator('/docs-3.1-cn/new-features-3.1/intro', '26e'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/configure-settings',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/configure-settings', '591'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/intro',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/intro', '9f0'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/manage-computes',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/manage-computes', '125'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/manage-images',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/manage-images', '188'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/manage-users',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/manage-users', '297'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/monitor-system',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/monitor-system', '763'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/new-template',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/new-template', 'a32'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/project-topology',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/project-topology', '32a'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-cisco-ios',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-cisco-ios', '1e8'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-cisco-iou',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-cisco-iou', '8db'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-docker',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-docker', '602'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences', 'c28'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences-builtin',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences-builtin', '559'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences-docker',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences-docker', '864'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences-dynamips',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences-dynamips', 'b2a'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences-iou',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences-iou', '313'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences-qemu',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences-qemu', 'fe2'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-preferences-vpcs',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-preferences-vpcs', '428'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/template-qemu',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/template-qemu', '50a'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/use-web-console',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/use-web-console', '444'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/use-web-vnc',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/use-web-vnc', '51c'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      },
+      {
+        path: '/docs-3.1-cn/web-ui/use-web-wireshark',
+        component: ComponentCreator('/docs-3.1-cn/web-ui/use-web-wireshark', 'd0e'),
+        exact: true,
+        sidebar: "sidebar310cn"
+      }
+    ]
+  },
+  {
+    path: '/docs-3.1-en',
+    component: ComponentCreator('/docs-3.1-en', 'f65'),
+    routes: [
+      {
+        path: '/docs-3.1-en/',
+        component: ComponentCreator('/docs-3.1-en/', 'ac1'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/ai-tools/use-ai-assistant',
+        component: ComponentCreator('/docs-3.1-en/ai-tools/use-ai-assistant', '88a'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/ai-tools/use-ai-skills',
+        component: ComponentCreator('/docs-3.1-en/ai-tools/use-ai-skills', '7b8'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/ai-tools/use-fault-injection',
+        component: ComponentCreator('/docs-3.1-en/ai-tools/use-fault-injection', 'b31'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/gns3-vm/gns3-vm-usage',
+        component: ComponentCreator('/docs-3.1-en/gns3-vm/gns3-vm-usage', 'd25'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/gns3-vm/hyperv-usage',
+        component: ComponentCreator('/docs-3.1-en/gns3-vm/hyperv-usage', '9f3'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/gns3-vm/kvm-usage',
+        component: ComponentCreator('/docs-3.1-en/gns3-vm/kvm-usage', '9e5'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/gns3-vm/virtualbox-usage',
+        component: ComponentCreator('/docs-3.1-en/gns3-vm/virtualbox-usage', '656'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/gns3-vm/vmware-esxi-usage',
+        component: ComponentCreator('/docs-3.1-en/gns3-vm/vmware-esxi-usage', '9c5'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/gns3-vm/vmware-workstation-usage',
+        component: ComponentCreator('/docs-3.1-en/gns3-vm/vmware-workstation-usage', 'be5'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/new-features-3.1/intro',
+        component: ComponentCreator('/docs-3.1-en/new-features-3.1/intro', '324'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/configure-settings',
+        component: ComponentCreator('/docs-3.1-en/web-ui/configure-settings', '54d'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/intro',
+        component: ComponentCreator('/docs-3.1-en/web-ui/intro', 'dee'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/manage-computes',
+        component: ComponentCreator('/docs-3.1-en/web-ui/manage-computes', '203'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/manage-images',
+        component: ComponentCreator('/docs-3.1-en/web-ui/manage-images', 'f6c'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/manage-users',
+        component: ComponentCreator('/docs-3.1-en/web-ui/manage-users', 'ed9'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/monitor-system',
+        component: ComponentCreator('/docs-3.1-en/web-ui/monitor-system', 'b3d'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/new-template',
+        component: ComponentCreator('/docs-3.1-en/web-ui/new-template', 'd4d'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/project-topology',
+        component: ComponentCreator('/docs-3.1-en/web-ui/project-topology', '63a'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-cisco-ios',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-cisco-ios', 'b46'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-cisco-iou',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-cisco-iou', '9fb'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-docker',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-docker', '61f'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences', '476'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences-builtin',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences-builtin', 'f42'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences-docker',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences-docker', '621'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences-dynamips',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences-dynamips', '6d9'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences-iou',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences-iou', 'acb'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences-qemu',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences-qemu', 'a7d'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-preferences-vpcs',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-preferences-vpcs', 'e5a'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/template-qemu',
+        component: ComponentCreator('/docs-3.1-en/web-ui/template-qemu', '2e5'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/use-web-console',
+        component: ComponentCreator('/docs-3.1-en/web-ui/use-web-console', 'b2b'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/use-web-vnc',
+        component: ComponentCreator('/docs-3.1-en/web-ui/use-web-vnc', '4fd'),
+        exact: true,
+        sidebar: "sidebar310en"
+      },
+      {
+        path: '/docs-3.1-en/web-ui/use-web-wireshark',
+        component: ComponentCreator('/docs-3.1-en/web-ui/use-web-wireshark', '8bf'),
+        exact: true,
+        sidebar: "sidebar310en"
+      }
+    ]
+  },
+  {
     path: '/',
-    component: ComponentCreator('/', '8a6'),
+    component: ComponentCreator('/', 'ed4'),
     exact: true
   },
   {

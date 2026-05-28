@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/mother/gns3-docs/blob/master/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/home/grossmj/PycharmProjects/gns3-docs/sidebars.js",
-          "contentPath": "/home/grossmj/PycharmProjects/gns3-docs/docs",
-          "contentPathLocalized": "/home/grossmj/PycharmProjects/gns3-docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/home/yueguobin/myCode/GNS3/gns3-docs/sidebars.js",
+          "contentPath": "/home/yueguobin/myCode/GNS3/gns3-docs/docs",
+          "contentPathLocalized": "/home/yueguobin/myCode/GNS3/gns3-docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "contribute/contribute-to-gns3",
@@ -2000,6 +2000,2317 @@
                 ],
                 "collapsed": true,
                 "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "docs-310-cn": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs-3.1-cn",
+          "tagsPath": "/docs-3.1-cn/tags",
+          "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn",
+          "editUrlLocalized": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/i18n/en/docusaurus-plugin-content-docs-docs-310-cn/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/yueguobin/myCode/GNS3/gns3-docs/sidebars-3.1-cn.js",
+          "contentPath": "/home/yueguobin/myCode/GNS3/gns3-docs/docs-3.1-cn",
+          "contentPathLocalized": "/home/yueguobin/myCode/GNS3/gns3-docs/i18n/en/docusaurus-plugin-content-docs-docs-310-cn/current",
+          "docs": [
+            {
+              "unversionedId": "ai-tools/use-ai-assistant",
+              "id": "ai-tools/use-ai-assistant",
+              "title": "如何配置和使用 AI 助手",
+              "description": "GNS3 AI Assistant（GNS3 Copilot）最初作为独立项目开发，详见 github.com/yueguobin/gns3-copilot。该项目由社区开发者 YueGuobin 创建，是一个基于大语言模型的网络自动化助手，支持通过自然语言管理网络设备、诊断故障和自动化配置，已合入 GNS3 3.1 版本。",
+              "source": "@site/docs-3.1-cn/ai-tools/use-ai-assistant.md",
+              "sourceDirName": "ai-tools",
+              "slug": "/ai-tools/use-ai-assistant",
+              "permalink": "/docs-3.1-cn/ai-tools/use-ai-assistant",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/ai-tools/use-ai-assistant.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置和使用 AI 助手",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何管理用户和权限",
+                "permalink": "/docs-3.1-cn/web-ui/manage-users"
+              },
+              "next": {
+                "title": "如何使用 AI Skills",
+                "permalink": "/docs-3.1-cn/ai-tools/use-ai-skills"
+              }
+            },
+            {
+              "unversionedId": "ai-tools/use-ai-skills",
+              "id": "ai-tools/use-ai-skills",
+              "title": "如何使用 AI Skills",
+              "description": "GNS3 Skills 是一个网络故障排查技能库仓库，用于扩展 AI 助手能力。包含 50 个 YAML 技能文件、815 个故障注入场景，覆盖 60+ 种网络协议和技术（从 PPP 到 SRv6、EVPN），集成到 GNS3 网络仿真环境中，提供自动化故障诊断和学习辅助。",
+              "source": "@site/docs-3.1-cn/ai-tools/use-ai-skills.md",
+              "sourceDirName": "ai-tools",
+              "slug": "/ai-tools/use-ai-skills",
+              "permalink": "/docs-3.1-cn/ai-tools/use-ai-skills",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/ai-tools/use-ai-skills.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何使用 AI Skills",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置和使用 AI 助手",
+                "permalink": "/docs-3.1-cn/ai-tools/use-ai-assistant"
+              },
+              "next": {
+                "title": "如何进行故障注入测试",
+                "permalink": "/docs-3.1-cn/ai-tools/use-fault-injection"
+              }
+            },
+            {
+              "unversionedId": "ai-tools/use-fault-injection",
+              "id": "ai-tools/use-fault-injection",
+              "title": "如何进行故障注入测试",
+              "description": "故障注入是 GNS3 AI Assistant 的一项功能，用于在网络拓扑中模拟网络故障，帮助用户练习网络故障排查技能。该功能通过 AI 自动分析您的网络拓扑，选择合适的故障类型并注入到项目中。",
+              "source": "@site/docs-3.1-cn/ai-tools/use-fault-injection.md",
+              "sourceDirName": "ai-tools",
+              "slug": "/ai-tools/use-fault-injection",
+              "permalink": "/docs-3.1-cn/ai-tools/use-fault-injection",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/ai-tools/use-fault-injection.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何进行故障注入测试",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何使用 AI Skills",
+                "permalink": "/docs-3.1-cn/ai-tools/use-ai-skills"
+              },
+              "next": {
+                "title": "3.1 新特性概览",
+                "permalink": "/docs-3.1-cn/new-features-3.1/intro"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/gns3-vm-usage",
+              "id": "gns3-vm/gns3-vm-usage",
+              "title": "GNS3 VM 概览",
+              "description": "GNS3 VM 是运行在虚拟机中的 GNS3 服务器，提供完整的 GNS3 网络仿真环境。它与 GNS3 Web UI 配合使用，提供强大的网络模拟能力。",
+              "source": "@site/docs-3.1-cn/gns3-vm/gns3-vm-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/gns3-vm-usage",
+              "permalink": "/docs-3.1-cn/gns3-vm/gns3-vm-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/gns3-vm/gns3-vm-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "功能标签": [
+                  "基础操作"
+                ],
+                "难度": "入门",
+                "前置知识": "无",
+                "预计阅读时间": "3 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "简介",
+                "permalink": "/docs-3.1-cn/"
+              },
+              "next": {
+                "title": "如何在 VirtualBox 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/virtualbox-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/hyperv-usage",
+              "id": "gns3-vm/hyperv-usage",
+              "title": "如何在 Hyper-V 中使用 GNS3 VM",
+              "description": "待补充",
+              "source": "@site/docs-3.1-cn/gns3-vm/hyperv-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/hyperv-usage",
+              "permalink": "/docs-3.1-cn/gns3-vm/hyperv-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/gns3-vm/hyperv-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何在 Hyper-V 中使用 GNS3 VM",
+                "功能标签": [
+                  "基础操作"
+                ],
+                "难度": "中级",
+                "前置知识": "无",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何在 KVM/QEMU 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/kvm-usage"
+              },
+              "next": {
+                "title": "如何在 VMware Workstation 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/vmware-workstation-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/kvm-usage",
+              "id": "gns3-vm/kvm-usage",
+              "title": "如何在 KVM/QEMU 中使用 GNS3 VM",
+              "description": "待补充",
+              "source": "@site/docs-3.1-cn/gns3-vm/kvm-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/kvm-usage",
+              "permalink": "/docs-3.1-cn/gns3-vm/kvm-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/gns3-vm/kvm-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何在 KVM/QEMU 中使用 GNS3 VM",
+                "功能标签": [
+                  "基础操作"
+                ],
+                "难度": "中级",
+                "前置知识": "无",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何在 VirtualBox 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/virtualbox-usage"
+              },
+              "next": {
+                "title": "如何在 Hyper-V 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/hyperv-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/virtualbox-usage",
+              "id": "gns3-vm/virtualbox-usage",
+              "title": "如何在 VirtualBox 中使用 GNS3 VM",
+              "description": "📺 观看视频教程 - 跟随视频一步步导入 GNS3 VM 到 VirtualBox",
+              "source": "@site/docs-3.1-cn/gns3-vm/virtualbox-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/virtualbox-usage",
+              "permalink": "/docs-3.1-cn/gns3-vm/virtualbox-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/gns3-vm/virtualbox-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何在 VirtualBox 中使用 GNS3 VM",
+                "功能标签": [
+                  "基础操作"
+                ],
+                "难度": "入门",
+                "前置知识": "无",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "GNS3 VM 概览",
+                "permalink": "/docs-3.1-cn/gns3-vm/gns3-vm-usage"
+              },
+              "next": {
+                "title": "如何在 KVM/QEMU 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/kvm-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/vmware-esxi-usage",
+              "id": "gns3-vm/vmware-esxi-usage",
+              "title": "如何在 VMware ESXi 中使用 GNS3 VM",
+              "description": "待补充",
+              "source": "@site/docs-3.1-cn/gns3-vm/vmware-esxi-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/vmware-esxi-usage",
+              "permalink": "/docs-3.1-cn/gns3-vm/vmware-esxi-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/gns3-vm/vmware-esxi-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何在 VMware ESXi 中使用 GNS3 VM",
+                "功能标签": [
+                  "基础操作"
+                ],
+                "难度": "中级",
+                "前置知识": "无",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何在 VMware Workstation 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/vmware-workstation-usage"
+              },
+              "next": {
+                "title": "项目首页",
+                "permalink": "/docs-3.1-cn/web-ui/intro"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/vmware-workstation-usage",
+              "id": "gns3-vm/vmware-workstation-usage",
+              "title": "如何在 VMware Workstation 中使用 GNS3 VM",
+              "description": "待补充",
+              "source": "@site/docs-3.1-cn/gns3-vm/vmware-workstation-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/vmware-workstation-usage",
+              "permalink": "/docs-3.1-cn/gns3-vm/vmware-workstation-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/gns3-vm/vmware-workstation-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何在 VMware Workstation 中使用 GNS3 VM",
+                "功能标签": [
+                  "基础操作"
+                ],
+                "难度": "入门",
+                "前置知识": "无",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何在 Hyper-V 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/hyperv-usage"
+              },
+              "next": {
+                "title": "如何在 VMware ESXi 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/vmware-esxi-usage"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "GNS3 3.1 文档",
+              "description": "欢迎阅读 GNS3 3.1 版本文档。本文档介绍 GNS3 3.1 的主要功能和使用方法。",
+              "source": "@site/docs-3.1-cn/intro.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs-3.1-cn/",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "intro",
+                "title": "GNS3 3.1 文档",
+                "sidebar_label": "简介",
+                "slug": "/"
+              },
+              "sidebar": "sidebar310cn",
+              "next": {
+                "title": "GNS3 VM 概览",
+                "permalink": "/docs-3.1-cn/gns3-vm/gns3-vm-usage"
+              }
+            },
+            {
+              "unversionedId": "new-features-3.1/intro",
+              "id": "new-features-3.1/intro",
+              "title": "3.1 新特性概览",
+              "description": "GNS3 3.1 版本的核心特性是全面 Web 化，所有操作（控制台、VNC、Wireshark）都可在浏览器中完成，同时引入 AI 辅助和故障注入功能，大幅提升用户体验和网络仿真能力。",
+              "source": "@site/docs-3.1-cn/new-features-3.1/intro.md",
+              "sourceDirName": "new-features-3.1",
+              "slug": "/new-features-3.1/intro",
+              "permalink": "/docs-3.1-cn/new-features-3.1/intro",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/new-features-3.1/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "3.1 新特性概览",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何进行故障注入测试",
+                "permalink": "/docs-3.1-cn/ai-tools/use-fault-injection"
+              }
+            },
+            {
+              "unversionedId": "web-ui/configure-settings",
+              "id": "web-ui/configure-settings",
+              "title": "如何使用设置页面",
+              "description": "在项目首页点击右上角的三个点按钮，选择\"Settings\"进入设置页面。",
+              "source": "@site/docs-3.1-cn/web-ui/configure-settings.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/configure-settings",
+              "permalink": "/docs-3.1-cn/web-ui/configure-settings",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/configure-settings.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何使用设置页面",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何监控系统状态",
+                "permalink": "/docs-3.1-cn/web-ui/monitor-system"
+              },
+              "next": {
+                "title": "如何管理用户和权限",
+                "permalink": "/docs-3.1-cn/web-ui/manage-users"
+              }
+            },
+            {
+              "unversionedId": "web-ui/intro",
+              "id": "web-ui/intro",
+              "title": "项目首页",
+              "description": "GNS3 Web UI 是完全基于浏览器的网络仿真管理界面。登录后首先看到的是项目页面。",
+              "source": "@site/docs-3.1-cn/web-ui/intro.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/intro",
+              "permalink": "/docs-3.1-cn/web-ui/intro",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "项目首页",
+                "功能标签": [
+                  "入门"
+                ],
+                "难度": "入门",
+                "前置知识": "无",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何在 VMware ESXi 中使用 GNS3 VM",
+                "permalink": "/docs-3.1-cn/gns3-vm/vmware-esxi-usage"
+              },
+              "next": {
+                "title": "项目拓扑",
+                "permalink": "/docs-3.1-cn/web-ui/project-topology"
+              }
+            },
+            {
+              "unversionedId": "web-ui/manage-computes",
+              "id": "web-ui/manage-computes",
+              "title": "如何添加计算节点",
+              "description": "本文档描述设置 GNS3 控制器与远程计算节点所需的最低配置。",
+              "source": "@site/docs-3.1-cn/web-ui/manage-computes.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/manage-computes",
+              "permalink": "/docs-3.1-cn/web-ui/manage-computes",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/manage-computes.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何添加计算节点",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何管理镜像",
+                "permalink": "/docs-3.1-cn/web-ui/manage-images"
+              },
+              "next": {
+                "title": "如何监控系统状态",
+                "permalink": "/docs-3.1-cn/web-ui/monitor-system"
+              }
+            },
+            {
+              "unversionedId": "web-ui/manage-images",
+              "id": "web-ui/manage-images",
+              "title": "如何管理镜像",
+              "description": "在项目首页点击左上角的 GNS3 Logo，选择\"Image Manager\"（镜像管理），可以查看和管理所有已上传的镜像文件。",
+              "source": "@site/docs-3.1-cn/web-ui/manage-images.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/manage-images",
+              "permalink": "/docs-3.1-cn/web-ui/manage-images",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/manage-images.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何管理镜像",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置 Docker 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-docker"
+              },
+              "next": {
+                "title": "如何添加计算节点",
+                "permalink": "/docs-3.1-cn/web-ui/manage-computes"
+              }
+            },
+            {
+              "unversionedId": "web-ui/manage-users",
+              "id": "web-ui/manage-users",
+              "title": "如何管理用户和权限",
+              "description": "在项目首页点击左上角的 GNS3 Logo，选择\"Management\"（用户管理），进入管理页面。",
+              "source": "@site/docs-3.1-cn/web-ui/manage-users.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/manage-users",
+              "permalink": "/docs-3.1-cn/web-ui/manage-users",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/manage-users.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何管理用户和权限",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何使用设置页面",
+                "permalink": "/docs-3.1-cn/web-ui/configure-settings"
+              },
+              "next": {
+                "title": "如何配置和使用 AI 助手",
+                "permalink": "/docs-3.1-cn/ai-tools/use-ai-assistant"
+              }
+            },
+            {
+              "unversionedId": "web-ui/monitor-system",
+              "id": "web-ui/monitor-system",
+              "title": "如何监控系统状态",
+              "description": "在项目首页点击右上角的三个点按钮，选择\"System Status\"进入系统状态页面。",
+              "source": "@site/docs-3.1-cn/web-ui/monitor-system.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/monitor-system",
+              "permalink": "/docs-3.1-cn/web-ui/monitor-system",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/monitor-system.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何监控系统状态",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何添加计算节点",
+                "permalink": "/docs-3.1-cn/web-ui/manage-computes"
+              },
+              "next": {
+                "title": "如何使用设置页面",
+                "permalink": "/docs-3.1-cn/web-ui/configure-settings"
+              }
+            },
+            {
+              "unversionedId": "web-ui/new-template",
+              "id": "web-ui/new-template",
+              "title": "新建模板",
+              "description": "模板是 GNS3 中定义设备运行方式的配置模板。创建模板后，就可以在项目中添加对应的设备节点。",
+              "source": "@site/docs-3.1-cn/web-ui/new-template.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/new-template",
+              "permalink": "/docs-3.1-cn/web-ui/new-template",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/new-template.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "新建模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "前置知识": "已了解设备镜像的基本概念",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "Web Wireshark",
+                "permalink": "/docs-3.1-cn/web-ui/use-web-wireshark"
+              },
+              "next": {
+                "title": "如何创建 Cisco IOS 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-cisco-ios"
+              }
+            },
+            {
+              "unversionedId": "web-ui/project-topology",
+              "id": "web-ui/project-topology",
+              "title": "项目拓扑",
+              "description": "Project Map（项目拓扑图）是 GNS3 Web UI 的核心工作区，用于创建、编辑和管理网络拓扑图。这是一个交互式的可视化编辑器，用户可以添加节点、连接设备、配置网络拓扑，并实时控制仿真设备的运行状态。",
+              "source": "@site/docs-3.1-cn/web-ui/project-topology.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/project-topology",
+              "permalink": "/docs-3.1-cn/web-ui/project-topology",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/project-topology.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "项目拓扑",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "项目首页",
+                "permalink": "/docs-3.1-cn/web-ui/intro"
+              },
+              "next": {
+                "title": "如何使用 Web 控制台",
+                "permalink": "/docs-3.1-cn/web-ui/use-web-console"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-cisco-ios",
+              "id": "web-ui/template-cisco-ios",
+              "title": "如何创建 Cisco IOS 模板",
+              "description": "📺 观看视频教程 - 跟随视频一步步创建 Cisco IOS 模板",
+              "source": "@site/docs-3.1-cn/web-ui/template-cisco-ios.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-cisco-ios",
+              "permalink": "/docs-3.1-cn/web-ui/template-cisco-ios",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-cisco-ios.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何创建 Cisco IOS 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "前置知识": "拥有 Cisco IOS 镜像文件",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "新建模板",
+                "permalink": "/docs-3.1-cn/web-ui/new-template"
+              },
+              "next": {
+                "title": "如何创建 Cisco IOU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-cisco-iou"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-cisco-iou",
+              "id": "web-ui/template-cisco-iou",
+              "title": "如何创建 Cisco IOU 模板",
+              "description": "📺 观看视频教程 - 跟随视频一步步创建 Cisco IOU 模板",
+              "source": "@site/docs-3.1-cn/web-ui/template-cisco-iou.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-cisco-iou",
+              "permalink": "/docs-3.1-cn/web-ui/template-cisco-iou",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-cisco-iou.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何创建 Cisco IOU 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "前置知识": "拥有 Cisco IOU 镜像文件（.iol）",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何创建 Cisco IOS 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-cisco-ios"
+              },
+              "next": {
+                "title": "如何创建 QEMU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-qemu"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-docker",
+              "id": "web-ui/template-docker",
+              "title": "如何创建 Docker 模板",
+              "description": "📺 观看视频教程 - 跟随视频一步步创建 Docker 模板",
+              "source": "@site/docs-3.1-cn/web-ui/template-docker.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-docker",
+              "permalink": "/docs-3.1-cn/web-ui/template-docker",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-docker.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何创建 Docker 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "前置知识": "了解 Docker 镜像的基本概念",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何创建 QEMU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-qemu"
+              },
+              "next": {
+                "title": "模板首选项",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences",
+              "id": "web-ui/template-preferences",
+              "title": "模板首选项",
+              "description": "在项目首页点击左上角的 GNS3 Logo，选择 Template Preferences（模板首选项），可以查看和管理所有已创建的模板。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "模板首选项",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何创建 Docker 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-docker"
+              },
+              "next": {
+                "title": "如何配置 Built-in 内置模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-builtin"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-builtin",
+              "id": "web-ui/template-preferences-builtin",
+              "title": "如何配置 Built-in 内置模板",
+              "description": "点击\"Built-in\"选项进入。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences-builtin.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-builtin",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences-builtin",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences-builtin.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置 Built-in 内置模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "模板首选项",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences"
+              },
+              "next": {
+                "title": "如何配置 Dynamips 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-dynamips"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-docker",
+              "id": "web-ui/template-preferences-docker",
+              "title": "如何配置 Docker 模板",
+              "description": "Docker 是 GNS3 中基于容器技术的节点类型，与 QEMU/Dynamips 等虚拟机不同，它共享宿主机内核，启动速度极快。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences-docker.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-docker",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences-docker",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences-docker.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置 Docker 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置 QEMU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-qemu"
+              },
+              "next": {
+                "title": "如何管理镜像",
+                "permalink": "/docs-3.1-cn/web-ui/manage-images"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-dynamips",
+              "id": "web-ui/template-preferences-dynamips",
+              "title": "如何配置 Dynamips 模板",
+              "description": "Dynamips 是 GNS3 中用 IOS 镜像模拟 Cisco 路由器的引擎。与 builtin 模板不同，Dynamips 的 IOS 路由器模板需要用户手动创建——指定 IOS 镜像、选择平台、配置插槽等。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences-dynamips.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-dynamips",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences-dynamips",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences-dynamips.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置 Dynamips 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置 Built-in 内置模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-builtin"
+              },
+              "next": {
+                "title": "如何配置 IOU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-iou"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-iou",
+              "id": "web-ui/template-preferences-iou",
+              "title": "如何配置 IOU 模板",
+              "description": "IOU 是直接运行在 Linux 上的原生 Cisco IOS ELF 二进制文件（.iol），无需 Dynamips 硬件模拟，性能远高于 Dynamips。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences-iou.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-iou",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences-iou",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences-iou.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置 IOU 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置 Dynamips 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-dynamips"
+              },
+              "next": {
+                "title": "如何配置 VPCS 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-vpcs"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-qemu",
+              "id": "web-ui/template-preferences-qemu",
+              "title": "如何配置 QEMU 模板",
+              "description": "QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完整的硬件虚拟化。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences-qemu.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-qemu",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences-qemu",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences-qemu.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置 QEMU 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "15 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置 VPCS 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-vpcs"
+              },
+              "next": {
+                "title": "如何配置 Docker 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-docker"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-vpcs",
+              "id": "web-ui/template-preferences-vpcs",
+              "title": "如何配置 VPCS 模板",
+              "description": "VPCS（Virtual PC Simulator）是 GNS3 中模拟 PC 的轻量级工具。与路由器/交换机不同，VPCS 只模拟一个极简的虚拟 PC 环境，用于测试网络连通性。",
+              "source": "@site/docs-3.1-cn/web-ui/template-preferences-vpcs.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-vpcs",
+              "permalink": "/docs-3.1-cn/web-ui/template-preferences-vpcs",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-preferences-vpcs.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何配置 VPCS 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "10 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何配置 IOU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-iou"
+              },
+              "next": {
+                "title": "如何配置 QEMU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-preferences-qemu"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-qemu",
+              "id": "web-ui/template-qemu",
+              "title": "如何创建 QEMU 模板",
+              "description": "📺 观看视频教程 - 跟随视频一步步创建 QEMU 模板",
+              "source": "@site/docs-3.1-cn/web-ui/template-qemu.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-qemu",
+              "permalink": "/docs-3.1-cn/web-ui/template-qemu",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/template-qemu.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何创建 QEMU 模板",
+                "功能标签": [
+                  "操作"
+                ],
+                "难度": "入门",
+                "前置知识": "拥有 QEMU 镜像文件和启动文件",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何创建 Cisco IOU 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-cisco-iou"
+              },
+              "next": {
+                "title": "如何创建 Docker 模板",
+                "permalink": "/docs-3.1-cn/web-ui/template-docker"
+              }
+            },
+            {
+              "unversionedId": "web-ui/use-web-console",
+              "id": "web-ui/use-web-console",
+              "title": "如何使用 Web 控制台",
+              "description": "Web Console 是 GNS3 3.1 的新功能，让您直接在浏览器中访问设备的命令行终端，无需安装额外软件或打开多个窗口。",
+              "source": "@site/docs-3.1-cn/web-ui/use-web-console.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/use-web-console",
+              "permalink": "/docs-3.1-cn/web-ui/use-web-console",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/use-web-console.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何使用 Web 控制台",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "项目拓扑",
+                "permalink": "/docs-3.1-cn/web-ui/project-topology"
+              },
+              "next": {
+                "title": "如何使用 Web VNC",
+                "permalink": "/docs-3.1-cn/web-ui/use-web-vnc"
+              }
+            },
+            {
+              "unversionedId": "web-ui/use-web-vnc",
+              "id": "web-ui/use-web-vnc",
+              "title": "如何使用 Web VNC",
+              "description": "Web VNC 让您直接在浏览器中访问 VNC 类型的设备（如 QEMU 虚拟机、docker等带有桌面的模拟设备），无需安装 VNC 客户端软件。",
+              "source": "@site/docs-3.1-cn/web-ui/use-web-vnc.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/use-web-vnc",
+              "permalink": "/docs-3.1-cn/web-ui/use-web-vnc",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/use-web-vnc.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "如何使用 Web VNC",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何使用 Web 控制台",
+                "permalink": "/docs-3.1-cn/web-ui/use-web-console"
+              },
+              "next": {
+                "title": "Web Wireshark",
+                "permalink": "/docs-3.1-cn/web-ui/use-web-wireshark"
+              }
+            },
+            {
+              "unversionedId": "web-ui/use-web-wireshark",
+              "id": "web-ui/use-web-wireshark",
+              "title": "Web Wireshark",
+              "description": "Web Wireshark 让您直接在浏览器中分析网络数据包，无需安装 Wireshark 软件。它通过 Docker 容器中的 xpra 技术提供完整的 Wireshark 图形界面，支持实时捕获和深度包检测。",
+              "source": "@site/docs-3.1-cn/web-ui/use-web-wireshark.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/use-web-wireshark",
+              "permalink": "/docs-3.1-cn/web-ui/use-web-wireshark",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-cn/web-ui/use-web-wireshark.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Web Wireshark",
+                "功能标签": [
+                  "新特性"
+                ],
+                "难度": "入门",
+                "预计阅读时间": "5 分钟"
+              },
+              "sidebar": "sidebar310cn",
+              "previous": {
+                "title": "如何使用 Web VNC",
+                "permalink": "/docs-3.1-cn/web-ui/use-web-vnc"
+              },
+              "next": {
+                "title": "新建模板",
+                "permalink": "/docs-3.1-cn/web-ui/new-template"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "sidebar310cn": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "GNS3 VM",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/gns3-vm-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/virtualbox-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/kvm-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/hyperv-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/vmware-workstation-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/vmware-esxi-usage"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "管理项目",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/intro"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/project-topology"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/use-web-console"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/use-web-vnc"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/use-web-wireshark"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "创建模板",
+                "link": {
+                  "type": "doc",
+                  "id": "web-ui/new-template"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-cisco-ios"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-cisco-iou"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-qemu"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-docker"
+                  }
+                ],
+                "collapsible": true,
+                "collapsed": false
+              },
+              {
+                "type": "category",
+                "label": "配置模板",
+                "link": {
+                  "type": "doc",
+                  "id": "web-ui/template-preferences"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-builtin"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-dynamips"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-iou"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-vpcs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-qemu"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-docker"
+                  }
+                ],
+                "collapsible": true,
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "管理资源",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/manage-images"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/manage-computes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/monitor-system"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/configure-settings"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "用户管理",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/manage-users"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "AI 辅助工具",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "ai-tools/use-ai-assistant"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ai-tools/use-ai-skills"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ai-tools/use-fault-injection"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "doc",
+                "label": "3.1 新特性",
+                "id": "new-features-3.1/intro"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "docs-310-en": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs-3.1-en",
+          "tagsPath": "/docs-3.1-en/tags",
+          "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en",
+          "editUrlLocalized": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/i18n/en/docusaurus-plugin-content-docs-docs-310-en/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/yueguobin/myCode/GNS3/gns3-docs/sidebars-3.1-en.js",
+          "contentPath": "/home/yueguobin/myCode/GNS3/gns3-docs/docs-3.1-en",
+          "contentPathLocalized": "/home/yueguobin/myCode/GNS3/gns3-docs/i18n/en/docusaurus-plugin-content-docs-docs-310-en/current",
+          "docs": [
+            {
+              "unversionedId": "ai-tools/use-ai-assistant",
+              "id": "ai-tools/use-ai-assistant",
+              "title": "How to configure and use AI Assistant",
+              "description": "GNS3 AI Assistant (GNS3 Copilot) started as a separate project. See github.com/yueguobin/gns3-copilot for details. It was created by community developer YueGuobin. It is a network automation assistant based on large language models. It supports managing network devices, diagnosing faults, and automating configuration using natural language. It has been included in GNS3 3.1.",
+              "source": "@site/docs-3.1-en/ai-tools/use-ai-assistant.md",
+              "sourceDirName": "ai-tools",
+              "slug": "/ai-tools/use-ai-assistant",
+              "permalink": "/docs-3.1-en/ai-tools/use-ai-assistant",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/ai-tools/use-ai-assistant.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure and use AI Assistant"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to manage users and permissions",
+                "permalink": "/docs-3.1-en/web-ui/manage-users"
+              },
+              "next": {
+                "title": "How to use AI Skills",
+                "permalink": "/docs-3.1-en/ai-tools/use-ai-skills"
+              }
+            },
+            {
+              "unversionedId": "ai-tools/use-ai-skills",
+              "id": "ai-tools/use-ai-skills",
+              "title": "How to use AI Skills",
+              "description": "GNS3 Skills is a repository of network troubleshooting skills. It is used to expand the AI Assistant's capabilities. It contains 50 YAML skill files and 815 fault injection scenarios. It covers over 60 network protocols and technologies (from PPP to SRv6 and EVPN). It is integrated into the GNS3 network simulation environment. It provides automated fault diagnosis and learning support.",
+              "source": "@site/docs-3.1-en/ai-tools/use-ai-skills.md",
+              "sourceDirName": "ai-tools",
+              "slug": "/ai-tools/use-ai-skills",
+              "permalink": "/docs-3.1-en/ai-tools/use-ai-skills",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/ai-tools/use-ai-skills.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use AI Skills"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure and use AI Assistant",
+                "permalink": "/docs-3.1-en/ai-tools/use-ai-assistant"
+              },
+              "next": {
+                "title": "How to inject faults for testing",
+                "permalink": "/docs-3.1-en/ai-tools/use-fault-injection"
+              }
+            },
+            {
+              "unversionedId": "ai-tools/use-fault-injection",
+              "id": "ai-tools/use-fault-injection",
+              "title": "How to inject faults for testing",
+              "description": "Fault injection is a feature of the GNS3 AI Assistant. It simulates network problems in your topology. This helps you practice your network troubleshooting skills. The feature uses AI to automatically analyze your network topology, choose the right fault type, and inject it into the project.",
+              "source": "@site/docs-3.1-en/ai-tools/use-fault-injection.md",
+              "sourceDirName": "ai-tools",
+              "slug": "/ai-tools/use-fault-injection",
+              "permalink": "/docs-3.1-en/ai-tools/use-fault-injection",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/ai-tools/use-fault-injection.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to inject faults for testing"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use AI Skills",
+                "permalink": "/docs-3.1-en/ai-tools/use-ai-skills"
+              },
+              "next": {
+                "title": "3.1 New Features Overview",
+                "permalink": "/docs-3.1-en/new-features-3.1/intro"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/gns3-vm-usage",
+              "id": "gns3-vm/gns3-vm-usage",
+              "title": "How to use GNS3 VM",
+              "description": "GNS3 VM is a GNS3 server that runs inside a virtual machine. It gives you a full GNS3 network simulation environment. It works together with the GNS3 Web UI to provide powerful network simulation.",
+              "source": "@site/docs-3.1-en/gns3-vm/gns3-vm-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/gns3-vm-usage",
+              "permalink": "/docs-3.1-en/gns3-vm/gns3-vm-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/gns3-vm/gns3-vm-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use GNS3 VM"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs-3.1-en/"
+              },
+              "next": {
+                "title": "How to use GNS3 VM with VirtualBox",
+                "permalink": "/docs-3.1-en/gns3-vm/virtualbox-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/hyperv-usage",
+              "id": "gns3-vm/hyperv-usage",
+              "title": "How to use GNS3 VM with Hyper-V",
+              "description": "Coming soon",
+              "source": "@site/docs-3.1-en/gns3-vm/hyperv-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/hyperv-usage",
+              "permalink": "/docs-3.1-en/gns3-vm/hyperv-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/gns3-vm/hyperv-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use GNS3 VM with Hyper-V"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use GNS3 VM with KVM/QEMU",
+                "permalink": "/docs-3.1-en/gns3-vm/kvm-usage"
+              },
+              "next": {
+                "title": "How to use GNS3 VM with VMware Workstation",
+                "permalink": "/docs-3.1-en/gns3-vm/vmware-workstation-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/kvm-usage",
+              "id": "gns3-vm/kvm-usage",
+              "title": "How to use GNS3 VM with KVM/QEMU",
+              "description": "Coming soon",
+              "source": "@site/docs-3.1-en/gns3-vm/kvm-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/kvm-usage",
+              "permalink": "/docs-3.1-en/gns3-vm/kvm-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/gns3-vm/kvm-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use GNS3 VM with KVM/QEMU"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use GNS3 VM with VirtualBox",
+                "permalink": "/docs-3.1-en/gns3-vm/virtualbox-usage"
+              },
+              "next": {
+                "title": "How to use GNS3 VM with Hyper-V",
+                "permalink": "/docs-3.1-en/gns3-vm/hyperv-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/virtualbox-usage",
+              "id": "gns3-vm/virtualbox-usage",
+              "title": "How to use GNS3 VM with VirtualBox",
+              "description": "📺 Watch the Video Tutorial - Follow along step-by-step to import GNS3 VM to VirtualBox",
+              "source": "@site/docs-3.1-en/gns3-vm/virtualbox-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/virtualbox-usage",
+              "permalink": "/docs-3.1-en/gns3-vm/virtualbox-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/gns3-vm/virtualbox-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use GNS3 VM with VirtualBox"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use GNS3 VM",
+                "permalink": "/docs-3.1-en/gns3-vm/gns3-vm-usage"
+              },
+              "next": {
+                "title": "How to use GNS3 VM with KVM/QEMU",
+                "permalink": "/docs-3.1-en/gns3-vm/kvm-usage"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/vmware-esxi-usage",
+              "id": "gns3-vm/vmware-esxi-usage",
+              "title": "How to use GNS3 VM with VMware ESXi",
+              "description": "Coming soon",
+              "source": "@site/docs-3.1-en/gns3-vm/vmware-esxi-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/vmware-esxi-usage",
+              "permalink": "/docs-3.1-en/gns3-vm/vmware-esxi-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/gns3-vm/vmware-esxi-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use GNS3 VM with VMware ESXi"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use GNS3 VM with VMware Workstation",
+                "permalink": "/docs-3.1-en/gns3-vm/vmware-workstation-usage"
+              },
+              "next": {
+                "title": "Project Home",
+                "permalink": "/docs-3.1-en/web-ui/intro"
+              }
+            },
+            {
+              "unversionedId": "gns3-vm/vmware-workstation-usage",
+              "id": "gns3-vm/vmware-workstation-usage",
+              "title": "How to use GNS3 VM with VMware Workstation",
+              "description": "Coming soon",
+              "source": "@site/docs-3.1-en/gns3-vm/vmware-workstation-usage.md",
+              "sourceDirName": "gns3-vm",
+              "slug": "/gns3-vm/vmware-workstation-usage",
+              "permalink": "/docs-3.1-en/gns3-vm/vmware-workstation-usage",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/gns3-vm/vmware-workstation-usage.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use GNS3 VM with VMware Workstation"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use GNS3 VM with Hyper-V",
+                "permalink": "/docs-3.1-en/gns3-vm/hyperv-usage"
+              },
+              "next": {
+                "title": "How to use GNS3 VM with VMware ESXi",
+                "permalink": "/docs-3.1-en/gns3-vm/vmware-esxi-usage"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "GNS3 3.1 Documentation",
+              "description": "Welcome to the GNS3 3.1 documentation. This guide explains the main features of GNS3 3.1 and how to use it.",
+              "source": "@site/docs-3.1-en/intro.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs-3.1-en/",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "intro",
+                "title": "GNS3 3.1 Documentation",
+                "sidebar_label": "Introduction",
+                "slug": "/"
+              },
+              "sidebar": "sidebar310en",
+              "next": {
+                "title": "How to use GNS3 VM",
+                "permalink": "/docs-3.1-en/gns3-vm/gns3-vm-usage"
+              }
+            },
+            {
+              "unversionedId": "new-features-3.1/intro",
+              "id": "new-features-3.1/intro",
+              "title": "3.1 New Features Overview",
+              "description": "GNS3 3.1 is all about moving everything to the web. You can now do all operations (console, VNC, Wireshark) directly in your browser. It also adds AI help and fault injection. These changes make the user experience much better and improve network simulation.",
+              "source": "@site/docs-3.1-en/new-features-3.1/intro.md",
+              "sourceDirName": "new-features-3.1",
+              "slug": "/new-features-3.1/intro",
+              "permalink": "/docs-3.1-en/new-features-3.1/intro",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/new-features-3.1/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "3.1 New Features Overview"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to inject faults for testing",
+                "permalink": "/docs-3.1-en/ai-tools/use-fault-injection"
+              }
+            },
+            {
+              "unversionedId": "web-ui/configure-settings",
+              "id": "web-ui/configure-settings",
+              "title": "How to use settings page",
+              "description": "On the project home page, click the three-dot button at the top right and select \"Settings\".",
+              "source": "@site/docs-3.1-en/web-ui/configure-settings.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/configure-settings",
+              "permalink": "/docs-3.1-en/web-ui/configure-settings",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/configure-settings.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use settings page"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to monitor system status",
+                "permalink": "/docs-3.1-en/web-ui/monitor-system"
+              },
+              "next": {
+                "title": "How to manage users and permissions",
+                "permalink": "/docs-3.1-en/web-ui/manage-users"
+              }
+            },
+            {
+              "unversionedId": "web-ui/intro",
+              "id": "web-ui/intro",
+              "title": "Project Home",
+              "description": "GNS3 Web UI is a browser-based network simulation management interface. After you log in, the first page you see is the project page.",
+              "source": "@site/docs-3.1-en/web-ui/intro.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/intro",
+              "permalink": "/docs-3.1-en/web-ui/intro",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Project Home"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use GNS3 VM with VMware ESXi",
+                "permalink": "/docs-3.1-en/gns3-vm/vmware-esxi-usage"
+              },
+              "next": {
+                "title": "Project Topology",
+                "permalink": "/docs-3.1-en/web-ui/project-topology"
+              }
+            },
+            {
+              "unversionedId": "web-ui/manage-computes",
+              "id": "web-ui/manage-computes",
+              "title": "How to add compute nodes",
+              "description": "This document describes the minimum setup needed for GNS3 controller and remote compute nodes.",
+              "source": "@site/docs-3.1-en/web-ui/manage-computes.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/manage-computes",
+              "permalink": "/docs-3.1-en/web-ui/manage-computes",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/manage-computes.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to add compute nodes"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "Image Manager",
+                "permalink": "/docs-3.1-en/web-ui/manage-images"
+              },
+              "next": {
+                "title": "How to monitor system status",
+                "permalink": "/docs-3.1-en/web-ui/monitor-system"
+              }
+            },
+            {
+              "unversionedId": "web-ui/manage-images",
+              "id": "web-ui/manage-images",
+              "title": "Image Manager",
+              "description": "On the project home page, click the GNS3 Logo at the top left and select \"Image Manager\". Here you can see and manage all uploaded image files.",
+              "source": "@site/docs-3.1-en/web-ui/manage-images.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/manage-images",
+              "permalink": "/docs-3.1-en/web-ui/manage-images",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/manage-images.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Image Manager"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure Docker template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-docker"
+              },
+              "next": {
+                "title": "How to add compute nodes",
+                "permalink": "/docs-3.1-en/web-ui/manage-computes"
+              }
+            },
+            {
+              "unversionedId": "web-ui/manage-users",
+              "id": "web-ui/manage-users",
+              "title": "How to manage users and permissions",
+              "description": "On the project home page, click the GNS3 Logo at the top left and select \"Management\".",
+              "source": "@site/docs-3.1-en/web-ui/manage-users.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/manage-users",
+              "permalink": "/docs-3.1-en/web-ui/manage-users",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/manage-users.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to manage users and permissions"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use settings page",
+                "permalink": "/docs-3.1-en/web-ui/configure-settings"
+              },
+              "next": {
+                "title": "How to configure and use AI Assistant",
+                "permalink": "/docs-3.1-en/ai-tools/use-ai-assistant"
+              }
+            },
+            {
+              "unversionedId": "web-ui/monitor-system",
+              "id": "web-ui/monitor-system",
+              "title": "How to monitor system status",
+              "description": "On the project home page, click the three-dot button at the top right and select \"System Status\".",
+              "source": "@site/docs-3.1-en/web-ui/monitor-system.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/monitor-system",
+              "permalink": "/docs-3.1-en/web-ui/monitor-system",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/monitor-system.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to monitor system status"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to add compute nodes",
+                "permalink": "/docs-3.1-en/web-ui/manage-computes"
+              },
+              "next": {
+                "title": "How to use settings page",
+                "permalink": "/docs-3.1-en/web-ui/configure-settings"
+              }
+            },
+            {
+              "unversionedId": "web-ui/new-template",
+              "id": "web-ui/new-template",
+              "title": "New Template",
+              "description": "A template is a configuration that defines how a device runs in GNS3. After you create a template, you can add the device node to your project.",
+              "source": "@site/docs-3.1-en/web-ui/new-template.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/new-template",
+              "permalink": "/docs-3.1-en/web-ui/new-template",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/new-template.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "New Template"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "Web Wireshark",
+                "permalink": "/docs-3.1-en/web-ui/use-web-wireshark"
+              },
+              "next": {
+                "title": "How to create a Cisco IOS template",
+                "permalink": "/docs-3.1-en/web-ui/template-cisco-ios"
+              }
+            },
+            {
+              "unversionedId": "web-ui/project-topology",
+              "id": "web-ui/project-topology",
+              "title": "Project Topology",
+              "description": "The Project Map is the main work area in the GNS3 Web UI. You use it to create, edit, and manage your network topology. It is an interactive visual editor. You can add nodes, connect devices, set up the network, and control the simulation devices in real time.",
+              "source": "@site/docs-3.1-en/web-ui/project-topology.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/project-topology",
+              "permalink": "/docs-3.1-en/web-ui/project-topology",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/project-topology.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Project Topology"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "Project Home",
+                "permalink": "/docs-3.1-en/web-ui/intro"
+              },
+              "next": {
+                "title": "How to use Web Console",
+                "permalink": "/docs-3.1-en/web-ui/use-web-console"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-cisco-ios",
+              "id": "web-ui/template-cisco-ios",
+              "title": "How to create a Cisco IOS template",
+              "description": "📺 Watch the Video Tutorial - Follow along step-by-step to create a Cisco IOS template",
+              "source": "@site/docs-3.1-en/web-ui/template-cisco-ios.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-cisco-ios",
+              "permalink": "/docs-3.1-en/web-ui/template-cisco-ios",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-cisco-ios.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to create a Cisco IOS template"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "New Template",
+                "permalink": "/docs-3.1-en/web-ui/new-template"
+              },
+              "next": {
+                "title": "How to create a Cisco IOU template",
+                "permalink": "/docs-3.1-en/web-ui/template-cisco-iou"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-cisco-iou",
+              "id": "web-ui/template-cisco-iou",
+              "title": "How to create a Cisco IOU template",
+              "description": "📺 Watch the Video Tutorial - Follow along step-by-step to create a Cisco IOU template",
+              "source": "@site/docs-3.1-en/web-ui/template-cisco-iou.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-cisco-iou",
+              "permalink": "/docs-3.1-en/web-ui/template-cisco-iou",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-cisco-iou.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to create a Cisco IOU template"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to create a Cisco IOS template",
+                "permalink": "/docs-3.1-en/web-ui/template-cisco-ios"
+              },
+              "next": {
+                "title": "How to create a QEMU template",
+                "permalink": "/docs-3.1-en/web-ui/template-qemu"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-docker",
+              "id": "web-ui/template-docker",
+              "title": "How to create a Docker template",
+              "description": "📺 Watch the Video Tutorial - Follow along step-by-step to create a Docker template",
+              "source": "@site/docs-3.1-en/web-ui/template-docker.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-docker",
+              "permalink": "/docs-3.1-en/web-ui/template-docker",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-docker.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to create a Docker template"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to create a QEMU template",
+                "permalink": "/docs-3.1-en/web-ui/template-qemu"
+              },
+              "next": {
+                "title": "Template Preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences",
+              "id": "web-ui/template-preferences",
+              "title": "Template Preferences",
+              "description": "In the project home page, click the GNS3 Logo at the top left, then select Template Preferences. Here you can see and manage all created templates.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Template Preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to create a Docker template",
+                "permalink": "/docs-3.1-en/web-ui/template-docker"
+              },
+              "next": {
+                "title": "How to configure Built-in template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-builtin"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-builtin",
+              "id": "web-ui/template-preferences-builtin",
+              "title": "How to configure Built-in template preferences",
+              "description": "Click the \"Built-in\" option to enter.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences-builtin.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-builtin",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences-builtin",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences-builtin.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure Built-in template preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "Template Preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences"
+              },
+              "next": {
+                "title": "How to configure Dynamips template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-dynamips"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-docker",
+              "id": "web-ui/template-preferences-docker",
+              "title": "How to configure Docker template preferences",
+              "description": "Docker is a node type in GNS3 based on container technology. Unlike QEMU/Dynamips virtual machines, Docker shares the host machine kernel. It starts very fast.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences-docker.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-docker",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences-docker",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences-docker.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure Docker template preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure QEMU template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-qemu"
+              },
+              "next": {
+                "title": "Image Manager",
+                "permalink": "/docs-3.1-en/web-ui/manage-images"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-dynamips",
+              "id": "web-ui/template-preferences-dynamips",
+              "title": "How to configure Dynamips template preferences",
+              "description": "Dynamips is the engine in GNS3 that uses IOS images to simulate Cisco routers. Unlike built-in templates, Dynamips IOS router templates need to be created by the user. You must select the IOS image, choose the platform, configure slots, and so on.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences-dynamips.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-dynamips",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences-dynamips",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences-dynamips.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure Dynamips template preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure Built-in template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-builtin"
+              },
+              "next": {
+                "title": "How to configure IOU template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-iou"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-iou",
+              "id": "web-ui/template-preferences-iou",
+              "title": "How to configure IOU template preferences",
+              "description": "IOU is a native Cisco IOS ELF binary (.iol) that runs directly on Linux. It does not need Dynamips hardware simulation. Its performance is much higher than Dynamips.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences-iou.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-iou",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences-iou",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences-iou.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure IOU template preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure Dynamips template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-dynamips"
+              },
+              "next": {
+                "title": "How to configure VPCS template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-vpcs"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-qemu",
+              "id": "web-ui/template-preferences-qemu",
+              "title": "How to configure QEMU template preferences",
+              "description": "QEMU is the most complex node type in GNS3. It has the most configuration options. It supports full hardware virtualization.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences-qemu.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-qemu",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences-qemu",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences-qemu.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure QEMU template preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure VPCS template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-vpcs"
+              },
+              "next": {
+                "title": "How to configure Docker template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-docker"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-preferences-vpcs",
+              "id": "web-ui/template-preferences-vpcs",
+              "title": "How to configure VPCS template preferences",
+              "description": "VPCS (Virtual PC Simulator) is a lightweight tool in GNS3 that simulates a PC. Unlike routers or switches, VPCS only simulates a very simple virtual PC environment. It is used to test network connectivity.",
+              "source": "@site/docs-3.1-en/web-ui/template-preferences-vpcs.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-preferences-vpcs",
+              "permalink": "/docs-3.1-en/web-ui/template-preferences-vpcs",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-preferences-vpcs.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to configure VPCS template preferences"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to configure IOU template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-iou"
+              },
+              "next": {
+                "title": "How to configure QEMU template preferences",
+                "permalink": "/docs-3.1-en/web-ui/template-preferences-qemu"
+              }
+            },
+            {
+              "unversionedId": "web-ui/template-qemu",
+              "id": "web-ui/template-qemu",
+              "title": "How to create a QEMU template",
+              "description": "📺 Watch the Video Tutorial - Follow along step-by-step to create a QEMU template",
+              "source": "@site/docs-3.1-en/web-ui/template-qemu.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/template-qemu",
+              "permalink": "/docs-3.1-en/web-ui/template-qemu",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/template-qemu.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to create a QEMU template"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to create a Cisco IOU template",
+                "permalink": "/docs-3.1-en/web-ui/template-cisco-iou"
+              },
+              "next": {
+                "title": "How to create a Docker template",
+                "permalink": "/docs-3.1-en/web-ui/template-docker"
+              }
+            },
+            {
+              "unversionedId": "web-ui/use-web-console",
+              "id": "web-ui/use-web-console",
+              "title": "How to use Web Console",
+              "description": "Web Console is a new feature in GNS3 3.1. It lets you access the command-line terminal of your devices directly in the browser. You do not need to install extra software or open many windows.",
+              "source": "@site/docs-3.1-en/web-ui/use-web-console.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/use-web-console",
+              "permalink": "/docs-3.1-en/web-ui/use-web-console",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/use-web-console.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use Web Console"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "Project Topology",
+                "permalink": "/docs-3.1-en/web-ui/project-topology"
+              },
+              "next": {
+                "title": "How to use Web VNC",
+                "permalink": "/docs-3.1-en/web-ui/use-web-vnc"
+              }
+            },
+            {
+              "unversionedId": "web-ui/use-web-vnc",
+              "id": "web-ui/use-web-vnc",
+              "title": "How to use Web VNC",
+              "description": "Web VNC lets you access VNC-type devices (like QEMU virtual machines, Docker, and other emulated devices with a desktop) directly in your browser. You do not need to install VNC client software.",
+              "source": "@site/docs-3.1-en/web-ui/use-web-vnc.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/use-web-vnc",
+              "permalink": "/docs-3.1-en/web-ui/use-web-vnc",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/use-web-vnc.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "How to use Web VNC"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use Web Console",
+                "permalink": "/docs-3.1-en/web-ui/use-web-console"
+              },
+              "next": {
+                "title": "Web Wireshark",
+                "permalink": "/docs-3.1-en/web-ui/use-web-wireshark"
+              }
+            },
+            {
+              "unversionedId": "web-ui/use-web-wireshark",
+              "id": "web-ui/use-web-wireshark",
+              "title": "Web Wireshark",
+              "description": "Web Wireshark lets you analyze network packets directly in your browser. You do not need to install Wireshark software. It uses xpra technology inside a Docker container to give you the full Wireshark graphical interface. It supports real-time capture and deep packet inspection.",
+              "source": "@site/docs-3.1-en/web-ui/use-web-wireshark.md",
+              "sourceDirName": "web-ui",
+              "slug": "/web-ui/use-web-wireshark",
+              "permalink": "/docs-3.1-en/web-ui/use-web-wireshark",
+              "draft": false,
+              "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/docs-3.1-en/web-ui/use-web-wireshark.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Web Wireshark"
+              },
+              "sidebar": "sidebar310en",
+              "previous": {
+                "title": "How to use Web VNC",
+                "permalink": "/docs-3.1-en/web-ui/use-web-vnc"
+              },
+              "next": {
+                "title": "New Template",
+                "permalink": "/docs-3.1-en/web-ui/new-template"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "sidebar310en": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "GNS3 VM",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/gns3-vm-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/virtualbox-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/kvm-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/hyperv-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/vmware-workstation-usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "gns3-vm/vmware-esxi-usage"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Managing Projects",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/intro"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/project-topology"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/use-web-console"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/use-web-vnc"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/use-web-wireshark"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Creating Templates",
+                "link": {
+                  "type": "doc",
+                  "id": "web-ui/new-template"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-cisco-ios"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-cisco-iou"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-qemu"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-docker"
+                  }
+                ],
+                "collapsible": true,
+                "collapsed": false
+              },
+              {
+                "type": "category",
+                "label": "Configuring Templates",
+                "link": {
+                  "type": "doc",
+                  "id": "web-ui/template-preferences"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-builtin"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-dynamips"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-iou"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-vpcs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-qemu"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/template-preferences-docker"
+                  }
+                ],
+                "collapsible": true,
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Managing Resources",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/manage-images"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/manage-computes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/monitor-system"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web-ui/configure-settings"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Managing Users",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web-ui/manage-users"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "AI Tools",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "ai-tools/use-ai-assistant"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ai-tools/use-ai-skills"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ai-tools/use-fault-injection"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "doc",
+                "label": "New Features in 3.1",
+                "id": "new-features-3.1/intro"
               }
             ]
           }

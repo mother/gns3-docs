@@ -333,6 +333,384 @@
         }
       ],
       "breadcrumbs": true
+    },
+    "docs-310-cn": {
+      "path": "/docs-3.1-cn",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs-3.1-cn",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "ai-tools/use-ai-assistant",
+              "path": "/docs-3.1-cn/ai-tools/use-ai-assistant",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "ai-tools/use-ai-skills",
+              "path": "/docs-3.1-cn/ai-tools/use-ai-skills",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "ai-tools/use-fault-injection",
+              "path": "/docs-3.1-cn/ai-tools/use-fault-injection",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "gns3-vm/gns3-vm-usage",
+              "path": "/docs-3.1-cn/gns3-vm/gns3-vm-usage",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "gns3-vm/hyperv-usage",
+              "path": "/docs-3.1-cn/gns3-vm/hyperv-usage",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "gns3-vm/kvm-usage",
+              "path": "/docs-3.1-cn/gns3-vm/kvm-usage",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "gns3-vm/virtualbox-usage",
+              "path": "/docs-3.1-cn/gns3-vm/virtualbox-usage",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "gns3-vm/vmware-esxi-usage",
+              "path": "/docs-3.1-cn/gns3-vm/vmware-esxi-usage",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "gns3-vm/vmware-workstation-usage",
+              "path": "/docs-3.1-cn/gns3-vm/vmware-workstation-usage",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "intro",
+              "path": "/docs-3.1-cn/",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "new-features-3.1/intro",
+              "path": "/docs-3.1-cn/new-features-3.1/intro",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/configure-settings",
+              "path": "/docs-3.1-cn/web-ui/configure-settings",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/intro",
+              "path": "/docs-3.1-cn/web-ui/intro",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/manage-computes",
+              "path": "/docs-3.1-cn/web-ui/manage-computes",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/manage-images",
+              "path": "/docs-3.1-cn/web-ui/manage-images",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/manage-users",
+              "path": "/docs-3.1-cn/web-ui/manage-users",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/monitor-system",
+              "path": "/docs-3.1-cn/web-ui/monitor-system",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/new-template",
+              "path": "/docs-3.1-cn/web-ui/new-template",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/project-topology",
+              "path": "/docs-3.1-cn/web-ui/project-topology",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-cisco-ios",
+              "path": "/docs-3.1-cn/web-ui/template-cisco-ios",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-cisco-iou",
+              "path": "/docs-3.1-cn/web-ui/template-cisco-iou",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-docker",
+              "path": "/docs-3.1-cn/web-ui/template-docker",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences",
+              "path": "/docs-3.1-cn/web-ui/template-preferences",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences-builtin",
+              "path": "/docs-3.1-cn/web-ui/template-preferences-builtin",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences-docker",
+              "path": "/docs-3.1-cn/web-ui/template-preferences-docker",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences-dynamips",
+              "path": "/docs-3.1-cn/web-ui/template-preferences-dynamips",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences-iou",
+              "path": "/docs-3.1-cn/web-ui/template-preferences-iou",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences-qemu",
+              "path": "/docs-3.1-cn/web-ui/template-preferences-qemu",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-preferences-vpcs",
+              "path": "/docs-3.1-cn/web-ui/template-preferences-vpcs",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/template-qemu",
+              "path": "/docs-3.1-cn/web-ui/template-qemu",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/use-web-console",
+              "path": "/docs-3.1-cn/web-ui/use-web-console",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/use-web-vnc",
+              "path": "/docs-3.1-cn/web-ui/use-web-vnc",
+              "sidebar": "sidebar310cn"
+            },
+            {
+              "id": "web-ui/use-web-wireshark",
+              "path": "/docs-3.1-cn/web-ui/use-web-wireshark",
+              "sidebar": "sidebar310cn"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "sidebar310cn": {
+              "link": {
+                "path": "/docs-3.1-cn/",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    },
+    "docs-310-en": {
+      "path": "/docs-3.1-en",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs-3.1-en",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "ai-tools/use-ai-assistant",
+              "path": "/docs-3.1-en/ai-tools/use-ai-assistant",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "ai-tools/use-ai-skills",
+              "path": "/docs-3.1-en/ai-tools/use-ai-skills",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "ai-tools/use-fault-injection",
+              "path": "/docs-3.1-en/ai-tools/use-fault-injection",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "gns3-vm/gns3-vm-usage",
+              "path": "/docs-3.1-en/gns3-vm/gns3-vm-usage",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "gns3-vm/hyperv-usage",
+              "path": "/docs-3.1-en/gns3-vm/hyperv-usage",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "gns3-vm/kvm-usage",
+              "path": "/docs-3.1-en/gns3-vm/kvm-usage",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "gns3-vm/virtualbox-usage",
+              "path": "/docs-3.1-en/gns3-vm/virtualbox-usage",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "gns3-vm/vmware-esxi-usage",
+              "path": "/docs-3.1-en/gns3-vm/vmware-esxi-usage",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "gns3-vm/vmware-workstation-usage",
+              "path": "/docs-3.1-en/gns3-vm/vmware-workstation-usage",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "intro",
+              "path": "/docs-3.1-en/",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "new-features-3.1/intro",
+              "path": "/docs-3.1-en/new-features-3.1/intro",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/configure-settings",
+              "path": "/docs-3.1-en/web-ui/configure-settings",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/intro",
+              "path": "/docs-3.1-en/web-ui/intro",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/manage-computes",
+              "path": "/docs-3.1-en/web-ui/manage-computes",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/manage-images",
+              "path": "/docs-3.1-en/web-ui/manage-images",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/manage-users",
+              "path": "/docs-3.1-en/web-ui/manage-users",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/monitor-system",
+              "path": "/docs-3.1-en/web-ui/monitor-system",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/new-template",
+              "path": "/docs-3.1-en/web-ui/new-template",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/project-topology",
+              "path": "/docs-3.1-en/web-ui/project-topology",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-cisco-ios",
+              "path": "/docs-3.1-en/web-ui/template-cisco-ios",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-cisco-iou",
+              "path": "/docs-3.1-en/web-ui/template-cisco-iou",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-docker",
+              "path": "/docs-3.1-en/web-ui/template-docker",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences",
+              "path": "/docs-3.1-en/web-ui/template-preferences",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences-builtin",
+              "path": "/docs-3.1-en/web-ui/template-preferences-builtin",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences-docker",
+              "path": "/docs-3.1-en/web-ui/template-preferences-docker",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences-dynamips",
+              "path": "/docs-3.1-en/web-ui/template-preferences-dynamips",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences-iou",
+              "path": "/docs-3.1-en/web-ui/template-preferences-iou",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences-qemu",
+              "path": "/docs-3.1-en/web-ui/template-preferences-qemu",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-preferences-vpcs",
+              "path": "/docs-3.1-en/web-ui/template-preferences-vpcs",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/template-qemu",
+              "path": "/docs-3.1-en/web-ui/template-qemu",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/use-web-console",
+              "path": "/docs-3.1-en/web-ui/use-web-console",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/use-web-vnc",
+              "path": "/docs-3.1-en/web-ui/use-web-vnc",
+              "sidebar": "sidebar310en"
+            },
+            {
+              "id": "web-ui/use-web-wireshark",
+              "path": "/docs-3.1-en/web-ui/use-web-wireshark",
+              "sidebar": "sidebar310en"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "sidebar310en": {
+              "link": {
+                "path": "/docs-3.1-en/",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
     }
   }
 }

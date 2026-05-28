@@ -16,7 +16,7 @@ export default {
       "tagName": "meta",
       "attributes": {
         "http-equiv": "Content-Security-Policy",
-        "content": "default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com;"
+        "content": "default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com; frame-src 'self' https://player.bilibili.com; img-src 'self' data: https: https://*.bilibili.com;"
       }
     }
   ],
@@ -45,6 +45,18 @@ export default {
           "to": "docs/",
           "activeBasePath": "docs",
           "label": "Documentation",
+          "position": "left"
+        },
+        {
+          "to": "docs-3.1-cn/",
+          "activeBasePath": "docs-3.1-cn",
+          "label": "3.1 文档",
+          "position": "left"
+        },
+        {
+          "to": "docs-3.1-en/",
+          "activeBasePath": "docs-3.1-en",
+          "label": "3.1 Docs",
           "position": "left"
         },
         {
@@ -265,12 +277,34 @@ export default {
           "anonymizeIP": false
         },
         "docs": {
-          "sidebarPath": "/home/grossmj/PycharmProjects/gns3-docs/sidebars.js",
+          "sidebarPath": "/home/yueguobin/myCode/GNS3/gns3-docs/sidebars.js",
           "editUrl": "https://github.com/mother/gns3-docs/blob/master/"
         },
         "theme": {
-          "customCss": "/home/grossmj/PycharmProjects/gns3-docs/src/css/custom.css"
+          "customCss": "/home/yueguobin/myCode/GNS3/gns3-docs/src/css/custom.css"
         }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "docs-310-cn",
+        "path": "docs-3.1-cn",
+        "routeBasePath": "docs-3.1-cn",
+        "sidebarPath": "/home/yueguobin/myCode/GNS3/gns3-docs/sidebars-3.1-cn.js",
+        "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "docs-310-en",
+        "path": "docs-3.1-en",
+        "routeBasePath": "docs-3.1-en",
+        "sidebarPath": "/home/yueguobin/myCode/GNS3/gns3-docs/sidebars-3.1-en.js",
+        "editUrl": "https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/"
       }
     ]
   ],
@@ -290,7 +324,6 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "stylesheets": [],

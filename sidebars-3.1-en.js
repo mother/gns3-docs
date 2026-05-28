@@ -19,6 +19,9 @@ module.exports = {
       items: [
         'web-ui/intro',
         'web-ui/project-topology',
+        'web-ui/use-web-console',
+        'web-ui/use-web-vnc',
+        'web-ui/use-web-wireshark',
       ],
     },
     {
@@ -68,16 +71,18 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'AI Tools',
+      items: [
+        'ai-tools/use-ai-assistant',
+        'ai-tools/use-ai-skills',
+        'ai-tools/use-fault-injection',
+      ],
+    },
+    {
+      type: 'category',
       label: 'New Features in 3.1',
       link: { type: 'doc', id: 'new-features-3.1/intro' },
-      items: [
-        'new-features-3.1/use-web-console',
-        'new-features-3.1/use-web-vnc',
-        'new-features-3.1/web-wireshark',
-        'new-features-3.1/use-ai-assistant',
-        'new-features-3.1/use-fault-injection',
-        'new-features-3.1/use-ai-skills',
-      ],
+      items: [],
     },
   ],
 };

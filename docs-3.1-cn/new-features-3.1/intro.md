@@ -13,51 +13,39 @@ GNS3 3.1 版本的核心特性是全面 Web 化，所有操作（控制台、VNC
 
 Web UI 项目从 Angular 14 跨代升级到 Angular 21，得益于 AI 辅助完成了大量代码迁移工作。
 
-## 1. Web Console
+## 🌐 Web 功能
 
-- **功能**：在浏览器中直接访问节点控制台，无需外部终端软件
-- **实现**：基于 xterm.js 的嵌入式终端
-- **特点**：支持多标签、拖拽。
+### [如何使用 Web 控制台](../web-ui/use-web-console) 🆕
 
-<img style={{ width: '100%' }} alt="Web Console" src={useBaseUrl('img/web-ui/zh/feature-console.jpeg')} />
+在浏览器中直接访问节点控制台，无需外部终端软件。基于 xterm.js 的嵌入式终端，支持多标签、拖拽。
 
-## 2. Web VNC
+### [如何使用 Web VNC](../web-ui/use-web-vnc) 🆕
 
-- **功能**：在浏览器中通过 VNC 协议访问图形界面节点
-- **实现**：前端基于 noVNC
-- **用途**：访问有图形界面的虚拟机（如 Linux Desktop）
+在浏览器中通过 VNC 协议访问图形界面节点，前端基于 noVNC，用于访问有图形界面的虚拟机（如 Linux Desktop）。
 
-<img style={{ width: '100%' }} alt="Web VNC" src={useBaseUrl('img/web-ui/zh/feature-vnc.jpeg')} />
+### [如何使用 Web Wireshark](../web-ui/use-web-wireshark) 🆕
 
-## 3. Web Wireshark
+在浏览器中直接进行网络抓包分析，前端使用 xpra-html5 client，支持内联窗口显示、多链路同时抓包。
 
-- **功能**：在浏览器中直接进行网络抓包分析
-- **实现**：前端使用 xpra-html5 client
-- **特点**：支持内联窗口显示、多链路同时抓包
+## 🤖 AI 辅助工具
 
-<img style={{ width: '100%' }} alt="Web Wireshark" src={useBaseUrl('img/web-ui/zh/feature-wireshark.jpeg')} />
+### [如何使用 AI 助手](../ai-tools/use-ai-assistant) 🆕
 
-## 4. AI 助手
+基于大语言模型的智能助手，基于 LangChain/LangGraph 构建，使用 Nornir/Netmiko 进行设备配置。支持自然语言交互设计拓扑、配置建议和故障诊断、自动化任务辅助，实施抓包数据分析。
 
-- **功能**：基于大语言模型的智能助手
-- **实现**：基于 LangChain/LangGraph 构建，使用 Nornir/Netmiko 进行设备配置
-- **能力**：自然语言交互设计拓扑、配置建议和故障诊断、自动化任务辅助，实施抓包数据分析。
+### [如何使用 AI 技能包](../ai-tools/use-ai-skills) 🆕
 
+在线 AI 技能包仓库，方便更新。位于 GitHub [gns3-skills](https://github.com/gns3/gns3-skills)，用于扩展 AI 助手能力。
 
-<img style={{ width: '100%' }} alt="AI Assistant" src={useBaseUrl('img/web-ui/zh/feature-ai.jpeg')} />
+### [如何使用故障注入](../ai-tools/use-fault-injection) 🆕
 
-## 5. 故障注入
+使用 AI 结合拓扑中设备的实际配置，调用 GNS3-Skills 仓库预定义的故障集，模拟网络故障环境。通过配置命令注入故障，用于故障恢复演练、协议学习等。
 
-- **功能**：使用AI结合拓扑中设备的实际配置，调用GNS3-Skills仓库预定义的故障集，模拟网络故障环境
-- **实现**：通过配置命令注入故障
-- **用途**：故障恢复演练、协议学习等。
+---
 
-<img style={{ width: '100%' }} alt="故障注入" src={useBaseUrl('img/web-ui/zh/feature-fault-inject.jpeg')} />
+:::tip 快速导航
 
-## 6. GNS3 Skills 仓库
+详细的配置和使用步骤，请点击上方各个功能的链接查看完整文档。
 
-- **功能**：在线 AI 技能包仓库，方便更新。
-- **内容**：提示词和技能定义
-- **仓库**：位于 GitHub [gns3-skills](https://github.com/gns3/gns3-skills)
-- **用途**：扩展 AI 助手能力。
+:::
 
