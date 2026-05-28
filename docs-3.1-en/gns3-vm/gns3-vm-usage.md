@@ -35,11 +35,11 @@ GNS3 VM works with many virtualization platforms. You can choose the right one b
 
 Choose your virtualization platform and read the guide:
 
-- [VirtualBox Guide](virtualbox-usage.md)
-- [VMware Workstation Guide](vmware-workstation-usage.md)
-- [VMware ESXi Guide](vmware-esxi-usage.md)
-- [KVM/QEMU Guide](kvm-usage.md)
-- [Hyper-V Guide](hyperv-usage.md)
+- [How to use GNS3 VM with VirtualBox](virtualbox-usage.md)
+- [How to use GNS3 VM with VMware Workstation](vmware-workstation-usage.md)
+- [How to use GNS3 VM with VMware ESXi](vmware-esxi-usage.md)
+- [How to use GNS3 VM with KVM/QEMU](kvm-usage.md)
+- [How to use GNS3 VM with Hyper-V](hyperv-usage.md)
 
 ## System Requirements
 
