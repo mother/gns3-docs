@@ -3,6 +3,12 @@ module.exports = {
     'intro',
     {
       type: 'category',
+      label: 'New Features in 3.1',
+      link: { type: 'doc', id: 'new-features-3.1/intro' },
+      items: [],
+    },
+    {
+      type: 'category',
       label: 'GNS3 VM',
       items: [
         'gns3-vm/gns3-vm-usage',
@@ -77,12 +83,6 @@ module.exports = {
         'ai-tools/use-ai-skills',
         'ai-tools/use-fault-injection',
       ],
-    },
-    {
-      type: 'category',
-      label: 'New Features in 3.1',
-      link: { type: 'doc', id: 'new-features-3.1/intro' },
-      items: [],
     },
   ],
 };
