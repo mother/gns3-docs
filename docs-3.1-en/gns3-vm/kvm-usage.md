@@ -1,7 +1,7 @@
 ---
-title: KVM/QEMU Guide
+title: How to use GNS3 VM with KVM/QEMU
 ---
 
-# KVM/QEMU Guide
+# How to use GNS3 VM with KVM/QEMU
 
 Coming soon

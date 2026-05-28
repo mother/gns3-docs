@@ -1,7 +1,7 @@
 ---
-title: VMware ESXi Guide
+title: How to use GNS3 VM with VMware ESXi
 ---
 
-# VMware ESXi Guide
+# How to use GNS3 VM with VMware ESXi
 
 Coming soon

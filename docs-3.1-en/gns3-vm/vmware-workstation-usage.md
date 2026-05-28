@@ -1,7 +1,7 @@
 ---
-title: VMware Workstation Guide
+title: How to use GNS3 VM with VMware Workstation
 ---
 
-# VMware Workstation Guide
+# How to use GNS3 VM with VMware Workstation
 
 Coming soon

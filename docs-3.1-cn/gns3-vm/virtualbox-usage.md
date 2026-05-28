@@ -1,4 +1,5 @@
 ---
+title: 如何在 VirtualBox 中使用 GNS3 VM
 功能标签: [基础操作]
 难度: 入门
 前置知识: "无"
@@ -7,7 +8,7 @@
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# VirtualBox 使用指南
+# 如何在 VirtualBox 中使用 GNS3 VM
 
 :::tip 视频教程
 

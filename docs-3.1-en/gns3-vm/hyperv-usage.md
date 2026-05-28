@@ -1,7 +1,7 @@
 ---
-title: Hyper-V Guide
+title: How to use GNS3 VM with Hyper-V
 ---
 
-# Hyper-V Guide
+# How to use GNS3 VM with Hyper-V
 
 Coming soon

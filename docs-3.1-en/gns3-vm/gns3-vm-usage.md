@@ -1,8 +1,8 @@
 ---
-title: GNS3 VM Overview
+title: How to use GNS3 VM
 ---
 
-# GNS3 VM Overview
+# How to use GNS3 VM
 
 GNS3 VM is a GNS3 server that runs inside a virtual machine. It gives you a full GNS3 network simulation environment. It works together with the GNS3 Web UI to provide powerful network simulation.
 

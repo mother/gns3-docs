@@ -1,10 +1,10 @@
 ---
-title: VirtualBox Guide
+title: How to use GNS3 VM with VirtualBox
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# VirtualBox Guide
+# How to use GNS3 VM with VirtualBox
 
 :::tip Video Tutorial
 
