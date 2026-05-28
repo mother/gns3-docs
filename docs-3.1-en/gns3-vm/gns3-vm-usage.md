@@ -21,15 +21,15 @@ GNS3 VM works with many virtualization platforms. You can choose the right one b
 ## How to Choose a Platform
 
 ### For Personal Learning and Development
-- **VirtualBox** - Free and easy to use. Good for beginners.
-- **VMware Workstation** - Better performance, but you need to buy a license.
+- **VirtualBox** - Free and open source, easy to use, good for beginners
+- **VMware Workstation** - Excellent performance, feature rich
 
 ### For Production Environment
-- **VMware ESXi** - Enterprise solution, stable and reliable.
-- **KVM/QEMU** - Open source option, great performance.
+- **VMware ESXi** - Enterprise solution, stable and reliable
+- **KVM/QEMU** - Open source option, great performance
 
 ### For Windows Users
-- **Hyper-V** - Built into Windows, no extra installation needed.
+- **Hyper-V** - Built into Windows, no extra installation needed
 
 ## Quick Start
 
