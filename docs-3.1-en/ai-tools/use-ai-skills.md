@@ -25,8 +25,21 @@ GNS3-Skills is the domain knowledge base for GNS3 Copilot. It contains 50 YAML s
 
 ## Usage
 
-GNS3-Skills is automatically loaded by GNS3 Copilot, no manual configuration required. Skill files are exposed to the LLM through LangChain tools and support hot reload.
+### Using the Official Repository
+GNS3-Skills is automatically loaded by GNS3 Copilot, no manual configuration required. The official repository is used by default. The GNS3 server checks for updates on startup, or you can manually update from the settings page, see [How to use settings page](../web-ui/configure-settings.md#3-updates). Skill files are exposed to the LLM through LangChain tools and support hot reload.
 
+### Using a Custom Skill Repository
+If your organization or team needs to use a customized skill repository, ensure your repository format is consistent with GNS3-Skills (see the official repository docs for format rules), then configure it in the `gns3_server.conf` file:
+
+```ini
+[Server]
+# Custom skill repository URL
+skills_repo_url = https://github.com/your-org/your-custom-skills.git
+# Repository branch (default: main)
+skills_repo_branch = main
+# Auto-update skill repository (default: true)
+skills_auto_update = true
+```
 ## Statistics
 
 For detailed statistics and categories, see: [SKILLS_SUMMARY.md](https://github.com/GNS3/gns3-skills/blob/main/SKILLS_SUMMARY.md)

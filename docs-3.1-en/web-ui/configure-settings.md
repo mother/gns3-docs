@@ -49,7 +49,7 @@ Controls the background style of the topology canvas:
 This section lets you check for software updates and AI feature updates:
 
 - **Check for updates**: Checks for GNS3 software updates. Opens the GNS3 website to show the latest version information.
-- **Check for update AI skills**: Checks for AI skill package updates and downloads the latest AI skills package from the GitHub repository (https://github.com/gns3/gns3-skills)
+- **Check for update AI skills**: Checks for AI skill package updates and downloads the latest AI skills package from the GitHub repository ([https://github.com/gns3/gns3-skills](https://github.com/gns3/gns3-skills))
 
 <img style={{ width: '100%' }} alt="Update check" src={useBaseUrl('img/web-ui/zh/settings-04-updates.jpeg')} />
 
