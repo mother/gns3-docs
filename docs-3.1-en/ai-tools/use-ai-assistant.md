@@ -87,6 +87,49 @@ For more supported Telnet device types, see: [GNS3 Server - Netmiko Supported De
 
 <img style={{ width: '100%' }} alt="Device Tags Configuration" src={useBaseUrl('img/web-ui/zh/ai-device-tags.png')} />
 
+## Usage Scenarios
+
+AI Assistant provides two core modes for different network operations and learning scenarios.
+
+### Teaching Assistant Mode
+
+The Teaching Assistant mode is ideal for learning and troubleshooting. You can interact with the AI assistant using natural language to get answers and guidance on network technical issues.
+
+**Example Usage:**
+
+1. Open the AI Assistant panel in the project topology and select "Teaching Assistant" as the Copilot Mode.
+
+2. Describe your needs in the input box, for example:
+   - "Explain the OSPF neighbor establishment process in this topology"
+   - "Check the routing table of device R1"
+   - "Why can't PC1 ping PC2?"
+
+3. The AI assistant automatically analyzes the topology, connects to devices to run diagnostic commands, and provides detailed explanations.
+
+:::tip Video Tutorial
+
+📺 **[Watch the Video Tutorial](https://youtu.be/Fz3VAce-rfU)** - Follow along to see the Teaching Assistant mode in action
+:::
+
+### Lab Automation Assistant Mode
+
+The Lab Automation Assistant mode is suitable for batch configuration and lab automation. You can describe configuration goals in natural language, and the AI assistant will automatically generate and execute device configuration commands.
+
+**Example Usage:**
+
+1. In the AI Assistant panel, switch the Copilot Mode to "Lab Automation Assistant".
+
+2. Enter your automation task description, for example:
+   - "Create VLAN 10, 20, 30 on all switches"
+   - "Configure OSPF area 0 between R1 and R3"
+   - "Assign all interfaces of PC1 through PC5 to VLAN 10"
+
+3. The AI assistant parses your requirements, generates corresponding device configuration commands, and deploys them to devices.
+
+:::note
+HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirmation operations during execution.
+:::
+
 ## Architecture Overview
 
 ### Overall Architecture
