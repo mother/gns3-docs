@@ -1,5 +1,5 @@
 ---
-title: Web Wireshark
+title: 如何使用 Web Wireshark
 功能标签: [新特性]
 难度: 入门
 预计阅读时间: 5 分钟
@@ -7,7 +7,7 @@ title: Web Wireshark
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Web Wireshark
+# 如何使用 Web Wireshark
 
 Web Wireshark 让您直接在浏览器中分析网络数据包，无需安装 Wireshark 软件。它通过 Docker 容器中的 xpra 技术提供完整的 Wireshark 图形界面，支持实时捕获和深度包检测。
 

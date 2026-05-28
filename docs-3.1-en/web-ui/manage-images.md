@@ -1,10 +1,10 @@
 ---
-title: Image Manager
+title: How to manage images
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Image Manager
+# How to manage images
 
 On the project home page, click the GNS3 Logo at the top left and select "Image Manager". Here you can see and manage all uploaded image files.
 

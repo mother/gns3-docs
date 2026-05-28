@@ -7,7 +7,7 @@ title: 如何管理镜像
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 镜像管理器
+# 如何管理镜像
 
 在项目首页点击左上角的 GNS3 Logo，选择"Image Manager"（镜像管理），可以查看和管理所有已上传的镜像文件。
 

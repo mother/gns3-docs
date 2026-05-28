@@ -1,10 +1,10 @@
 ---
-title: Web Wireshark
+title: How to use Web Wireshark
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Web Wireshark
+# How to use Web Wireshark
 
 Web Wireshark lets you analyze network packets directly in your browser. You do not need to install Wireshark software. It uses xpra technology inside a Docker container to give you the full Wireshark graphical interface. It supports real-time capture and deep packet inspection.
 
