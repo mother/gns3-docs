@@ -192,10 +192,6 @@ Adjust memory based on how many Web Wireshark instances you use at the same time
 
 ## Reference Information
 
-### Feature Contributor
-
-Web Wireshark feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
-
 ### Web Wireshark vs Local Wireshark
 
 | Feature | Web Wireshark | Local Wireshark |
@@ -213,3 +209,9 @@ Web Wireshark feature was developed and contributed by [YueGuobin](https://githu
 - Check if network_subnet conflicts with existing networks
 - Use `docker network ls` to see existing networks
 - If needed, delete the old network: `docker network rm gns3-wireshark`
+
+## Feature Contributor
+
+Web Wireshark feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
+
+- **LinkedIn:** [Guobin Yue](https://www.linkedin.com/in/guobin-yue/)

@@ -8,7 +8,27 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Web VNC lets you access VNC-type devices (like QEMU virtual machines, Docker, and other emulated devices with a desktop) directly in your browser. You do not need to install VNC client software.
 
-## 1. Connection Management
+## Quick Start
+
+**Open Web VNC**
+
+Right-click on a VNC-supported node and select "Web console(inline)" to open an inline Web VNC window. Or select "Web console in new tab" to open it in a new browser tab.
+
+<img style={{ width: '100%' }} alt="Right-click node to open Web VNC" src={useBaseUrl('img/web-ui/zh/web-vnc-right-click-menu.jpeg')} />
+
+The Web console(inline) window opens in the topology interface. You can drag, resize, move, or minimize it.
+
+<img style={{ width: '100%' }} alt="Web VNC inline window" src={useBaseUrl('img/web-ui/zh/web-vnc-inline-window.jpeg')} />
+
+:::note
+**Window limits:**
+- Minimum size: 500×400px
+- Maximum size: No hard limit
+:::
+
+## Features
+
+### Connection Management
 
 **Auto-connect:**
 - When you open a VNC console, it connects to the device automatically
@@ -21,7 +41,7 @@ Web VNC lets you access VNC-type devices (like QEMU virtual machines, Docker, an
 - Connected
 - Disconnected
 
-## 2. Screen Control
+### Screen Control
 
 **Zoom features:**
 
@@ -37,7 +57,7 @@ Web VNC lets you access VNC-type devices (like QEMU virtual machines, Docker, an
 - Press F11 or click the fullscreen button to enter or exit fullscreen
 - Hides the browser frame for a full-screen experience
 
-## 3. Send Keys
+### Send Keys
 
 Send special key combinations to the device (to avoid conflicts in the browser):
 
@@ -56,7 +76,7 @@ Send special key combinations to the device (to avoid conflicts in the browser):
 Combination keys are supported, for example Ctrl+Shift+F1.
 :::
 
-## 4. Screenshot
+### Screenshot
 
 - Click the screenshot button
 - The screenshot is automatically downloaded as a PNG file
@@ -64,7 +84,7 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 
 <img style={{ width: '100%' }} alt="VNC Screenshot" src={useBaseUrl('img/web-ui/zh/web-vnc-screenshot.jpeg')} />
 
-## 5. Screen Recording
+### Screen Recording
 
 **Recording modes:**
 
@@ -90,7 +110,7 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 - If VNC disconnects, the recording continues (may show a black screen)
 - Paused time does not count toward the recording duration
 
-## 6. Clipboard Sync
+### Clipboard Sync
 
 **Send clipboard:**
 - Paste local text into the VNC device
@@ -98,7 +118,7 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 <img style={{ width: '100%' }} alt="Send Text to VNC Device" src={useBaseUrl('img/web-ui/zh/web-vnc-clipboard-recv.jpeg')} />
 
 :::note
-### VNC Clipboard Support by Platform
+#### VNC Clipboard Support by Platform
 
 | Platform | Clipboard Support | How It Works |
 |----------|------------------|--------------|
@@ -115,3 +135,9 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 | Recording | Built-in recording | Needs extra software |
 | Screenshot | One-click screenshot | Needs extra steps |
 | Camera | Supports picture-in-picture | Not supported |
+
+## Feature Contributor
+
+Web VNC feature was developed and contributed by [YueGuobin](https://github.com/yueguobin).
+
+- **LinkedIn:** [Guobin Yue](https://www.linkedin.com/in/guobin-yue/)
