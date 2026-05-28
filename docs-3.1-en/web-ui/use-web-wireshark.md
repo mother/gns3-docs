@@ -24,25 +24,25 @@ If the pull from Docker Hub fails, it will try to build the `gns3/web-wireshark:
 
 Start the network devices you want to capture in the project topology, then right-click on a link and select "Start capture".
 
-<img style={{ width: '100%' }} alt="Right-click on link to start capture" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg')} />
+<img alt="Right-click on link to start capture" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg')} />
 
 In the "Packet capture" dialog, check the "Web Wireshark" option and click OK.
 
-<img style={{ width: '100%' }} alt="Configure Web Wireshark capture" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg')} />
+<img alt="Configure Web Wireshark capture" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg')} />
 
 Wait 3-6 seconds for the system to automatically start the Web Wireshark container.
 
-<img style={{ width: '100%' }} alt="Starting Web Wireshark" src={useBaseUrl('img/web-ui/zh/web-wireshark-starting-status.jpeg')} />
+<img alt="Starting Web Wireshark" src={useBaseUrl('img/web-ui/zh/web-wireshark-starting-status.jpeg')} />
 
 Once started, a capture icon appears in the middle of the link.
 
-<img style={{ width: '100%' }} alt="Capture icon on link" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg')} />
+<img alt="Capture icon on link" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg')} />
 
 **Step 2: Open Web Wireshark**
 
 Right-click on the capture icon and select "Open Web Wireshark(Inline)".
 
-<img style={{ width: '100%' }} alt="Right-click to select inline mode" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg')} />
+<img alt="Right-click to select inline mode" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg')} />
 
 **Step 3: Analyze Packets**
 

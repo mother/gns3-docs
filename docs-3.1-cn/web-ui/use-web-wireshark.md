@@ -33,27 +33,27 @@ Web Wireshark 让您直接在浏览器中分析网络数据包，无需安装 Wi
 
 在项目拓扑中启动需要抓包的网络设备，然后在链路上右键点击，选择"Start capture"。
 
-<img style={{ width: '100%' }} alt="右键链路启动捕获" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg')} />
+<img alt="右键链路启动捕获" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg')} />
 
 
 
 在弹出的"Packet capture"对话框中，勾选"Web Wireshark"选项，然后点击 OK。
 
-<img style={{ width: '100%' }} alt="配置 Web Wireshark 捕获" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg')} />
+<img alt="配置 Web Wireshark 捕获" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg')} />
 
 等待 3-6 秒，系统会自动启动 Web Wireshark 容器。
 
-<img style={{ width: '100%' }} alt="正在启动 Web Wireshark" src={useBaseUrl('img/web-ui/zh/web-wireshark-starting-status.jpeg')} />
+<img alt="正在启动 Web Wireshark" src={useBaseUrl('img/web-ui/zh/web-wireshark-starting-status.jpeg')} />
 
 启动完成后，链路中间会显示一个抓包图标。
 
-<img style={{ width: '100%' }} alt="链路上的抓包图标" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg')} />
+<img alt="链路上的抓包图标" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg')} />
 
 **步骤2：打开 Web Wireshark**
 
 在抓包图标上右键点击，选择"Open Web Wireshark(Inline)"选项。
 
-<img style={{ width: '100%' }} alt="右键选择内联模式" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg')} />
+<img alt="右键选择内联模式" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg')} />
 
 **步骤3：分析数据包**
 
