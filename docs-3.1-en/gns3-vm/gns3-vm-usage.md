@@ -46,8 +46,8 @@ Choose your virtualization platform and read the guide:
 No matter which platform you choose, make sure your system meets these basic requirements:
 
 - **CPU**: Supports hardware virtualization (VT-x/AMD-V)
-- **Memory**: At least 8GB of free memory
-- **Disk**: At least 50GB of free disk space
+- **Memory**: 4GB of free memory recommended (GNS3 VM typically uses 2-4GB)
+- **Disk**: At least 20GB of free disk space
 - **Network**: A stable internet connection
 
 ---
