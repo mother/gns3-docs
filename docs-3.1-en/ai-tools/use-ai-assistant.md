@@ -13,8 +13,6 @@ GNS3 AI Assistant (GNS3 Copilot) started as a separate project. See [github.com/
 
 The AI Assistant (GNS3 Copilot) is a smart assistant feature in GNS3 3.1. It uses large language models (LLMs) to provide intelligent network topology management, fault diagnosis, and automated configuration.
 
-**Technical Architecture**: The backend is built with LangChain/LangGraph for intelligent workflow orchestration, and device configuration tools use Nornir/Netmiko for automated network device management.
-
 :::note Testing Scope Note
 Currently, this feature has been primarily tested with Cisco IOS images that do not have a console login password set.
 :::
@@ -23,15 +21,41 @@ Currently, this feature has been primarily tested with Cisco IOS images that do 
 
 **Development Testing Note:** During the development and testing phase, this feature was primarily tested using DeepSeek models. The former `deepseek-chat` is now renamed to `deepseek-v4-flash` or `deepseek-v4-pro`.
 
-On the project home page, click the three dots at the top right and select "AI Profile" to go to the configuration page.
+### User Configuration
+
+On the project home page, click the three dots at the top right and select `AI Profile` to go to the configuration page.
 
 <img style={{ width: '100%' }} alt="AI Configuration Entry" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
 
-- On the AI Profile screen, add an AI configuration for the user. Click the "New Configuration" button.
+### Admin Configuration
+
+Admins can configure AI Profiles for users or user groups through the `Controller Management` page.
+
+#### Configure for Users
+
+On the project home page, click the three dots at the top right, select `Management`, then enter the `Controller Management` page.
+
+<img style={{ width: '100%' }} alt="Controller Management Entry" src={useBaseUrl('img/web-ui/zh/ai-config-management.jpeg')} />
+
+Click the `Users` tab to configure `AI Profile` for different users.
+
+<img style={{ width: '100%' }} alt="Users Tab Configuration" src={useBaseUrl('img/web-ui/zh/ai-config-users-tab.jpeg')} />
+
+#### Configure for Groups
+
+Click the `Groups` tab to configure `AI Profile` for different user groups.
+
+After group configuration, regular users who join the group can use the group's `AI Profile` (currently only the default `AI Profile` of the group), or use their own `AI Profile`.
+
+<img style={{ width: '100%' }} alt="Groups Tab Configuration" src={useBaseUrl('img/web-ui/zh/ai-config-groups-tab.jpeg')} />
+
+### Configuration Parameters
+
+- On the `AI Profile` screen, click the `New Configuration` button.
 
 <img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
 
-On the "Create LLM Model Configuration" page, select the "Base Models" tab. Follow the steps and enter:
+On the `Create LLM Model Configuration` page, select the `Base Models` tab, and enter the following:
 
 1. **Configuration Name** — The name of your configuration
 2. **Select LLM provider** — Choose an LLM provider (options are OpenRouter and DeepSeek)
@@ -47,7 +71,7 @@ On the "Create LLM Model Configuration" page, select the "Base Models" tab. Foll
 Custom Mode has more configuration options. It is good for users with some experience. This page has field documentation to help you.
 :::
 
-After filling in the fields, click the "Create" button.
+After filling in the fields, click the `Create` button.
 
 :::note API Key Security
 - Encrypted using Python's `cryptography.fernet` module (AES-128-CBC algorithm), with the key file in the same directory as the configuration file
@@ -97,7 +121,7 @@ The Teaching Assistant mode is ideal for learning and troubleshooting. You can i
 
 **Example Usage:**
 
-1. Open the AI Assistant panel in the project topology and select "Teaching Assistant" as the Copilot Mode.
+1. Open the AI Assistant panel in the project topology and select `Select AI Mode` as `Teaching Assistant`.
 
 2. Describe your needs in the input box, for example:
    - "Explain the OSPF neighbor establishment process in this topology"
@@ -117,7 +141,7 @@ The Lab Automation Assistant mode is suitable for batch configuration and lab au
 
 **Example Usage:**
 
-1. In the AI Assistant panel, switch the Copilot Mode to "Lab Automation Assistant".
+1. In the AI Assistant panel, switch `Select AI Mode` to `Lab Automation Assistant`.
 
 2. Enter your automation task description, for example:
    - "Create VLAN 10, 20, 30 on all switches"
