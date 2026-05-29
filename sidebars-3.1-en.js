@@ -29,6 +29,7 @@ module.exports = {
         'web-ui/use-web-console',
         'web-ui/use-web-vnc',
         'web-ui/use-web-wireshark',
+        'web-ui/use-packet-filter',
       ],
     },
     {
