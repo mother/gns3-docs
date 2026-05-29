@@ -17,6 +17,7 @@ module.exports = {
         'gns3-vm/hyperv-usage',
         'gns3-vm/vmware-workstation-usage',
         'gns3-vm/vmware-esxi-usage',
+        'gns3-vm/development-setup',
       ],
     },
     {
