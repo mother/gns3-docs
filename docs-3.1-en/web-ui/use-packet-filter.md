@@ -35,11 +35,11 @@ Choose the filter type and configure its parameters:
 
 | Filter Type | Function | Parameters |
 |---|---|---|
-| **Delay Latency** | Latency | 0-32767ms |
+| **Delay Latency** | Latency | 1-32767ms |
 | **Delay Jitter** | Jitter | 0-32767ms |
 | **Packet loss** | Random packet drop | Chance (0-100%) |
 | **Packet corruption** | Packet corruption | Chance (0-100%) |
-| **Frequency drop** | Drop one packet every N packets | Frequency (1-32767) |
+| **Frequency drop** | Drop one packet every N packets | Frequency (-1 to 32767, -1=drop all, 0=no filter) |
 | **BPF** | Precise traffic filtering | BPF expression (e.g., `icmp`, `port 80`) |
 
 **Step 4: Apply Configuration**
