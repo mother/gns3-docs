@@ -16,12 +16,6 @@ build/
 .docusaurus/
 .obsidian/
 
-# Video files (prevent repo bloat)
-static/videos/*.mp4
-static/videos/*.webm
-static/videos/*.mov
-static/videos/*.avi
-static/videos/*.mkv
 .claude/zhipu-settings.json
 .claude/minmax-settings.json
 .claude/deepseek-settings.json

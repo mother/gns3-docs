@@ -1,5 +1,5 @@
 ---
-title: How to Use Packet Filter
+title: How to use Packet Filter
 功能标签: [操作]
 难度: 入门
 预计阅读时间: 5 分钟
@@ -7,7 +7,7 @@ title: How to Use Packet Filter
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# How to Use Packet Filter
+# How to use Packet Filter
 
 Packet Filter is a network impairment simulation feature provided by GNS3. It allows you to simulate real-world network issues at the link layer, such as latency, packet loss, and packet corruption.
 
