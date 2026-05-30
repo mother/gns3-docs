@@ -31,6 +31,7 @@ module.exports = {
         'web-ui/use-web-wireshark',
         'web-ui/use-packet-filter',
         'web-ui/use-lock-unlock',
+        'web-ui/use-screenshot',
         {
           type: 'category',
           label: 'Drawing Tools',
