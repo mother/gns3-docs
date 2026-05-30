@@ -116,8 +116,8 @@ Adding or deleting project global variables will cause the GNS3 server
 
 - 启动拓扑中的 Alpine Linux Docker 容器，通过 Web Console 连接到这三个容器，执行 `export` 命令查看环境变量，可以看到我们刚才定义的全局变量已生效。
 
-<img style={{ width: '70%', display: 'block', margin: '0 auto' }} alt="环境变量结果 1" src={useBaseUrl('img/web-ui/zh/edit-project-09-env-result1.jpeg')} />
-
-<img style={{ width: '70%', display: 'block', margin: '0 auto' }} alt="环境变量结果 2" src={useBaseUrl('img/web-ui/zh/edit-project-10-env-result2.jpeg')} />
-
-<img style={{ width: '70%', display: 'block', margin: '0 auto' }} alt="环境变量结果 3" src={useBaseUrl('img/web-ui/zh/edit-project-11-env-result3.jpeg')} />
+<div style={{ display: 'flex', justifyContent: 'center', gap: 10 }}>
+  <img style={{ width: '32%' }} alt="环境变量结果 1" src={useBaseUrl('img/web-ui/zh/edit-project-09-env-result1.jpeg')} />
+  <img style={{ width: '32%' }} alt="环境变量结果 2" src={useBaseUrl('img/web-ui/zh/edit-project-10-env-result2.jpeg')} />
+  <img style={{ width: '32%' }} alt="环境变量结果 3" src={useBaseUrl('img/web-ui/zh/edit-project-11-env-result3.jpeg')} />
+</div>
