@@ -27,12 +27,20 @@ Welcome to the GNS3 3.1 documentation. This guide explains the main features of 
 - **[How to use GNS3 VM with KVM/QEMU](gns3-vm/kvm-usage.md)** - Linux KVM platform
 - **[How to use GNS3 VM with Hyper-V](gns3-vm/hyperv-usage.md)** - Windows Hyper-V platform
 
-### Getting Started
+### Project Operations
 
 - **[Project Management](web-ui/project-management.md)** - Project list, import, export, edit
 - **[Project Topology](web-ui/project-topology.md)** - Topology operations, node management
+- **[How to edit a project](web-ui/use-edit-project.md)** - Configure project properties, documentation, and global variables
+- **[How to take a screenshot](web-ui/use-screenshot.md)** - Capture topology or window screenshots
+- **[How to add a note](web-ui/use-add-note.md)** - Add text notes to the topology
+- **[Drawing tools](web-ui/use-draw-line.md)** - Draw lines, curves, and shapes
+- **[How to insert a picture](web-ui/use-insert-picture.md)** - Insert images into the topology
+- **[How to lock or unlock items](web-ui/use-lock-unlock.md)** - Lock elements in the project
+- **[How to use Packet Filter](web-ui/use-packet-filter.md)** - Filter captured packets
 - **[How to use Web Console](web-ui/use-web-console.md)** - Access device consoles in browser
 - **[How to use Web VNC](web-ui/use-web-vnc.md)** - Access VNC connections in browser
+- **[How to use Web Wireshark](web-ui/use-web-wireshark.md)** - Use Wireshark for packet analysis in browser
 
 ### AI Features
 

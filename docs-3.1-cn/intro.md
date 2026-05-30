@@ -27,12 +27,20 @@ slug: /
 - **[如何在 KVM/QEMU 中使用 GNS3 VM](gns3-vm/kvm-usage.md)** - Linux KVM 平台
 - **[如何在 Hyper-V 中使用 GNS3 VM](gns3-vm/hyperv-usage.md)** - Windows Hyper-V 平台
 
-### 快速入门
+### 项目操作
 
 - **[项目管理](web-ui/project-management.md)** - 项目列表、导入、导出、编辑
 - **[项目拓扑](web-ui/project-topology.md)** - 拓扑图操作、节点管理
+- **[如何编辑项目](web-ui/use-edit-project.md)** - 配置项目属性、文档和全局变量
+- **[如何截取截图](web-ui/use-screenshot.md)** - 捕获拓扑或窗口截图
+- **[如何添加笔记](web-ui/use-add-note.md)** - 在拓扑中添加文本笔记
+- **[绘图工具](web-ui/use-draw-line.md)** - 绘制线条、曲线和形状
+- **[如何插入图片](web-ui/use-insert-picture.md)** - 在拓扑中插入图片
+- **[如何锁定/解锁项目](web-ui/use-lock-unlock.md)** - 锁定项目中的元素
+- **[如何使用数据包过滤](web-ui/use-packet-filter.md)** - 过滤抓包数据
 - **[如何使用 Web 控制台](web-ui/use-web-console.md)** - 浏览器中访问设备控制台
 - **[如何使用 Web VNC](web-ui/use-web-vnc.md)** - 浏览器中访问 VNC 连接
+- **[如何使用 Web Wireshark](web-ui/use-web-wireshark.md)** - 浏览器中使用 Wireshark 抓包分析
 
 ### AI 功能使用
 

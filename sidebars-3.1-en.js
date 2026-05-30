@@ -59,7 +59,7 @@ module.exports = {
         'web-ui/template-docker',
       ],
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
     },
     {
       type: 'category',
