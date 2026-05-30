@@ -42,15 +42,15 @@ The Text Editor Dialog will open, allowing you to customize the following proper
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="Text Editor Dialog" src={useBaseUrl('img/web-ui/zh/add-note-03-text-editor-dialog.jpeg')} />
 
-### Text Content
+**Text Content**
 
 A large text area for multi-line input with real-time style preview.
 
-### Fill Color
+**Fill Color**
 
 Use the color picker to set the text color.
 
-### Font Family
+**Font Family**
 
 Choose from 8 font options:
 
@@ -65,11 +65,11 @@ Choose from 8 font options:
 | Georgia | Georgia font |
 | Comic Sans MS | Comic Sans MS font |
 
-### Font Size
+**Font Size**
 
 Numeric input, range 1–200, step 0.5.
 
-### Font Weight
+**Font Weight**
 
 13 options:
 
@@ -89,15 +89,15 @@ Numeric input, range 1–200, step 0.5.
 | 800 | Extra Bold |
 | 900 | Black |
 
-### Text Decoration
+**Text Decoration**
 
 4 options: None, Underline, Line Through, Overline.
 
-### Rotation
+**Rotation**
 
 Text input box for entering the rotation angle (validated).
 
-### Dialog Buttons
+**Dialog Buttons**
 
 - **Cancel** — Discard changes and close the dialog.
 - **Apply** — Save changes and close the dialog.

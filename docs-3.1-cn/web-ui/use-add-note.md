@@ -31,25 +31,25 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 点击地图的其他位置或按 **Tab** 键使输入框失去焦点。输入的文本会自动保存并显示为 SVG 文本元素。工具状态自动重置，光标恢复为默认箭头。
 
-## 编辑注释（Text Editor 对话框）
+## Text Editor 编辑对话框
 
-如需修改已添加的文本，**双击**文本元素，或**右键点击**选择 **Edit text**。
+如需修改已添加的文本，**右键点击**选择 **Edit text**。
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="右键编辑文本" src={useBaseUrl('img/web-ui/zh/add-note-02-edit-right-click.jpeg')} />
 
-打开 Text Editor 对话框，可以修改以下属性：
+打开 Text Editor 对话框，可以修改以下内容：
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="Text Editor 对话框" src={useBaseUrl('img/web-ui/zh/add-note-03-text-editor-dialog.jpeg')} />
 
-### 文本内容
+**文本内容**
 
 大型文本区域，支持多行输入，实时预览样式效果。
 
-### 填充颜色
+**填充颜色**
 
 使用颜色选择器设置文本颜色。
 
-### 字体族
+**字体族**
 
 8 种字体选项：
 
@@ -64,11 +64,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 | Georgia | Georgia 字体 |
 | Comic Sans MS | Comic Sans MS 字体 |
 
-### 字号
+**字号**
 
 数字输入框，范围 1–200，步长 0.5。
 
-### 字重
+**字重**
 
 13 个选项：
 
@@ -88,31 +88,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 | 800 | 特粗 (Extra Bold) |
 | 900 | 黑体 (Black) |
 
-### 文本装饰
+**文本装饰**
 
 4 种选项：无装饰、下划线、删除线、上划线。
 
-### 旋转角度
+**旋转角度**
 
 文本输入框，支持输入角度值（经过验证器验证）。
 
-### 操作按钮
+**操作按钮**
 
 - **Cancel（取消）** — 取消更改，关闭对话框
 - **Apply（应用）** — 应用更改，保存并关闭对话框
 
-## 功能特点
 
-- **自由定位**：可以在地图上任意位置添加文本，不受网格限制
-- **即时反馈**：输入框自动出现在点击位置，所见即所得
-- **自动保存**：失去焦点时自动保存到服务器，无需手动确认
-- **可编辑**：已添加的文本可以通过双击再次编辑内容
-- **同步缩放**：文本会随地图缩放而调整大小，保持可读性
-
-## 坐标系统
-
-该功能使用 GNS3 的画布坐标系统，会自动处理地图的缩放和平移偏移，确保文本准确定位在用户点击的位置。
-
-## 状态管理
-
-工具激活后，如果再次点击工具栏按钮，会取消文本添加模式，光标恢复正常。添加完一条文本后，工具也会自动退出，需要重新点击按钮才能添加下一条文本。
