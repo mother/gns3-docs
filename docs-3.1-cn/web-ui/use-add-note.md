@@ -41,15 +41,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="Text Editor 对话框" src={useBaseUrl('img/web-ui/zh/add-note-03-text-editor-dialog.jpeg')} />
 
-**文本内容**
+**Text Content（文本内容）**
 
 大型文本区域，支持多行输入，实时预览样式效果。
 
-**填充颜色**
+**Fill Color（填充颜色）**
 
 使用颜色选择器设置文本颜色。
 
-**字体族**
+**Font Family（字体族）**
 
 8 种字体选项：
 
@@ -64,11 +64,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 | Georgia | Georgia 字体 |
 | Comic Sans MS | Comic Sans MS 字体 |
 
-**字号**
+**Font Size（字号）**
 
 数字输入框，范围 1–200，步长 0.5。
 
-**字重**
+**Font Weight（字重）**
 
 13 个选项：
 
@@ -88,15 +88,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 | 800 | 特粗 (Extra Bold) |
 | 900 | 黑体 (Black) |
 
-**文本装饰**
+**Text Decoration（文本装饰）**
 
-4 种选项：无装饰、下划线、删除线、上划线。
+4 种选项：None（无装饰）、Underline（下划线）、Line Through（删除线）、Overline（上划线）。
 
-**旋转角度**
+**Rotation（旋转角度）**
 
 文本输入框，支持输入角度值（经过验证器验证）。
 
-**操作按钮**
+**Dialog Buttons（操作按钮）**
 
 - **Cancel（取消）** — 取消更改，关闭对话框
 - **Apply（应用）** — 应用更改，保存并关闭对话框
