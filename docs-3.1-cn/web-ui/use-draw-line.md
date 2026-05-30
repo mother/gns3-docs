@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何绘制线条
 
-Draw a Line（绘制线条）功能允许用户在 GNS3 网络拓扑图上绘制直线，用于创建路径标识等。
+Draw a Line（绘制线条）功能允许用户在 GNS3 网络拓扑图上绘制直线，用于创建路径标识。
 
 ## 使用流程
 

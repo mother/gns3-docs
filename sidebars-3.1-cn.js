@@ -26,6 +26,7 @@ module.exports = {
       link: { type: 'doc', id: 'web-ui/project-management' },
       items: [
         'web-ui/project-topology',
+        'web-ui/use-edit-project',
         'web-ui/use-web-console',
         'web-ui/use-web-vnc',
         'web-ui/use-web-wireshark',
