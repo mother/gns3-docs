@@ -33,6 +33,7 @@ module.exports = {
         'web-ui/use-add-note',
         'web-ui/use-insert-picture',
         'web-ui/use-draw-shape',
+        'web-ui/use-draw-line',
       ],
     },
     {
