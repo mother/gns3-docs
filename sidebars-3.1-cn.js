@@ -34,6 +34,8 @@ module.exports = {
         'web-ui/use-insert-picture',
         'web-ui/use-draw-shape',
         'web-ui/use-draw-line',
+        'web-ui/use-draw-curve',
+        'web-ui/use-lock-unlock',
       ],
     },
     {
