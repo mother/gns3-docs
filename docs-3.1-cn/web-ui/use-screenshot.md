@@ -18,7 +18,11 @@ Take a Screenshot（截图）功能可以捕获 GNS3 网络拓扑图的当前状
 
 点击工具栏的相机图标（工具提示："Take a screenshot"），打开截图配置对话框。
 
+<img style={{ display: 'block', margin: '0 auto' }} alt="截图按钮" src={useBaseUrl('img/web-ui/zh/screenshot-01-toolbar.jpeg')} />
+
 **配置截图选项**
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="截图对话框" src={useBaseUrl('img/web-ui/zh/screenshot-02-dialog.jpeg')} />
 
 对话框包含以下设置：
 
@@ -30,10 +34,9 @@ Take a Screenshot（截图）功能可以捕获 GNS3 网络拓扑图的当前状
 
 点击 **Take a screenshot** 按钮，自动生成并下载文件到本地。文件名格式：`{输入的名称}.{扩展名}`。
 
-### 键盘快捷键
-
-- **Enter 键** — 直接执行截图
-- **Esc 键** — 关闭对话框（不截图）
+:::note
+导出的 SVG 格式截图，建议使用浏览器打开。
+:::
 
 ## 文件格式对比
 
@@ -45,45 +48,3 @@ Take a Screenshot（截图）功能可以捕获 GNS3 网络拓扑图的当前状
 | 可编辑性 | 可用文本/矢量编辑器编辑 | 需图像编辑器 |
 | 兼容性 | 需浏览器/SVG 查看器 | 所有图像查看器 |
 | 适用场景 | 文档、打印、后续编辑 | 分享、演示、快速查看 |
-
-### 使用 SVG 截图的场景
-
-- 需要后续编辑网络拓扑
-- 打印高质量文档
-- 发布到网页（可缩放）
-- 存档备份（文件小）
-- 可无限缩放不失真
-- 文本可选中复制
-
-### 使用 PNG 截图的场景
-
-- 快速分享给他人
-- 插入到 Word/PPT 文档
-- 发布到社交媒体
-- 不需要后续编辑
-- 确保跨平台兼容
-
-## 截图处理流程
-
-### PNG 导出
-
-1. 克隆地图 SVG 元素
-2. 应用背景色
-3. 内嵌图片（将节点符号转换为内联 SVG）
-4. 应用颜色变量
-5. 使用 `saveSvgAsPng` 库生成 PNG 文件
-6. 触发浏览器下载
-
-### SVG 导出
-
-1. 克隆 SVG 元素
-2. 应用背景色
-3. 内嵌图片
-4. 解析所有 CSS 变量为计算值
-5. 使用 `XMLSerializer` 序列化 SVG
-6. 创建 Blob 并触发下载
-
-## 错误处理
-
-- **PNG 导出失败** — "Failed to save screenshot as PNG"
-- **SVG 导出失败** — "Failed to save screenshot as SVG"
