@@ -30,6 +30,7 @@ module.exports = {
         'web-ui/use-web-vnc',
         'web-ui/use-web-wireshark',
         'web-ui/use-packet-filter',
+        'web-ui/use-add-note',
       ],
     },
     {
