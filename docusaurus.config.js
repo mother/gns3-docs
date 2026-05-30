@@ -25,6 +25,9 @@ module.exports = {
       colorMode: {
         disableSwitch: true
       },
+      zoom: {
+         selector: '.markdown img',
+      },
       navbar: {
          logo: {
             alt: 'GNS3 Docs',
@@ -133,5 +136,6 @@ module.exports = {
             editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/',
          },
       ],
+      'docusaurus-plugin-medium-zoom',
    ],
 };

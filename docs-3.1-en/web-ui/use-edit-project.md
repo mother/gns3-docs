@@ -108,8 +108,8 @@ Adding or deleting project global variables will cause the GNS3 server
 
 - Start the Alpine Linux Docker containers, connect via Web Console, and run the `export` command to verify the global variables have taken effect.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Environment result 1" src={useBaseUrl('img/web-ui/zh/edit-project-09-env-result1.jpeg')} />
+<img style={{ width: '70%', display: 'block', margin: '0 auto' }} alt="Environment result 1" src={useBaseUrl('img/web-ui/zh/edit-project-09-env-result1.jpeg')} />
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Environment result 2" src={useBaseUrl('img/web-ui/zh/edit-project-10-env-result2.jpeg')} />
+<img style={{ width: '70%', display: 'block', margin: '0 auto' }} alt="Environment result 2" src={useBaseUrl('img/web-ui/zh/edit-project-10-env-result2.jpeg')} />
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Environment result 3" src={useBaseUrl('img/web-ui/zh/edit-project-11-env-result3.jpeg')} />
+<img style={{ width: '70%', display: 'block', margin: '0 auto' }} alt="Environment result 3" src={useBaseUrl('img/web-ui/zh/edit-project-11-env-result3.jpeg')} />
