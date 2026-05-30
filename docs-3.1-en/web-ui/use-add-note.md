@@ -1,5 +1,5 @@
 ---
-title: How to use Add a note
+title: How to add a note
 功能标签: [操作]
 难度: 入门
 前置知识: "Basic familiarity with the GNS3 Web UI project topology"
@@ -8,27 +8,27 @@ title: How to use Add a note
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# How to use Add a note
+# How to add a note
 
 Add a Note is a tool for adding text annotations to the GNS3 network topology map. You can click anywhere on the map and enter text to record network design notes, node remarks, or other identifying information.
 
 ## Quick Start
 
-**Step 1: Activate the Tool**
+**Activate the Tool**
 
 Click the first button on the left side of the project map toolbar (with the "create" pencil icon). The mouse cursor will change to a crosshair, indicating that text addition mode is active.
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="Toolbar button" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
 
-**Step 2: Choose a Location**
+**Choose a Location**
 
 Click the left mouse button at any position on the map. A temporary text input box will appear at the clicked location.
 
-**Step 3: Enter Text**
+**Enter Text**
 
 Type your text directly into the input box. The input box will auto-focus, so no additional click is needed.
 
-**Step 4: Save the Text**
+**Save the Text**
 
 Click elsewhere on the map or press the **Tab** key to remove focus from the input box. The text will be automatically saved and displayed as an SVG text element. The tool state will reset automatically, and the cursor will return to the default arrow.
 
@@ -48,22 +48,13 @@ A large text area for multi-line input with real-time style preview.
 
 **Fill Color**
 
-Use the color picker to set the text color.
+Use the color picker to set the text color. Click the Fill Color area to open the Choose a color dialog, where you can select from default colors or click "+" to set a custom color.
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="Color picker dialog" src={useBaseUrl('img/web-ui/zh/add-note-04-fill-color.jpeg')} />
 
 **Font Family**
 
-Choose from 8 font options:
-
-| Font | Description |
-|---|---|
-| TypeWriter | Typewriter font |
-| Arial | Arial font |
-| Courier New | Courier New font |
-| Times New Roman | Times New Roman font |
-| Helvetica | Helvetica font |
-| Verdana | Verdana font |
-| Georgia | Georgia font |
-| Comic Sans MS | Comic Sans MS font |
+8 font options: `TypeWriter` (Typewriter), `Arial`, `Courier New`, `Times New Roman`, `Helvetica`, `Verdana`, `Georgia`, `Comic Sans MS`
 
 **Font Size**
 
@@ -71,23 +62,7 @@ Numeric input, range 1–200, step 0.5.
 
 **Font Weight**
 
-13 options:
-
-| Value | Name |
-|---|---|
-| Normal | Normal |
-| Bold | Bold |
-| Lighter | Lighter |
-| Bolder | Bolder |
-| 100 | Thin |
-| 200 | Extra Light |
-| 300 | Light |
-| 400 | Normal |
-| 500 | Medium |
-| 600 | Semi Bold |
-| 700 | Bold |
-| 800 | Extra Bold |
-| 900 | Black |
+13 options: `Normal`, `Bold`, `Lighter`, `Bolder`, `100` (Thin), `200` (Extra Light), `300` (Light), `400` (Normal), `500` (Medium), `600` (Semi Bold), `700` (Bold), `800` (Extra Bold), `900` (Black)
 
 **Text Decoration**
 

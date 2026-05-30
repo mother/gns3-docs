@@ -1,5 +1,5 @@
 ---
-title: How to use Take a screenshot
+title: How to take a screenshot
 功能标签: [操作]
 难度: 入门
 前置知识: "Basic familiarity with the GNS3 Web UI project topology"
@@ -8,7 +8,7 @@ title: How to use Take a screenshot
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# How to use Take a screenshot
+# How to take a screenshot
 
 Take a Screenshot captures the current state of the GNS3 network topology map and saves it as an image file (SVG or PNG format) for documentation, presentations, or backup.
 

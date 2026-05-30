@@ -1,5 +1,5 @@
 ---
-title: How to use Lock or unlock all item
+title: How to lock or unlock all items
 功能标签: [操作]
 难度: 入门
 前置知识: "Basic familiarity with the GNS3 Web UI project topology"
@@ -8,7 +8,7 @@ title: How to use Lock or unlock all item
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# How to use Lock or unlock all item
+# How to lock or unlock all items
 
 Lock/Unlock Items and Show Lock Status work together to manage the lock state of nodes and drawing elements on the GNS3 topology map, and provide visual lock status indicators.
 

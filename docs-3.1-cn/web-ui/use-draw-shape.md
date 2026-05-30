@@ -1,5 +1,5 @@
 ---
-title: 如何使用Draw a shape
+title: 如何绘制形状
 功能标签: [操作]
 难度: 入门
 前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
@@ -8,7 +8,7 @@ title: 如何使用Draw a shape
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 如何使用 Draw a shape
+# 如何绘制形状
 
 Draw a Rectangle（绘制矩形）和 Draw an Ellipse（绘制椭圆）允许用户在 GNS3 网络拓扑图上绘制形状，用于创建区域标识、分组边界或视觉分隔。
 

@@ -1,5 +1,5 @@
 ---
-title: How to use Draw a line
+title: How to draw a line
 功能标签: [操作]
 难度: 入门
 前置知识: "Basic familiarity with the GNS3 Web UI project topology"
@@ -8,7 +8,7 @@ title: How to use Draw a line
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# How to use Draw a line
+# How to draw a line
 
 Draw a Line allows you to draw straight lines on the GNS3 network topology map for creating path markers.
 

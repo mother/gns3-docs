@@ -1,5 +1,5 @@
 ---
-title: 如何使用Add a note
+title: 如何添加注释
 功能标签: [操作]
 难度: 入门
 前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
@@ -8,28 +8,28 @@ title: 如何使用Add a note
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 如何使用 Add a note
+# 如何添加注释
 
 "Add a Note" 是一个在 GNS3 网络拓扑图上添加文字注释的工具。用户可以在地图的任意位置点击并输入文本，用于记录网络设计说明、节点备注或其他标识信息。
 
 ## 使用流程
 
-**第一步：激活工具**
+**激活工具**
 
 点击项目地图工具栏左侧的第一个按钮（带有 "create" 铅笔图标）。鼠标光标变为十字线，表示已进入文本添加模式。
 <img style={{ display: 'block', margin: '0 auto' }} alt="工具栏按钮" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
 
-**第二步：选择位置**
+**选择位置**
 
 在地图上的任意位置点击鼠标左键。点击位置会出现一个临时的文本输入框。
 
-**第三步：输入文本**
+**输入文本**
 
 在弹出的输入框中直接输入文字内容。输入框会自动聚焦，无需额外点击。
 
-**第四步：保存文本**
+**保存文本**
 
-点击地图的其他位置或按 **Tab** 键使输入框失去焦点。输入的文本会自动保存并显示为 SVG 文本元素。工具状态自动重置，光标恢复为默认箭头。
+点击地图的其他位置使输入框失去焦点。输入的文本会自动保存并显示为 SVG 文本元素。工具状态自动重置，光标恢复为默认箭头。
 
 ## Text Editor 编辑对话框
 
@@ -47,22 +47,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Fill Color（填充颜色）**
 
-使用颜色选择器设置文本颜色。
+使用颜色选择器设置文本颜色，点击 Fill Color 区域，弹出 Choose a color 对话框，可以选择默认的多种颜色或点击"+"号（截图中的 3 号位置）设置自定义的颜色，然后点击 select 完成设置。
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="选择颜色" src={useBaseUrl('img/web-ui/zh/add-note-04-fill-color.jpeg')} />
 
 **Font Family（字体族）**
 
-8 种字体选项：
-
-| 字体 | 说明 |
-|---|---|
-| TypeWriter | 打字机字体 |
-| Arial | Arial 字体 |
-| Courier New | Courier New 字体 |
-| Times New Roman | Times New Roman 字体 |
-| Helvetica | Helvetica 字体 |
-| Verdana | Verdana 字体 |
-| Georgia | Georgia 字体 |
-| Comic Sans MS | Comic Sans MS 字体 |
+8 种字体选项：`TypeWriter`（打字机字体）、`Arial`（Arial 字体）、`Courier New`（Courier New 字体）、`Times New Roman`（Times New Roman 字体）、`Helvetica`（Helvetica 字体）、`Verdana`（Verdana 字体）、`Georgia`（Georgia 字体）、`Comic Sans MS`（Comic Sans MS 字体）
 
 **Font Size（字号）**
 
@@ -70,23 +61,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Font Weight（字重）**
 
-13 个选项：
-
-| 值 | 名称 |
-|---|---|
-| Normal | 正常 |
-| Bold | 粗体 |
-| Lighter | 更细 |
-| Bolder | 更粗 |
-| 100 | 极细 (Thin) |
-| 200 | 特细 (Extra Light) |
-| 300 | 细 (Light) |
-| 400 | 正常 (Normal) |
-| 500 | 中等 (Medium) |
-| 600 | 半粗 (Semi Bold) |
-| 700 | 粗体 (Bold) |
-| 800 | 特粗 (Extra Bold) |
-| 900 | 黑体 (Black) |
+13 个选项：`Normal`（正常）、`Bold`（粗体）、`Lighter`（更细）、`Bolder`（更粗）、`100`（极细 / Thin）、`200`（特细 / Extra Light）、`300`（细 / Light）、`400`（正常 / Normal）、`500`（中等 / Medium）、`600`（半粗 / Semi Bold）、`700`（粗体 / Bold）、`800`（特粗 / Extra Bold）、`900`（黑体 / Black）
 
 **Text Decoration（文本装饰）**
 

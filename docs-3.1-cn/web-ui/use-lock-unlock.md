@@ -1,5 +1,5 @@
 ---
-title: 如何使用Lock or unlock all item
+title: 如何锁定或解锁所有项目
 功能标签: [操作]
 难度: 入门
 前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
@@ -8,7 +8,7 @@ title: 如何使用Lock or unlock all item
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 如何使用 Lock or unlock all item
+# 如何锁定或解锁所有项目
 
 Lock/Unlock Items（锁定/解锁项目）和 Show Lock Status（显示锁定状态）配合使用，用于管理 GNS3 网络拓扑图中节点和绘图元素的锁定状态，并提供可视化的锁定状态显示。
 

@@ -1,5 +1,5 @@
 ---
-title: How to use Insert a picture
+title: How to insert a picture
 功能标签: [操作]
 难度: 入门
 前置知识: "Basic familiarity with the GNS3 Web UI project topology"
@@ -8,7 +8,7 @@ title: How to use Insert a picture
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# How to use Insert a picture
+# How to insert a picture
 
 "Insert a picture" allows you to upload and insert image files onto the GNS3 network topology map, enabling you to add legends, logos, or other visual elements.
 

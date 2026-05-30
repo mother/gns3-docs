@@ -1,5 +1,5 @@
 ---
-title: 如何使用Insert a picture
+title: 如何插入图片
 功能标签: [操作]
 难度: 入门
 前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
@@ -8,7 +8,7 @@ title: 如何使用Insert a picture
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 如何使用 Insert a picture
+# 如何插入图片
 
 "Insert a picture"（插入图片）功能允许用户在 GNS3 网络拓扑图上上传并插入图片文件，用于添加图例、Logo 或其他视觉元素。
 

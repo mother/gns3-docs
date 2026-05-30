@@ -1,5 +1,5 @@
 ---
-title: 如何使用Take a screenshot
+title: 如何截图
 功能标签: [操作]
 难度: 入门
 前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
@@ -8,7 +8,7 @@ title: 如何使用Take a screenshot
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 如何使用 Take a screenshot
+# 如何截图
 
 Take a Screenshot（截图）功能可以捕获 GNS3 网络拓扑图的当前状态，保存为 SVG 或 PNG 格式的图片文件，用于文档、演示或备份。
 

@@ -1,5 +1,5 @@
 ---
-title: 如何使用Draw a line
+title: 如何绘制线条
 功能标签: [操作]
 难度: 入门
 前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
@@ -8,7 +8,7 @@ title: 如何使用Draw a line
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 如何使用 Draw a line
+# 如何绘制线条
 
 Draw a Line（绘制线条）功能允许用户在 GNS3 网络拓扑图上绘制直线，用于创建路径标识等。
 
