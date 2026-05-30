@@ -31,6 +31,8 @@ module.exports = {
         'web-ui/use-web-wireshark',
         'web-ui/use-packet-filter',
         'web-ui/use-add-note',
+        'web-ui/use-insert-picture',
+        'web-ui/use-draw-shape',
       ],
     },
     {
