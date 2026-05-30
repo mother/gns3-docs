@@ -84,20 +84,35 @@ Markdown 格式编辑器，支持实时预览。
 
 项目中有 3 个 Alpine Linux Docker 容器，需要统一设置以下环境变量：
 
-| 变量 | 值 | 用途 |
-|---|---|---|
-| `TZ` | `Asia/Shanghai` | 设置容器时区为中国时区 |
-| `LANG` | `en_US.UTF-8` | 设置容器语言环境 |
-| `APP_ENV` | `development` | 标识当前运行环境 |
-| `DEBUG_LEVEL` | `verbose` | 控制应用日志详细程度 |
+| 变量            | 值               | 用途          |
+| ------------- | --------------- | ----------- |
+| `TZ`          | `Asia/Shanghai` | 设置容器时区为中国时区 |
+| `LANG`        | `en_US.UTF-8`   | 设置容器语言环境    |
+| `APP_ENV`     | `development`   | 标识当前运行环境    |
+| `DEBUG_LEVEL` | `verbose`       | 控制应用日志详细程度  |
 
 - 在 Edit Project 对话框的全局变量中逐个添加这些变量。
-
 <img style={{ display: 'block', margin: '0 auto' }} alt="添加全局变量" src={useBaseUrl('img/web-ui/zh/edit-project-07-vars-adding.jpeg')} />
 
 - 完成添加后，点击 **Apply** 按钮。
+<img style={{ display: 'block', margin: '0 auto' }} alt="确认对话框" src={useBaseUrl('img/web-ui/zh/edit-project-12-vars-confirm-dialog.jpeg')} />
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="点击 Apply" src={useBaseUrl('img/web-ui/zh/edit-project-08-vars-apply.jpeg')} />
+- 会出现一个确认对话框，提示信息：
+
+```
+Adding or deleting project global variables will cause the GNS3 server
+  to rebuild docker containers in the project to apply the new variables.
+  If containers are running, this operation may take approximately 5-10 seconds.
+  Do you want to continue?
+```
+
+> 中文翻译：添加或删除项目全局变量将导致 GNS3 服务器重建项目中的 Docker 容器以应用新变量。如果容器正在运行，此操作可能需要大约 5-10 秒。是否要继续？
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="变量应用过程" src={useBaseUrl('img/web-ui/zh/edit-project-13-vars-rebuild-applying.jpeg')} />
+
+- 确认后，GNS3 会自动重建 Docker 容器以应用新的环境变量。
+
+
 
 - 启动拓扑中的 Alpine Linux Docker 容器，通过 Web Console 连接到这三个容器，执行 `export` 命令查看环境变量，可以看到我们刚才定义的全局变量已生效。
 

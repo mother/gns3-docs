@@ -1,8 +1,8 @@
 ---
 title: How to use Packet Filter
-功能标签: [操作]
-难度: 入门
-预计阅读时间: 5 分钟
+featureTag: [Operations]
+difficulty: Beginner
+readingTime: 5 minutes
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

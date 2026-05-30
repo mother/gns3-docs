@@ -1,9 +1,9 @@
 ---
 title: How to edit a project
-功能标签: [操作]
-难度: 入门
-前置知识: "Basic familiarity with the GNS3 Web UI project topology"
-预计阅读时间: 10 minutes
+featureTag: [Operations]
+difficulty: Beginner
+prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
+readingTime: 10 minutes
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -20,7 +20,7 @@ You can open the Edit Project Dialog from two locations:
 - **Topology page** — Click the top-left logo → Project Settings → Edit Project.
 <img style={{ display: 'block', margin: '0 auto' }} alt="Topology page menu" src={useBaseUrl('img/web-ui/zh/edit-project-02-topology-menu.jpeg')} />
 
-## General（常规设置）
+## General
 
 Configure basic project information and canvas dimensions.
 
@@ -38,7 +38,7 @@ Configure basic project information and canvas dimensions.
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="General tab" src={useBaseUrl('img/web-ui/zh/edit-project-03-general-tab.jpeg')} />
 
-## Readme（说明文档）
+## Readme
 
 Markdown editor with live preview for project documentation.
 
@@ -48,7 +48,7 @@ Markdown editor with live preview for project documentation.
 - In edit mode, you can enter Markdown or plain text. Mermaid rendering is not supported. Content auto-saves after 2 seconds of inactivity.
 <img style={{ display: 'block', margin: '0 auto' }} alt="Readme editing" src={useBaseUrl('img/web-ui/zh/edit-project-05-readme-editing.jpeg')} />
 
-## Global variables（全局变量）
+## Global Variables
 
 Manage project-level variables, primarily used for Docker container environment variable template substitution.
 
@@ -89,7 +89,22 @@ A project has 3 Alpine Linux Docker containers that need the following environme
 <img style={{ display: 'block', margin: '0 auto' }} alt="Adding global variables" src={useBaseUrl('img/web-ui/zh/edit-project-07-vars-adding.jpeg')} />
 
 - After adding, click the **Apply** button.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Click Apply" src={useBaseUrl('img/web-ui/zh/edit-project-08-vars-apply.jpeg')} />
+<img style={{ display: 'block', margin: '0 auto' }} alt="Confirmation dialog" src={useBaseUrl('img/web-ui/zh/edit-project-12-vars-confirm-dialog.jpeg')} />
+
+- A confirmation dialog appears with the following message:
+
+```
+Adding or deleting project global variables will cause the GNS3 server
+  to rebuild docker containers in the project to apply the new variables.
+  If containers are running, this operation may take approximately 5-10 seconds.
+  Do you want to continue?
+```
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="Applying variables" src={useBaseUrl('img/web-ui/zh/edit-project-13-vars-rebuild-applying.jpeg')} />
+
+- After confirming, GNS3 automatically rebuilds the Docker containers to apply the new environment variables.
+
+
 
 - Start the Alpine Linux Docker containers, connect via Web Console, and run the `export` command to verify the global variables have taken effect.
 

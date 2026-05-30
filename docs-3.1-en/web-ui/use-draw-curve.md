@@ -1,9 +1,9 @@
 ---
 title: How to draw a curve
-功能标签: [操作]
-难度: 入门
-前置知识: "Basic familiarity with the GNS3 Web UI project topology"
-预计阅读时间: 5 minutes
+featureTag: [Operations]
+difficulty: Beginner
+prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
+readingTime: 5 minutes
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
