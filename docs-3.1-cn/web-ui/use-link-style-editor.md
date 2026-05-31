@@ -1,0 +1,50 @@
+---
+title: 如何编辑链接样式
+功能标签: [操作]
+难度: 入门
+前置知识: "已了解如何创建项目拓扑和节点连接"
+预计阅读时间: 10 分钟
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# 如何编辑链接样式
+
+Link Style Editor（链接样式编辑器）用于编辑 GNS3 项目中**节点之间的链路样式**，包括颜色、宽度、边框类型以及链接类型（直线、贝塞尔曲线、流程图、状态机等）。
+
+<img style={{ width: '100%' }} alt="链接样式编辑器对话框" src={useBaseUrl('img/web-ui/zh/link-style-editor-01-dialog.jpeg')} />
+
+## 打开方式
+
+在两个已连接节点之间的链路上，**鼠标右键点击**，选择 **Edit style** 选项。
+
+<img style={{ width: '100%' }} alt="右键菜单 Edit style" src={useBaseUrl('img/web-ui/zh/link-style-editor-02-context-menu.jpeg')} />
+
+## 样式属性
+
+| 属性 | 说明 |
+|---|---|
+| **边框颜色** | 颜色选择器，点击打开调色板选择颜色。默认值：串行链接 #800000（栗色），其他 #000000（黑色） |
+| **边框宽度** | 数字输入框，范围：0–100 |
+| **边框类型** | 实线、虚线、点线等 |
+
+## 链接类型
+
+链接类型决定链路外观形态，可根据拓扑图的展示需求选择。
+
+| 类型 | 说明 | 适用场景 |
+|---|---|---|
+| **Straight（直线）** | 两点之间的直线连接 | 常规网络拓扑 |
+| **Bezier（贝塞尔曲线）** | 平滑曲线 | 需要视觉流畅的链路 |
+| **Flowchart（流程图）** | 流程图风格连线（含圆角拐点） | 流程图、架构图 |
+| **StateMachine（状态机）** | 状态机风格连线（贝塞尔曲率可调） | 状态转换图 |
+| **Freeform（自由曲线）** | 自由拖拽的任意路径 | 自定义路径展示 |
+
+<img style={{ width: '100%' }} alt="链接类型示例" src={useBaseUrl('img/web-ui/zh/link-style-editor-04-link-types.jpeg')} />
+
+## 动态参数
+
+| 参数 | 适用类型 | 说明 |
+|---|---|---|
+| **贝塞尔曲率** | Bezier、StateMachine | 控制曲线弯曲程度 |
+| **流程图圆角** | Flowchart | 控制拐角的圆润程度 |

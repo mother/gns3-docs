@@ -44,6 +44,7 @@ module.exports = {
             'web-ui/use-draw-shape',
             'web-ui/use-draw-line',
             'web-ui/use-draw-curve',
+            'web-ui/use-link-style-editor',
           ],
         },
       ],

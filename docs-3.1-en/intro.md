@@ -35,6 +35,7 @@ Welcome to the GNS3 3.1 documentation. This guide explains the main features of 
 - **[How to take a screenshot](web-ui/use-screenshot.md)** - Capture topology or window screenshots
 - **[How to add a note](web-ui/use-add-note.md)** - Add text notes to the topology
 - **[Drawing tools](web-ui/use-draw-line.md)** - Draw lines, curves, and shapes
+- **[How to edit link styles](web-ui/use-link-style-editor.md)** - Customize node link styles and types
 - **[How to insert a picture](web-ui/use-insert-picture.md)** - Insert images into the topology
 - **[How to lock or unlock items](web-ui/use-lock-unlock.md)** - Lock elements in the project
 - **[How to use Packet Filter](web-ui/use-packet-filter.md)** - Filter captured packets

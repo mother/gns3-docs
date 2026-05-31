@@ -35,6 +35,7 @@ slug: /
 - **[如何截取截图](web-ui/use-screenshot.md)** - 捕获拓扑或窗口截图
 - **[如何添加注释](web-ui/use-add-note.md)** - 在拓扑中添加文本注释
 - **[绘图工具](web-ui/use-draw-line.md)** - 绘制线条、曲线和形状
+- **[如何编辑链接样式](web-ui/use-link-style-editor.md)** - 编辑节点之间的链路样式和类型
 - **[如何插入图片](web-ui/use-insert-picture.md)** - 在拓扑中插入图片
 - **[如何锁定/解锁项目](web-ui/use-lock-unlock.md)** - 锁定项目中的元素
 - **[如何使用数据包过滤](web-ui/use-packet-filter.md)** - 过滤抓包数据
