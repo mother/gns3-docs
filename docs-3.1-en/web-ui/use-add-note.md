@@ -16,7 +16,7 @@ Add a Note is a tool for adding text annotations to the GNS3 network topology ma
 
 **Activate the Tool**
 
-Click the first button on the left side of the project map toolbar (with the "create" pencil icon). The mouse cursor will change to a crosshair, indicating that text addition mode is active.
+Click the pencil button on the left side of the project map toolbar (with the "create" pencil icon). The mouse cursor will change to a crosshair, indicating that text addition mode is active.
 
 <img style={{ display: 'block', margin: '0 auto' }} alt="Toolbar button" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
 

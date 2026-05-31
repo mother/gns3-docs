@@ -220,7 +220,7 @@ The mode is selected in the `llm_call` node via `copilot_mode`, which picks the 
 
 - Per-project independent SQLite database (`gns3-copilot/copilot_checkpoints.db`)
 - Supports pin, rename, delete, history query
-- Auto-records token usage, message count, LLM call count
+- Auto-records token usage, message count, LLM call count (currently not displayed in the Web UI)
 
 ### LLM Config System
 

@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **激活工具**
 
-点击项目地图工具栏左侧的第一个按钮（带有 "create" 铅笔图标）。鼠标光标变为十字线，表示已进入文本添加模式。
+点击项目地图工具栏左侧的铅笔按钮（带有 "create" 铅笔图标）。鼠标光标变为十字线，表示已进入文本添加模式。
 <img style={{ display: 'block', margin: '0 auto' }} alt="工具栏按钮" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
 
 **选择位置**
