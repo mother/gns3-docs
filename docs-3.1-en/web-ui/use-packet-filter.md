@@ -42,6 +42,12 @@ Choose the filter type and configure its parameters:
 | **Frequency drop** | Drop one packet every N packets | Frequency (-1 to 32767, -1=drop all, 0=no filter) |
 | **BPF** | Precise traffic filtering | BPF expression (e.g., `icmp`, `port 80`) |
 
+:::note
+Packet Filter rules take effect bidirectionally. For example, if you configure Delay Latency 100ms and Delay Jitter 20ms:
+- **A → B direction**: 100ms latency, ±20ms jitter
+- **B → A direction**: 100ms latency, ±20ms jitter
+:::
+
 **Step 4: Apply Configuration**
 
 After configuring the parameters, click the **Apply** button. A Packet Filter icon will appear on the link.
