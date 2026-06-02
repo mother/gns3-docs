@@ -107,6 +107,13 @@ compute_password = gns3
 - GNS3 VM：`/opt/gns3/server/gns3_server.conf`
 - Linux 手动安装：`~/.config/GNS3/3.1/gns3_server.conf`
 
+### 安全说明：Docker UsernsMode
+
+Docker 容器在运行时配置了 `UsernsMode: host`，即容器与宿主机共享用户命名空间。这意味着容器内的用户权限与宿主机用户空间直接对应，存在潜在安全风险。因此：
+
+- **不推荐在裸机（bare metal）上安装 gns3server**，建议使用 GNS3 VM 作为计算节点
+- **多用户共享同一台 GNS3 Server 时需谨慎**，因为 `UsernsMode: host` 使得容器内外的用户 ID 未做映射隔离
+
 ## 故障排除
 
 ### 计算节点连接时出现 401 Unauthorized

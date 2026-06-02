@@ -103,6 +103,13 @@ After a successful connection, you will see the node's CPU, memory, and disk usa
 - GNS3 VM: `/opt/gns3/server/gns3_server.conf`
 - Linux manual install: `~/.config/GNS3/3.1/gns3_server.conf`
 
+### Security Note: Docker UsernsMode
+
+Docker containers are configured with `UsernsMode: host` at runtime, meaning they share the host's user namespace. This means user permissions inside containers correspond directly to the host user space, which introduces potential security risks. Therefore:
+
+- **It is not recommended to install gns3server on bare metal**; please use the GNS3 VM as the compute node instead
+- **Be cautious when multiple users share a single GNS3 Server**, as `UsernsMode: host` means user IDs inside containers are not mapped or isolated from the host
+
 ## Troubleshooting
 
 ### 401 Unauthorized When Connecting a Compute Node
