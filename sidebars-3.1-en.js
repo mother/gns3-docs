@@ -104,5 +104,20 @@ module.exports = {
         'ai-tools/use-ai-packet-analysis',
       ],
     },
+    {
+      type: 'category',
+      label: 'FAQ',
+      link: { type: 'doc', id: 'faq/faq' },
+      items: [
+        'faq/docker-container-stop',
+        'faq/user-ace',
+        'faq/appliance-loading',
+        'faq/ubridge-permission',
+        'faq/web-wireshark',
+        'faq/ai-assistant',
+        'faq/system-admin',
+        'faq/contributing',
+      ],
+    },
   ],
 };

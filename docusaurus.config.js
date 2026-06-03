@@ -123,7 +123,7 @@ module.exports = {
             path: 'docs-3.1-cn',
             routeBasePath: 'docs-3.1-cn',
             sidebarPath: require.resolve('./sidebars-3.1-cn.js'),
-            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/',
+            editUrl: 'https://github.com/mother/gns3-docs/blob/master/',
          },
       ],
       [
@@ -133,7 +133,7 @@ module.exports = {
             path: 'docs-3.1-en',
             routeBasePath: 'docs-3.1-en',
             sidebarPath: require.resolve('./sidebars-3.1-en.js'),
-            editUrl: 'https://github.com/yueguobin/gns3-docs/blob/docs/3.1-new-features/',
+            editUrl: 'https://github.com/mother/gns3-docs/blob/master/',
          },
       ],
       'docusaurus-plugin-medium-zoom',

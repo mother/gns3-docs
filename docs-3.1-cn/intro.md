@@ -75,3 +75,11 @@ slug: /
 ## 技术支持
 
 如有问题或建议，请访问 [GNS3 官方网站](https://gns3.com) 或在 [GitHub 提交 Issue](https://github.com/gns3/gns3-web-ui/issues)。
+
+## 参与贡献
+
+GNS3 文档托管在 GitHub 上，欢迎提交 Issue 或 Pull Request：
+
+- **文档仓库**：[github.com/mother/gns3-docs](https://github.com/mother/gns3-docs)
+- **提交 Issue**：发现错误或遗漏可直接在仓库提交 Issue
+- **提交 PR**：Fork 仓库修改后提交 Pull Request

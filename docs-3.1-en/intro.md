@@ -75,3 +75,11 @@ Welcome to the GNS3 3.1 documentation. This guide explains the main features of 
 ## Support
 
 If you have questions or suggestions, visit the [GNS3 website](https://gns3.com) or [open an issue on GitHub](https://github.com/gns3/gns3-web-ui/issues).
+
+## Contributing
+
+GNS3 documentation is hosted on GitHub. Issues and Pull Requests are welcome:
+
+- **Docs repository**: [github.com/mother/gns3-docs](https://github.com/mother/gns3-docs)
+- **Submit an Issue**: Report errors or omissions by opening an Issue
+- **Submit a PR**: Fork the repository, make changes, and submit a Pull Request
