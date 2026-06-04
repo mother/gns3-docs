@@ -38,6 +38,10 @@ A smart assistant powered by large language models. Built with LangChain/LangGra
 
 <img style={{ width: '100%' }} alt="AI Assistant" src={useBaseUrl('img/web-ui/zh/feature-ai.jpeg')} />
 
+### [How to use the MCP service](../ai-tools/use-mcp-service) 🆕
+
+Provides a standard MCP (Model Context Protocol) interface, allowing external AI clients like Claude Code and Claude Desktop to directly manage GNS3 projects, nodes, links, templates, and compute nodes via SSE transport.
+
 ### [How to use AI Skills](../ai-tools/use-ai-skills) 🆕
 
 An online AI skills package repository that is easy to update. Located on GitHub at [gns3-skills](https://github.com/gns3/gns3-skills). Used to expand the AI Assistant's capabilities.

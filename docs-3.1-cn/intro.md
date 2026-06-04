@@ -13,7 +13,7 @@ slug: /
 
 - **全新的 Web UI** - 支持 Web 控制台、Web VNC 和 Web Wireshark
 - **Web UI 跨代升级** - 前端框架从 Angular 14 升级到 Angular 21，得益于 AI 辅助完成代码迁移
-- **AI 功能集成** - [如何配置和使用 AI 助手](ai-tools/use-ai-assistant.md)、[如何使用 AI Skills](ai-tools/use-ai-skills.md)、[如何进行故障注入测试](ai-tools/use-fault-injection.md)、[如何使用 AI 实时数据包分析](ai-tools/use-ai-packet-analysis.md)
+- **AI 功能集成** - [如何配置和使用 AI 助手](ai-tools/use-ai-assistant.md)、[如何使用 MCP 服务](ai-tools/use-mcp-service.md)、[如何使用 AI Skills](ai-tools/use-ai-skills.md)、[如何进行故障注入测试](ai-tools/use-fault-injection.md)、[如何使用 AI 实时数据包分析](ai-tools/use-ai-packet-analysis.md)
 - **GNS3 VM** - 改进的虚拟机性能和易用性
 - **多用户协作** - 支持团队协作和权限管理
 
@@ -46,6 +46,7 @@ slug: /
 ### AI 功能使用
 
 - **[如何配置和使用 AI 助手](ai-tools/use-ai-assistant.md)** - 配置 AI 模型、使用 AI 助手进行对话
+- **[如何使用 MCP 服务](ai-tools/use-mcp-service.md)** - 通过标准 MCP 协议让外部 AI 客户端管理 GNS3
 - **[如何使用 AI Skills](ai-tools/use-ai-skills.md)** - 技能库的使用和自定义配置
 - **[如何进行故障注入测试](ai-tools/use-fault-injection.md)** - 模拟网络故障、练习排查技能
 - **[如何使用 AI 实时数据包分析](ai-tools/use-ai-packet-analysis.md)** - AI 驱动的数据包分析

@@ -13,7 +13,7 @@ Welcome to the GNS3 3.1 documentation. This guide explains the main features of 
 
 - **New Web UI** - Supports Web Console, Web VNC, and Web Wireshark
 - **Web UI Upgrade Across Generations** - Frontend framework upgraded from Angular 14 to Angular 21, with AI-assisted code migration
-- **AI Features** - [How to configure and use AI Assistant](ai-tools/use-ai-assistant.md), [How to use AI Skills](ai-tools/use-ai-skills.md), [How to inject faults for testing](ai-tools/use-fault-injection.md), [How to use AI real-time packet analysis](ai-tools/use-ai-packet-analysis.md)
+- **AI Features** - [How to configure and use AI Assistant](ai-tools/use-ai-assistant.md), [How to use the MCP service](ai-tools/use-mcp-service.md), [How to use AI Skills](ai-tools/use-ai-skills.md), [How to inject faults for testing](ai-tools/use-fault-injection.md), [How to use AI real-time packet analysis](ai-tools/use-ai-packet-analysis.md)
 - **GNS3 VM** - Better performance and easier to use
 - **Multi-user Collaboration** - Supports team work and permission management
 
@@ -46,6 +46,7 @@ Welcome to the GNS3 3.1 documentation. This guide explains the main features of 
 ### AI Features
 
 - **[How to configure and use AI Assistant](ai-tools/use-ai-assistant.md)** - Configure AI models, use AI Assistant for conversations
+- **[How to use the MCP service](ai-tools/use-mcp-service.md)** - Manage GNS3 via external AI clients through the standard MCP protocol
 - **[How to use AI Skills](ai-tools/use-ai-skills.md)** - Skill repository usage and custom configuration
 - **[How to inject faults for testing](ai-tools/use-fault-injection.md)** - Simulate network failures, practice troubleshooting
 - **[How to use AI real-time packet analysis](ai-tools/use-ai-packet-analysis.md)** - AI-driven packet analysis

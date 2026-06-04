@@ -99,6 +99,7 @@ module.exports = {
       label: 'AI 辅助工具',
       items: [
         'ai-tools/use-ai-assistant',
+        'ai-tools/use-mcp-service',
         'ai-tools/use-ai-skills',
         'ai-tools/use-fault-injection',
         'ai-tools/use-ai-packet-analysis',
