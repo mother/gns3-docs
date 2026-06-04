@@ -26,6 +26,10 @@ The documentation primarily demonstrates using DeepSeek, but the AI Assistant al
 
 To use models not listed in the quick-select, switch to the **Custom Mode** tab for custom configuration (custom API endpoints, model names, temperature, etc.).
 
+:::warning Compatibility Note
+Compatible with large language models that support the **OpenAI API format**. If your model provider is compatible with the OpenAI API format (such as vLLM, Ollama, etc.), you can fill in the corresponding API endpoint in Custom Mode.
+:::
+
 :::warning
 Local small-parameter models are not recommended. The AI Assistant requires a large context window to accommodate topology information, conversation history, and tool call records. Small-parameter models have insufficient context windows, which may cause functional issues or severely degraded response quality.
 :::

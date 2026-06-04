@@ -62,6 +62,11 @@ On the `Create LLM Model Configuration` page, select the `Base Models` tab, and 
 3. **Model Name** — The model name
    - OpenRouter offers quick selection for x-ai / z-ai / openai / google / anthropic
    - DeepSeek offers quick selection for deepseek-v4-flash / deepseek-v4-pro
+
+:::warning Compatibility Note
+Compatible with large language models that support the **OpenAI API format**. If your model provider is compatible with the OpenAI API format (such as vLLM, Ollama, etc.), you can fill in the corresponding API endpoint in Custom Mode.
+:::
+
 4. **API Key** — Enter your API Key
 5. **Copilot Mode** — AI Assistant mode
    - Teaching Assistant
