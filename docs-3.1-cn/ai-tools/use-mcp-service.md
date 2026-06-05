@@ -198,6 +198,27 @@ AI 助手 (Claude Code / Desktop)
 ### 内部实现要点
 
 - **FastMCP**（Anthropic MCP SDK）用于工具注册和 SSE 传输
+
+## 传输安全配置
+
+GNS3 Server 的 MCP 服务默认允许所有主机连接，与 GNS3 server 监听 `0.0.0.0`（所有网络接口）的策略一致。
+
+如需限制访问来源，可在 `gns3_server.conf` 中启用 DNS 反绑定保护。`mcp_allowed_hosts` 填写**客户端访问 GNS3 server 时使用的地址**，而非客户端自身的地址：
+
+```ini
+[Server]
+; 启用 MCP 传输安全保护（默认 False）
+mcp_enable_dns_rebinding_protection = True
+; 允许客户端访问的 GNS3 server 地址列表（"host:port" 格式）
+; 例如 GNS3 server IP 为 192.168.1.3，则填写 192.168.1.3:*
+mcp_allowed_hosts = 127.0.0.1:*,localhost:*,192.168.1.3:*
+; 允许的来源列表（CORS Origin）
+mcp_allowed_origins = http://127.0.0.1:*,http://localhost:*,http://192.168.1.3:*
+```
+
+:::tip
+默认配置下所有主机均可连接，适合大多数场景。仅在需要严格限制访问来源时启用保护。
+:::
 - SSE 应用作为 Starlette 子应用挂载在 `/v3/mcp/transport` 路径下
 - JWT Token 通过 `contextvars.ContextVar` 存储，Python ≥ 3.9 的 `asyncio.to_thread` 会自动传播到工具处理器线程
 - 工具处理器通过 `Gns3Connector` 调用 GNS3 自身的 REST API，MCP 层保持解耦

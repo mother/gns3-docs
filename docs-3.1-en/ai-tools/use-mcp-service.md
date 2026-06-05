@@ -197,6 +197,27 @@ AI Assistant (Claude Code / Desktop)
 ### Implementation Highlights
 
 - **FastMCP** (Anthropic MCP SDK) is used for tool registration and SSE transport
+
+## Transport Security Configuration
+
+By default, the GNS3 Server MCP service allows connections from all hosts, consistent with GNS3 server's policy of listening on `0.0.0.0` (all network interfaces).
+
+To restrict access sources, enable DNS rebinding protection in `gns3_server.conf`. `mcp_allowed_hosts` should be set to the **address clients use to reach the GNS3 server**, not the client's own address:
+
+```ini
+[Server]
+; Enable MCP transport security (default False)
+mcp_enable_dns_rebinding_protection = True
+; GNS3 server addresses that clients are allowed to connect to ("host:port" format)
+; e.g. if GNS3 server IP is 192.168.1.3, add 192.168.1.3:*
+mcp_allowed_hosts = 127.0.0.1:*,localhost:*,192.168.1.3:*
+; Allowed origin list (CORS Origin)
+mcp_allowed_origins = http://127.0.0.1:*,http://localhost:*,http://192.168.1.3:*
+```
+
+:::tip
+With the default configuration, all hosts can connect — suitable for most scenarios. Only enable protection when you need to strictly restrict access sources.
+:::
 - The SSE app is mounted as a Starlette sub-application under `/v3/mcp/transport`
 - JWT token is stored in a `contextvars.ContextVar` - Python ≥ 3.9's `asyncio.to_thread` automatically propagates it to tool handler threads
 - Tool handlers use `Gns3Connector` to call GNS3's own REST API, keeping the MCP layer decoupled
