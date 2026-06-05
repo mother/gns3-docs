@@ -10,3 +10,13 @@ website/build/
 website/yarn.lock
 website/node_modules
 website/i18n/*
+
+# Docusaurus build cache
+build/
+.docusaurus/
+.obsidian/
+
+.claude/zhipu-settings.json
+.claude/minmax-settings.json
+.claude/deepseek-settings.json
+.claude/settings.json

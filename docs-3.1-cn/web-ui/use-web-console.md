@@ -1,0 +1,93 @@
+---
+title: 如何使用 Web 控制台
+功能标签: [新特性]
+难度: 入门
+预计阅读时间: 5 分钟
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# 如何使用 Web 控制台
+
+Web Console 是 GNS3 3.1 的新功能，让您直接在浏览器中访问设备的命令行终端，无需安装额外软件或打开多个窗口。
+
+## 快速开始
+
+**打开 Web Console**
+
+在项目拓扑中右键点击支持串行控制台的设备（如路由器、交换机），选择"Web console"即可在浏览器中打开控制台窗口。
+
+<img style={{ width: '100%' }} alt="右键设备打开 Web Console" src={useBaseUrl('img/web-ui/zh/web-console-right-click.jpeg')} />
+
+控制台窗口支持拖拽、调整大小、最小化等操作，您可以在浏览器中方便地管理多个设备。
+
+## 功能介绍
+
+### 设备管理侧边栏
+
+控制台窗口左侧显示当前项目中所有可连接的设备列表。
+
+**显示的设备：**
+- ✅ 支持串行控制台的设备（如路由器、交换机）
+- ❌ VNC 设备（使用独立窗口）
+
+**操作：**
+- 点击设备名称 → 打开或切换到该设备的控制台标签
+- 点击侧边栏标题 → 展开/折叠设备列表
+
+<img style={{ width: '100%' }} alt="设备管理侧边栏" src={useBaseUrl('img/web-ui/zh/web-console-sidebar.jpeg')} />
+
+### 多标签控制台窗口
+
+**窗口操作：**
+- 拖动：按住标题栏移动窗口位置
+- 调整大小：拖动窗口边缘或角落
+- 最小化：点击最小化按钮，窗口隐藏到任务栏
+- 最大化：点击最大化按钮，窗口高度填满屏幕
+- 关闭：点击关闭按钮关闭当前设备控制台
+
+**控制台标签：**
+- 每个设备显示为一个独立标签
+- 点击标签切换到不同设备
+- 最多可同时打开 8 个设备控制台
+
+<img style={{ width: '100%' }} alt="多标签控制台窗口" src={useBaseUrl('img/web-ui/zh/web-console-tabs.jpeg')} />
+
+### 快捷键
+
+| 快捷键 | 功能 |
+|--------|------|
+| Alt+1 ~ Alt+8 | 快速切换到第 1-8 个设备控制台 |
+| Alt+9 | 切换到 GNS3 日志控制台 |
+
+<img style={{ width: '100%' }} alt="快捷键说明" src={useBaseUrl('img/web-ui/zh/web-console-shortcuts.jpeg')} />
+
+:::note
+快捷键仅在控制台窗口激活时有效（点击窗口后）。
+:::
+
+### GNS3 日志控制台
+
+控制台窗口的最后一个标签（Alt+9）显示 GNS3 项目日志，包括：
+- 项目事件
+- 错误和警告信息
+- 设备状态变化
+
+可用于故障排查和项目监控。
+
+<img style={{ width: '100%' }} alt="GNS3日志控制台" src={useBaseUrl('img/web-ui/zh/web-console-log.jpeg')} />
+
+## 与传统方式的对比
+
+| 特性 | Web Console | 传统控制台 |
+|------|-------------|------------|
+| 安装 | 无需安装 | 需要安装终端软件 |
+| 窗口管理 | 浏览器标签 | 多个独立窗口 |
+| 快捷键 | Alt+1-9 切换 | 需手动切换窗口 |
+| 跨平台 | 任何浏览器 | 依赖操作系统 |
+
+## 功能贡献者
+
+Web Console 功能由 [YueGuobin](https://github.com/yueguobin) 开发和贡献。
+
+- **知乎：** [蛋炒饭](https://www.zhihu.com/people/qin-lao-de-cai-niao)

@@ -11,7 +11,7 @@ module.exports = {
          tagName: 'meta',
          attributes: {
             'http-equiv': 'Content-Security-Policy',
-            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com;`,
+            content: `default-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com; frame-src 'self' https://player.bilibili.com; img-src 'self' data: https: https://*.bilibili.com;`,
          },
       },
    ],
@@ -25,6 +25,9 @@ module.exports = {
       colorMode: {
         disableSwitch: true
       },
+      zoom: {
+         selector: '.markdown img',
+      },
       navbar: {
          logo: {
             alt: 'GNS3 Docs',
@@ -35,6 +38,16 @@ module.exports = {
                to: 'docs/',
                activeBasePath: 'docs',
                label: 'Documentation',
+               position: 'left'
+            }, {
+               to: 'docs-3.1-cn/',
+               activeBasePath: 'docs-3.1-cn',
+               label: '3.1 文档',
+               position: 'left'
+            }, {
+               to: 'docs-3.1-en/',
+               activeBasePath: 'docs-3.1-en',
+               label: '3.1 Docs',
                position: 'left'
             }, {
                href: 'https://gns3.com/marketplace/appliances',
@@ -101,5 +114,28 @@ module.exports = {
             }
          }
       ]
-   ]
+   ],
+   plugins: [
+      [
+         '@docusaurus/plugin-content-docs',
+         {
+            id: 'docs-310-cn',
+            path: 'docs-3.1-cn',
+            routeBasePath: 'docs-3.1-cn',
+            sidebarPath: require.resolve('./sidebars-3.1-cn.js'),
+            editUrl: 'https://github.com/mother/gns3-docs/blob/master/',
+         },
+      ],
+      [
+         '@docusaurus/plugin-content-docs',
+         {
+            id: 'docs-310-en',
+            path: 'docs-3.1-en',
+            routeBasePath: 'docs-3.1-en',
+            sidebarPath: require.resolve('./sidebars-3.1-en.js'),
+            editUrl: 'https://github.com/mother/gns3-docs/blob/master/',
+         },
+      ],
+      'docusaurus-plugin-medium-zoom',
+   ],
 };

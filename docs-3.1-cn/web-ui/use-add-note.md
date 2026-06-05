@@ -1,0 +1,79 @@
+---
+title: 如何添加注释
+功能标签: [操作]
+难度: 入门
+前置知识: "熟悉 GNS3 Web UI 项目拓扑基本操作"
+预计阅读时间: 5 分钟
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# 如何添加注释
+
+"Add a Note" 是在 GNS3 网络拓扑图上添加文字注释的工具。用户可以在地图的任意位置点击并输入文本，用于记录网络设计说明、节点备注或其他标识信息。
+
+## 使用流程
+
+**激活工具**
+
+点击项目地图工具栏左侧的铅笔按钮（带有 "create" 铅笔图标）。鼠标光标变为十字线，表示已进入文本添加模式。
+<img style={{ display: 'block', margin: '0 auto' }} alt="工具栏按钮" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
+
+**选择位置**
+
+在地图上的任意位置点击鼠标左键。点击位置会出现一个临时的文本输入框。
+
+**输入文本**
+
+在弹出的输入框中直接输入文字内容。输入框会自动聚焦，无需额外点击。
+
+**保存文本**
+
+点击地图的其他位置使输入框失去焦点。输入的文本会自动保存并显示为 SVG 文本元素。工具状态自动重置，光标恢复为默认箭头。
+
+## Text Editor 编辑对话框
+
+如需修改已添加的文本，**右键点击**选择 **Edit text**。
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="右键编辑文本" src={useBaseUrl('img/web-ui/zh/add-note-02-edit-right-click.jpeg')} />
+
+打开 Text Editor 对话框，可以修改以下内容：
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="Text Editor 对话框" src={useBaseUrl('img/web-ui/zh/add-note-03-text-editor-dialog.jpeg')} />
+
+**Text Content（文本内容）**
+
+大型文本区域，支持多行输入，实时预览样式效果。
+
+**Fill Color（填充颜色）**
+
+使用颜色选择器设置文本颜色，点击 Fill Color 区域，弹出 Choose a color 对话框，可以选择默认的多种颜色或点击"+"号（截图中的 3 号位置）设置自定义的颜色，然后点击 select 完成设置。
+
+<img style={{ display: 'block', margin: '0 auto' }} alt="选择颜色" src={useBaseUrl('img/web-ui/zh/add-note-04-fill-color.jpeg')} />
+
+**Font Family（字体族）**
+
+8 种字体选项：`TypeWriter`（打字机字体）、`Arial`（Arial 字体）、`Courier New`（Courier New 字体）、`Times New Roman`（Times New Roman 字体）、`Helvetica`（Helvetica 字体）、`Verdana`（Verdana 字体）、`Georgia`（Georgia 字体）、`Comic Sans MS`（Comic Sans MS 字体）
+
+**Font Size（字号）**
+
+数字输入框，范围 1–200，步长 0.5。
+
+**Font Weight（字重）**
+
+13 个选项：`Normal`（正常）、`Bold`（粗体）、`Lighter`（更细）、`Bolder`（更粗）、`100`（极细 / Thin）、`200`（特细 / Extra Light）、`300`（细 / Light）、`400`（正常 / Normal）、`500`（中等 / Medium）、`600`（半粗 / Semi Bold）、`700`（粗体 / Bold）、`800`（特粗 / Extra Bold）、`900`（黑体 / Black）
+
+**Text Decoration（文本装饰）**
+
+4 种选项：None（无装饰）、Underline（下划线）、Line Through（删除线）、Overline（上划线）。
+
+**Rotation（旋转角度）**
+
+文本输入框，支持输入角度值（经过验证器验证）。
+
+**Dialog Buttons（操作按钮）**
+
+- **Cancel（取消）** — 取消更改，关闭对话框
+- **Apply（应用）** — 应用更改，保存并关闭对话框
+
+

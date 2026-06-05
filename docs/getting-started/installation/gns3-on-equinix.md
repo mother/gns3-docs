@@ -55,8 +55,6 @@ If you use IOU, the name of the machine should be exactly the name you have in y
 
 The first thing you must do is to create a Organization, this is normally promted just after creation. if not [link here](https://console.equinix.com/setup/organization) Fill out all the information including creditcard.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-equinix/setup-org.png')} />
-
 Since there currently are no project, create a new project, click “add new”:
 
 <img alt="screenshot" src={useBaseUrl('img/getting-started/installation/gns3-on-equinix/setup-done.png')} />
