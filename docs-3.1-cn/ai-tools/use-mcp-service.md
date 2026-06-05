@@ -104,6 +104,10 @@ MCP 服务提供 **30 个工具**，分为 5 大类：
 | `update_node` | 更新节点属性 | `project_id`, `node_id` |
 | `get_node_console_info` | 获取节点控制台 WebSocket 地址 | `project_id`, `node_id` |
 
+:::note
+`get_node_console_info` 返回的 WebSocket 地址需要使用 `websocat` 工具连接，请确保在运行 Claude Code 的系统中已安装该工具。安装方法：`cargo install websocat`（需 Rust 环境）或从 [GitHub Releases](https://github.com/vi/websocat/releases) 下载预编译二进制。
+:::
+
 ### 链路管理（5 个）
 
 | 工具 | 说明 | 必需参数 |

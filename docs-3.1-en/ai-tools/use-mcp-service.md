@@ -103,6 +103,10 @@ The MCP service provides **30 tools** across 5 categories:
 | `update_node` | Update node properties | `project_id`, `node_id` |
 | `get_node_console_info` | Get console WebSocket URL | `project_id`, `node_id` |
 
+:::note
+The WebSocket URL returned by `get_node_console_info` requires the `websocat` tool to connect. Make sure it is installed on the system running Claude Code. Install via: `cargo install websocat` (requires Rust toolchain) or download a prebuilt binary from [GitHub Releases](https://github.com/vi/websocat/releases).
+:::
+
 ### Link Management (5)
 
 | Tool | Description | Required Parameters |
