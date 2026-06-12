@@ -102,6 +102,22 @@ Once configured, you can manage GNS3 using natural language in Claude Code, for 
 - "Add a Cisco router to the project"
 - "Start the node and check its status"
 
+### Using with Claude Desktop
+
+Claude Desktop does not support custom headers, so credentials must be passed as URL query parameters.
+
+Edit `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "My_GNS3_Server": {
+      "url": "http://localhost:3080/v3/mcp/transport/sse?token=$API_KEY"
+    }
+  }
+}
+```
+
 ## Available Tools
 
 The MCP service provides **82 tools** across 12 categories:

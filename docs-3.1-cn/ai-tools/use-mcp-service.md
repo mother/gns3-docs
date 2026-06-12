@@ -99,6 +99,22 @@ claude mcp add --transport sse My_GNS3_Server \
 - "在项目中添加一个 Cisco 路由器"
 - "启动节点并检查状态"
 
+### 在 Claude Desktop 中使用
+
+Claude Desktop 不支持自定义请求头，需要通过 URL 查询参数传递凭证。
+
+编辑 `claude_desktop_config.json`：
+
+```json
+{
+  "mcpServers": {
+    "My_GNS3_Server": {
+      "url": "http://localhost:3080/v3/mcp/transport/sse?token=$API_KEY"
+    }
+  }
+}
+```
+
 ## 可用工具
 
 MCP 服务提供 **82 个工具**，分为 12 大类：
