@@ -309,7 +309,7 @@ GNS3 的 SVG 渲染器与标准 SVG 规范存在以下差异：
 
 ## 演示视频
 
-📺 **[观看中文演示视频](https://www.zhihu.com/pin/2046032031797213055?page=video_pin&scene=share)**
+📺 **[观看中文演示视频](https://www.zhihu.com/pin/2048932087688966201?page=video_pin&scene=share)**
 
 ## 架构概览
 

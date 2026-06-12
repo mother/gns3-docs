@@ -312,7 +312,7 @@ Full 82-tool test results are available in the [gns3-api-mcp-test](https://githu
 
 ## Demo Video
 
-📺 **[Watch the English Demo](https://youtu.be/uzufwS-sPD8)**
+📺 **[Watch the English Demo](https://youtu.be/BawBAKbNOow)**
 
 ## Architecture Overview
 
