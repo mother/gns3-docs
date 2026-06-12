@@ -115,7 +115,7 @@ We MUST add vmxhdd.img as HDB, and metadata-usb-re.img as HDC.  Failing to add t
 
 <img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/19.jpg')} />
 
-The vMX-vCP VM only needs two adapters. One to connect to an out-of-band mgmt switch, and the other to connect to the vMX-vFP VM as our internal interface.  I’ve see people name the first port “fxp0”, since that’s what the mgmt port is called, and then use em{port1} so that the second interface is called “em1”, which is the name of the internal interface.  You can leave these set as Intel GigE interfaces.  Click finish, and here are what your final settings for the vCP VM should look like:
+The vMX-vCP VM only needs two adapters. One to connect to an out-of-band mgmt switch, and the other to connect to the vMX-vFP VM as our internal interface.  I’ve see people name the first port “fxp0”, since that’s what the mgmt port is called, and then use `em{port1}` so that the second interface is called “em1”, which is the name of the internal interface.  You can leave these set as Intel GigE interfaces.  Click finish, and here are what your final settings for the vCP VM should look like:
 
 <img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/20.jpg')} />
 
@@ -139,7 +139,7 @@ Set this vm to be part of the Router group, confirm that it’s been assigned 4G
 
 <img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/25.jpg')} />
 
-I have seen folks say not to use more than 9 interfaces, but with the 16.x series, I’ve had pretty good luck with 12.   The first port name was set to “ext”, since that will also connect to the OOB mgmt switch, and the name format was set to Eth{port1}, since Eth1 will be part of our internal interface, and connect to “em1” of the vCP vm.   Now, notice that I set the interface type to “virtio-net-pci”. This is very important. When I tried leaving it set to Intel e1000, it would generate lots of error on boot (and besides, you use those adapter types, when running vMX via KVM on an Ubuntu server any way, so it makes sense).  
+I have seen folks say not to use more than 9 interfaces, but with the 16.x series, I’ve had pretty good luck with 12.   The first port name was set to “ext”, since that will also connect to the OOB mgmt switch, and the name format was set to `Eth{port1}`, since Eth1 will be part of our internal interface, and connect to “em1” of the vCP vm.   Now, notice that I set the interface type to “virtio-net-pci”. This is very important. When I tried leaving it set to Intel e1000, it would generate lots of error on boot (and besides, you use those adapter types, when running vMX via KVM on an Ubuntu server any way, so it makes sense).  
 
 Now, this next part is optional, but you can limit the amount of CPU time that gets allocated to the vFP vm via the Advanced Settings tab:
 

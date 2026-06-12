@@ -70,7 +70,7 @@ This example uses an Ubuntu container to show how to create a Docker template.
 | Field | Type | Unit | Use |
 |------|------|------|------|
 | Template name | Text | -- | Name of the template, shown in the list |
-| Default name format | Text | -- | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | -- | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Image | Text | -- | Docker image name (e.g. ubuntu:latest) |
 | Category | Dropdown | -- | Device category |
 | Symbol | Text + button | -- | Topology icon |

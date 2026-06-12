@@ -38,7 +38,7 @@ VPCS (Virtual PC Simulator) is a lightweight tool in GNS3 that simulates a PC. U
 | Field | Type | Required | Use |
 |------|------|------|------|
 | Template name | Text | Yes | Name of the template, shown in lists and when creating instances |
-| Default name format | Text | Yes | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | Yes | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Base script file | Text | Yes | Path to the startup script. VPCS commands that run automatically at startup |
 | Symbol | Text + button | Yes | Icon shown on the topology |
 | Tags | Chip input | No | Tags for sorting/filtering |

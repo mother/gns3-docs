@@ -143,7 +143,7 @@ Combinations: cn, cd, dn, dc, nc, nd
 | Field | Type | Use |
 |------|------|------|
 | Template name | Text | Name of the template, shown in the list |
-| Default name format | Text | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Category | Dropdown | Device category: Router/Switch/End devices, etc. |
 | Symbol | Text + button | Topology icon, can be chosen from the icon library |
 | Tags | Chip input | Tags for sorting/filtering |
@@ -200,7 +200,7 @@ Interface type description:
 |------|------|------|
 | Adapters | Number | Number of network adapters |
 | First port | Text | Name of the first port, e.g. eth0 |
-| Name format | Text | Port naming format, e.g. eth{0} |
+| Name format | Text | Port naming format, e.g. `eth{0}` |
 | Segment size | Number | Port segment size |
 | Base MAC | Text (format xx:xx:xx:xx:xx:xx) | Base MAC address |
 | Type | Dropdown | NIC model, 24 types total |

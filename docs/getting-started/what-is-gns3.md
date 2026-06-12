@@ -239,7 +239,7 @@ Additional platforms that can run the GNS3 VM:
 
 ## Supported Appliances
 GNS3 supports multiple operating systems and appliances and emulators.
-[Which emulator should I use?](emulators/which-emulators-should-i-use)
+[Which emulator should I use?](/docs/emulators/which-emulators-should-i-use)
 
 ## Should you use the GNS3 VM?
 The GNS3 VM is recommended for most situations when you are using Windows or Mac OS. The GNS3 development team have worked hard to create a lightweight, robust way of creating GNS3 topologies that avoids multiple common issues experienced when using a local install of GNS3. This includes the lack of proper Qemu support when running VIRL natively on Windows (not recommended).

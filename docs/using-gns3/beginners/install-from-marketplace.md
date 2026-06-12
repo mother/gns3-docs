@@ -25,9 +25,9 @@ Some vendors provide images of their systems for free. Others like Cisco do not.
 
 ## Download the GNS3 Appliance
 
-::note
+:::note
 In this example, a Cisco IOSvL2 appliance will be imported. Other appliances will follow a similar process.
-:::
+::::
 
 :::note
 In this guide, the Windows operating system is used. The process is similar however for other operating systems such as Mac OS and Linux.

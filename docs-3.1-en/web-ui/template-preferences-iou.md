@@ -54,7 +54,7 @@ IOU is a native Cisco IOS ELF binary (.iol) that runs directly on Linux. It does
 | Field | Type | Use |
 |------|------|------|
 | Template name | Text | Name of the template, shown in the list |
-| Default name format | Text | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Category | Dropdown | Device category, decides grouping in the topology panel |
 | Symbol | Text + button | Icon shown on the topology |
 | Tags | Chip input | Tags for sorting/filtering |

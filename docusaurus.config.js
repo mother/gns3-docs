@@ -3,6 +3,7 @@ module.exports = {
    tagline: 'The official guide and reference for GNS3',
    url: 'https://mother.github.io',
    baseUrl: '/',
+   trailingSlash: false,
    favicon: 'img/favicon.ico',
    organizationName: 'mother',
    projectName: 'gns3-docs',
@@ -15,18 +16,22 @@ module.exports = {
          },
       },
    ],
+   markdown: {
+      format: 'mdx',
+      mdx1Compat: {
+         comments: true,
+         admonitions: true,
+         headingIds: true,
+      },
+   },
    themeConfig: {
       algolia: {
          apiKey: '75bf7dd136b92cb76d52b7ef8de3576f',
          appId: '1WIL6RAPZV',
          indexName: 'gns3',
-         algoliaOptions: {},
       },
       colorMode: {
         disableSwitch: true
-      },
-      zoom: {
-         selector: '.markdown img',
       },
       navbar: {
          logo: {
@@ -136,6 +141,6 @@ module.exports = {
             editUrl: 'https://github.com/mother/gns3-docs/blob/master/',
          },
       ],
-      'docusaurus-plugin-medium-zoom',
+      'docusaurus-plugin-image-zoom',
    ],
 };

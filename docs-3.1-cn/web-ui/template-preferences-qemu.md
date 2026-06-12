@@ -146,7 +146,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 | 字段 | 类型 | 用途 |
 |------|------|------|
 | Template name | 文本 | 模板名称，在列表中显示 |
-| Default name format | 文本 | 实例自动命名格式，如 {name}-{0} |
+| Default name format | 文本 | 实例自动命名格式，如 `{name}-{0}` |
 | Category | 下拉选择 | 设备分类：Router/Switch/End devices 等 |
 | Symbol | 文本 + 按钮 | 拓扑图图标，可从图标库选择 |
 | Tags | Chip 输入框 | 标签，用于分类/筛选 |
@@ -203,7 +203,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 |------|------|------|
 | Adapters | 数值 | 网络适配器数量 |
 | First port | 文本 | 第一个网口名称，如 eth0 |
-| Name format | 文本 | 网口命名格式，如 eth{0} |
+| Name format | 文本 | 网口命名格式，如 `eth{0}` |
 | Segment size | 数值 | 端口分段大小 |
 | Base MAC | 文本（格式 xx:xx:xx:xx:xx:xx） | 基 MAC 地址 |
 | Type | 下拉选择 | 网卡型号，共 24 种 |
