@@ -1,0 +1,1 @@
+- [Mermaid usage](mermaid-usage.md) — Mermaid 图表必须用组件导入方式，代码块语法不可用
