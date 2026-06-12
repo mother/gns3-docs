@@ -33,6 +33,13 @@ module.exports = {
       colorMode: {
         disableSwitch: true
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+      },
       navbar: {
          logo: {
             alt: 'GNS3 Docs',
