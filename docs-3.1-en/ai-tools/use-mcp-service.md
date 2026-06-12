@@ -34,19 +34,19 @@ The MCP service supports two credential types: JWT Token (24-hour expiry) or API
 
 ### Create an API Key (Recommended)
 
-After logging into the server, click the three dots button on the right side, then select the **API Key** option.
+- After logging into the server, click the three dots button on the right side, then select the **API Key** option.
 
 ![API Key menu option](/img/web-ui/zh/mcp-api-key-menu-option.jpeg)
 
-In the API Keys dialog, click **Create your first API key**.
+- In the API Keys dialog, click **Create your first API key**.
 
 ![Create first API Key](/img/web-ui/zh/mcp-api-key-create-first.jpeg)
 
-Enter a name for the API Key and click **Create**.
+- Enter a name for the API Key and click **Create**.
 
 ![Enter API Key name](/img/web-ui/zh/mcp-api-key-input-name.jpeg)
 
-Once created, the dialog displays the key. **Copy and save it now.**
+- Once created, the dialog displays the key. **Copy and save it now.**
 
 ![API Key created](/img/web-ui/zh/mcp-api-key-created-dialog.jpeg)
 
@@ -54,37 +54,30 @@ Once created, the dialog displays the key. **Copy and save it now.**
 This API Key is **only shown once**. After closing the dialog, it cannot be displayed again. Save it immediately.
 :::
 
-The key appears in the list.
+- The key appears in the list.
 
 ![API Key list](/img/web-ui/zh/mcp-api-key-list.jpeg)
 
-In the Actions column, click Revoke to revoke a key.
+- In the Actions column, click Revoke to revoke a key.
 
 ![Revoke API Key](/img/web-ui/zh/mcp-api-key-revoke.jpeg)
 
-Confirm the revocation.
+- After revocation, you can click **Restore** or **Delete**.
 
-![Revoke confirmation](/img/web-ui/zh/mcp-api-key-revoke-confirm.jpeg)
+![Revoked state](/img/web-ui/zh/mcp-api-key-revoked.jpeg)
 
-After revocation, you can click **Restore** or **Delete**.
+- Click **Restore** to restore the key
 
-![Restore or delete API Key](/img/web-ui/zh/mcp-api-key-restore-delete.jpeg)
+![Restore confirmation dialog](/img/web-ui/zh/mcp-api-key-restore-confirm.jpeg)
 
-After confirming restore, the key becomes active again.
+- Click **Delete** to permanently delete
 
-![Restore confirmation](/img/web-ui/zh/mcp-api-key-restore-confirm.jpeg)
+![Delete confirmation dialog](/img/web-ui/zh/mcp-api-key-delete-confirm.jpeg)
 
 ### JWT Token
 
 If you prefer to use a JWT Token (24-hour expiry), you can obtain it from the User Info dialog.
 
-### Token Expiry
-
-The default JWT token lifetime is **1440 minutes (24 hours)**. This can be configured in `gns3_server.conf`:
-
-```ini
-jwt_access_token_expire_minutes = 1440  ; 24 hours
-```
 
 ## Quick Start
 
@@ -375,14 +368,6 @@ With the default configuration, all hosts can connect — suitable for most scen
 - **MCP Service**: Provides a standardized MCP protocol interface for external AI clients (like Claude Code, Claude Desktop) to interact with GNS3 functionality in a unified way
 
 They can be used together: MCP is for tool-calling scenarios, while the AI Assistant is for in-GUI interactive usage.
-
-### How to configure token expiry?
-
-Set in `gns3_server.conf`:
-
-```ini
-jwt_access_token_expire_minutes = 1440  ; default 24 hours
-```
 
 ### Is remote connection supported?
 

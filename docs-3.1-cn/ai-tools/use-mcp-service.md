@@ -34,19 +34,19 @@ MCP 服务支持两种凭证方式：JWT Token（24小时有效期）或 API Key
 
 ### 创建 API Key（推荐）
 
-如下图所示，登录服务器后，点击右侧三个点按钮，然后选择 **API Key** 选项。
+- 如下图所示，登录服务器后，点击右侧三个点按钮，然后选择 **API Key** 选项。
 
 ![API Key 菜单选项](/img/web-ui/zh/mcp-api-key-menu-option.jpeg)
 
-在弹出的 API Keys 对话框中，点击 **Create your first API key** 按钮。
+- 在弹出的 API Keys 对话框中，点击 **Create your first API key** 按钮。
 
 ![创建第一个 API Key](/img/web-ui/zh/mcp-api-key-create-first.jpeg)
 
-为即将创建的 API Key 输入一个名称，然后点击 **Create** 按钮。
+- 为即将创建的 API Key 输入一个名称，然后点击 **Create** 按钮。
 
 ![输入 API Key 名称](/img/web-ui/zh/mcp-api-key-input-name.jpeg)
 
-后端创建完成后，会显示 API Key Created 对话框，**复制并保存此 Key**。
+- 后端创建完成后，会显示 API Key Created 对话框，**复制并保存此 Key**。
 
 ![API Key 创建成功](/img/web-ui/zh/mcp-api-key-created-dialog.jpeg)
 
@@ -54,27 +54,27 @@ MCP 服务支持两种凭证方式：JWT Token（24小时有效期）或 API Key
 此 API Key **只显示一次**，复制保存后，将不会再次显示。请立即妥善保存。
 :::
 
-创建完成后，列表中将显示该 Key。
+- 创建完成后，列表中将显示该 Key。
 
 ![API Key 列表](/img/web-ui/zh/mcp-api-key-list.jpeg)
 
-在 Actions 中，可以点击 Revoke 按钮吊销某个 Key。
+- 在 Actions 中，可以点击 Revoke 按钮吊销某个 Key。
 
 ![吊销 API Key](/img/web-ui/zh/mcp-api-key-revoke.jpeg)
 
-吊销后，可以点击 **Restore** 恢复或 **Delete** 永久删除。
+- 吊销后，可以点击 **Restore** 恢复或 **Delete** 永久删除。
 
-![吊销确认](/img/web-ui/zh/mcp-api-key-revoke-confirm.jpeg)
+![吊销后状态](/img/web-ui/zh/mcp-api-key-revoked.jpeg)
 
-点击Restore恢复
-![恢复或删除 API Key](/img/web-ui/zh/mcp-api-key-restore-delete.jpeg)
+- 点击Restore恢复
 
-点击Delete永久删除
-![恢复确认](/img/web-ui/zh/mcp-api-key-restore-confirm.jpeg)
+![恢复确认对话框](/img/web-ui/zh/mcp-api-key-restore-confirm.jpeg)
 
-### JWT Token
+- 点击Delete永久删除
 
-如果需要使用 JWT Token（24小时有效期），可参考用户信息中的 Access Token。
+![删除确认对话框](/img/web-ui/zh/mcp-api-key-delete-confirm.jpeg)
+
+
 
 ## 快速开始
 
@@ -84,14 +84,14 @@ MCP 服务支持两种凭证方式：JWT Token（24小时有效期）或 API Key
 # 添加 MCP 服务器
 claude mcp add --transport sse My_GNS3_Server \
   http://localhost:3080/v3/mcp/transport/sse \
-  -H "Authorization: Bearer $API-Key"
+  -H "Authorization: Bearer $API_KEY"
 ```
 
 参数说明：
 - `--transport sse` — 使用 SSE（Server-Sent Events）传输协议，MCP 的标准传输方式，支持远程连接
 - `My_GNS3_Server` — 自定义的 MCP 服务器名称，可任意命名，用于在 Claude Code 中标识该服务器
 - `http://localhost:3080/v3/mcp/transport/sse` — GNS3 服务端的 MCP SSE 端点地址，`localhost` 为 GNS3 服务端地址，`3080` 为默认端口
-- `-H "Authorization: Bearer $API-Key"` — 携带 API Key 的认证请求头，`$API-Key` 替换为上一步获取的 API Key 值
+- `-H "Authorization: Bearer $API_KEY"` — 携带 API Key 的认证请求头，`$API_KEY` 替换为上一步获取的 API Key 值
 
 添加完成后，在 Claude Code 中即可通过自然语言管理 GNS3，例如：
 - "列出所有 GNS3 项目"
@@ -365,14 +365,6 @@ mcp_allowed_origins = http://127.0.0.1:*,http://localhost:*,http://192.168.1.3:*
 - **MCP 服务**：提供标准化的 MCP 协议接口，允许外部 AI 客户端（如 Claude Code、Claude Desktop）以统一方式调用 GNS3 功能
 
 两者可以配合使用：MCP 服务于工具调用场景，AI 助手服务于 GUI 内交互式使用场景。
-
-### 如何配置 Token 有效期？
-
-在 `gns3_server.conf` 中设置：
-
-```ini
-jwt_access_token_expire_minutes = 1440  ; 默认 24 小时
-```
 
 ### 是否支持远程连接？
 
