@@ -16,7 +16,9 @@ module.exports = {
          },
       },
    ],
+   themes: ['@docusaurus/theme-mermaid'],
    markdown: {
+      mermaid: true,
       format: 'mdx',
       mdx1Compat: {
          comments: true,
