@@ -4,7 +4,6 @@ title: GNS3 Windows Install
 sidebar_label: Windows
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
 
@@ -88,17 +87,17 @@ If you want to create complex environments with many devices, your hardware requ
 ## Download the GNS3 all-in-one-installer
 Follow these steps to download GNS3 to you MAC. Using a web browser, browse to https://gns3.com and click the **Free Download** link:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/1.jpg')} />
+![screenshot](/img/getting-started/installation/windows/1.jpg)
 
 If you have not already registered on the GNS3 site, create an account and then click **Create Account & Continue**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/2.jpg')} />
+![screenshot](/img/getting-started/installation/windows/2.jpg)
 
 Or, if you already have an account, click **Login**, fill in the your details and then click **Login & Continue**:
 
 After login, you will be prompted to select the version of GNS3 to download. In this guide, we will select the Windows installation. Click the Download button to download the GNS3-all-in-one package.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/3.jpg')} />
+![screenshot](/img/getting-started/installation/windows/3.jpg)
 
 :::note
 The GNS3 executable file is about 85MB in size. The amount of time it takes to download will depend on the speed of your Internet connection.
@@ -110,7 +109,7 @@ The GNS3 downloaded file is an executable Windows file. If you have issues downl
 
 The GNS3-all-in-one package will automatically be downloaded to your PC.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/4.jpg')} />
+![screenshot](/img/getting-started/installation/windows/4.jpg)
 
 You also get an option to download a free version of the SolarWinds Network Engineers Toolkit (this is a subset of the full Pro version).
 
@@ -124,7 +123,7 @@ This guide only discusses a local Windows installation (Dynamips). If you are us
 
 Navigate in Windows Explorer to your Downloads folder and then double-click the GNS3-2.2.0-all-in-one-regular.exe file:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/5.jpg')} />
+![screenshot](/img/getting-started/installation/windows/5.jpg)
 
 :::note
 If you have configured your browser to download files to a different directory to the default Downloads directory, look for the GNS3-2.2.0-all-in-one-regular.exe file (or the version of file you downloaded) in that directory.
@@ -138,21 +137,21 @@ The GNS install process will run multiple installation wizards. If the process s
 
 The GNS3 Setup wizard displays. Click **Next >** to start the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/6.jpg')} />
+![screenshot](/img/getting-started/installation/windows/6.jpg)
 
 GNS3 is free open source software distributed under the GNU General Public License Version 3. Read the license agreement, and if you agree  with the contents, click the **I Agree** button to continue the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/7.jpg')} />
+![screenshot](/img/getting-started/installation/windows/7.jpg)
 
 Select the Start Menu folder for the GNS3 shortcut. The default is the GNS3 folder. Click **Next >** to continue the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/8.jpg')} />
+![screenshot](/img/getting-started/installation/windows/8.jpg)
 
 GNS3 comes bundled with various prerequisite and optional software. By default most software is selected for installation, but you can decide to only install specific software.
 
 If you are unsure, leave all software selections at their default selection and click **Next >** to continue the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/9.jpg')} />
+![screenshot](/img/getting-started/installation/windows/9.jpg)
 
 :::note
 Recent versions of Windows 10 have an issue with WinPcap. If Wireshark hangs while trying to use it in a GNS3 topology, consider switching to Npcap instead. Instructions can be found lower down in this document.  
@@ -175,7 +174,7 @@ Here is a brief description of software:
 | Virt-viewer | Recommended | Alternate displayer of Qemu desktop VMs that have qemu-spice pre-installed. |
 | Intel Hardware Acceleration Manager (HAXM) | Optional | Only available on systems with Intel CPUs (and VT-X enabled), that are *not* using Hyper-V. Used for hardware acceleration of Android emulation, as well as QEMU. |
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/10.jpg')} />
+![screenshot](/img/getting-started/installation/windows/10.jpg)
 
 Choose an install location. The default location is ```C:\Program Files\GNS3```. Then click **Install**:
 
@@ -188,46 +187,46 @@ The output displayed will depend on what you have selected to install.
 
 If WinPcap is already installed, a warning message is displayed. It is not necessary to reinstall WinPcap. Click ** Cancel** if you do not want to reinstall WinPcap and go directly to the next step. Click **OK** to continue re-installing WinPcap:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/11.jpg')} />
+![screenshot](/img/getting-started/installation/windows/11.jpg)
 
 The WinPcap installation wizard displays. Click **Next >** to continue the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/12.jpg')} />
+![screenshot](/img/getting-started/installation/windows/12.jpg)
 
 The WinPcap License Agreement displays. Read the agreement and if you agree, click the **I Agree** button to continue with the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/13.jpg')} />
+![screenshot](/img/getting-started/installation/windows/13.jpg)
 
 Leave the checkbox **Automatically start the WinPcap driver at boot time** checked and click **Install**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/14.jpg')} />
+![screenshot](/img/getting-started/installation/windows/14.jpg)
 
 The WinPcap installation continues. Click **Finish** to complete the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/15.jpg')} />
+![screenshot](/img/getting-started/installation/windows/15.jpg)
 
 If you selected that Wireshark should be installed, the GNS3 setup software will download the Wireshark install files. Wait for the process to complete:
 
 GNS3 will then perform a silent install of Wireshark. Wait for the process to complete:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/16.jpg')} />
+![screenshot](/img/getting-started/installation/windows/16.jpg)
 
 Once the core GNS3 software (and any optional selected items) is installed, Click **Next>**
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/17.jpg')} />
+![screenshot](/img/getting-started/installation/windows/17.jpg)
 
 Optional: If you are interested, install the Solarwinds Standard Toolset. This is free evaluation (a $200 value). Otherwise Select **No** and click **Next >** to continue:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/18.jpg')} />
+![screenshot](/img/getting-started/installation/windows/18.jpg)
 
 If you elect to download the Standard Toolset, you’ll be redirected to a webpage on Solarwinds, where you enter registration information, in order to download the software:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/19.jpg')} />
+![screenshot](/img/getting-started/installation/windows/19.jpg)
 
 After registration and clicking the Download Free Toolkit link, you’ll be redirected to an informational page asking that you check your email, as well as instructions on how to activate your license for the Standard Toolset:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/20.jpg')} />
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/21.jpg')} />
+![screenshot](/img/getting-started/installation/windows/20.jpg)
+![screenshot](/img/getting-started/installation/windows/21.jpg)
 
 **Congratulations!** You have successfully installed GNS3. A browser window will open showing additional help and options. Leave the **Start GNS3** checkbox enabled and click **Finish** to complete the GNS3 installation.  Click here to for a walkthrough of using the Setup Wizard to configure and use the Local Server.
 
@@ -235,7 +234,7 @@ After registration and clicking the Download Free Toolkit link, you’ll be redi
 If you intend on using the GNS3-VM to run your devices, the please leave this window open and minimized in your taskbar,  proceed with importing the GNS3-VM first (please click here to see those steps), and then come back to complete this step once the GNS3-VM has been imported.
 :::
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/22.jpg')} />
+![screenshot](/img/getting-started/installation/windows/22.jpg)
 
 :::note
 If you are running Win10 with the latest updates, and experience issues with Wireshark hanging while trying to initialize interfaces, it’s worth giving the most recent Npcap a shot.    
@@ -245,11 +244,11 @@ First, uninstall WinPcap and reboot.  Next, either re-run the GNS3 All-In-One in
 Scroll down the page a little bit, and look for the most recent version (v0.9983 as of Oct 7th, 2019):
 :::
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/23.jpg')} />
+![screenshot](/img/getting-started/installation/windows/23.jpg)
 
 When installing Npcap with WinPcap, make sure to enable the “WinPcap API-compatible Mode” option before completing the installation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/24.jpg')} />
+![screenshot](/img/getting-started/installation/windows/24.jpg)
 
 Click **Install**, and then reboot Windows a final time.  
 
@@ -261,15 +260,15 @@ If you wish to install Npcap before installing GNS3, you’re free to do so. Jus
 Solar-Putty is now the new default terminal emulation application for GNS3 in Windows, if you downloaded the GNS3 AIO installer from gns3.com (see note 3) .  During GNS3 installation, if you elected to install Solar-Putty, you’ll be prompted to accept a License Agreement and Privacy Notice:
 :::
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/25.jpg')} />
+![screenshot](/img/getting-started/installation/windows/25.jpg)
 
 After clicking ‘Accept’, you’ll be prompted to enter a valid email address:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/26.jpg')} />
+![screenshot](/img/getting-started/installation/windows/26.jpg)
 
 Clicking Continue will finish this part of the installation, and takes you back to the main GNS3 installation.  Solar-Putty will now be the default console application, unless you choose to select a different one, by click Edit->Preferences->GNS3->Console in the main GNS3 GUI:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/windows/27.jpg')} />
+![screenshot](/img/getting-started/installation/windows/27.jpg)
 
 David Bombal has several videos online, showing Solar-Putty in general, along with configuration changes you can make:
 

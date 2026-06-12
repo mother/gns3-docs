@@ -2,7 +2,6 @@
 title: Project Topology
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Project Topology
 

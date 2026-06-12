@@ -6,7 +6,6 @@ prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
 readingTime: 5 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to draw a curve
 
@@ -18,19 +17,19 @@ Draw a Curve allows you to draw smooth curves on the GNS3 network topology map f
 
 Click the curve icon button on the toolbar (tooltip: "Draw a curve"). The mouse cursor will change to a crosshair.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Curve toolbar button" src={useBaseUrl('img/web-ui/zh/draw-curve-01-toolbar.jpeg')} />
+![Curve toolbar button](/img/web-ui/zh/draw-curve-01-toolbar.jpeg)
 
 **Drag to Draw**
 
 Press and hold the mouse button on the map and drag to create a curve path. Release the mouse button to complete the drawing. The curve is automatically saved to the server.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Drawing a curve" src={useBaseUrl('img/web-ui/zh/draw-curve-02-drawing.jpeg')} />
+![Drawing a curve](/img/web-ui/zh/draw-curve-02-drawing.jpeg)
 
 ## Style Editor
 
 Right-click on the curve and select **Edit style** to open the Style editor dialog.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Curve Style editor" src={useBaseUrl('img/web-ui/zh/draw-curve-03-style-editor.png')} />
+![Curve Style editor](/img/web-ui/zh/draw-curve-03-style-editor.png)
 
 - **Border Color** — Color picker
 - **Border Width** — Numeric input (range: 0–100)
@@ -44,7 +43,7 @@ Right-click on the curve and select **Edit style** to open the Style editor dial
 
 ### Curve Example
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Curve example" src={useBaseUrl('img/web-ui/zh/draw-curve-04-example.jpeg')} />
+![Curve example](/img/web-ui/zh/draw-curve-04-example.jpeg)
 
 ### Dialog Buttons
 

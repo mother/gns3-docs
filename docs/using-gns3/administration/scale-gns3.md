@@ -4,7 +4,6 @@ title: Scale GNS3
 sidebar_label: Scale GNS3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 GNS3 itself doesn’t have limitation on the number of nodes you can run into it. The limitation will be your hardware.
 
@@ -25,7 +24,7 @@ https://www.gns3.com/discussions/the-worlds-first-gns3-beowulf-cl
 The PI use an ARM processor that is not adapted to run x86 code on Qemu. Also since this forum post, the interfaces have changed.
 :::
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/1.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/1.jpg)
 
 ## Requirements
 - You need the same version of the GNS3 server on all machines
@@ -45,25 +44,25 @@ This is not definitive. GNS3 is evolving and contributions are welcome
 ### Add your remote servers
 First you need to add your remote servers in the Server preferences:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/2.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/2.jpg)
 
 You will see these appear in the Server summary pane, along with the CPU/RAM usage of each:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/3.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/3.jpg)
 
 ### Setup the Appliance Templates
 When you create your appliance template, choose a remote server:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/4.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/4.jpg)
 
 At the node name step, choose a name to help you remember which server this node will be run on:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/5.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/5.jpg)
 
 Create a second template for the other server. You have now two nodes that allow you to manually dispatch the load between servers:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/6.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/6.jpg)
 
 You can use the server summary in order to know which server has free resources:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/scale-gns3/7.jpg')} />
+![screenshot](/img/using-gns3/administration/scale-gns3/7.jpg)

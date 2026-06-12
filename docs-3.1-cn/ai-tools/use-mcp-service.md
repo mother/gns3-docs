@@ -6,7 +6,6 @@ title: 如何使用 MCP 服务
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何使用 MCP 服务
 
@@ -35,11 +34,11 @@ MCP 服务需要有效的 GNS3 JWT Token：
 
 如下图所示，登陆服务器后，点击右侧三个点按钮，然后选择User info选项。
 
-<img style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="User Info菜单入口" src={useBaseUrl('img/web-ui/zh/mcp-user-info-menu.jpeg')} />
+![User Info菜单入口](/img/web-ui/zh/mcp-user-info-menu.jpeg)
 
 在弹出的logged in user info 对话框中，如下图所示，点击copy access token按钮，复制你的jwt 认证token。
 
-<img style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="复制Access Token" src={useBaseUrl('img/web-ui/zh/mcp-copy-access-token.jpeg')} />
+![复制Access Token](/img/web-ui/zh/mcp-copy-access-token.jpeg)
 
 
 ### Token 有效期

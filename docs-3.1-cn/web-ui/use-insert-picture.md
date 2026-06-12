@@ -6,7 +6,6 @@ title: 如何插入图片
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何插入图片
 
@@ -18,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 点击项目地图工具栏的 "image" 图标按钮（工具提示："Insert a picture"），触发文件选择对话框。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="工具栏按钮" src={useBaseUrl('img/web-ui/zh/insert-picture-01-toolbar-button.jpeg')} />
+![工具栏按钮](/img/web-ui/zh/insert-picture-01-toolbar-button.jpeg)
 
 **选择图片文件**
 

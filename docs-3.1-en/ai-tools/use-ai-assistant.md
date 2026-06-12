@@ -2,7 +2,6 @@
 title: How to configure and use AI Assistant
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::tip Project Origin
 
@@ -25,7 +24,7 @@ Currently, this feature has been primarily tested with Cisco IOS images that do 
 
 On the project home page, click the three dots at the top right and select `AI Profile` to go to the configuration page.
 
-<img style={{ width: '100%' }} alt="AI Configuration Entry" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
+![AI Configuration Entry](/img/web-ui/zh/ai-config-menu.jpeg)
 
 ### Admin Configuration
 
@@ -35,11 +34,11 @@ Admins can configure AI Profiles for users or user groups through the `Controlle
 
 On the project home page, click the three dots at the top right, select `Management`, then enter the `Controller Management` page.
 
-<img style={{ width: '100%' }} alt="Controller Management Entry" src={useBaseUrl('img/web-ui/zh/ai-config-management.jpeg')} />
+![Controller Management Entry](/img/web-ui/zh/ai-config-management.jpeg)
 
 Click the `Users` tab to configure `AI Profile` for different users.
 
-<img style={{ width: '100%' }} alt="Users Tab Configuration" src={useBaseUrl('img/web-ui/zh/ai-config-users-tab.jpeg')} />
+![Users Tab Configuration](/img/web-ui/zh/ai-config-users-tab.jpeg)
 
 #### Configure for Groups
 
@@ -47,13 +46,13 @@ Click the `Groups` tab to configure `AI Profile` for different user groups.
 
 After group configuration, regular users who join the group can use the group's `AI Profile` (currently only the default `AI Profile` of the group), or use their own `AI Profile`.
 
-<img style={{ width: '100%' }} alt="Groups Tab Configuration" src={useBaseUrl('img/web-ui/zh/ai-config-groups-tab.jpeg')} />
+![Groups Tab Configuration](/img/web-ui/zh/ai-config-groups-tab.jpeg)
 
 ### Configuration Parameters
 
 - On the `AI Profile` screen, click the `New Configuration` button.
 
-<img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
+![New Configuration](/img/web-ui/zh/ai-new-config.jpeg)
 
 On the `Create LLM Model Configuration` page, select the `Base Models` tab, and enter the following:
 
@@ -84,21 +83,21 @@ After filling in the fields, click the `Create` button.
 - The system only decrypts the key internally when the AI Assistant needs to make an API call
 :::
 
-<img style={{ width: '100%' }} alt="Create Configuration" src={useBaseUrl('img/web-ui/zh/ai-create-config.jpeg')} />
+![Create Configuration](/img/web-ui/zh/ai-create-config.jpeg)
 
 After creation, it will look like the image below.
 
-<img style={{ width: '100%' }} alt="Configuration Ready" src={useBaseUrl('img/web-ui/zh/ai-config-ready.jpeg')} />
+![Configuration Ready](/img/web-ui/zh/ai-config-ready.jpeg)
 
 ## Use the AI Assistant in a Project Topology
 
 - On the project topology page, click the AI button on the left to open the AI Assistant. Next to the input box on the AI Assistant page, you can click to select the configured model and assistant mode.
 
-<img style={{ width: '100%' }} alt="AI Assistant Panel" src={useBaseUrl('img/web-ui/zh/ai-assistant-panel.jpeg')} />
+![AI Assistant Panel](/img/web-ui/zh/ai-assistant-panel.jpeg)
 
 - The sidebar of the AI Assistant shows your chat history.
 
-<img style={{ width: '100%' }} alt="Chat History" src={useBaseUrl('img/web-ui/zh/ai-session-history.jpeg')} />
+![Chat History](/img/web-ui/zh/ai-session-history.jpeg)
 
 ## Emulator Configuration
 
@@ -114,7 +113,7 @@ We mainly test with the following device types:
 For more supported Telnet device types, see: [GNS3 Server - Netmiko Supported Devices](https://github.com/GNS3/gns3-server/blob/ca2004e715cd1f9b860b28bc371fd814b554a93d/docs/gns3-copilot/netmiko_devices.md)
 :::
 
-<img style={{ width: '100%' }} alt="Device Tags Configuration" src={useBaseUrl('img/web-ui/zh/ai-device-tags.png')} />
+![Device Tags Configuration](/img/web-ui/zh/ai-device-tags.png)
 
 ## Usage Scenarios
 
@@ -163,7 +162,7 @@ HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirma
 
 ### Overall Architecture
 
-<img style={{ width: '100%' }} alt="Overall Architecture" src={useBaseUrl('img/web-ui/zh/ai-assistant-overview-en-overall-architecture.svg')} />
+![Overall Architecture](/img/web-ui/zh/ai-assistant-overview-en-overall-architecture.svg)
 
 ### API Endpoints
 
@@ -178,7 +177,7 @@ HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirma
 
 ### LangGraph Agent Workflow
 
-<img style={{ width: '100%' }} alt="Agent Workflow" src={useBaseUrl('img/web-ui/zh/ai-assistant-overview-en-langgraph-agent-workflow.svg')} />
+![Agent Workflow](/img/web-ui/zh/ai-assistant-overview-en-langgraph-agent-workflow.svg)
 
 ### Three Copilot Modes
 
@@ -215,7 +214,7 @@ The mode is selected in the `llm_call` node via `copilot_mode`, which picks the 
 
 ### Context Window Management
 
-<img style={{ width: '100%' }} alt="Context Window Management" src={useBaseUrl('img/web-ui/zh/ai-assistant-overview-en-context-window-management.svg')} />
+![Context Window Management](/img/web-ui/zh/ai-assistant-overview-en-context-window-management.svg)
 
 - Accurate token counting via tiktoken (`cl100k_base`)
 - Three trimming strategies: conservative / balanced / aggressive

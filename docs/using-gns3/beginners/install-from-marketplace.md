@@ -4,7 +4,6 @@ title: Install an appliance from the GNS3 Marketplace
 sidebar_label: Install an appliance from the GNS3 Marketplace
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
 This document explains how to download and install an appliance from the **GNS3 Marketplace**.
@@ -35,34 +34,34 @@ In this guide, the Windows operating system is used. The process is similar howe
 
 Before downloading the appliance from the GNS3 website, download and save the operating system for the appliance in your **Downloads** directory:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/1.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/1.jpg)
 
 Starting with GNS3 2.2.0, there are appliances included, in the GNS3 installation directory:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/2.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/2.jpg)
 
 (The default installation directory in Windows is ```C:\Program Files\GNS3```)
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/3.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/3.jpg)
 
 (the appliance templates listed in ```C:\Program Files\GNS3\appliances```)
 
 You can also download the appliance template files from the GNS3 website using a web browser. Browse to [https://gns3.com](https://gns3.com) and click the **Marketplace** menu item:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/4.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/4.jpg)
 
 Click **Appliances**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/5.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/5.jpg)
 
 Select the appliance you want to download. Since we want to import the **Cisco IOSvL2 VM**, select **Cisco IOSvL2** in the **Appliances** section of the **Marketplace**, in order to download the cisco-iosvl2.gns3a template file:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/6.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/6.jpg)
 
 An appliance description is displayed. Confirm details of the appliance and then click **Download Template**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/7.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/7.jpg)
 
 The appliance template  is downloaded to your local PC:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/install-from-marketplace/8.jpg')} />
+![screenshot](/img/using-gns3/beginners/install-from-marketplace/8.jpg)

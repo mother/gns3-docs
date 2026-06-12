@@ -5,7 +5,6 @@ title: 如何使用 AI 实时数据包分析
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何使用 AI 实时数据包分析
 
@@ -19,11 +18,11 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 2. 打开 AI Assistant 窗口，在输入框中描述分析需求，例如："r2-r3 之间的 OSPF 协议分析一下"。
 3. 等待 AI Assistant 自动分析并返回结果。
 
-<img style={{ width: '100%' }} alt="AI 数据包分析使用示例" src={useBaseUrl('img/web-ui/zh/ai-packet-analysis-usage.jpeg')} />
+![AI 数据包分析使用示例](/img/web-ui/zh/ai-packet-analysis-usage.jpeg)
 
 ## 核心流程
 
-<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="核心流程图" src={useBaseUrl('img/web-ui/zh/ai-packet-core-flow-cn.svg')} />
+![核心流程图](/img/web-ui/zh/ai-packet-core-flow-cn.svg)
 
 ## 工具总览
 
@@ -34,7 +33,7 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 
 ## Agent 工作流（LangGraph）
 
-<img style={{ width: '100%' }} alt="Agent 工作流" src={useBaseUrl('img/web-ui/zh/ai-packet-agent-workflow-cn.svg')} />
+![Agent 工作流](/img/web-ui/zh/ai-packet-agent-workflow-cn.svg)
 
 ## 服务端 Capture API
 

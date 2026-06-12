@@ -4,7 +4,6 @@ title: One GNS3 server, multiple clients
 sidebar_label: One GNS3 server, multiple clients
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
 This documentation is only for GNS3 2.0 and later
@@ -40,15 +39,15 @@ When you use a remote GNS3 VM you have a GNS3 server running on your local machi
 
 If you want to use a local GNS3 installation and a remote installation you can use the [settings profiles](../../using-gns3/advanced/settings-profiles). At startup in the setup wizard choose **Run appliances on a remote server**
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/one-server-multiple-clients/1.jpg')} />
+![screenshot](/img/getting-started/installation/one-server-multiple-clients/1.jpg)
 
 And put the server settings:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/one-server-multiple-clients/2.jpg')} />
+![screenshot](/img/getting-started/installation/one-server-multiple-clients/2.jpg)
 
 Click **Finish** in the next window, to complete the setup:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/one-server-multiple-clients/3.jpg')} />
+![screenshot](/img/getting-started/installation/one-server-multiple-clients/3.jpg)
 
 That’s all!
 

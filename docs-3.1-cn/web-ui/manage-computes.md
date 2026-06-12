@@ -5,7 +5,6 @@ title: 如何添加计算节点
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何添加计算节点
 
@@ -50,17 +49,17 @@ compute_password = gns3
 
 配置完成后，重启 GNS3 Server 使配置生效。
 
-<img style={{ width: '100%' }} alt="重启 GNS3 Server" src={useBaseUrl('img/web-ui/zh/compute-restart.jpeg')} />
+![重启 GNS3 Server](/img/web-ui/zh/compute-restart.jpeg)
 
 ### 4. 将计算节点注册到控制器
 
 在项目首页点击左上角的 GNS3 Logo，选择"Compute"（计算节点管理），可以查看和管理所有已添加的计算节点。
 
-<img style={{ width: '100%' }} alt="进入计算节点管理" src={useBaseUrl('img/web-ui/zh/compute-01-enter.jpeg')} />
+![进入计算节点管理](/img/web-ui/zh/compute-01-enter.jpeg)
 
 点击右上角的 + 号按钮添加新的计算节点。
 
-<img style={{ width: '100%' }} alt="添加计算节点" src={useBaseUrl('img/web-ui/zh/compute-04-add.jpeg')} />
+![添加计算节点](/img/web-ui/zh/compute-04-add.jpeg)
 
 依次输入以下字段后点击"Add"按钮：
 
@@ -73,15 +72,15 @@ compute_password = gns3
 | User | 文本输入 | gns3 | 认证用户名 |
 | Password | 密码输入 | gns3 | 认证密码 |
 
-<img style={{ width: '100%' }} alt="添加表单" src={useBaseUrl('img/web-ui/zh/compute-05-form.jpeg')} />
+![添加表单](/img/web-ui/zh/compute-05-form.jpeg)
 
 添加完成后，该计算节点默认为 offline（离线）状态。点击右侧的三个点按钮，选择"Connect"进行连接。
 
-<img style={{ width: '100%' }} alt="连接计算节点" src={useBaseUrl('img/web-ui/zh/compute-06-connect.jpeg')} />
+![连接计算节点](/img/web-ui/zh/compute-06-connect.jpeg)
 
 连接成功后，将实时显示该节点的 CPU、内存、硬盘使用情况。
 
-<img style={{ width: '100%' }} alt="连接成功" src={useBaseUrl('img/web-ui/zh/compute-07-connected.jpeg')} />
+![连接成功](/img/web-ui/zh/compute-07-connected.jpeg)
 
 ## 重要说明
 

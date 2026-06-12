@@ -5,7 +5,6 @@ sidebar_label: What is GNS3?
 slug: /
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
 
@@ -42,7 +41,7 @@ GNS3-all-in-one:
 
 This is the client part of GNS3 and is graphical user interface (GUI). You install the all-in-one software on your local PC (Windows, MAC, Linux) and create your topologies using this software. This is what you usually see show in screenshots such as the following:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/what-is-gns3/1.jpg')} />
+![screenshot](/img/getting-started/what-is-gns3/1.jpg)
 
 Server options:
 

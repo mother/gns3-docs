@@ -2,7 +2,6 @@
 title: 3.1 New Features Overview
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 3.1 New Features Overview
 
@@ -16,19 +15,19 @@ The Web UI project was upgraded from Angular 14 to Angular 21. AI helped a lot w
 
 Access the node console directly in your browser. No need for external terminal software. Uses xterm.js for an embedded terminal. Supports multiple tabs and drag-and-drop.
 
-<img style={{ width: '100%' }} alt="Web Console" src={useBaseUrl('img/web-ui/zh/feature-console.jpeg')} />
+![Web Console](/img/web-ui/zh/feature-console.jpeg)
 
 ### [How to use Web VNC](../web-ui/use-web-vnc) 🆕
 
 Access graphical interface nodes through VNC in your browser. The frontend uses noVNC. Used for accessing virtual machines with a graphical interface (like Linux Desktop).
 
-<img style={{ width: '100%' }} alt="Web VNC" src={useBaseUrl('img/web-ui/zh/feature-vnc.jpeg')} />
+![Web VNC](/img/web-ui/zh/feature-vnc.jpeg)
 
 ### [How to use Web Wireshark](../web-ui/use-web-wireshark) 🆕
 
 Capture and analyze network packets directly in your browser. The frontend uses xpra-html5 client. Supports inline window display and multi-link packet capture at the same time.
 
-<img style={{ width: '100%' }} alt="Web Wireshark" src={useBaseUrl('img/web-ui/zh/feature-wireshark.jpeg')} />
+![Web Wireshark](/img/web-ui/zh/feature-wireshark.jpeg)
 
 ## 🤖 AI Tools
 
@@ -36,7 +35,7 @@ Capture and analyze network packets directly in your browser. The frontend uses 
 
 A smart assistant powered by large language models. Built with LangChain/LangGraph. Uses Nornir/Netmiko to configure devices. Capabilities include designing topologies with natural language, getting configuration advice, diagnosing faults, automating tasks, and analyzing packet capture data.
 
-<img style={{ width: '100%' }} alt="AI Assistant" src={useBaseUrl('img/web-ui/zh/feature-ai.jpeg')} />
+![AI Assistant](/img/web-ui/zh/feature-ai.jpeg)
 
 ### [How to use the MCP service](../ai-tools/use-mcp-service) 🆕
 
@@ -50,7 +49,7 @@ An online AI skills package repository that is easy to update. Located on GitHub
 
 Uses AI together with the real device settings in your topology. It calls predefined faults from the GNS3-Skills repository to simulate network problems. Injects faults by running configuration commands. Used for practicing fault recovery, learning protocols, and more.
 
-<img style={{ width: '100%' }} alt="Fault Injection" src={useBaseUrl('img/web-ui/zh/feature-fault-inject.jpeg')} />
+![Fault Injection](/img/web-ui/zh/feature-fault-inject.jpeg)
 
 ---
 

@@ -5,7 +5,6 @@ difficulty: Beginner
 readingTime: 5 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use Packet Filter
 
@@ -21,13 +20,13 @@ Only supported on specific node types: VPCS, Dynamips, QEMU, IOU, Cloud, NAT, Do
 
 In the project topology, **right-click** on the link you want to configure and select **Packet filters**.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Right-click to select Packet filters" src={useBaseUrl('img/web-ui/zh/packet-filter-right-click.jpeg')} />
+![Right-click to select Packet filters](/img/web-ui/zh/packet-filter-right-click.jpeg)
 
 **Step 2: Select Filter Type**
 
 In the **Packet filters** dialog, select the corresponding tab to configure the filter.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Packet filters dialog" src={useBaseUrl('img/web-ui/zh/packet-filter-dialog.jpeg')} />
+![Packet filters dialog](/img/web-ui/zh/packet-filter-dialog.jpeg)
 
 **Step 3: Configure Filter Parameters**
 
@@ -52,7 +51,7 @@ Packet Filter rules take effect bidirectionally. For example, if you configure D
 
 After configuring the parameters, click the **Apply** button. A Packet Filter icon will appear on the link.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Packet Filter icon on link" src={useBaseUrl('img/web-ui/zh/packet-filter-apply.jpeg')} />
+![Packet Filter icon on link](/img/web-ui/zh/packet-filter-apply.jpeg)
 
 ## Clearing Filters
 
@@ -60,7 +59,7 @@ After configuring the parameters, click the **Apply** button. A Packet Filter ic
 
 Open the Packet filters dialog and click the **Reset** button to quickly clear all parameters.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Reset button" src={useBaseUrl('img/web-ui/zh/packet-filter-reset.jpeg')} />
+![Reset button](/img/web-ui/zh/packet-filter-reset.jpeg)
 
 **Method 2: Delete the Link**
 

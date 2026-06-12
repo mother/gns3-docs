@@ -5,7 +5,6 @@ title: 如何使用 AI Skills
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何使用 AI Skills
 

@@ -4,7 +4,6 @@ title: GNS3 Setup wizard with the GNS3 VM
 sidebar_label: Setup wizard for GNS3 VM
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Which Virtualization Software? VirtualBox or VMware?
 In this document we will explain the import of the GNS3 VM for VMware but instructions for VirtualBox are similar.
@@ -39,21 +38,21 @@ This document assumes that you already have VMware Workstation installed on your
 
 Extract the downloaded .zip archive:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/1.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/1.jpg)
 
 This extracts the “GNS3 VM.ova” file stored within the compressed archive, in order to import it into VMware Workstation.  
 
 In VMware Workstation, click **'Open a Virtual Machine'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/2.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/2.jpg)
 
 Navigate to the directory where the extracted **GNS3 VM.ova** is located, and click **'Open'** to open the OVA:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/3.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/3.jpg)
 
 Leave the virtual machine name as **'GNS3 VM'**, and click **'Import'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/4.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/4.jpg)
 
 :::caution
 With VMware Player it’s recommended to keep the default location. GNS3 will try to detect VMs outside, but unlike Workstation VMware Player doesn’t offer a central database with all VMs location.
@@ -61,11 +60,11 @@ With VMware Player it’s recommended to keep the default location. GNS3 will tr
 
 VMware Workstation will import the GNS3 VM:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/5.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/5.jpg)
 
 The GNS3 VM will show as available in VMware Workstation. Leave all settings at their defaults:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/6.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/6.jpg)
 
 **Congratulations!** You have successfully imported the GNS3 VM. In the next section you will integrate GNS3 with the GNS3 VM.
 
@@ -76,23 +75,23 @@ If you encounter a message in the GNS3-VM where it states that KVM support is no
 ## Local GNS3 VM Setup Wizard
 The GNS3 Setup Wizard is displayed when GNS3 starts up for the first time. This provides an easy way to initially configure GNS3 options:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/7.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/7.jpg)
 
 ### Manually Starting the Setup Wizard
 You can also manually start the Setup Wizard at any time by clicking Help->Setup Wizard in the GNS3 software:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/8.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/8.jpg)
 
 ### Disable Setup Wizard
 Optional: You can disable the Setup Wizard from displaying by selecting the ‘Don't show this again’ checkbox:      
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/9.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/9.jpg)
 
 ### Using the GNS3 Setup Wizard
 
 Select **'Run Modern IOS (IOSv or IOU), ASA, and appliances from non-Cisco manufacturers'** in the Wizard and click **'Next'**:           
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/10.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/10.jpg)
 
 :::important
 This guide explains the Local GNS3 VM server configuration. For a Local Server (Dynamips) configuration [click here](setup-wizard-local-server).
@@ -100,13 +99,13 @@ This guide explains the Local GNS3 VM server configuration. For a Local Server (
 
 Even though you’ll be using the GNS3-VM to perform the “heavy lifting” of running your VMs/images/containers, it’s still necessary to configure the local server settings in GNS3 before proceeding with the remaining process of configuring the GNS3-VM.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/11.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/11.jpg)
 
 Ensure that the path to the gns3server executable is correct (typically ```C:\Program Files\GNS3``` in a default installation), and select a Host binding and Port.  Selecting the 127.0.0.1 local loopback address tends to be the most trouble-free option to use as a host binding, but the dropdown menu does contain additional options. Click **'Next'**.
 
 A connection validation screen will appear:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/12.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/12.jpg)
 
 If successful, click **'Next'**.  If this connection attempt was unsuccessful for any reason, there possible remedies are to:
 
@@ -119,11 +118,11 @@ An additional step that may be necessary is to allow the gns3server, ubridge, an
 The Virtualization software you are going to use needs to be selected. In this example, **VMware (recommended)** is selected:
 :::
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/13.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/13.jpg)
 
 The Setup Wizard will detect the presence of the **GNS3 VM** in VMware Workstation. If the GNS3 VM is not displayed, click the **'Refresh'** button and ensure that the VM was imported correctly into VMware Workstation:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/14.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/14.jpg)
 
 Change the vCPU cores and RAM values to the amount that your computer supports and then click **'Next'**:
 
@@ -131,89 +130,89 @@ Change the vCPU cores and RAM values to the amount that your computer supports a
 GNS3 recommends a minimum of 1 vCPU core and 2GB RAM. However, if you want to run large topologies with many devices, more CPU cores and RAM are recommended. You can adjust the settings later using the GNS3 GUI. A good rule of thumb is to assign it half the total amount of available vCPU cores and physical RAM available in your PC. The below example uses a minimal resource allocation, as it’s being run on a laptop.  On a  desktop with an i7 quad-core CPU with hyperthreading and 32GB RAM, allocating the GNS3 VM 4-6 vCPUs and 16GB RAM will allow for respectable GNS3 topologies to be running, while still reserving enough resources to task switch between GNS3 and Windows (or Linux).
 :::
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/15.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/15.jpg)
 
 After making your allocation choices, click **'Next'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/16.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/16.jpg)
 
 The next page will show a summary of the settings you chose for the GNS3 VM. You may see a pop up saying “Please Wait”. That’s perfectly normal, as it’s due to GNS3 starting the GNS3 VM up:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/17.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/17.jpg)
 
  Once booted successfully, the IP address of the GNS3 VM will be displayed:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/18.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/18.jpg)
 
 While devices are normally installed using appliance templates found in the [GNS3 Marketplace](https://gns3.com/marketplace/appliances) (via the Import Appliance wizard), we’ll manually add a router using a [compatible IOS image](../emulators/cisco-ios-images-for-dynamips), just for a quick example. GNS3 is not limited to just those IOS images. Other articles ([here](../using-gns3/beginners/install-from-marketplace) and [here](../using-gns3/beginners/import-gns3-appliance) cover importing devices via those appliance templates via the aforementioned Import Appliance wizard, even compatible IOS images.
 
 In the GNS3 GUI, click **Edit->Preferences->IOS Routers**, to reach the correct section we need to be in:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/19.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/19.jpg)
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/20.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/20.jpg)
 
 Click **'New'** to begin manually importing and configuring the image.
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/21.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/21.jpg)
 
 In the **New IOS router template** window, select **Run the IOS router on the GNS3 VM** and click **'Next'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/22.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/22.jpg)
 
 The **New IOS router template** window displays. Click **'Browse…'** to find a local IOS image on your computer:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/23.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/23.jpg)
 
  Browse to the folder where you have stored your Cisco IOS images (you must supply your own), select the image and click **'Open'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/24.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/24.jpg)
 
 GNS3 can decompress IOS images to allow for quicker booting of routers in your GNS3 topologies. This is recommended for a better user experience, as IOS image decompression can take several minutes, even on physical hardware.  Click **'Yes'** to uncompress the image:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/25.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/25.jpg)
 
 The image is automatically uploaded to the GNS3 VM (this may take a few moments, depending on the speed of your PC, and the size of the image/VM).
 
 The uploaded image is shown. Click **'Next'** to continue the setup:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/26.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/26.jpg)
 
 The Name and platform window displays. Confirm the **Platform** selection, and configure the router **Name** as desired and click **'Next'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/27.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/27.jpg)
 
 A Default RAM setting is displayed. It is important that you check your Router's minimum memory requirements using the Cisco website. Click the **Check for minimum and maximum RAM requirement** option:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/28.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/28.jpg)
 
 The **Cisco Feature Navigator** is opened in your default web browser. Select **Image Name** and enter the name of the image you are using:  
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/29.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/29.jpg)
 
 Click **Search for Image(s)**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/30.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/30.jpg)
 
 The minimum DRAM requirements for the IOS are displayed. Note the value for your IOS image:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/31.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/31.jpg)
 
 Set the Default RAM value to the value recommended by the Cisco Feature Navigator (yours may be different to the screenshot) and click **'Next'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/32.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/32.jpg)
 
 Select your preferred Network adapters. This is device dependant. With this c3725 image, we can only add adapters to slots 0, 1, and 2, with slot 0 prepopulated with GT96100-FE dual Fast Ethernet adapter.  Which adapters you can add, and how many slots you are allowed to install adapters to is device dependent.  Click **'Next'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/33.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/33.jpg)
 
 WIC modules can now be added. Again, it’s device dependent on whether WIC slots are available, but WIC-1T and WIC-2T serial modules will be available on devices that support WICs. Once completed, click Click **'Next'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/34.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/34.jpg)
 
 It is important for optimum GNS3 performance that an **Idle-PC** value be  selected. If a green Idle-PC value is NOT shown then click the **'Idle-PC finder'** button to find an Idle-PC value.  This c3725 happens to already have an optimum idle-pc value predefined, so it’s OK to click **'Finish'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/35.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/35.jpg)
 
 If your device does NOT have an idle-pc value predefined, click the **Idle-PC** finder button in the upper-right to initiate that process.
 
@@ -221,11 +220,11 @@ It is important for optimum GNS3 performance that an **Idle-PC** value be  selec
 
 If you selected the Idle-PC finder button (only necessary if no value was detected automatically), GNS3 will calculate a value:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/36.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/36.jpg)
 
 An Idle-PC value is displayed. Click **'OK'** to complete:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/37.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/37.jpg)
 
 :::important
 If no Idle-PC value is displayed, try clicking the ‘Idle-PC finder’ button again. You may also need to reboot your computer and try again is no value is found.
@@ -235,15 +234,15 @@ Click **'Finish'** to complete the GNS3 Setup Wizard.
 
 The **Preferences** window displays showing the settings you have configured through the Setup Wizard. Click **'OK'** to complete the process:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/38.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/38.jpg)
 
 The **New Project** Window displays. Give your new Project a **Name** and click **'OK'**:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/39.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/39.jpg)
 
 The GNS3 workspace displays:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/40.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/40.jpg)
 
 **Congratulations!** You are now ready to create your first GNS3 topologies.
 
@@ -265,11 +264,11 @@ As of GNS3 2.2.3, the issue where users with AMD CPUs wanting to run the GNS3 VM
 
 Start the GNS3 VM in VMware, while GNS3 itself is shut down. Access the GNS3 VM’s shell using its text menu. Click OK on the Information screen:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/41.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/41.jpg)
 
 Press the down arrow to highlight “Shell”, and press the Enter key again:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/setup-wizard-gns3-vm/42.jpg')} />
+![screenshot](/img/getting-started/setup-wizard-gns3-vm/42.jpg)
 
 You’ll now be in Bash  (the default shell for Ubuntu):
 We need to upgrade the GNS3 VM’s kernel by entering the following in the CLI:

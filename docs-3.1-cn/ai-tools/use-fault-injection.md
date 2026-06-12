@@ -5,7 +5,6 @@ title: 如何进行故障注入测试
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何进行故障注入测试
 
@@ -15,33 +14,33 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 1. 在项目拓扑页面，点击左侧工具栏的故障注入按钮（如下图所示位置）。
 
-   <img style={{ width: '100%' }} alt="工具栏故障注入按钮" src={useBaseUrl('img/web-ui/zh/fault-injection-button.jpeg')} />
+   ![工具栏故障注入按钮](/img/web-ui/zh/fault-injection-button.jpeg)
 
 2. 在"Fault Injection"对话框中，点击"Inject Fault"按钮。
 
-   <img style={{ width: '100%' }} alt="故障注入对话框" src={useBaseUrl('img/web-ui/zh/fault-injection-dialog.jpeg')} />
+   ![故障注入对话框](/img/web-ui/zh/fault-injection-dialog.jpeg)
 
 3. 选择要注入的故障数量（可选 1-3 个或随机数量），然后点击"Confirm & Inject"按钮。
 
-   <img style={{ width: '100%' }} alt="选择故障数量" src={useBaseUrl('img/web-ui/zh/fault-injection-count.jpeg')} />
+   ![选择故障数量](/img/web-ui/zh/fault-injection-count.jpeg)
 
 4. 等待故障注入完成，界面会显示实时执行进度。
 
-   <img style={{ width: '100%' }} alt="故障注入进行中" src={useBaseUrl('img/web-ui/zh/fault-injection-progress.jpeg')} />
+   ![故障注入进行中](/img/web-ui/zh/fault-injection-progress.jpeg)
 
 5. 故障注入完成后，可以查看注入结果。
 
-   <img style={{ width: '100%' }} alt="故障注入完成" src={useBaseUrl('img/web-ui/zh/fault-injection-done.jpeg')} />
+   ![故障注入完成](/img/web-ui/zh/fault-injection-done.jpeg)
 
 6. 在 AI 助手界面查看故障注入的详细步骤，以便在不确定故障原因时获取更多信息。
 
-   <img style={{ width: '100%' }} alt="AI助手查看详情" src={useBaseUrl('img/web-ui/zh/fault-injection-details.jpeg')} />
+   ![AI助手查看详情](/img/web-ui/zh/fault-injection-details.jpeg)
 
 ## 架构概览
 
 ### 核心流程
 
-<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="故障注入核心流程" src={useBaseUrl('img/web-ui/zh/fault-injection-core-flow-cn.svg')} />
+![故障注入核心流程](/img/web-ui/zh/fault-injection-core-flow-cn.svg)
 
 ### 工具总览
 
@@ -75,7 +74,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Agent 工作流（LangGraph）
 
-<img style={{ width: '100%' }} alt="故障注入 Agent 工作流" src={useBaseUrl('img/web-ui/zh/fault-injection-agent-workflow-cn.svg')} />
+![故障注入 Agent 工作流](/img/web-ui/zh/fault-injection-agent-workflow-cn.svg)
 
 ### 关键设计要点
 

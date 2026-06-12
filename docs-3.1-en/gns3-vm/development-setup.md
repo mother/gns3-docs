@@ -2,7 +2,6 @@
 title: Development Setup
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Development Setup
 

@@ -4,7 +4,6 @@ title: Downloading the GNS3 VM
 sidebar_label: Download the GNS3 VM
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Which Virtualization Software? VirtualBox or VMware?
 In this document we will explain the import of the GNS3 VM for VMware, but instructions for VirtualBox are similar (instructions for using the new Hyper-V and KVM versions of the GNS3 VM will be discussed in a separate post).
@@ -25,7 +24,7 @@ These will be .zip archives, so make sure you choose “Save as…” when downl
 
 The second option is to browse to the [GNS3 release page on github](https://github.com/GNS3/gns3-gui/releases), where you can download the GNS3 application, the various versions of the GNS3 VM, and the source code from the same section:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/download-gns3-vm/1.jpg')} />
+![screenshot](/img/getting-started/installation/download-gns3-vm/1.jpg)
 
 :::caution
 Running the VirtualBox version on VMware or the VMware version on VirtualBox will not work
@@ -41,13 +40,13 @@ VMware Fusion is the marketing name for VMware Workstation on Mac OSX
 
 A third option is to download it via a provided link in the GNS3 Setup Wizard:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/download-gns3-vm/2.jpg')} />
+![screenshot](/img/getting-started/installation/download-gns3-vm/2.jpg)
 
 When you click that embedded link, it will automatically start downloading the GNS3-VM .zip file from the GNS3 github release page.  
 
 In order to see this particular option, you’ll need to choose the “Run modern IOS (IOSv or IOU), ASA, and appliances from non-Cisco manufacturers”  option in the Setup Wizard, as shown below, since this indicates that you will want to use the GNS3-VM (the other two indicate either local or remote server use only):
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/download-gns3-vm/3.jpg')} />
+![screenshot](/img/getting-started/installation/download-gns3-vm/3.jpg)
 
 :::note
 The GNS3 VM has a built in upgrade mechanism so you will not need to download again for every release.

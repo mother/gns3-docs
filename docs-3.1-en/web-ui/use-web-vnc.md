@@ -2,7 +2,6 @@
 title: How to use Web VNC
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use Web VNC
 
@@ -14,11 +13,11 @@ Web VNC lets you access VNC-type devices (like QEMU virtual machines, Docker, an
 
 Right-click on a VNC-supported node and select "Web console(inline)" to open an inline Web VNC window. Or select "Web console in new tab" to open it in a new browser tab.
 
-<img style={{ width: '100%' }} alt="Right-click node to open Web VNC" src={useBaseUrl('img/web-ui/zh/web-vnc-right-click-menu.jpeg')} />
+![Right-click node to open Web VNC](/img/web-ui/zh/web-vnc-right-click-menu.jpeg)
 
 The Web console(inline) window opens in the topology interface. You can drag, resize, move, or minimize it.
 
-<img style={{ width: '100%' }} alt="Web VNC inline window" src={useBaseUrl('img/web-ui/zh/web-vnc-inline-window.jpeg')} />
+![Web VNC inline window](/img/web-ui/zh/web-vnc-inline-window.jpeg)
 
 :::note
 **Window limits:**
@@ -34,7 +33,7 @@ The Web console(inline) window opens in the topology interface. You can drag, re
 - When you open a VNC console, it connects to the device automatically
 - There is a 15-second connection timeout for protection
 
-<img style={{ width: '100%' }} alt="VNC Connection Management" src={useBaseUrl('img/web-ui/zh/web-vnc-connection.jpeg')} />
+![VNC Connection Management](/img/web-ui/zh/web-vnc-connection.jpeg)
 
 **Connection states:**
 - Connecting
@@ -45,7 +44,7 @@ The Web console(inline) window opens in the topology interface. You can drag, re
 
 **Zoom features:**
 
-<img style={{ width: '100%' }} alt="VNC Zoom" src={useBaseUrl('img/web-ui/zh/web-vnc-zoom.jpeg')} />
+![VNC Zoom](/img/web-ui/zh/web-vnc-zoom.jpeg)
 
 | Action | Description |
 |--------|-------------|
@@ -61,7 +60,7 @@ The Web console(inline) window opens in the topology interface. You can drag, re
 
 Send special key combinations to the device (to avoid conflicts in the browser):
 
-<img style={{ width: '100%' }} alt="VNC Send Keys" src={useBaseUrl('img/web-ui/zh/web-vnc-keys.jpeg')} />
+![VNC Send Keys](/img/web-ui/zh/web-vnc-keys.jpeg)
 
 | Key                    | Function                 |
 |------------------------|--------------------------|
@@ -82,7 +81,7 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 - The screenshot is automatically downloaded as a PNG file
 - Captures the current VNC screen content
 
-<img style={{ width: '100%' }} alt="VNC Screenshot" src={useBaseUrl('img/web-ui/zh/web-vnc-screenshot.jpeg')} />
+![VNC Screenshot](/img/web-ui/zh/web-vnc-screenshot.jpeg)
 
 ### Screen Recording
 
@@ -94,7 +93,7 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 | VNC+Camera | VNC screen with camera picture-in-picture (bottom-right corner) |
 | Camera | Record only the camera |
 
-<img style={{ width: '100%' }} alt="VNC Recording Modes" src={useBaseUrl('img/web-ui/zh/web-vnc-record.jpeg')} />
+![VNC Recording Modes](/img/web-ui/zh/web-vnc-record.jpeg)
 
 **Recording features:**
 - Format: WebM
@@ -115,7 +114,7 @@ Combination keys are supported, for example Ctrl+Shift+F1.
 **Send clipboard:**
 - Paste local text into the VNC device
 
-<img style={{ width: '100%' }} alt="Send Text to VNC Device" src={useBaseUrl('img/web-ui/zh/web-vnc-clipboard-recv.jpeg')} />
+![Send Text to VNC Device](/img/web-ui/zh/web-vnc-clipboard-recv.jpeg)
 
 :::note
 #### VNC Clipboard Support by Platform

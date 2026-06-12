@@ -4,7 +4,6 @@ title: Cisco IOS images for Dynamips
 sidebar_label: Cisco IOS images for Dynamips
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 GNS3 offers multiple ways to emulate IOS. For older images, we use and maintain Dynamips; an emulator dedicated to emulate some Cisco hardware. Dynamips can run unmodified IOS images. In the new GNS3 1.4, there is a way to run a second category of switches and routers. These are classified as Routing and Switching virtual machines (or R+Svms) for short. What are the differences? Here are the major differences:
 
@@ -32,7 +31,7 @@ We really recommend using the c3640, c3660, c3725, c3745 and c7200 IOS images li
 ### Idle-PC value
 When Dynamips runs an IOS image, a single instance can consume 100% of the processing time for a CPU core or thread. To remedy this, you can supply Dynamips with an Idle-PC value, to consume less CPU. This value will vary between devices/images. To help automate the process of determining a valid Idle-PC value, you can use the Idle-PC finder button when importing a supported IOS image into GNS3:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/cisco-ios-images-for-dynamips/1.jpg')} />
+![screenshot](/img/emulators/cisco-ios-images-for-dynamips/1.jpg)
 
 (Idle-PC values are not required with virtual machines or docker containers. They’re only required for use by the Dynamips emulator)
 

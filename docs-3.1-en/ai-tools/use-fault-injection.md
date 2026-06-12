@@ -2,7 +2,6 @@
 title: How to inject faults for testing
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to inject faults for testing
 
@@ -12,33 +11,33 @@ Fault injection is a feature of the GNS3 AI Assistant. It simulates network prob
 
 1. On the project topology page, click the fault injection button in the left toolbar (shown in the image below).
 
-   <img style={{ width: '100%' }} alt="Fault Injection Button in Toolbar" src={useBaseUrl('img/web-ui/zh/fault-injection-button.jpeg')} />
+   ![Fault Injection Button in Toolbar](/img/web-ui/zh/fault-injection-button.jpeg)
 
 2. In the "Fault Injection" dialog, click the "Inject Fault" button.
 
-   <img style={{ width: '100%' }} alt="Fault Injection Dialog" src={useBaseUrl('img/web-ui/zh/fault-injection-dialog.jpeg')} />
+   ![Fault Injection Dialog](/img/web-ui/zh/fault-injection-dialog.jpeg)
 
 3. Choose how many faults to inject (you can pick 1-3 faults or a random number). Then click the "Confirm & Inject" button.
 
-   <img style={{ width: '100%' }} alt="Choose Fault Count" src={useBaseUrl('img/web-ui/zh/fault-injection-count.jpeg')} />
+   ![Choose Fault Count](/img/web-ui/zh/fault-injection-count.jpeg)
 
 4. Wait for the fault injection to finish. The screen shows real-time progress.
 
-   <img style={{ width: '100%' }} alt="Fault Injection in Progress" src={useBaseUrl('img/web-ui/zh/fault-injection-progress.jpeg')} />
+   ![Fault Injection in Progress](/img/web-ui/zh/fault-injection-progress.jpeg)
 
 5. After the fault injection is done, you can see the results.
 
-   <img style={{ width: '100%' }} alt="Fault Injection Complete" src={useBaseUrl('img/web-ui/zh/fault-injection-done.jpeg')} />
+   ![Fault Injection Complete](/img/web-ui/zh/fault-injection-done.jpeg)
 
 6. Check the AI Assistant for the detailed steps of the fault injection. This can help you if you are not sure about the cause of the problem.
 
-   <img style={{ width: '100%' }} alt="View Details in AI Assistant" src={useBaseUrl('img/web-ui/zh/fault-injection-details.jpeg')} />
+   ![View Details in AI Assistant](/img/web-ui/zh/fault-injection-details.jpeg)
 
 ## Architecture Overview
 
 ### Core Flow
 
-<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="Fault Injection Core Flow" src={useBaseUrl('img/web-ui/zh/fault-injection-core-flow-en.svg')} />
+![Fault Injection Core Flow](/img/web-ui/zh/fault-injection-core-flow-en.svg)
 
 ### Tool Overview
 
@@ -72,7 +71,7 @@ Simulates network impairment at the link layer by applying delay, packet loss, c
 
 ### Agent Workflow (LangGraph)
 
-<img style={{ width: '100%' }} alt="Fault Injection Agent Workflow" src={useBaseUrl('img/web-ui/zh/fault-injection-agent-workflow-en.svg')} />
+![Fault Injection Agent Workflow](/img/web-ui/zh/fault-injection-agent-workflow-en.svg)
 
 ### Key Design Points
 

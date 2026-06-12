@@ -6,7 +6,6 @@ prerequisite: "Understand basic GNS3 server concepts, refer to [Server Configura
 readingTime: 10 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to Use the MCP Service
 
@@ -35,11 +34,11 @@ The MCP service requires a valid GNS3 JWT token.
 
 After logging into the server, click the three dots button on the right side, then select the `User info` option.
 
-<img style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="User Info menu entry" src={useBaseUrl('img/web-ui/zh/mcp-user-info-menu.jpeg')} />
+![User Info menu entry](/img/web-ui/zh/mcp-user-info-menu.jpeg)
 
 In the `logged in user info` dialog, click the `copy access token` button to copy your JWT token.
 
-<img style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="Copy Access Token" src={useBaseUrl('img/web-ui/zh/mcp-copy-access-token.jpeg')} />
+![Copy Access Token](/img/web-ui/zh/mcp-copy-access-token.jpeg)
 
 ### Token Expiry
 

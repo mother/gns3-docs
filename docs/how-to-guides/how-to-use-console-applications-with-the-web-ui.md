@@ -4,7 +4,6 @@ title: How to use applications with the GNS3 Web interface
 sidebar_label: How to use applications with the GNS3 Web interface
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 A web client pack must be installed on your operating system in order to launch local applications needed to work with the GNS3 Web interface. We currently support Telnet, VNC, SPICE and packet capture applications.
 
@@ -19,7 +18,7 @@ The Web-ui is bundled with the GNS3 server. After starting the GNS3 server, the 
 ### Installation on Windows
 Make sure the GNS3 WebClient option is ticked when installing GNS3 then follow the installation process. Protocol handlers are registered during the installation.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/how-to-use-console-applications-with-the-web-ui/1.jpg')} />
+![screenshot](/img/how-to-guides/how-to-use-console-applications-with-the-web-ui/1.jpg)
 
 ### Installation on macOS
 
@@ -36,14 +35,14 @@ The WebClient has 2 executables. The webclient configurator to edit settings lik
 
 The first step is to configure your application paths or leave by default.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/how-to-use-console-applications-with-the-web-ui/2.jpg')} />
+![screenshot](/img/how-to-guides/how-to-use-console-applications-with-the-web-ui/2.jpg)
 
 Then launch the Web Ui, start a node, right click on it and select “console”. Alternatively, just right click on a link and select “Start capture” to start a packet capture and start Wireshark.
 
 Choose “Open GNS3 WebClient launcher” to start your application when using Google Chrome web browser.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/how-to-use-console-applications-with-the-web-ui/3.jpg')} />
+![screenshot](/img/how-to-guides/how-to-use-console-applications-with-the-web-ui/3.jpg)
 
 On Firefox web browser, select the GNS3 WebClient launcher and tick “Remember my choice for gns3+telnet links” then click on “Open link”. You won’t have to do this again the next time.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/how-to-use-console-applications-with-the-web-ui/4.jpg')} />
+![screenshot](/img/how-to-guides/how-to-use-console-applications-with-the-web-ui/4.jpg)

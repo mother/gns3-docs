@@ -4,7 +4,6 @@ title: Connect GNS3 to the Internet (local server)
 sidebar_label: Connect GNS3 to the Internet
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
 
@@ -16,7 +15,7 @@ Use of the NAT node to allow topology nodes to access the internet is also an op
 
 The topology created in this document looks as follows:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/1.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/1.jpg)
 
 :::caution
 Ensure that your PC firewall is not blocking GNS3 traffic. If necessary, turn off your PC’s firewall.
@@ -34,92 +33,92 @@ The following steps show you how to connect a local GNS3 installation to the Int
 
 1. To create a new GNS3 topology, select a group of devices in the **Devices Toolbar** by clicking the **Browse Routers** button
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/2.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/2.jpg)
 
 2. The routers available will depend on your GNS3 configuration. In this example both a local router and GNS3 VM router are available.
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/3.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/3.jpg)
 
 3. Drag and drop a **local** router to the GNS3 **Workspace**. An instance of the node becomes available in the **Workspace**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/4.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/4.jpg)
 
 4. Drag and drop another **local server** router to the GNS3 **Workspace**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/5.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/5.jpg)
 
 5. Click the **End devices** button:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/6.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/6.jpg)
 
 6. Drag and drop a **Cloud** node to the **Workspace**, select a **local server**, and then click **OK**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/7.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/7.jpg)
 
 7. The **Cloud** node will now appear in the **Workspace**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/8.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/8.jpg)
 
 8. Click the **Toolbar Device** button again to collapse the group:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/9.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/9.jpg)
 
 9. Right click on the **Cloud** and then click **Configure**:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/10.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/10.jpg)
 
 10. A list of available Ethernet interfaces is listed:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/11.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/11.jpg)
 
 Use of physical interfaces is recommended. However, it is possible to use other interfaces, like a bridge interface, or a wireless interface. Configuring those is outside the scope of this article.
 
 Below are examples of enabling “show special ethernet interfaces”, and then viewing the dropdown list:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/12.jpg')} />
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/13.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/12.jpg)
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/13.jpg)
 
 11. Click the **Add a Link** button to start adding links to your topology. The mouse cursor will change to indicate that links can be added:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/14.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/14.jpg)
 
 12. Click on the first router topology to display available interfaces (this is device dependant):
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/15.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/15.jpg)
 
 13. Click the interface and then select the cloud in the topology to connect the interface to it. In this example FastEthernet 0/0 on R1 was selected. Next, click on the Cloud node, to see a list of available interfaces:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/16.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/16.jpg)
 
 (notice that the listed interfaces on the Cloud node matches what we saw in its properties)
 
 14. Select an interface on the **Cloud** to complete the connection. In this example,  **Ethernet** on **Cloud 1** was selected:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/17.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/17.jpg)
 
 15. Add another link between R2 and R1:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/18.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/18.jpg)
 
 16. Click the **Add a Link** button to stop adding links. The mouse cursor will change back to normal to indicate that you have stopped adding links:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/19.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/19.jpg)
 
 17. If not already done, click the **Show/Hide interface labels** button on the **GNS3 Toolbar** to display interface labels in your topology:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/20.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/20.jpg)
 
 18. You are now ready to power on your network devices. Click the Start/Resume button on the GNS3 Toolbar to start up your network devices:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/21.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/21.jpg)
 
 19. You are now ready to configure your devices. Click the **Console connect to all devices** button on the **Toolbar** to open a connection to every device in the topology:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/22.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/22.jpg)
 
 20. A console connection is opened to each router in the topology:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/23.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/23.jpg)
 
 21. Configure IP addresses:
 
@@ -205,7 +204,7 @@ If your pings don’t succeed, ensure that you have connectivity to your default
 
 25. Configure IP addressing on the Internal GNS3 network:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/connect-gns3-internet/24.jpg')} />
+![screenshot](/img/using-gns3/advanced/connect-gns3-internet/24.jpg)
 
 Configuration on the routers:
 

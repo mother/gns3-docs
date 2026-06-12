@@ -6,7 +6,6 @@ prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
 readingTime: 5 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to add a note
 
@@ -18,7 +17,7 @@ Add a Note is a tool for adding text annotations to the GNS3 network topology ma
 
 Click the pencil button on the left side of the project map toolbar (with the "create" pencil icon). The mouse cursor will change to a crosshair, indicating that text addition mode is active.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Toolbar button" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
+![Toolbar button](/img/web-ui/zh/add-note-01-toolbar-button.jpeg)
 
 **Choose a Location**
 
@@ -36,11 +35,11 @@ Click elsewhere on the map or press the **Tab** key to remove focus from the inp
 
 To modify an existing note, **double-click** on the text element, or **right-click** and select **Edit text**.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Right-click Edit text" src={useBaseUrl('img/web-ui/zh/add-note-02-edit-right-click.jpeg')} />
+![Right-click Edit text](/img/web-ui/zh/add-note-02-edit-right-click.jpeg)
 
 The Text Editor Dialog will open, allowing you to customize the following properties:
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Text Editor Dialog" src={useBaseUrl('img/web-ui/zh/add-note-03-text-editor-dialog.jpeg')} />
+![Text Editor Dialog](/img/web-ui/zh/add-note-03-text-editor-dialog.jpeg)
 
 **Text Content**
 
@@ -50,7 +49,7 @@ A large text area for multi-line input with real-time style preview.
 
 Use the color picker to set the text color. Click the Fill Color area to open the Choose a color dialog, where you can select from default colors or click "+" to set a custom color.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Color picker dialog" src={useBaseUrl('img/web-ui/zh/add-note-04-fill-color.jpeg')} />
+![Color picker dialog](/img/web-ui/zh/add-note-04-fill-color.jpeg)
 
 **Font Family**
 

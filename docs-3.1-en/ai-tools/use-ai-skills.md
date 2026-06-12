@@ -2,7 +2,6 @@
 title: How to use AI Skills
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use AI Skills
 

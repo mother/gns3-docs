@@ -5,13 +5,12 @@ title: 如何使用设置页面
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何使用设置页面
 
 在项目首页点击右上角的三个点按钮，选择"Settings"进入设置页面。
 
-<img style={{ width: '100%' }} alt="进入设置" src={useBaseUrl('img/web-ui/zh/settings-01-menu.jpeg')} />
+![进入设置](/img/web-ui/zh/settings-01-menu.jpeg)
 
 Settings 页面是 GNS3 Web UI 的用户偏好设置中心，允许用户自定义本地行为、外观主题和系统更新选项。设置保存在浏览器的 localStorage 中，仅影响当前浏览器。
 
@@ -27,7 +26,7 @@ Settings 页面分为三个可折叠的部分。
 - **Send anonymous usage statistics**：发送匿名使用统计，帮助了解功能使用情况
 - **Open consoles in the widget instead of in new tabs**：点击"启动所有节点控制台"后，在当前组件内打开控制台，而非新标签页
 
-<img style={{ width: '100%' }} alt="本地设置" src={useBaseUrl('img/web-ui/zh/settings-02-local.jpeg')} />
+![本地设置](/img/web-ui/zh/settings-02-local.jpeg)
 
 ## 2. Theme Settings（主题设置）
 
@@ -45,7 +44,7 @@ Settings 页面分为三个可折叠的部分。
 - **Light 背景选项**：提供多种浅色背景可选
 - **Dark 背景选项**：提供多种深色背景可选
 
-<img style={{ width: '100%' }} alt="主题设置" src={useBaseUrl('img/web-ui/zh/settings-03-theme.jpeg')} />
+![主题设置](/img/web-ui/zh/settings-03-theme.jpeg)
 
 ## 3. Updates（更新检查）
 
@@ -54,7 +53,7 @@ Settings 页面分为三个可折叠的部分。
 - **Check for updates**：检查 GNS3 软件更新，打开 GNS3 官网显示最新版本信息
 - **Check for update AI skills**：检查 AI 技能包更新，从 GitHub 仓库（[https://github.com/gns3/gns3-skills](https://github.com/gns3/gns3-skills)）下载并重新加载最新的 AI 技能包
 
-<img style={{ width: '100%' }} alt="更新检查" src={useBaseUrl('img/web-ui/zh/settings-04-updates.jpeg')} />
+![更新检查](/img/web-ui/zh/settings-04-updates.jpeg)
 
 ## 保存设置
 

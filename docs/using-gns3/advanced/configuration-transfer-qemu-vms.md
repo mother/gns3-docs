@@ -4,7 +4,6 @@ title: Configuration transfer to QEMU VMs
 sidebar_label: Configuration transfer to QEMU VMs
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 GNS3 v2.2.18 introduces a feature to transfer files,
 for example configurations, between the GNS3 GUI and QEMU VMs.
@@ -21,7 +20,7 @@ You have to enable it in the HDD tab of the
 node properties (for a specific node)
 or the QEMU VM template (for all new nodes of that type).
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/configuration-transfer-qemu-vms/1.png')} />
+![screenshot](/img/using-gns3/advanced/configuration-transfer-qemu-vms/1.png)
 
 This adds a FAT formatted image as hard disk D to the node.
 The user can now transfer data to/from this disk to the VM.
@@ -110,7 +109,7 @@ IOSv and IOSvL2 images have an odd way to name the flash drives.
 
 So lets assume the following IOSv template:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/configuration-transfer-qemu-vms/2.png')} />
+![screenshot](/img/using-gns3/advanced/configuration-transfer-qemu-vms/2.png)
 
 The HDB disk is the first external disk and
 will therefore be named `flash2:` within IOS.
@@ -160,11 +159,11 @@ Well, there is one quirk.
 The checksum file should contain only the 32 characters of the MD5 sum and
 an optional linefeed.
 
-As an example here the config ZIP file I'm using for IOSv and IOSvL2: <a href={useBaseUrl('configs/IOSv_startup_image.zip')} target="_blank">IOSv_startup_image.zip</a>
+As an example here the config ZIP file I'm using for IOSv and IOSvL2: [IOSv_startup_image.zip](/configs/IOSv_startup_image.zip)
 
 I have added it as a config disk "Startup-cfg",
 so it's automatically added to all new IOSv VMs.
 This replaces the old HDB IOSv_startup_image.img,
 which should be cleared from the template.
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/configuration-transfer-qemu-vms/3.png')} />
+![screenshot](/img/using-gns3/advanced/configuration-transfer-qemu-vms/3.png)

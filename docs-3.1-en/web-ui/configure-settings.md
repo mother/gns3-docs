@@ -2,13 +2,12 @@
 title: How to use settings page
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use settings page
 
 On the project home page, click the three-dot button at the top right and select "Settings".
 
-<img style={{ width: '100%' }} alt="Open settings" src={useBaseUrl('img/web-ui/zh/settings-01-menu.jpeg')} />
+![Open settings](/img/web-ui/zh/settings-01-menu.jpeg)
 
 The Settings page is the user preferences center for the GNS3 Web UI. It lets you customize local behavior, appearance theme, and system update options. Settings are saved in the browser's localStorage and only affect the current browser.
 
@@ -24,7 +23,7 @@ This section contains options that affect how the browser behaves locally:
 - **Send anonymous usage statistics**: Sends anonymous usage data to help understand feature usage
 - **Open consoles in the widget instead of in new tabs**: After clicking "Start all node consoles", opens consoles inside the current widget instead of in new tabs
 
-<img style={{ width: '100%' }} alt="Local settings" src={useBaseUrl('img/web-ui/zh/settings-02-local.jpeg')} />
+![Local settings](/img/web-ui/zh/settings-02-local.jpeg)
 
 ## 2. Theme Settings
 
@@ -42,7 +41,7 @@ Controls the background style of the topology canvas:
 - **Light background options**: Several light backgrounds to choose from
 - **Dark background options**: Several dark backgrounds to choose from
 
-<img style={{ width: '100%' }} alt="Theme settings" src={useBaseUrl('img/web-ui/zh/settings-03-theme.jpeg')} />
+![Theme settings](/img/web-ui/zh/settings-03-theme.jpeg)
 
 ## 3. Updates
 
@@ -51,7 +50,7 @@ This section lets you check for software updates and AI feature updates:
 - **Check for updates**: Checks for GNS3 software updates. Opens the GNS3 website to show the latest version information.
 - **Check for update AI skills**: Checks for AI skill package updates and downloads the latest AI skills package from the GitHub repository ([https://github.com/gns3/gns3-skills](https://github.com/gns3/gns3-skills))
 
-<img style={{ width: '100%' }} alt="Update check" src={useBaseUrl('img/web-ui/zh/settings-04-updates.jpeg')} />
+![Update check](/img/web-ui/zh/settings-04-updates.jpeg)
 
 ## Saving Settings
 

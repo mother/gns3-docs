@@ -6,7 +6,6 @@ title: 如何绘制线条
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何绘制线条
 
@@ -18,19 +17,19 @@ Draw a Line（绘制线条）功能允许用户在 GNS3 网络拓扑图上绘制
 
 点击工具栏的线条图标按钮（工具提示："Draw a line"）。鼠标光标变为十字线。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="线条工具栏按钮" src={useBaseUrl('img/web-ui/zh/draw-line-01-toolbar.jpeg')} />
+![线条工具栏按钮](/img/web-ui/zh/draw-line-01-toolbar.jpeg)
 
 **点击地图**
 
 在地图上点击想要放置线条的位置。线条会自动创建并显示。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="线条创建完成" src={useBaseUrl('img/web-ui/zh/draw-line-02-created.jpeg')} />
+![线条创建完成](/img/web-ui/zh/draw-line-02-created.jpeg)
 
 ## Style Editor
 
 鼠标在线条上右键，选择 **Edit style** 选项，进入 Style editor 对话框。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="线条样式编辑器" src={useBaseUrl('img/web-ui/zh/draw-line-03-style-editor.jpeg')} />
+![线条样式编辑器](/img/web-ui/zh/draw-line-03-style-editor.jpeg)
 
 - **Border Color（边框颜色）** — 颜色选择器
 - **Border Width（边框宽度）** — 数字输入框（范围：0–100）
@@ -41,4 +40,4 @@ Draw a Line（绘制线条）功能允许用户在 GNS3 网络拓扑图上绘制
 
 ### FreeForm（自由曲线）示例
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="自由曲线示例" src={useBaseUrl('img/web-ui/zh/draw-line-04-freeform.jpeg')} />
+![自由曲线示例](/img/web-ui/zh/draw-line-04-freeform.jpeg)

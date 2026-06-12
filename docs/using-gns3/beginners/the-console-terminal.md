@@ -4,7 +4,6 @@ title: The console terminal
 sidebar_label: The console terminal
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 GNS3 uses Solar-PuTTY as the default console terminal in Windows* (see note), and will attempt to use the default system terminal in other operating systems (gnome-terminal, for example, in vanilla Ubuntu).  
 
@@ -14,21 +13,21 @@ You can direct GNS3  to use one of multiple other popular terminals (as options 
 
 In **Edit->Preferences->General preferences->Console applications**, you can edit the command used to start the console application.
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/the-console-terminal/1.jpg')} />
+![screenshot](/img/using-gns3/beginners/the-console-terminal/1.jpg)
 
 And choose a predefined command
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/the-console-terminal/2.jpg')} />
+![screenshot](/img/using-gns3/beginners/the-console-terminal/2.jpg)
 
 Below are the predefined commands currently included:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/the-console-terminal/3.jpg')} />
+![screenshot](/img/using-gns3/beginners/the-console-terminal/3.jpg)
 
 ## Use a custom Terminal
 
 If you choose Custom and Save, you can add a non-supported terminal to the dropdown list:
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/the-console-terminal/4.jpg')} />
+![screenshot](/img/using-gns3/beginners/the-console-terminal/4.jpg)
 
 Modify the highlighted section above to include the application’s executable, along with any necessary variables required.
 
@@ -38,7 +37,7 @@ If the console application isn’t part of your PATH environment variable, you�
 
 If you right-click on node in a topology you can open a different terminal than the default.
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/beginners/the-console-terminal/5.jpg')} />
+![screenshot](/img/using-gns3/beginners/the-console-terminal/5.jpg)
 
 Now that Solar-Putty is the default, David Bombal has created some videos on how you can customize it to your liking:
 

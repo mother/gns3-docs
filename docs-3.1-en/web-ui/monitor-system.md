@@ -2,13 +2,12 @@
 title: How to monitor system status
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to monitor system status
 
 On the project home page, click the three-dot button at the top right and select "System Status".
 
-<img style={{ width: '100%' }} alt="Open system status" src={useBaseUrl('img/web-ui/zh/status-01-enter.jpeg')} />
+![Open system status](/img/web-ui/zh/status-01-enter.jpeg)
 
 The System Status page shows real-time system resource information about the GNS3 controller and all compute nodes. This helps administrators monitor and plan system resources. The page refreshes data every 20 seconds automatically.
 
@@ -50,7 +49,7 @@ Each compute node (local and remote) shows its own resource usage card.
 - **Memory**: Memory usage details, format: used / total (remaining)
 - **SWAP**: Swap space usage details, format: used / total (remaining)
 
-<img style={{ width: '100%' }} alt="System status page" src={useBaseUrl('img/web-ui/zh/status-02-overview.jpeg')} />
+![System status page](/img/web-ui/zh/status-02-overview.jpeg)
 
 ## Auto Refresh
 

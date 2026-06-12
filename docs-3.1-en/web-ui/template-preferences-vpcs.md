@@ -2,7 +2,6 @@
 title: How to configure VPCS template preferences
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to configure VPCS template preferences
 
@@ -20,16 +19,16 @@ VPCS (Virtual PC Simulator) is a lightweight tool in GNS3 that simulates a PC. U
 ## Create a Template
 
 1. Click the "VPCS" option to enter.
-   <img style={{ width: '100%' }} alt="Enter VPCS" src={useBaseUrl('img/web-ui/zh/vpcs-create-01-enter.jpeg')} />
+   ![Enter VPCS](/img/web-ui/zh/vpcs-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/vpcs-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/vpcs-create-02-add.jpeg)
 
 3. Enter the Template Name, then click "Add Template" to finish.
-   <img style={{ width: '100%' }} alt="Configure template" src={useBaseUrl('img/web-ui/zh/vpcs-create-03-configure.jpeg')} />
+   ![Configure template](/img/web-ui/zh/vpcs-create-03-configure.jpeg)
 
 4. Click the three-dot button on the right to choose Delete or Edit.
-   <img style={{ width: '100%' }} alt="Action menu" src={useBaseUrl('img/web-ui/zh/vpcs-create-04-menu.jpeg')} />
+   ![Action menu](/img/web-ui/zh/vpcs-create-04-menu.jpeg)
 
 ## VPCS Template Configuration Details
 
@@ -46,7 +45,7 @@ VPCS (Virtual PC Simulator) is a lightweight tool in GNS3 that simulates a PC. U
 | Console type | Dropdown | No | Console type: telnet / ssh / none |
 | Auto start console | Checkbox | No | When enabled, the console opens automatically when VPCS starts |
 
-<img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/vpcs-config-01-general.jpeg')} />
+![General settings](/img/web-ui/zh/vpcs-config-01-general.jpeg)
 
 ### Base Script File Details
 

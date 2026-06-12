@@ -2,7 +2,6 @@
 title: How to use AI real-time packet analysis
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use AI real-time packet analysis
 
@@ -16,11 +15,11 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 2. Open the AI Assistant window and describe your analysis requirement, for example: "Analyze OSPF protocol between r2 and r3".
 3. Wait for the AI Assistant to analyze and return the results.
 
-<img style={{ width: '100%' }} alt="AI packet analysis usage example" src={useBaseUrl('img/web-ui/zh/ai-packet-analysis-usage-en.jpeg')} />
+![AI packet analysis usage example](/img/web-ui/zh/ai-packet-analysis-usage-en.jpeg)
 
 ## Core Flow
 
-<img style={{ width: '600px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} alt="Core Flow" src={useBaseUrl('img/web-ui/zh/ai-packet-core-flow-en.svg')} />
+![Core Flow](/img/web-ui/zh/ai-packet-core-flow-en.svg)
 
 ## Tool Overview
 
@@ -31,7 +30,7 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 
 ## Agent Workflow (LangGraph)
 
-<img style={{ width: '100%' }} alt="Agent Workflow" src={useBaseUrl('img/web-ui/zh/ai-packet-agent-workflow-en.svg')} />
+![Agent Workflow](/img/web-ui/zh/ai-packet-agent-workflow-en.svg)
 
 ## Server Capture API
 

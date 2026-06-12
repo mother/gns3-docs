@@ -6,7 +6,6 @@ title: 新建模板
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 新建模板
 
@@ -14,17 +13,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 在项目首页点击左上角的 GNS3 Logo，在下拉菜单中选择 `New Template`（新建模板）打开创建向导。
 
-<img style={{ width: '100%' }} alt="新建模板向导" src={useBaseUrl('img/web-ui/zh/template-wizard-start.jpeg')} />
+![新建模板向导](/img/web-ui/zh/template-wizard-start.jpeg)
 
 ## 模板更新
 
 从 GitHub 下载最新的 appliances 文件。
 
 - 在 Add new template 对话框，如下图所示，点击 Next 按钮。
-<img style={{ width: '100%' }} alt="新建模板向导" src={useBaseUrl('img/web-ui/zh/template-wizard-update-01-start.jpeg')} />
+![新建模板向导](/img/web-ui/zh/template-wizard-update-01-start.jpeg)
 
 - 然后点击下图所示位置的”Update from online registry”按钮，从 GitHub (https://api.github.com/repos/GNS3/gns3-registry/contents/appliances) 下载最新的 appliances 文件。
-<img style={{ width: '100%' }} alt="更新在线注册表" src={useBaseUrl('img/web-ui/zh/template-wizard-update-02-registry-button.jpeg')} />
+![更新在线注册表](/img/web-ui/zh/template-wizard-update-02-registry-button.jpeg)
 
 :::note
 
