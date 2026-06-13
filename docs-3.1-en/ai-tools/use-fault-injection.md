@@ -2,6 +2,8 @@
 title: How to inject faults for testing
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 # How to inject faults for testing
 
@@ -37,7 +39,33 @@ Fault injection is a feature of the GNS3 AI Assistant. It simulates network prob
 
 ### Core Flow
 
-![Fault Injection Core Flow](/img/web-ui/zh/fault-injection-core-flow-en.svg)
+<Mermaid value={`flowchart TB
+    subgraph S1["① API Trigger & Mode Switch"]
+        A["POST /chat/inject\nUser requests fault injection"] --> B["Verify project is opened"]
+        B --> C["Set copilot_mode =\ntroubleshooting_injection"]
+        C --> D["Start Agent\nwith fault injection tool set"]
+    end
+
+    subgraph S2["② Topology Analysis & Fault Selection"]
+        D --> E["GNS3TopologyTool\nget topology info"]
+        E --> F["ExecuteMultipleDeviceCommands\nget device configs"]
+        F --> G["InjectionSkillsTool\nquery available fault types"]
+        G --> H{"Injection Skills Repository\ngns3/gns3-skills"}
+        H --> I["Return matching fault definitions\nwith config injection commands"]
+    end
+
+    subgraph S3["③ Fault Injection"]
+        I --> J["Choose injection method"]
+        J --> K["ExecuteMultipleDeviceConfigCommands\ninject config changes"]
+        J --> L["GNS3PacketFilterTool\ninject link-layer faults"]
+    end
+
+    subgraph S4["④ Result Confirmation"]
+        K --> M["Verify fault is active"]
+        L --> M
+        M --> N["Document fault details\nincluding restore commands"]
+    end
+`} />
 
 ### Tool Overview
 
@@ -71,7 +99,32 @@ Simulates network impairment at the link layer by applying delay, packet loss, c
 
 ### Agent Workflow (LangGraph)
 
-![Fault Injection Agent Workflow](/img/web-ui/zh/fault-injection-agent-workflow-en.svg)
+<Mermaid value={`sequenceDiagram
+    participant U as User
+    participant API as POST /chat/inject
+    participant LLM as LLM Node
+    participant Topo as GNS3TopologyTool
+    participant DC as ExecuteMultipleDeviceCommands
+    participant CC as ExecuteMultipleDeviceConfigCommands
+    participant Skill as InjectionSkillsTool
+    participant Filter as GNS3PacketFilterTool
+
+    U->>API: Inject an OSPF fault
+    API->>LLM: set mode=troubleshooting_injection
+    LLM->>Topo: get topology
+    Topo-->>LLM: topology info
+    LLM->>DC: read device configs
+    DC-->>LLM: running configs
+    LLM->>Skill: list context=["ospf"]
+    Skill-->>LLM: matching fault types
+    LLM->>Skill: get device_type=injection_ospf
+    Skill-->>LLM: fault definition + injection commands
+    LLM->>CC: execute config injection
+    CC-->>LLM: injection result
+    LLM->>Filter: set filters={delay:[200,50]}
+    Filter-->>LLM: link delay injected successfully
+    LLM-->>U: Fault injected, restore commands included
+`} />
 
 ### Key Design Points
 

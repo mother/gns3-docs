@@ -5,6 +5,8 @@ title: 如何进行故障注入测试
 预计阅读时间: 5 分钟
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 # 如何进行故障注入测试
 
@@ -40,7 +42,33 @@ title: 如何进行故障注入测试
 
 ### 核心流程
 
-![故障注入核心流程](/img/web-ui/zh/fault-injection-core-flow-cn.svg)
+<Mermaid value={`flowchart TB
+    subgraph S1["① API 触发 & 模式切换"]
+        A["POST /chat/inject\n用户请求故障注入"] --> B["验证项目已打开"]
+        B --> C["设置 copilot_mode =\ntroubleshooting_injection"]
+        C --> D["启动 Agent\n加载故障注入工具集"]
+    end
+
+    subgraph S2["② 拓扑分析 & 故障选择"]
+        D --> E["GNS3TopologyTool\n获取拓扑信息"]
+        E --> F["ExecuteMultipleDeviceCommands\n获取设备配置"]
+        F --> G["InjectionSkillsTool\n查询可用故障类型"]
+        G --> H{"故障技能仓库\ngns3/gns3-skills"}
+        H --> I["返回匹配的故障定义\n及配置注入命令"]
+    end
+
+    subgraph S3["③ 故障注入"]
+        I --> J["选择注入方式"]
+        J --> K["ExecuteMultipleDeviceConfigCommands\n注入配置变更"]
+        J --> L["GNS3PacketFilterTool\n注入链路层故障"]
+    end
+
+    subgraph S4["④ 结果确认"]
+        K --> M["验证故障已生效"]
+        L --> M
+        M --> N["记录故障详情\n包含恢复命令"]
+    end
+`} />
 
 ### 工具总览
 
@@ -74,7 +102,32 @@ title: 如何进行故障注入测试
 
 ### Agent 工作流（LangGraph）
 
-![故障注入 Agent 工作流](/img/web-ui/zh/fault-injection-agent-workflow-cn.svg)
+<Mermaid value={`sequenceDiagram
+    participant U as User
+    participant API as POST /chat/inject
+    participant LLM as LLM Node
+    participant Topo as GNS3TopologyTool
+    participant DC as ExecuteMultipleDeviceCommands
+    participant CC as ExecuteMultipleDeviceConfigCommands
+    participant Skill as InjectionSkillsTool
+    participant Filter as GNS3PacketFilterTool
+
+    U->>API: 注入一个 OSPF 故障
+    API->>LLM: set mode=troubleshooting_injection
+    LLM->>Topo: 获取拓扑
+    Topo-->>LLM: 拓扑信息
+    LLM->>DC: 读取设备配置
+    DC-->>LLM: running configs
+    LLM->>Skill: list context=["ospf"]
+    Skill-->>LLM: 匹配的故障类型
+    LLM->>Skill: get device_type=injection_ospf
+    Skill-->>LLM: 故障定义 + 注入命令
+    LLM->>CC: 执行配置注入
+    CC-->>LLM: 注入结果
+    LLM->>Filter: set filters={delay:[200,50]}
+    Filter-->>LLM: 链路延迟注入成功
+    LLM-->>U: 故障已注入，包含恢复命令
+`} />
 
 ### 关键设计要点
 
