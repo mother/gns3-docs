@@ -35,10 +35,13 @@ GNS3-Skills 由 GNS3 Copilot 自动加载，无需手动配置。默认使用官
 
 ```ini
 [Server]
+
 # 自定义技能库仓库地址
 skills_repo_url = https://github.com/your-org/your-custom-skills.git
+
 # 仓库分支（默认：main）
 skills_repo_branch = main
+
 # 是否自动更新技能库（默认：true）
 skills_auto_update = true
 ```
