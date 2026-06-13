@@ -2,6 +2,8 @@
 title: How to use AI real-time packet analysis
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 # How to use AI real-time packet analysis
 
@@ -19,7 +21,26 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 
 ## Core Flow
 
-![Core Flow](/img/web-ui/zh/ai-packet-core-flow-en.svg)
+<Mermaid value={`flowchart TB
+    subgraph S1["① Analysis Trigger & Knowledge Query"]
+        A["User asks\n'e.g. Analyze OSPF neighbor state'"] --> B["LLM calls\nPacketAnalysisSkillsTool"]
+        B --> C{"Protocol Knowledge Repository\ngns3/gns3-skills"}
+        C --> D["Returns protocol definition\nfields/base_filter/check_rules"]
+        B --> E["LLM calls\nsearch_fields mode"]
+        E --> F["tshark -G fields\nfield name search"]
+        F --> G["Returns valid field names"]
+    end
+
+    subgraph S2["② Live Capture & Analysis"]
+        D --> H["LLM constructs tshark_args"]
+        G --> H
+        H --> I["PacketAnalysisTool\ncapture analysis mode"]
+        I --> J["GET /capture/file\ndownload live PCAP"]
+        J --> K["Pre-validate -e field names"]
+        K --> L["tshark -r pcap\nrun analysis"]
+        L --> M["Return analysis results"]
+    end
+`} />
 
 ## Tool Overview
 
@@ -30,7 +51,22 @@ AI real-time packet analysis is powered by the GNS3 AI Assistant. The LLM constr
 
 ## Agent Workflow (LangGraph)
 
-![Agent Workflow](/img/web-ui/zh/ai-packet-agent-workflow-en.svg)
+<Mermaid value={`sequenceDiagram
+    participant U as User
+    participant LLM as LLM Node
+    participant Skills as PacketAnalysisSkillsTool
+    participant Pcap as PacketAnalysisTool
+
+    U->>LLM: OSPF neighbors can't establish, analyze
+    LLM->>Skills: get protocol=ospf
+    Skills-->>LLM: OSPF fields, filter definitions
+    LLM->>Pcap: search_fields query=ospf.hello
+    Pcap-->>LLM: valid -e field names
+    LLM->>Pcap: download PCAP + tshark_args
+    Pcap-->>LLM: tshark output results
+    LLM->>LLM: analysis reveals Dead interval mismatch
+    LLM-->>U: OSPF Dead interval mismatch detected
+`} />
 
 ## Server Capture API
 

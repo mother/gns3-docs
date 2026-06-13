@@ -5,6 +5,8 @@ title: 如何使用 AI 实时数据包分析
 预计阅读时间: 5 分钟
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 # 如何使用 AI 实时数据包分析
 
@@ -22,7 +24,26 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 
 ## 核心流程
 
-![核心流程图](/img/web-ui/zh/ai-packet-core-flow-cn.svg)
+<Mermaid value={`flowchart TB
+    subgraph S1["① 分析触发 & 知识查询"]
+        A["用户提问\n'例如：分析 OSPF 邻居状态'"] --> B["LLM 调用\nPacketAnalysisSkillsTool"]
+        B --> C{"协议知识仓库\ngns3/gns3-skills"}
+        C --> D["返回协议定义\nfields/base_filter/check_rules"]
+        B --> E["LLM 调用\nsearch_fields 模式"]
+        E --> F["tshark -G fields\n字段名搜索"]
+        F --> G["返回有效字段名"]
+    end
+
+    subgraph S2["② 实时抓包 & 分析"]
+        D --> H["LLM 构建 tshark_args"]
+        G --> H
+        H --> I["PacketAnalysisTool\n抓包分析模式"]
+        I --> J["GET /capture/file\n下载实时 PCAP"]
+        J --> K["预验证 -e 字段名"]
+        K --> L["tshark -r pcap\n运行分析"]
+        L --> M["返回分析结果"]
+    end
+`} />
 
 ## 工具总览
 
@@ -33,7 +54,22 @@ AI 实时数据包分析功能由 GNS3 AI Assistant 驱动，LLM 自行构造 ts
 
 ## Agent 工作流（LangGraph）
 
-![Agent 工作流](/img/web-ui/zh/ai-packet-agent-workflow-cn.svg)
+<Mermaid value={`sequenceDiagram
+    participant U as User
+    participant LLM as LLM Node
+    participant Skills as PacketAnalysisSkillsTool
+    participant Pcap as PacketAnalysisTool
+
+    U->>LLM: OSPF 邻居无法建立，分析一下
+    LLM->>Skills: get protocol=ospf
+    Skills-->>LLM: OSPF 字段、过滤定义
+    LLM->>Pcap: search_fields query=ospf.hello
+    Pcap-->>LLM: 有效的 -e 字段名
+    LLM->>Pcap: download PCAP + tshark_args
+    Pcap-->>LLM: tshark 输出结果
+    LLM->>LLM: 分析发现 Dead interval 不匹配
+    LLM-->>U: 检测到 OSPF Dead interval 不匹配
+`} />
 
 ## 服务端 Capture API
 
