@@ -1,1 +1,2 @@
-- [Mermaid usage](mermaid-usage.md) — Mermaid 图表必须用组件导入方式，代码块语法不可用
+- [Mermaid usage](mermaid-usage.md) — Mermaid diagrams must use component import syntax, code block syntax does not work
+- [Cloudflare Pages Yarn version](cloudflare-pages-yarn-version.md) — Cloudflare Pages Yarn version compatibility fix
