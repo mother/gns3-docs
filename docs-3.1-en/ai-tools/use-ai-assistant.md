@@ -2,6 +2,8 @@
 title: How to configure and use AI Assistant
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 :::tip Project Origin
 
@@ -162,7 +164,38 @@ HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirma
 
 ### Overall Architecture
 
-![Overall Architecture](/img/web-ui/zh/ai-assistant-overview-en-overall-architecture.svg)
+<Mermaid value={`flowchart TB
+    subgraph Client["Client"]
+        A["Web UI"] --> B["SSE Streaming"]
+    end
+
+    subgraph FastAPI["FastAPI Route Layer"]
+        B --> C["POST /chat/stream\nPOST /chat/inject"]
+        C --> D["Auth + LLM Config Loading\nSet ContextVars"]
+    end
+
+    subgraph AgentService["AgentService (Project-level)"]
+        D --> E["LangGraph Agent\nStateGraph"]
+        E --> F["SQLite Checkpointer\ncopilot_checkpoints.db"]
+    end
+
+    subgraph Workflow["LangGraph Workflow"]
+        E --> G["llm_call node\nmodel invocation"]
+        E --> H["tool_node\ntool execution"]
+        E --> I["title_generator_node\nauto title"]
+        E --> J["abort_handler_node\ninterrupt handling"]
+    end
+
+    subgraph Modes["Three Copilot Modes"]
+        G --> K["teaching_assistant\ndiagnostic read-only"]
+        G --> L["lab_automation_assistant\nfull control"]
+        G --> M["troubleshooting_injection\nfault injection"]
+    end
+
+    subgraph Config["LLM Config System"]
+        D --> N["User configs\nGroup config inheritance\nAPI key encryption"]
+    end
+`} />
 
 ### API Endpoints
 
@@ -177,7 +210,37 @@ HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirma
 
 ### LangGraph Agent Workflow
 
-![Agent Workflow](/img/web-ui/zh/ai-assistant-overview-en-langgraph-agent-workflow.svg)
+<Mermaid value={`sequenceDiagram
+    participant U as User
+    participant API as FastAPI
+    participant AS as AgentService
+    participant LLM as LLM Node
+    participant Tool as Tool Node
+    participant TGen as Title Node
+
+    U->>API: send message
+    API->>AS: stream_chat()
+    AS->>AS: set ContextVars<br/>(jwt_token, llm_config)
+
+    Note over AS,LLM: llm_call node
+    AS->>LLM: invoke pre-compiled model
+    LLM->>LLM: pre_model_hook<br/>inject topology + trim context
+    LLM-->>AS: AI reply (may include tool_calls)
+
+    opt has tool calls
+        AS->>Tool: execute tools
+        Tool-->>AS: tool results
+        AS->>LLM: continue LLM call
+    end
+
+    opt first turn and no title
+        AS->>TGen: auto-generate title
+        TGen-->>AS: session title
+    end
+
+    AS-->>API: SSE streaming response
+    API-->>U: stream output
+`} />
 
 ### Three Copilot Modes
 
@@ -214,7 +277,14 @@ The mode is selected in the `llm_call` node via `copilot_mode`, which picks the 
 
 ### Context Window Management
 
-![Context Window Management](/img/web-ui/zh/ai-assistant-overview-en-context-window-management.svg)
+<Mermaid value={`flowchart LR
+    A["LLM call triggered"] --> B["pre_model_hook"]
+    B --> C["Inject topology\ninto System Prompt"]
+    B --> D["Estimate tool definition\ntoken cost"]
+    B --> E["trim_messages\nby strategy"]
+    E --> F["conservative 60%\nbalanced 75%\naggressive 85%"]
+    F --> G["Invoke LLM"]
+`} />
 
 - Accurate token counting via tiktoken (`cl100k_base`)
 - Three trimming strategies: conservative / balanced / aggressive
