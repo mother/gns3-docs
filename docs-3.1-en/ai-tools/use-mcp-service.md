@@ -11,9 +11,11 @@ import Mermaid from '@theme/Mermaid';
 
 # How to Use the MCP Service
 
-MCP (Model Context Protocol) is an open standard that enables AI assistants to interact with external tools and services securely. GNS3 Server provides a standard MCP interface over SSE (Server-Sent Events) transport, allowing AI assistants like Claude Code and Claude Desktop to interact with GNS3 network simulations.
+MCP (Model Context Protocol) is an open standard that enables AI assistants to interact with external tools and services securely. GNS3 Server provides a standard MCP interface over SSE (Server-Sent Events) transport, allowing AI assistants like Claude Code to interact with GNS3.
 
-With the MCP service, you can use natural language commands to manage GNS3 projects, nodes, links, templates, and compute nodes without manually using the GNS3 GUI.
+With the MCP service, you can use natural language commands to manage GNS3 projects, nodes, links, templates, and compute nodes without manually using the GNS3 GUI/Web UI.
+
+Beyond using ready-made clients, you can also build your own AI Agent based on MCP, or integrate it into existing AI workflows to enable automated testing and verification.
 
 ## Prerequisites
 
@@ -102,21 +104,6 @@ Once configured, you can manage GNS3 using natural language in Claude Code, for 
 - "Add a Cisco router to the project"
 - "Start the node and check its status"
 
-### Using with Claude Desktop
-
-Claude Desktop does not support custom headers, so credentials must be passed as URL query parameters.
-
-Edit `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "My_GNS3_Server": {
-      "url": "http://localhost:3080/v3/mcp/transport/sse?token=$API_KEY"
-    }
-  }
-}
-```
 
 ## Available Tools
 
@@ -360,11 +347,14 @@ To restrict access sources, enable DNS rebinding protection in `gns3_server.conf
 
 ```ini
 [Server]
+
 ; Enable MCP transport security (default False)
 mcp_enable_dns_rebinding_protection = True
+
 ; GNS3 server addresses that clients are allowed to connect to ("host:port" format)
 ; e.g. if GNS3 server IP is 192.168.1.3, add 192.168.1.3:*
 mcp_allowed_hosts = 127.0.0.1:*,localhost:*,192.168.1.3:*
+
 ; Allowed origin list (CORS Origin)
 mcp_allowed_origins = http://127.0.0.1:*,http://localhost:*,http://192.168.1.3:*
 ```
@@ -381,7 +371,7 @@ With the default configuration, all hosts can connect — suitable for most scen
 ### What's the difference between MCP and GNS3 Copilot?
 
 - **GNS3 Copilot (AI Assistant)**: Built-in AI feature within the GNS3 GUI that provides topology management, fault diagnosis, and automated configuration through LLMs
-- **MCP Service**: Provides a standardized MCP protocol interface for external AI clients (like Claude Code, Claude Desktop) to interact with GNS3 functionality in a unified way
+- **MCP Service**: Provides a standardized MCP protocol interface for external AI clients (like Claude Code) to interact with GNS3 functionality in a unified way
 
 They can be used together: MCP is for tool-calling scenarios, while the AI Assistant is for in-GUI interactive usage.
 
