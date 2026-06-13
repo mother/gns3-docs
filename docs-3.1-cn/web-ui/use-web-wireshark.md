@@ -5,6 +5,8 @@ title: 如何使用 Web Wireshark
 预计阅读时间: 5 分钟
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 # 如何使用 Web Wireshark
 
@@ -143,7 +145,40 @@ network_subnet = 192.168.100.0/22
 
 Web Wireshark 采用容器化架构，将传统桌面应用转换为浏览器服务：
 
-![Web Wireshark 架构概览](/img/web-ui/zh/web-wireshark-architecture-cn.svg)
+<Mermaid value={`graph TD
+    subgraph GNS3Server["GNS3 Server"]
+        WebUI["Web UI<br/>(Browser)"]
+        Controller["GNS3 Controller"]
+        LinkCtrl["Link Controller<br/>(start_capture / stop_capture)"]
+        Manager["WebWiresharkManager<br/>(called directly, not via CLI)"]
+        DockerClient["DockerHTTPClient<br/>(HTTP via Unix Socket)"]
+    end
+
+    subgraph DockerDaemon["Docker Daemon"]
+        Container["gns3-wireshark-{project_id}"]
+        Xvfb["Xvfb (virtual framebuffer)"]
+        Xpra["xpra server"]
+        Wireshark["Wireshark"]
+    end
+
+    ClientBrowser["Client Browser<br/>(HTML5 Client)"]
+
+    ClientBrowser -->|REST API| WebUI
+    WebUI -->|capture/start| Controller
+    Controller --> LinkCtrl
+    LinkCtrl -->|start/stop/restart session| Manager
+    Manager -->|Docker API<br/>/var/run/docker.sock| DockerClient
+    DockerClient -->|container lifecycle| Container
+    Container --- Xvfb
+    Container --- Xpra
+    Container --- Wireshark
+    ClientBrowser -.->|WebSocket proxy| Xpra
+    Xpra -.->|xpra HTML5| ClientBrowser
+
+    style GNS3Server fill:#e8f4fd,stroke:#2196f3
+    style DockerDaemon fill:#fff3e0,stroke:#ff9800
+    style ClientBrowser fill:#e8f5e9,stroke:#4caf50
+`} />
 
 **核心技术：**
 - 容器化隔离：每个项目独立的 Docker 容器（`gns3-wireshark-{project_id}`）

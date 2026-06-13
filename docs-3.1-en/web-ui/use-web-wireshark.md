@@ -2,6 +2,8 @@
 title: How to use Web Wireshark
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 
 # How to use Web Wireshark
 
@@ -131,7 +133,40 @@ network_subnet = 192.168.100.0/22
 
 Web Wireshark uses a container architecture. It turns a traditional desktop application into a browser service:
 
-![Web Wireshark Architecture Overview](/img/web-ui/zh/web-wireshark-architecture-en.svg)
+<Mermaid value={`graph TD
+    subgraph GNS3Server["GNS3 Server"]
+        WebUI["Web UI<br/>(Browser)"]
+        Controller["GNS3 Controller"]
+        LinkCtrl["Link Controller<br/>(start_capture / stop_capture)"]
+        Manager["WebWiresharkManager<br/>(called directly, not via CLI)"]
+        DockerClient["DockerHTTPClient<br/>(HTTP via Unix Socket)"]
+    end
+
+    subgraph DockerDaemon["Docker Daemon"]
+        Container["gns3-wireshark-{project_id}"]
+        Xvfb["Xvfb (virtual framebuffer)"]
+        Xpra["xpra server"]
+        Wireshark["Wireshark"]
+    end
+
+    ClientBrowser["Client Browser<br/>(HTML5 Client)"]
+
+    ClientBrowser -->|REST API| WebUI
+    WebUI -->|capture/start| Controller
+    Controller --> LinkCtrl
+    LinkCtrl -->|start/stop/restart session| Manager
+    Manager -->|Docker API<br/>/var/run/docker.sock| DockerClient
+    DockerClient -->|container lifecycle| Container
+    Container --- Xvfb
+    Container --- Xpra
+    Container --- Wireshark
+    ClientBrowser -.->|WebSocket proxy| Xpra
+    Xpra -.->|xpra HTML5| ClientBrowser
+
+    style GNS3Server fill:#e8f4fd,stroke:#2196f3
+    style DockerDaemon fill:#fff3e0,stroke:#ff9800
+    style ClientBrowser fill:#e8f5e9,stroke:#4caf50
+`} />
 
 **Core technologies:**
 - Container isolation: Each project gets its own Docker container (`gns3-wireshark-{project_id}`)
