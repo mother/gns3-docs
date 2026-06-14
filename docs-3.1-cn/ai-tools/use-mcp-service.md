@@ -285,7 +285,7 @@ GNS3 的 SVG 渲染器与标准 SVG 规范存在以下差异：
 | `vpcs_config_set` | 配置 VPCS 设备（IP、网关等） | `project_id`, `device_name`, `ip`, `netmask`, `gateway` |
 
 :::note
-设备配置工具需要先启动节点。设备类型会从节点的 `device_type:<type>` 标签自动识别。
+必须先启动节点，才能对设备进行配置。设备类型会从节点的 `device_type:<type>` 标签自动识别。
 :::
 
 #### 设备配置工作流

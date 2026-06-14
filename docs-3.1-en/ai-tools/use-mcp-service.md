@@ -288,7 +288,7 @@ Before using `image_install`, image files must be manually placed in the `~/GNS3
 | `vpcs_config_set` | Configure VPCS devices (IP, gateway, etc.) | `project_id`, `device_name`, `ip`, `netmask`, `gateway` |
 
 :::note
-Device Config tools require nodes to be started first. Device type is auto-detected from the node's `device_type:<type>` tag.
+You must start the node before you can configure the device. Device type is auto-detected from the node's `device_type:<type>` tag.
 :::
 
 #### Device Config Workflow
