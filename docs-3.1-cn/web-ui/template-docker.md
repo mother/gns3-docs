@@ -6,7 +6,6 @@ title: 如何创建 Docker 模板
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何创建 Docker 模板
 
@@ -19,15 +18,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 以 Ubuntu 为例，介绍如何创建 Docker 模板。
 
 1. 在新建模板向导中点击"Next"按钮。
-   <img style={{ width: '100%' }} alt="点击 Next" src={useBaseUrl('img/web-ui/zh/template-click-next.jpeg')} />
+   ![点击 Next](/img/web-ui/zh/template-click-next.jpeg)
 
 2. 在搜索框输入"ubuntu"快速搜索，然后点击图中"2"标识的按钮。
-   <img style={{ width: '100%' }} alt="搜索 ubuntu" src={useBaseUrl('img/web-ui/zh/template-docker-search-ubuntu.jpeg')} />
+   ![搜索 ubuntu](/img/web-ui/zh/template-docker-search-ubuntu.jpeg)
 
 3. 如下图所示，点击 "Create Docker Template" 按钮。
-   <img style={{ width: '100%' }} alt="创建 Docker 模板" src={useBaseUrl('img/web-ui/zh/template-docker-create.jpeg')} />
+   ![创建 Docker 模板](/img/web-ui/zh/template-docker-create.jpeg)
 
 4. 输入模板名称，这里默认为 `Ubuntu Docker Guest`，点击 "Add Template" 按钮完成创建。
-   <img style={{ width: '100%' }} alt="Docker 模板名称" src={useBaseUrl('img/web-ui/zh/template-docker-name-finish.jpeg')} />
+   ![Docker 模板名称](/img/web-ui/zh/template-docker-name-finish.jpeg)
 
 > 在这里添加模板后，在拓扑中首次使用这个模板时，会从 Docker Hub 下载该镜像。

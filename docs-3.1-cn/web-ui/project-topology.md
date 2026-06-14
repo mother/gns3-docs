@@ -5,13 +5,12 @@ title: 项目拓扑
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 项目拓扑
 
 Project Map（项目拓扑图）是 GNS3 Web UI 的核心工作区，用于创建、编辑和管理网络拓扑图。这是一个交互式的可视化编辑器，用户可以添加节点、连接设备、配置网络拓扑，并实时控制仿真设备的运行状态。
 
-<img style={{ width: '100%' }} alt="项目拓扑概览" src={useBaseUrl('img/web-ui/zh/topology-overview.jpeg')} />
+![项目拓扑概览](/img/web-ui/zh/topology-overview.jpeg)
 
 ## 项目标题栏按钮
 

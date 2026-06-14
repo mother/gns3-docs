@@ -2,7 +2,6 @@
 title: New Template
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # New Template
 
@@ -10,17 +9,17 @@ A template is a configuration that defines how a device runs in GNS3. After you 
 
 On the project home page, click the GNS3 Logo in the top left corner. Then select `New Template` from the dropdown menu to open the creation wizard.
 
-<img style={{ width: '100%' }} alt="New template wizard" src={useBaseUrl('img/web-ui/zh/template-wizard-start.jpeg')} />
+![New template wizard](/img/web-ui/zh/template-wizard-start.jpeg)
 
 ## Template Update
 
 Download the latest appliances files from GitHub.
 
 - In the "Add new template" dialog, click the **Next** button as shown below.
-<img style={{ width: '100%' }} alt="New template wizard" src={useBaseUrl('img/web-ui/zh/template-wizard-update-01-start.jpeg')} />
+![New template wizard](/img/web-ui/zh/template-wizard-update-01-start.jpeg)
 
 - Then click the **"Update from online registry"** button as shown below to download the latest appliances files from GitHub (https://api.github.com/repos/GNS3/gns3-registry/contents/appliances).
-<img style={{ width: '100%' }} alt="Update from online registry" src={useBaseUrl('img/web-ui/zh/template-wizard-update-02-registry-button.jpeg')} />
+![Update from online registry](/img/web-ui/zh/template-wizard-update-02-registry-button.jpeg)
 
 :::note
 

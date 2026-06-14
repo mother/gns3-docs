@@ -4,7 +4,6 @@ title: Install GNS3 on a remote server
 sidebar_label: Remote Server
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 If you need more resources for bigger topologies, you can install GNS3 on a remote server. This could be on:
 - your own server
@@ -48,7 +47,7 @@ If the server is exposed on the internet, you need to setup a VPN to avoid anybo
 ## VPN Setup
 The next time you log in you will see this message:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/installation/remote-server/1.jpg')} />
+![screenshot](/img/getting-started/installation/remote-server/1.jpg)
 
 Download the certificate. You can also find the certificate in /root/client.ovpn
 

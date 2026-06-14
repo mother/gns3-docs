@@ -2,7 +2,6 @@
 title: How to configure Dynamips template preferences
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to configure Dynamips template preferences
 
@@ -27,42 +26,42 @@ Different platforms support different Network Adapters. Please choose based on y
 :::
 
 1. Click the "Dynamips" option to enter.
-   <img style={{ width: '100%' }} alt="Enter Dynamips" src={useBaseUrl('img/web-ui/zh/dynamips-create-01-enter.jpeg')} />
+   ![Enter Dynamips](/img/web-ui/zh/dynamips-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/dynamips-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/dynamips-create-02-add.jpeg)
 
 3. Follow the wizard steps. Click "IOS Image".
-   <img style={{ width: '100%' }} alt="Wizard start" src={useBaseUrl('img/web-ui/zh/dynamips-create-03-wizard-start.jpeg')} />
+   ![Wizard start](/img/web-ui/zh/dynamips-create-03-wizard-start.jpeg)
 
 4. In the IOS Image step, click "Click to add image" to upload a local image file, or choose an already uploaded image from the list below. Then click "Name and platform".
-   <img style={{ width: '100%' }} alt="Choose image file" src={useBaseUrl('img/web-ui/zh/dynamips-create-04-ios-image.jpeg')} />
+   ![Choose image file](/img/web-ui/zh/dynamips-create-04-ios-image.jpeg)
 
 5. In Name and platform, enter the name and choose the platform. Then click "Memory".
-   <img style={{ width: '100%' }} alt="Name and platform" src={useBaseUrl('img/web-ui/zh/dynamips-create-05-name-platform.jpeg')} />
+   ![Name and platform](/img/web-ui/zh/dynamips-create-05-name-platform.jpeg)
 
 6. In Memory, you can change the RAM size. The default values are fine. Then click "Network adapters".
-   <img style={{ width: '100%' }} alt="Memory settings" src={useBaseUrl('img/web-ui/zh/dynamips-create-06-memory.jpeg')} />
+   ![Memory settings](/img/web-ui/zh/dynamips-create-06-memory.jpeg)
 
 7. In Network adapters, select the interface cards for the template. Then click "Idle-PC".
-   <img style={{ width: '100%' }} alt="Network adapters" src={useBaseUrl('img/web-ui/zh/dynamips-create-07-network-adapters.jpeg')} />
+   ![Network adapters](/img/web-ui/zh/dynamips-create-07-network-adapters.jpeg)
 
 8. Click the "Idle-PC finder" button to calculate the Idle-PC value. This value helps reduce CPU usage.
-   <img style={{ width: '100%' }} alt="Idle-PC finder" src={useBaseUrl('img/web-ui/zh/dynamips-create-08-idlepc-finder.jpeg')} />
+   ![Idle-PC finder](/img/web-ui/zh/dynamips-create-08-idlepc-finder.jpeg)
 
 9. After the calculation is done, click the "Add Template" button.
-   <img style={{ width: '100%' }} alt="Add template" src={useBaseUrl('img/web-ui/zh/dynamips-create-09-idlepc-result.jpeg')} />
+   ![Add template](/img/web-ui/zh/dynamips-create-09-idlepc-result.jpeg)
 
 10. After creation, you can see the new template in the list.
-    <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/dynamips-create-10-created.jpeg')} />
+    ![Creation done](/img/web-ui/zh/dynamips-create-10-created.jpeg)
 
 11. Click the three-dot button on the right to choose Delete, Copy, or Edit.
-    <img style={{ width: '100%' }} alt="Action menu" src={useBaseUrl('img/web-ui/zh/dynamips-create-11-menu.jpeg')} />
+    ![Action menu](/img/web-ui/zh/dynamips-create-11-menu.jpeg)
 
 ## IOS Router Template Configuration Details
 
 Click the "Edit" button to enter the configuration details.
-<img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/dynamips-config-01-general.jpeg')} />
+![General settings](/img/web-ui/zh/dynamips-config-01-general.jpeg)
 
 ### General Settings (c7200)
 
@@ -93,7 +92,7 @@ Special notes about c7200:
 - c7200 network adapters are configured in the Slots area
 - When Console type is set to vnc or spice, the server needs VNC/SPICE support to work correctly
 
-<img style={{ width: '100%' }} alt="Slot configuration" src={useBaseUrl('img/web-ui/zh/dynamips-config-02-slots.jpeg')} />
+![Slot configuration](/img/web-ui/zh/dynamips-config-02-slots.jpeg)
 
 ### Memories and Disks
 
@@ -123,7 +122,7 @@ Special notes about c7200:
 - PCMCIA disk0/disk1 match the real router's disk0: and disk1:. c7200 usually needs at least disk0 to start IOS
 - There is a checkbox "Automatically delete NVRAM and disk files" at the bottom. When checked, NVRAM and disk files are cleaned up when the project is deleted
 
-<img style={{ width: '100%' }} alt="Memory and disk" src={useBaseUrl('img/web-ui/zh/dynamips-config-03-memory-disk.jpeg')} />
+![Memory and disk](/img/web-ui/zh/dynamips-config-03-memory-disk.jpeg)
 
 ### Slots (c7200)
 
@@ -148,7 +147,7 @@ Behavior:
 - Template defaults: Slot 0 -> None, Slots 1-6 -> None (all empty at template level). The client UI may fill in the first available option automatically
 - c7200 has no WIC slots. WIC functions are provided by the Slot 0 IO controller
 
-<img style={{ width: '100%' }} alt="Slot details" src={useBaseUrl('img/web-ui/zh/dynamips-config-04-slot-detail.jpeg')} />
+![Slot details](/img/web-ui/zh/dynamips-config-04-slot-detail.jpeg)
 
 ### Advanced Settings (c7200)
 
@@ -168,4 +167,4 @@ Important notes for c7200:
 - mmap and sparsemem: for c7200 with 512 MB RAM or more, it is recommended to enable both
 - c7200 may need more conservative Idlemax and Idlesleep values than lower-end platforms
 
-<img style={{ width: '100%' }} alt="Advanced settings" src={useBaseUrl('img/web-ui/zh/dynamips-config-05-advanced.jpeg')} />
+![Advanced settings](/img/web-ui/zh/dynamips-config-05-advanced.jpeg)

@@ -5,7 +5,6 @@ title: 如何配置 Dynamips 模板
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何配置 Dynamips 模板
 
@@ -30,42 +29,42 @@ Dynamips 是 GNS3 中用 IOS 镜像模拟 Cisco 路由器的引擎。与 builtin
 :::
 
 1. 点击”Dynamips”选项进入。
-   <img style={{ width: '100%' }} alt="进入 Dynamips" src={useBaseUrl('img/web-ui/zh/dynamips-create-01-enter.jpeg')} />
+   ![进入 Dynamips](/img/web-ui/zh/dynamips-create-01-enter.jpeg)
 
 2. 点击右上角的 + 号按钮添加新模板。
-   <img style={{ width: '100%' }} alt="点击添加" src={useBaseUrl('img/web-ui/zh/dynamips-create-02-add.jpeg')} />
+   ![点击添加](/img/web-ui/zh/dynamips-create-02-add.jpeg)
 
 3. 按照引导步骤依次操作，点击”IOS Image”。
-   <img style={{ width: '100%' }} alt="向导开始" src={useBaseUrl('img/web-ui/zh/dynamips-create-03-wizard-start.jpeg')} />
+   ![向导开始](/img/web-ui/zh/dynamips-create-03-wizard-start.jpeg)
 
 4. 在 IOS Image 步骤中，点击”Click to add image”上传本地的镜像文件，或从下方列表选择已上传的镜像，然后点击”Name and platform”。
-   <img style={{ width: '100%' }} alt="选择镜像文件" src={useBaseUrl('img/web-ui/zh/dynamips-create-04-ios-image.jpeg')} />
+   ![选择镜像文件](/img/web-ui/zh/dynamips-create-04-ios-image.jpeg)
 
 5. 在 Name and platform 中，可以输入名称和选择平台，然后点击”Memory”。
-   <img style={{ width: '100%' }} alt="名称与平台" src={useBaseUrl('img/web-ui/zh/dynamips-create-05-name-platform.jpeg')} />
+   ![名称与平台](/img/web-ui/zh/dynamips-create-05-name-platform.jpeg)
 
 6. 在 Memory 中可修改内存大小，使用默认值即可，然后点击”Network adapters”。
-   <img style={{ width: '100%' }} alt="内存设置" src={useBaseUrl('img/web-ui/zh/dynamips-create-06-memory.jpeg')} />
+   ![内存设置](/img/web-ui/zh/dynamips-create-06-memory.jpeg)
 
 7. 在 Network adapters 中为模板选择接口板卡，然后点击”Idle-PC”。
-   <img style={{ width: '100%' }} alt="网络适配器" src={useBaseUrl('img/web-ui/zh/dynamips-create-07-network-adapters.jpeg')} />
+   ![网络适配器](/img/web-ui/zh/dynamips-create-07-network-adapters.jpeg)
 
 8. 点击”Idle-PC finder”按钮计算 Idle-PC 值，这个数值用于降低 CPU 使用率。
-   <img style={{ width: '100%' }} alt="Idle-PC 计算" src={useBaseUrl('img/web-ui/zh/dynamips-create-08-idlepc-finder.jpeg')} />
+   ![Idle-PC 计算](/img/web-ui/zh/dynamips-create-08-idlepc-finder.jpeg)
 
 9. 计算完成后，点击”Add Template”按钮。
-   <img style={{ width: '100%' }} alt="添加模板" src={useBaseUrl('img/web-ui/zh/dynamips-create-09-idlepc-result.jpeg')} />
+   ![添加模板](/img/web-ui/zh/dynamips-create-09-idlepc-result.jpeg)
 
 10. 创建完成后，在列表中可以看到新模板。
-    <img style={{ width: '100%' }} alt="创建完成" src={useBaseUrl('img/web-ui/zh/dynamips-create-10-created.jpeg')} />
+    ![创建完成](/img/web-ui/zh/dynamips-create-10-created.jpeg)
 
 11. 点击右侧的三个点按钮，可以选择删除（Delete）、复制（Copy）或编辑（Edit）。
-    <img style={{ width: '100%' }} alt="操作菜单" src={useBaseUrl('img/web-ui/zh/dynamips-create-11-menu.jpeg')} />
+    ![操作菜单](/img/web-ui/zh/dynamips-create-11-menu.jpeg)
 
 ## IOS 路由器模板配置详解
 
 点击”Edit”按钮，进入配置详情。
-<img style={{ width: '100%' }} alt="通用设置" src={useBaseUrl('img/web-ui/zh/dynamips-config-01-general.jpeg')} />
+![通用设置](/img/web-ui/zh/dynamips-config-01-general.jpeg)
 
 ### 通用设置（General settings）详解（c7200）
 
@@ -96,7 +95,7 @@ Dynamips 是 GNS3 中用 IOS 镜像模拟 Cisco 路由器的引擎。与 builtin
 - c7200 的网络适配器在 Slots 区域配置
 - Console type 选择 vnc 或 spice 时，服务器端需要相应的 VNC/SPICE 支持才能正常工作
 
-<img style={{ width: '100%' }} alt="插槽配置" src={useBaseUrl('img/web-ui/zh/dynamips-config-02-slots.jpeg')} />
+![插槽配置](/img/web-ui/zh/dynamips-config-02-slots.jpeg)
 
 ### 内存与磁盘（Memories and disks）详解
 
@@ -126,7 +125,7 @@ Dynamips 是 GNS3 中用 IOS 镜像模拟 Cisco 路由器的引擎。与 builtin
 - PCMCIA disk0/disk1 对应真实路由器上的 disk0: 和 disk1:，c7200 通常至少需要 disk0 来启动 IOS
 - 底部有 Automatically delete NVRAM and disk files 复选框，勾选后实验被删除时自动清理 NVRAM 和磁盘文件
 
-<img style={{ width: '100%' }} alt="内存与磁盘" src={useBaseUrl('img/web-ui/zh/dynamips-config-03-memory-disk.jpeg')} />
+![内存与磁盘](/img/web-ui/zh/dynamips-config-03-memory-disk.jpeg)
 
 ### 插槽（Slots）详解（c7200）
 
@@ -151,7 +150,7 @@ c7200 模拟的是 7206 路由器，有 7 个 slots（0-6）。Slot 0 为 IO 控
 - 模板默认值：Slot 0 → None，Slots 1-6 → None（模板层面均为空）。客户端 UI 可能会自动填入第一个可用选项
 - c7200 没有 WIC 插槽，WIC 功能由 Slot 0 的 IO 控制器提供
 
-<img style={{ width: '100%' }} alt="插槽详情" src={useBaseUrl('img/web-ui/zh/dynamips-config-04-slot-detail.jpeg')} />
+![插槽详情](/img/web-ui/zh/dynamips-config-04-slot-detail.jpeg)
 
 ### 高级设置（Advanced）详解（c7200）
 
@@ -171,4 +170,4 @@ c7200 模拟的是 7206 路由器，有 7 个 slots（0-6）。Slot 0 为 IO 控
 - mmap 和 sparsemem：对于 512MB 及以上 RAM 的 c7200，建议同时启用
 - c7200 的 Idlemax 和 Idlesleep 可能需要比低端平台更保守的值
 
-<img style={{ width: '100%' }} alt="高级设置" src={useBaseUrl('img/web-ui/zh/dynamips-config-05-advanced.jpeg')} />
+![高级设置](/img/web-ui/zh/dynamips-config-05-advanced.jpeg)

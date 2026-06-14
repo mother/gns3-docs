@@ -6,7 +6,6 @@ title: 如何锁定或解锁所有项目
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何锁定或解锁所有项目
 
@@ -18,7 +17,7 @@ Lock/Unlock Items（锁定/解锁项目）和 Show Lock Status（显示锁定状
 
 点击工具栏的锁定/解锁图标（工具提示："Lock or unlock all items"）。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="锁定按钮" src={useBaseUrl('img/web-ui/zh/lock-01-toolbar.jpeg')} />
+![锁定按钮](/img/web-ui/zh/lock-01-toolbar.jpeg)
 
 **确认对话框**
 
@@ -27,13 +26,13 @@ Lock/Unlock Items（锁定/解锁项目）和 Show Lock Status（显示锁定状
 - 内容："Are you sure you want to Lock/Unlock all devices?"
 - 按钮：**No**（取消）/ **Yes**（确认，默认聚焦）
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="确认对话框" src={useBaseUrl('img/web-ui/zh/lock-02-dialog.jpeg')} />
+![确认对话框](/img/web-ui/zh/lock-02-dialog.jpeg)
 
 **执行操作**
 
 点击 **Yes** 执行锁定/解锁。所有节点和绘图的状态同步更新，按钮图标随之变化。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="锁定后状态" src={useBaseUrl('img/web-ui/zh/lock-03-locked.jpeg')} />
+![锁定后状态](/img/web-ui/zh/lock-03-locked.jpeg)
 
 ### 锁定后的影响
 
@@ -54,7 +53,7 @@ Lock/Unlock Items（锁定/解锁项目）和 Show Lock Status（显示锁定状
 
 在项目地图右上角的 Map Settings 菜单中，勾选 **Show item lock status**（显示项目锁定状态）复选框。默认关闭。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Map Settings 菜单" src={useBaseUrl('img/web-ui/zh/lock-04-settings-menu.jpeg')} />
+![Map Settings 菜单](/img/web-ui/zh/lock-04-settings-menu.jpeg)
 
 ### 开启效果
 
@@ -62,7 +61,7 @@ Lock/Unlock Items（锁定/解锁项目）和 Show Lock Status（显示锁定状
 - 绘图元素（矩形、椭圆、图片）右上角显示锁定状态徽章
 - 每个项目的锁定/解锁状态一目了然
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="锁定状态徽章" src={useBaseUrl('img/web-ui/zh/lock-05-badges.jpeg')} />
+![锁定状态徽章](/img/web-ui/zh/lock-05-badges.jpeg)
 
 **哪些元素显示徽章：**
 - ✅ 所有节点

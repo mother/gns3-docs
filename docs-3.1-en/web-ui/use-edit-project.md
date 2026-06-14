@@ -6,7 +6,6 @@ prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
 readingTime: 10 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to edit a project
 
@@ -15,10 +14,10 @@ Edit Project Dialog allows you to configure project properties, documentation, a
 You can open the Edit Project Dialog from two locations:
 
 - **Project list page** — Click the edit button.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Project list edit button" src={useBaseUrl('img/web-ui/zh/edit-project-01-list-page.jpeg')} />
+![Project list edit button](/img/web-ui/zh/edit-project-01-list-page.jpeg)
 
 - **Topology page** — Click the top-left logo → Project Settings → Edit Project.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Topology page menu" src={useBaseUrl('img/web-ui/zh/edit-project-02-topology-menu.jpeg')} />
+![Topology page menu](/img/web-ui/zh/edit-project-02-topology-menu.jpeg)
 
 ## General
 
@@ -36,17 +35,17 @@ Configure basic project information and canvas dimensions.
 - Leave this project running in the background after closing
 - Show interface labels at start
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="General tab" src={useBaseUrl('img/web-ui/zh/edit-project-03-general-tab.jpeg')} />
+![General tab](/img/web-ui/zh/edit-project-03-general-tab.jpeg)
 
 ## Readme
 
 Markdown editor with live preview for project documentation.
 
 - Click the **Edit** button to enter edit mode.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Readme preview mode" src={useBaseUrl('img/web-ui/zh/edit-project-04-readme-edit.jpeg')} />
+![Readme preview mode](/img/web-ui/zh/edit-project-04-readme-edit.jpeg)
 
 - In edit mode, you can enter Markdown or plain text. Mermaid rendering is not supported. Content auto-saves after 2 seconds of inactivity.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Readme editing" src={useBaseUrl('img/web-ui/zh/edit-project-05-readme-editing.jpeg')} />
+![Readme editing](/img/web-ui/zh/edit-project-05-readme-editing.jpeg)
 
 ## Global Variables
 
@@ -56,7 +55,7 @@ Manage project-level variables, primarily used for Docker container environment 
 
 **Variable list:** Table with Name, Value, and Actions (delete) columns.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Global variables tab" src={useBaseUrl('img/web-ui/zh/edit-project-06-global-vars.jpeg')} />
+![Global variables tab](/img/web-ui/zh/edit-project-06-global-vars.jpeg)
 
 :::note
 Project Global variables are automatically set as Docker container environment variables. After adding, deleting, or modifying variables, the containers will be automatically rebuilt to apply the changes.
@@ -86,10 +85,10 @@ A project has 3 Alpine Linux Docker containers that need the following environme
 | `DEBUG_LEVEL` | `verbose` | Control log verbosity |
 
 - Add these variables one by one in the Edit Project dialog's Global variables tab.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Adding global variables" src={useBaseUrl('img/web-ui/zh/edit-project-07-vars-adding.jpeg')} />
+![Adding global variables](/img/web-ui/zh/edit-project-07-vars-adding.jpeg)
 
 - After adding, click the **Apply** button.
-<img style={{ display: 'block', margin: '0 auto' }} alt="Confirmation dialog" src={useBaseUrl('img/web-ui/zh/edit-project-12-vars-confirm-dialog.jpeg')} />
+![Confirmation dialog](/img/web-ui/zh/edit-project-12-vars-confirm-dialog.jpeg)
 
 - A confirmation dialog appears with the following message:
 
@@ -100,7 +99,7 @@ Adding or deleting project global variables will cause the GNS3 server
   Do you want to continue?
 ```
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Applying variables" src={useBaseUrl('img/web-ui/zh/edit-project-13-vars-rebuild-applying.jpeg')} />
+![Applying variables](/img/web-ui/zh/edit-project-13-vars-rebuild-applying.jpeg)
 
 - After confirming, GNS3 automatically rebuilds the Docker containers to apply the new environment variables.
 
@@ -108,8 +107,8 @@ Adding or deleting project global variables will cause the GNS3 server
 
 - Start the Alpine Linux Docker containers, connect via Web Console, and run the `export` command to verify the global variables have taken effect.
 
-<div style={{ display: 'flex', justifyContent: 'center', gap: 10 }}>
-  <img style={{ width: '32%' }} alt="Environment result 1" src={useBaseUrl('img/web-ui/zh/edit-project-09-env-result1.jpeg')} />
-  <img style={{ width: '32%' }} alt="Environment result 2" src={useBaseUrl('img/web-ui/zh/edit-project-10-env-result2.jpeg')} />
-  <img style={{ width: '32%' }} alt="Environment result 3" src={useBaseUrl('img/web-ui/zh/edit-project-11-env-result3.jpeg')} />
-</div>
+![Environment result 1](/img/web-ui/zh/edit-project-09-env-result1.jpeg)
+
+![Environment result 2](/img/web-ui/zh/edit-project-10-env-result2.jpeg)
+
+![Environment result 3](/img/web-ui/zh/edit-project-11-env-result3.jpeg)

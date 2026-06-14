@@ -2,7 +2,6 @@
 title: How to use Web Console
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use Web Console
 
@@ -14,7 +13,7 @@ Web Console is a new feature in GNS3 3.1. It lets you access the command-line te
 
 Right-click on a device that supports serial console (like routers or switches) in the project topology and select "Web console" to open the console window in your browser.
 
-<img style={{ width: '100%' }} alt="Right-click device to open Web Console" src={useBaseUrl('img/web-ui/zh/web-console-right-click.jpeg')} />
+![Right-click device to open Web Console](/img/web-ui/zh/web-console-right-click.jpeg)
 
 The console window supports dragging, resizing, minimizing, and other operations. You can manage multiple devices conveniently in your browser.
 
@@ -32,7 +31,7 @@ The left side of the console window shows a list of all devices you can connect 
 - Click a device name to open or switch to that device's console tab
 - Click the sidebar title to expand or collapse the device list
 
-<img style={{ width: '100%' }} alt="Device Management Sidebar" src={useBaseUrl('img/web-ui/zh/web-console-sidebar.jpeg')} />
+![Device Management Sidebar](/img/web-ui/zh/web-console-sidebar.jpeg)
 
 ### Multi-Tab Console Window
 
@@ -48,7 +47,7 @@ The left side of the console window shows a list of all devices you can connect 
 - Click a tab to switch to a different device
 - You can open up to 8 device consoles at the same time
 
-<img style={{ width: '100%' }} alt="Multi-Tab Console Window" src={useBaseUrl('img/web-ui/zh/web-console-tabs.jpeg')} />
+![Multi-Tab Console Window](/img/web-ui/zh/web-console-tabs.jpeg)
 
 ### Shortcuts
 
@@ -57,7 +56,7 @@ The left side of the console window shows a list of all devices you can connect 
 | Alt+1 to Alt+8 | Quickly switch to the 1st to 8th device console |
 | Alt+9 | Switch to the GNS3 log console |
 
-<img style={{ width: '100%' }} alt="Shortcuts" src={useBaseUrl('img/web-ui/zh/web-console-shortcuts.jpeg')} />
+![Shortcuts](/img/web-ui/zh/web-console-shortcuts.jpeg)
 
 :::note
 Shortcuts only work when the console window is active (click on the window first).
@@ -72,7 +71,7 @@ The last tab in the console window (Alt+9) shows GNS3 project logs. These includ
 
 You can use this for troubleshooting and project monitoring.
 
-<img style={{ width: '100%' }} alt="GNS3 Log Console" src={useBaseUrl('img/web-ui/zh/web-console-log.jpeg')} />
+![GNS3 Log Console](/img/web-ui/zh/web-console-log.jpeg)
 
 ## Comparison with the Traditional Way
 

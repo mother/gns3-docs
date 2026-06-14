@@ -1,0 +1,2 @@
+- [Mermaid usage](mermaid-usage.md) — Mermaid diagrams must use component import syntax, code block syntax does not work
+- [Cloudflare Pages Yarn version](cloudflare-pages-yarn-version.md) — Cloudflare Pages Yarn version compatibility fix

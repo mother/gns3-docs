@@ -5,43 +5,42 @@ title: 如何管理用户和权限
 预计阅读时间: 10 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何管理用户和权限
 
 在项目首页点击左上角的 GNS3 Logo，选择"Management"（用户管理），进入管理页面。
 
-<img style={{ width: '100%' }} alt="进入管理" src={useBaseUrl('img/web-ui/zh/mgmt-01-menu.jpeg')} />
+![进入管理](/img/web-ui/zh/mgmt-01-menu.jpeg)
 
 ## Users（用户管理）
 
 创建和管理系统用户账户，支持认证、个人信息管理和组织关系维护。
 
-<img style={{ width: '100%' }} alt="用户管理" src={useBaseUrl('img/web-ui/zh/mgmt-02-users.jpeg')} />
+![用户管理](/img/web-ui/zh/mgmt-02-users.jpeg)
 
 ## Groups（用户组管理）
 
 用户组是将多个用户组织成逻辑单元的机制，用于简化权限管理和用户组织，管理员可以一次性为多个用户分配相同的权限。
 
-<img style={{ width: '100%' }} alt="用户组管理" src={useBaseUrl('img/web-ui/zh/mgmt-03-groups.jpeg')} />
+![用户组管理](/img/web-ui/zh/mgmt-03-groups.jpeg)
 
 ## Roles（角色管理）
 
 角色是权限的集合，每个角色包含多个特权，用户通过被分配角色来获得相应的操作权限。系统默认角色足以满足大部分场景需要。
 
-<img style={{ width: '100%' }} alt="角色管理" src={useBaseUrl('img/web-ui/zh/mgmt-04-roles.jpeg')} />
+![角色管理](/img/web-ui/zh/mgmt-04-roles.jpeg)
 
 ## Pools（资源池管理）
 
 资源池用于将项目分享给用户或用户组，实现对项目访问的权限控制。
 
-<img style={{ width: '100%' }} alt="资源池管理" src={useBaseUrl('img/web-ui/zh/mgmt-05-pools.jpeg')} />
+![资源池管理](/img/web-ui/zh/mgmt-05-pools.jpeg)
 
 ## ACL（访问控制列表）
 
 访问控制列表（ACL）提供基于 API 路径的细粒度访问控制，管理用户和组对不同系统资源的访问权限。
 
-<img style={{ width: '100%' }} alt="访问控制" src={useBaseUrl('img/web-ui/zh/mgmt-06-acl.jpeg')} />
+![访问控制](/img/web-ui/zh/mgmt-06-acl.jpeg)
 
 ## 使用场景：用户项目隔离
 
@@ -50,24 +49,24 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ### 1. 创建用户
 
 在 Controller Management 页面点击 Users → Add Users，在对话框中输入用户信息并选择 Users 用户组，点击 Add user 完成创建：
-<img style={{ width: '100%' }} alt="创建用户" src={useBaseUrl('img/web-ui/zh/mgmt-07-create-user.jpeg')} />
+![创建用户](/img/web-ui/zh/mgmt-07-create-user.jpeg)
 
 创建张三和李四两个用户：
-<img style={{ width: '100%' }} alt="用户列表" src={useBaseUrl('img/web-ui/zh/mgmt-08-user-list.jpeg')} />
+![用户列表](/img/web-ui/zh/mgmt-08-user-list.jpeg)
 
 ### 2. 创建 ACL 规则
 
 在 Controller Management 页面点击 ACL → Add ACE，依次选择 All endpoints、Users 用户组、Users 角色，点击 Add ACE：
-<img style={{ width: '100%' }} alt="创建ACE规则" src={useBaseUrl('img/web-ui/zh/mgmt-09-create-ace.jpeg')} />
+![创建ACE规则](/img/web-ui/zh/mgmt-09-create-ace.jpeg)
 
 添加完成后的 ACE 规则列表：
-<img style={{ width: '100%' }} alt="ACE规则列表" src={useBaseUrl('img/web-ui/zh/mgmt-10-ace-list.jpeg')} />
+![ACE规则列表](/img/web-ui/zh/mgmt-10-ace-list.jpeg)
 
 ### 3. 验证隔离效果
 
 `zhangsan` 登录后只能看到自己创建的项目，`lisi` 同理：
-<img style={{ width: '100%' }} alt="张三项目视图" src={useBaseUrl('img/web-ui/zh/mgmt-11-project-zhangsan.jpeg')} />
-<img style={{ width: '100%' }} alt="李四项目视图" src={useBaseUrl('img/web-ui/zh/mgmt-12-project-lisi.jpeg')} />
+![张三项目视图](/img/web-ui/zh/mgmt-11-project-zhangsan.jpeg)
+![李四项目视图](/img/web-ui/zh/mgmt-12-project-lisi.jpeg)
 
 ## 使用场景：项目共享
 
@@ -76,29 +75,29 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ### 1. 创建资源池
 
 在 Controller Management 页面点击 Pools → Add Resource Pool，输入资源池名称（如 `zhangsan-projects`），点击 Add Resource Pool 完成创建：
-<img style={{ width: '100%' }} alt="创建资源池" src={useBaseUrl('img/web-ui/zh/mgmt-13-create-pool.jpeg')} />
+![创建资源池](/img/web-ui/zh/mgmt-13-create-pool.jpeg)
 
 点击刚才创建的资源池名称进入配置页面：
-<img style={{ width: '100%' }} alt="资源池配置" src={useBaseUrl('img/web-ui/zh/mgmt-14-pool-detail.jpeg')} />
+![资源池配置](/img/web-ui/zh/mgmt-14-pool-detail.jpeg)
 
 选择要共享的项目，点击添加按钮：
-<img style={{ width: '100%' }} alt="添加项目到资源池" src={useBaseUrl('img/web-ui/zh/mgmt-15-pool-add-project.jpeg')} />
+![添加项目到资源池](/img/web-ui/zh/mgmt-15-pool-add-project.jpeg)
 
 添加完成后，项目出现在资源池中：
-<img style={{ width: '100%' }} alt="项目已添加" src={useBaseUrl('img/web-ui/zh/mgmt-16-pool-project-added.jpeg')} />
+![项目已添加](/img/web-ui/zh/mgmt-16-pool-project-added.jpeg)
 
 ### 2. 创建 ACL 规则
 
 在 Controller Management 页面点击 ACL → Add ACE，选择 Resource pool 选项：
-<img style={{ width: '100%' }} alt="选择资源池选项" src={useBaseUrl('img/web-ui/zh/mgmt-17-create-ace-pool.jpeg')} />
+![选择资源池选项](/img/web-ui/zh/mgmt-17-create-ace-pool.jpeg)
 
 选择刚才创建的资源池 `zhangsan-projects`，然后在右侧设置共享类型为 `users`，用户为 `lisi`，角色为 `User`，点击 Add ACE：
-<img style={{ width: '100%' }} alt="配置ACE规则" src={useBaseUrl('img/web-ui/zh/mgmt-18-ace-pool-config.jpeg')} />
+![配置ACE规则](/img/web-ui/zh/mgmt-18-ace-pool-config.jpeg)
 
 创建完成后的 ACE 规则列表：
-<img style={{ width: '100%' }} alt="ACE规则列表" src={useBaseUrl('img/web-ui/zh/mgmt-19-ace-pool-list.jpeg')} />
+![ACE规则列表](/img/web-ui/zh/mgmt-19-ace-pool-list.jpeg)
 
 ### 3. 验证共享效果
 
 使用 `lisi` 的账号登录系统，可以在项目列表中看到 `zhangsan` 共享的项目：
-<img style={{ width: '100%' }} alt="李四看到共享项目" src={useBaseUrl('img/web-ui/zh/mgmt-20-shared-project-view.jpeg')} />
+![李四看到共享项目](/img/web-ui/zh/mgmt-20-shared-project-view.jpeg)

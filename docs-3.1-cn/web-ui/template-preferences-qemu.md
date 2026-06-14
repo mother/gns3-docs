@@ -5,7 +5,6 @@ title: 如何配置 QEMU 模板
 预计阅读时间: 15 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何配置 QEMU 模板
 
@@ -16,37 +15,37 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 以下以 Cisco IOSv 镜像为例，介绍如何创建 QEMU 模板。
 
 1. 点击"QEMU"选项进入。
-   <img style={{ width: '100%' }} alt="进入 QEMU" src={useBaseUrl('img/web-ui/zh/qemu-create-01-enter.jpeg')} />
+   ![进入 QEMU](/img/web-ui/zh/qemu-create-01-enter.jpeg)
 
 2. 点击右上角的 + 号按钮添加新模板。
-   <img style={{ width: '100%' }} alt="点击添加" src={useBaseUrl('img/web-ui/zh/qemu-create-02-add.jpeg')} />
+   ![点击添加](/img/web-ui/zh/qemu-create-02-add.jpeg)
 
 3. 按照引导步骤依次操作，点击"QEMU VM Name"。
-   <img style={{ width: '100%' }} alt="向导开始" src={useBaseUrl('img/web-ui/zh/qemu-create-03-name.jpeg')} />
+   ![向导开始](/img/web-ui/zh/qemu-create-03-name.jpeg)
 
 4. 输入模板名称，然后点击"Platform and memory"。
-   <img style={{ width: '100%' }} alt="输入名称" src={useBaseUrl('img/web-ui/zh/qemu-create-04-name-input.jpeg')} />
+   ![输入名称](/img/web-ui/zh/qemu-create-04-name-input.jpeg)
 
 5. 选择 Platform 和 RAM，然后点击"Console type"。
-   <img style={{ width: '100%' }} alt="平台与内存" src={useBaseUrl('img/web-ui/zh/qemu-create-05-platform.jpeg')} />
+   ![平台与内存](/img/web-ui/zh/qemu-create-05-platform.jpeg)
 
 6. 选择 Console type 为 telnet，然后点击"Auxiliary console type"。
-   <img style={{ width: '100%' }} alt="控制台类型" src={useBaseUrl('img/web-ui/zh/qemu-create-06-console.jpeg')} />
+   ![控制台类型](/img/web-ui/zh/qemu-create-06-console.jpeg)
 
 7. Auxiliary console type 选择 none，然后点击"Disk image"。
-   <img style={{ width: '100%' }} alt="辅助控制台" src={useBaseUrl('img/web-ui/zh/qemu-create-07-aux-console.jpeg')} />
+   ![辅助控制台](/img/web-ui/zh/qemu-create-07-aux-console.jpeg)
 
 8. 上传镜像文件。
-   <img style={{ width: '100%' }} alt="上传磁盘" src={useBaseUrl('img/web-ui/zh/qemu-create-08-disk-upload.jpeg')} />
+   ![上传磁盘](/img/web-ui/zh/qemu-create-08-disk-upload.jpeg)
 
 9. 如果已有镜像，选择 Existing Image 和对应的镜像文件，点击 "Add Template" 完成创建。
-   <img style={{ width: '100%' }} alt="选择已有镜像" src={useBaseUrl('img/web-ui/zh/qemu-create-09-disk-existing.jpeg')} />
+   ![选择已有镜像](/img/web-ui/zh/qemu-create-09-disk-existing.jpeg)
 
 10. 创建完成后，在列表中可以看到新模板。
-    <img style={{ width: '100%' }} alt="创建完成" src={useBaseUrl('img/web-ui/zh/qemu-create-10-created.jpeg')} />
+    ![创建完成](/img/web-ui/zh/qemu-create-10-created.jpeg)
 
 11. 点击右侧的三个点按钮，可以选择删除（Delete）、复制（Copy）或编辑（Edit）。
-    <img style={{ width: '100%' }} alt="操作菜单" src={useBaseUrl('img/web-ui/zh/qemu-create-11-menu.jpeg')} />
+    ![操作菜单](/img/web-ui/zh/qemu-create-11-menu.jpeg)
 
 ## 与其他节点类型的区别
 
@@ -146,7 +145,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 | 字段 | 类型 | 用途 |
 |------|------|------|
 | Template name | 文本 | 模板名称，在列表中显示 |
-| Default name format | 文本 | 实例自动命名格式，如 {name}-{0} |
+| Default name format | 文本 | 实例自动命名格式，如 `{name}-{0}` |
 | Category | 下拉选择 | 设备分类：Router/Switch/End devices 等 |
 | Symbol | 文本 + 按钮 | 拓扑图图标，可从图标库选择 |
 | Tags | Chip 输入框 | 标签，用于分类/筛选 |
@@ -159,7 +158,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 | Auxiliary console type | 下拉选择 | 辅助控制台类型 |
 | Auto start console | 复选框 | VM 启动时自动打开控制台 |
 
-<img style={{ width: '100%' }} alt="通用设置" src={useBaseUrl('img/web-ui/zh/qemu-config-01-general.jpeg')} />
+![通用设置](/img/web-ui/zh/qemu-config-01-general.jpeg)
 
 ### 硬盘（HDD）配置
 
@@ -186,7 +185,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 - **virtio** — 半虚拟化驱动，性能最高，需 OS 安装 virtio 驱动
 - **nvme** — NVMe SSD 接口，超高性能，现代 Linux 和 Windows 10+ 支持
 
-<img style={{ width: '100%' }} alt="硬盘配置" src={useBaseUrl('img/web-ui/zh/qemu-config-02-hdd.jpeg')} />
+![硬盘配置](/img/web-ui/zh/qemu-config-02-hdd.jpeg)
 
 ### 光驱（CD/DVD）配置
 
@@ -195,7 +194,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 | Upload | 按钮 | 上传本地 ISO 镜像 |
 | Image | 文本 + 自动完成 | ISO 镜像路径 |
 
-<img style={{ width: '100%' }} alt="光驱配置" src={useBaseUrl('img/web-ui/zh/qemu-config-03-cdrom.jpeg')} />
+![光驱配置](/img/web-ui/zh/qemu-config-03-cdrom.jpeg)
 
 ### 网络（Network）配置
 
@@ -203,7 +202,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 |------|------|------|
 | Adapters | 数值 | 网络适配器数量 |
 | First port | 文本 | 第一个网口名称，如 eth0 |
-| Name format | 文本 | 网口命名格式，如 eth{0} |
+| Name format | 文本 | 网口命名格式，如 `eth{0}` |
 | Segment size | 数值 | 端口分段大小 |
 | Base MAC | 文本（格式 xx:xx:xx:xx:xx:xx） | 基 MAC 地址 |
 | Type | 下拉选择 | 网卡型号，共 24 种 |
@@ -212,7 +211,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 
 常用网卡型号：e1000 系列、virtio（性能最高）、rtl8139（兼容极好）、vmxnet3（VMware 优化）
 
-<img style={{ width: '100%' }} alt="网络配置" src={useBaseUrl('img/web-ui/zh/qemu-config-04-network.jpeg')} />
+![网络配置](/img/web-ui/zh/qemu-config-04-network.jpeg)
 
 #### 自定义适配器配置
 
@@ -228,7 +227,7 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 
 对话框采用**增量保存**策略：只保存与默认值不同的适配器配置。
 
-<img style={{ width: '100%' }} alt="自定义适配器" src={useBaseUrl('img/web-ui/zh/qemu-config-05-adapters.jpeg')} />
+![自定义适配器](/img/web-ui/zh/qemu-config-05-adapters.jpeg)
 
 ### 高级设置（Advanced）
 
@@ -266,4 +265,4 @@ QEMU 是 GNS3 中功能最复杂、配置选项最多的节点类型，支持完
 | Max CPUs (hot-plug) | 数值 | 最大 CPU 数量（热插拔上限） |
 | Auto-create config disk | 复选框 | 自动创建配置磁盘 |
 
-<img style={{ width: '100%' }} alt="高级设置" src={useBaseUrl('img/web-ui/zh/qemu-config-06-advanced.jpeg')} />
+![高级设置](/img/web-ui/zh/qemu-config-06-advanced.jpeg)

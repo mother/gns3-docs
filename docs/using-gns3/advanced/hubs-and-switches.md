@@ -4,7 +4,6 @@ title: GNS3's built-in Hub and Switch devices
 sidebar_label: Built-in hubs and switches
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
 GNS3 comes with both an "Ethernet Hub" and an "Ethernet Switch" device out of the box.  For the most part, these behave like their physical counterparts.  Some peculiarities are documented here.

@@ -2,7 +2,6 @@
 title: How to configure QEMU template preferences
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to configure QEMU template preferences
 
@@ -13,37 +12,37 @@ QEMU is the most complex node type in GNS3. It has the most configuration option
 This example uses a Cisco IOSv image to show how to create a QEMU template.
 
 1. Click the "QEMU" option to enter.
-   <img style={{ width: '100%' }} alt="Enter QEMU" src={useBaseUrl('img/web-ui/zh/qemu-create-01-enter.jpeg')} />
+   ![Enter QEMU](/img/web-ui/zh/qemu-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/qemu-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/qemu-create-02-add.jpeg)
 
 3. Follow the wizard steps. Click "QEMU VM Name".
-   <img style={{ width: '100%' }} alt="Wizard start" src={useBaseUrl('img/web-ui/zh/qemu-create-03-name.jpeg')} />
+   ![Wizard start](/img/web-ui/zh/qemu-create-03-name.jpeg)
 
 4. Enter the template name. Then click "Platform and memory".
-   <img style={{ width: '100%' }} alt="Enter name" src={useBaseUrl('img/web-ui/zh/qemu-create-04-name-input.jpeg')} />
+   ![Enter name](/img/web-ui/zh/qemu-create-04-name-input.jpeg)
 
 5. Choose Platform and RAM. Then click "Console type".
-   <img style={{ width: '100%' }} alt="Platform and memory" src={useBaseUrl('img/web-ui/zh/qemu-create-05-platform.jpeg')} />
+   ![Platform and memory](/img/web-ui/zh/qemu-create-05-platform.jpeg)
 
 6. Set Console type to telnet. Then click "Auxiliary console type".
-   <img style={{ width: '100%' }} alt="Console type" src={useBaseUrl('img/web-ui/zh/qemu-create-06-console.jpeg')} />
+   ![Console type](/img/web-ui/zh/qemu-create-06-console.jpeg)
 
 7. Set Auxiliary console type to none. Then click "Disk image".
-   <img style={{ width: '100%' }} alt="Auxiliary console" src={useBaseUrl('img/web-ui/zh/qemu-create-07-aux-console.jpeg')} />
+   ![Auxiliary console](/img/web-ui/zh/qemu-create-07-aux-console.jpeg)
 
 8. Upload the image file.
-   <img style={{ width: '100%' }} alt="Upload disk" src={useBaseUrl('img/web-ui/zh/qemu-create-08-disk-upload.jpeg')} />
+   ![Upload disk](/img/web-ui/zh/qemu-create-08-disk-upload.jpeg)
 
 9. If you already have an image, choose Existing Image and the image file. Click "Add Template" to finish.
-   <img style={{ width: '100%' }} alt="Choose existing image" src={useBaseUrl('img/web-ui/zh/qemu-create-09-disk-existing.jpeg')} />
+   ![Choose existing image](/img/web-ui/zh/qemu-create-09-disk-existing.jpeg)
 
 10. After creation, you can see the new template in the list.
-    <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/qemu-create-10-created.jpeg')} />
+    ![Creation done](/img/web-ui/zh/qemu-create-10-created.jpeg)
 
 11. Click the three-dot button on the right to choose Delete, Copy, or Edit.
-    <img style={{ width: '100%' }} alt="Action menu" src={useBaseUrl('img/web-ui/zh/qemu-create-11-menu.jpeg')} />
+    ![Action menu](/img/web-ui/zh/qemu-create-11-menu.jpeg)
 
 ## Differences from Other Node Types
 
@@ -143,7 +142,7 @@ Combinations: cn, cd, dn, dc, nc, nd
 | Field | Type | Use |
 |------|------|------|
 | Template name | Text | Name of the template, shown in the list |
-| Default name format | Text | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Category | Dropdown | Device category: Router/Switch/End devices, etc. |
 | Symbol | Text + button | Topology icon, can be chosen from the icon library |
 | Tags | Chip input | Tags for sorting/filtering |
@@ -156,7 +155,7 @@ Combinations: cn, cd, dn, dc, nc, nd
 | Auxiliary console type | Dropdown | Auxiliary console type |
 | Auto start console | Checkbox | Automatically opens the console when the VM starts |
 
-<img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/qemu-config-01-general.jpeg')} />
+![General settings](/img/web-ui/zh/qemu-config-01-general.jpeg)
 
 ### HDD Configuration
 
@@ -183,7 +182,7 @@ Interface type description:
 - **virtio** -- Paravirtualized driver, best performance, needs virtio drivers installed in the OS
 - **nvme** -- NVMe SSD interface, very high performance, modern Linux and Windows 10+ support
 
-<img style={{ width: '100%' }} alt="HDD configuration" src={useBaseUrl('img/web-ui/zh/qemu-config-02-hdd.jpeg')} />
+![HDD configuration](/img/web-ui/zh/qemu-config-02-hdd.jpeg)
 
 ### CD/DVD Configuration
 
@@ -192,7 +191,7 @@ Interface type description:
 | Upload | Button | Upload a local ISO image |
 | Image | Text + autocomplete | ISO image path |
 
-<img style={{ width: '100%' }} alt="CD/DVD configuration" src={useBaseUrl('img/web-ui/zh/qemu-config-03-cdrom.jpeg')} />
+![CD/DVD configuration](/img/web-ui/zh/qemu-config-03-cdrom.jpeg)
 
 ### Network Configuration
 
@@ -200,7 +199,7 @@ Interface type description:
 |------|------|------|
 | Adapters | Number | Number of network adapters |
 | First port | Text | Name of the first port, e.g. eth0 |
-| Name format | Text | Port naming format, e.g. eth{0} |
+| Name format | Text | Port naming format, e.g. `eth{0}` |
 | Segment size | Number | Port segment size |
 | Base MAC | Text (format xx:xx:xx:xx:xx:xx) | Base MAC address |
 | Type | Dropdown | NIC model, 24 types total |
@@ -209,7 +208,7 @@ Interface type description:
 
 Common NIC models: e1000 series, virtio (best performance), rtl8139 (very good compatibility), vmxnet3 (VMware optimized)
 
-<img style={{ width: '100%' }} alt="Network configuration" src={useBaseUrl('img/web-ui/zh/qemu-config-04-network.jpeg')} />
+![Network configuration](/img/web-ui/zh/qemu-config-04-network.jpeg)
 
 #### Custom Adapter Configuration
 
@@ -225,7 +224,7 @@ Click "Configure custom adapters" to open the dialog. One adapter per row:
 
 The dialog uses **incremental saving**: it only saves adapter configurations that are different from the default.
 
-<img style={{ width: '100%' }} alt="Custom adapters" src={useBaseUrl('img/web-ui/zh/qemu-config-05-adapters.jpeg')} />
+![Custom adapters](/img/web-ui/zh/qemu-config-05-adapters.jpeg)
 
 ### Advanced Settings
 
@@ -263,4 +262,4 @@ The dialog uses **incremental saving**: it only saves adapter configurations tha
 | Max CPUs (hot-plug) | Number | Maximum number of CPUs (hot-plug limit) |
 | Auto-create config disk | Checkbox | Automatically create a config disk |
 
-<img style={{ width: '100%' }} alt="Advanced settings" src={useBaseUrl('img/web-ui/zh/qemu-config-06-advanced.jpeg')} />
+![Advanced settings](/img/web-ui/zh/qemu-config-06-advanced.jpeg)

@@ -6,7 +6,6 @@ prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
 readingTime: 10 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to lock or unlock all items
 
@@ -20,7 +19,7 @@ Click the lock/unlock icon on the toolbar (tooltip: "Lock or unlock all items").
 - 🔓 `lock_open` icon: currently unlocked
 - 🔒 `lock` icon: currently locked (highlighted)
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Lock button" src={useBaseUrl('img/web-ui/zh/lock-01-toolbar.jpeg')} />
+![Lock button](/img/web-ui/zh/lock-01-toolbar.jpeg)
 
 **Confirm Dialog**
 
@@ -29,13 +28,13 @@ A confirmation dialog will appear:
 - Message: "Are you sure you want to Lock/Unlock all devices?"
 - Buttons: **No** (cancel) / **Yes** (confirm, default focus)
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Confirmation dialog" src={useBaseUrl('img/web-ui/zh/lock-02-dialog.jpeg')} />
+![Confirmation dialog](/img/web-ui/zh/lock-02-dialog.jpeg)
 
 **Execute**
 
 Click **Yes** to execute. All node and drawing element states will be updated, and the button icon will change accordingly.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Locked state" src={useBaseUrl('img/web-ui/zh/lock-03-locked.jpeg')} />
+![Locked state](/img/web-ui/zh/lock-03-locked.jpeg)
 
 ### Effect When Locked
 
@@ -56,7 +55,7 @@ Click **Yes** to execute. All node and drawing element states will be updated, a
 
 Go to the Map Settings menu in the top-right corner of the project map. Toggle the **Show item lock status** checkbox. It is disabled by default.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Map Settings menu" src={useBaseUrl('img/web-ui/zh/lock-04-settings-menu.jpeg')} />
+![Map Settings menu](/img/web-ui/zh/lock-04-settings-menu.jpeg)
 
 ### Effect When Enabled
 
@@ -64,7 +63,7 @@ Go to the Map Settings menu in the top-right corner of the project map. Toggle t
 - Drawing elements (rectangles, ellipses, images) show lock status badges on the top-right corner
 - Each item's lock status is clearly visible
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Lock status badges" src={useBaseUrl('img/web-ui/zh/lock-05-badges.jpeg')} />
+![Lock status badges](/img/web-ui/zh/lock-05-badges.jpeg)
 
 **Which elements show badges:**
 - ✅ All nodes

@@ -4,7 +4,6 @@ title: Special IP addresses in GNS3
 sidebar_label: Special IP addresses in GNS3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 GNS3 uses several RFC1918 private IP ranges by default. If possible we recommend to avoid using them in your topology in order to limit conflicts.
 
@@ -38,7 +37,7 @@ This the default range use by docker0
 **VMWARE VMNET: 192.168.0.0/16**
 For each vmnet created in VMware (either directly via its Virtual Network Editor), or by using the gns3vmnet executable, it will have a random 192.168.x.x/24 subnet address and a DHCP server automatically created.  
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/special-ip-addresses/1.jpg')} />
+![screenshot](/img/using-gns3/advanced/special-ip-addresses/1.jpg)
 
 This is an example of the subnet addresses VMware automatically created for each of new host-only vmnets. When adding a VMware VM into a GNS3 topology, it must be a host-only vmnet with the DHCP server turned off.
 

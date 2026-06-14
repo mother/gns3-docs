@@ -2,7 +2,6 @@
 title: How to add compute nodes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to add compute nodes
 
@@ -46,17 +45,17 @@ compute_password = gns3
 
 After you finish the configuration, restart the GNS3 Server to apply the changes.
 
-<img style={{ width: '100%' }} alt="Restart GNS3 Server" src={useBaseUrl('img/web-ui/zh/compute-restart.jpeg')} />
+![Restart GNS3 Server](/img/web-ui/zh/compute-restart.jpeg)
 
 ### 4. Register the Compute Node to the Controller
 
 On the project home page, click the GNS3 Logo at the top left and select "Compute". Here you can see and manage all compute nodes.
 
-<img style={{ width: '100%' }} alt="Open compute node management" src={useBaseUrl('img/web-ui/zh/compute-01-enter.jpeg')} />
+![Open compute node management](/img/web-ui/zh/compute-01-enter.jpeg)
 
 Click the + button at the top right to add a new compute node.
 
-<img style={{ width: '100%' }} alt="Add compute node" src={useBaseUrl('img/web-ui/zh/compute-04-add.jpeg')} />
+![Add compute node](/img/web-ui/zh/compute-04-add.jpeg)
 
 Fill in the fields below and click the "Add" button:
 
@@ -69,15 +68,15 @@ Fill in the fields below and click the "Add" button:
 | User | Text input | gns3 | Authentication username |
 | Password | Password input | gns3 | Authentication password |
 
-<img style={{ width: '100%' }} alt="Add form" src={useBaseUrl('img/web-ui/zh/compute-05-form.jpeg')} />
+![Add form](/img/web-ui/zh/compute-05-form.jpeg)
 
 After adding, the compute node shows as offline by default. Click the three-dot button on the right and select "Connect".
 
-<img style={{ width: '100%' }} alt="Connect compute node" src={useBaseUrl('img/web-ui/zh/compute-06-connect.jpeg')} />
+![Connect compute node](/img/web-ui/zh/compute-06-connect.jpeg)
 
 After a successful connection, you will see the node's CPU, memory, and disk usage in real time.
 
-<img style={{ width: '100%' }} alt="Connected successfully" src={useBaseUrl('img/web-ui/zh/compute-07-connected.jpeg')} />
+![Connected successfully](/img/web-ui/zh/compute-07-connected.jpeg)
 
 ## Important Notes
 

@@ -4,7 +4,6 @@ title: Move from IOUVM to GNS3 VM
 sidebar_label: Move from IOUVM to GNS3 VM
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Starting with GNS3 v1.4,  the IOUVM was deprecated in favor of the GNS3 VM.
 
@@ -48,10 +47,10 @@ Go to http://www.gns3.com and download the lastest  VM for VirtualBox or VMware.
 
 Launch GNS3 and in the tools menu launch IOU VM Converter
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/move-from-iouvm-gns3-vm/1.jpg')} />
+![screenshot](/img/using-gns3/advanced/move-from-iouvm-gns3-vm/1.jpg)
 
 ### Step 3 Follow the wizard
 
 After cliking on the IOUVM converter button you will see a wizard helping you to move from the IOUVM to the GNS3 VM. Just follow the instructions on screen carefully.
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/advanced/move-from-iouvm-gns3-vm/2.jpg')} />
+![screenshot](/img/using-gns3/advanced/move-from-iouvm-gns3-vm/2.jpg)

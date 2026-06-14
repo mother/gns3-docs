@@ -4,7 +4,6 @@ title: GNS3 Security
 sidebar_label: GNS3 Security
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Users of GNS3 need to bear in mind that it is a tool designed to be used for experimentation/learning, not for managing Virtual Machines or appliances in a production environment.
 
@@ -36,7 +35,7 @@ For linux see: [Installation on Linux](../../getting-started/installation/linux)
 
 Please do not use any third party download sites as they might inject malicious code into the installer. Windows versions are signed with a GNS3 certificate.
 
-<img alt="screenshot" src={useBaseUrl('img/using-gns3/administration/gns3-security/1.jpg')} />
+![screenshot](/img/using-gns3/administration/gns3-security/1.jpg)
 
 :::note
 It’s not possible to screen capture UAC prompts in Win7/Win 10 anymore, so an older example has been left in place for illustration purposes)

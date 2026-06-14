@@ -2,19 +2,20 @@
 title: How to use Web Wireshark
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import Mermaid from '@theme/Mermaid';
+
 
 # How to use Web Wireshark
 
 Web Wireshark lets you analyze network packets directly in your browser. You do not need to install Wireshark software. It uses xpra technology inside a Docker container to give you the full Wireshark graphical interface. It supports real-time capture and deep packet inspection.
 
-<img style={{ width: '100%' }} alt="Web Wireshark Interface" src={useBaseUrl('img/web-ui/zh/web-wireshark-hero.jpeg')} />
+![Web Wireshark Interface](/img/web-ui/zh/web-wireshark-hero.jpeg)
 
 ## Installation Prerequisites
 
 As shown in the figure below, select Web Wireshark in the GNS3 VM interface, then select the OK button and press Enter. The system will first try to pull the `gns3/web-wireshark:latest` container from Docker Hub.
 
-<img style={{ width: '100%' }} alt="Web Wireshark installation selection interface" src={useBaseUrl('img/web-ui/zh/web-wireshark-install.jpeg')} />
+![Web Wireshark installation selection interface](/img/web-ui/zh/web-wireshark-install.jpeg)
 
 If the pull from Docker Hub fails, it will try to build the `gns3/web-wireshark:latest` container locally. During the build process, it needs to pull the Debian 13 base image from Docker Hub, and the subsequent software package installation will automatically switch to the Alibaba Cloud mirror source.
 
@@ -24,31 +25,31 @@ If the pull from Docker Hub fails, it will try to build the `gns3/web-wireshark:
 
 Start the network devices you want to capture in the project topology, then right-click on a link and select "Start capture".
 
-<img alt="Right-click on link to start capture" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg')} />
+![Right-click on link to start capture](/img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg)
 
 In the "Packet capture" dialog, check the "Web Wireshark" option and click OK.
 
-<img alt="Configure Web Wireshark capture" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg')} />
+![Configure Web Wireshark capture](/img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg)
 
 Wait 3-6 seconds for the system to automatically start the Web Wireshark container.
 
-<img alt="Starting Web Wireshark" src={useBaseUrl('img/web-ui/zh/web-wireshark-starting-status.jpeg')} />
+![Starting Web Wireshark](/img/web-ui/zh/web-wireshark-starting-status.jpeg)
 
 Once started, a capture icon appears in the middle of the link.
 
-<img alt="Capture icon on link" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg')} />
+![Capture icon on link](/img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg)
 
 **Step 2: Open Web Wireshark**
 
 Right-click on the capture icon and select "Open Web Wireshark(Inline)".
 
-<img alt="Right-click to select inline mode" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg')} />
+![Right-click to select inline mode](/img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg)
 
 **Step 3: Analyze Packets**
 
 The Web Wireshark window opens as a floating window in the topology. You can drag, resize, or minimize the window.
 
-<img style={{ width: '100%' }} alt="Web Wireshark inline window" src={useBaseUrl('img/web-ui/zh/web-wireshark-inline-window-display.jpeg')} />
+![Web Wireshark inline window](/img/web-ui/zh/web-wireshark-inline-window-display.jpeg)
 
 Now you can filter and analyze packets just like using desktop Wireshark.
 
@@ -132,7 +133,40 @@ network_subnet = 192.168.100.0/22
 
 Web Wireshark uses a container architecture. It turns a traditional desktop application into a browser service:
 
-<img style={{ width: '100%' }} alt="Web Wireshark Architecture Overview" src={useBaseUrl('img/web-ui/zh/web-wireshark-architecture-en.svg')} />
+<Mermaid value={`graph TD
+    subgraph GNS3Server["GNS3 Server"]
+        WebUI["Web UI<br/>(Browser)"]
+        Controller["GNS3 Controller"]
+        LinkCtrl["Link Controller<br/>(start_capture / stop_capture)"]
+        Manager["WebWiresharkManager<br/>(called directly, not via CLI)"]
+        DockerClient["DockerHTTPClient<br/>(HTTP via Unix Socket)"]
+    end
+
+    subgraph DockerDaemon["Docker Daemon"]
+        Container["gns3-wireshark-{project_id}"]
+        Xvfb["Xvfb (virtual framebuffer)"]
+        Xpra["xpra server"]
+        Wireshark["Wireshark"]
+    end
+
+    ClientBrowser["Client Browser<br/>(HTML5 Client)"]
+
+    ClientBrowser -->|REST API| WebUI
+    WebUI -->|capture/start| Controller
+    Controller --> LinkCtrl
+    LinkCtrl -->|start/stop/restart session| Manager
+    Manager -->|Docker API<br/>/var/run/docker.sock| DockerClient
+    DockerClient -->|container lifecycle| Container
+    Container --- Xvfb
+    Container --- Xpra
+    Container --- Wireshark
+    ClientBrowser -.->|WebSocket proxy| Xpra
+    Xpra -.->|xpra HTML5| ClientBrowser
+
+    style GNS3Server fill:#e8f4fd,stroke:#2196f3
+    style DockerDaemon fill:#fff3e0,stroke:#ff9800
+    style ClientBrowser fill:#e8f5e9,stroke:#4caf50
+`} />
 
 **Core technologies:**
 - Container isolation: Each project gets its own Docker container (`gns3-wireshark-{project_id}`)

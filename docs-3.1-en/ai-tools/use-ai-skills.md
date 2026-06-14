@@ -2,7 +2,6 @@
 title: How to use AI Skills
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to use AI Skills
 
@@ -33,10 +32,13 @@ If your organization or team needs to use a customized skill repository, ensure 
 
 ```ini
 [Server]
+
 # Custom skill repository URL
 skills_repo_url = https://github.com/your-org/your-custom-skills.git
+
 # Repository branch (default: main)
 skills_repo_branch = main
+
 # Auto-update skill repository (default: true)
 skills_auto_update = true
 ```

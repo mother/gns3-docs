@@ -6,7 +6,6 @@ prerequisites: "Basic familiarity with the GNS3 Web UI project topology"
 readingTime: 5 minutes
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to take a screenshot
 
@@ -18,11 +17,11 @@ Take a Screenshot captures the current state of the GNS3 network topology map an
 
 Click the camera icon on the toolbar (tooltip: "Take a screenshot"). The screenshot configuration dialog will open.
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Screenshot button" src={useBaseUrl('img/web-ui/zh/screenshot-01-toolbar.jpeg')} />
+![Screenshot button](/img/web-ui/zh/screenshot-01-toolbar.jpeg)
 
 **Configure Screenshot Options**
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Screenshot dialog" src={useBaseUrl('img/web-ui/zh/screenshot-02-dialog.jpeg')} />
+![Screenshot dialog](/img/web-ui/zh/screenshot-02-dialog.jpeg)
 
 The dialog includes the following settings:
 

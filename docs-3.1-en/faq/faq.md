@@ -9,29 +9,29 @@ readingTime: 10 minutes
 
 ## Docker & Containers
 
-- [Docker Container Stop Delay](docker-container-stop) — Some containers take ~5s to stop
+- [Docker Container Stop Delay](faq/docker-container-stop) — Some containers take ~5s to stop
 
 ## Users & Permissions
 
-- [ACE Rules on User Deletion](user-ace) — Automatic ACE cleanup
+- [ACE Rules on User Deletion](faq/user-ace) — Automatic ACE cleanup
 
 ## Appliances
 
-- [Appliance (.gns3a) Loading Locations and Priority](appliance-loading) — Builtin vs custom directories
+- [Appliance (.gns3a) Loading Locations and Priority](faq/appliance-loading) — Builtin vs custom directories
 
 ## Startup & Network
 
-- [uBridge Permission Issue Causing Docker Node Failure](ubridge-permission) — CAP_NET_ADMIN / CAP_NET_RAW
-- [Compute Node Connection Errors (401 / No common subnet)](system-admin) — Common connection issues
+- [uBridge Permission Issue Causing Docker Node Failure](faq/ubridge-permission) — CAP_NET_ADMIN / CAP_NET_RAW
+- [Compute Node Connection Errors (401 / No common subnet)](faq/system-admin) — Common connection issues
 
 ## Web Wireshark
 
-- [Web Wireshark Troubleshooting, Installation, and Resource Configuration](web-wireshark) — Startup issues and config
+- [Web Wireshark Troubleshooting, Installation, and Resource Configuration](faq/web-wireshark) — Startup issues and config
 
 ## AI Assistant
 
-- [AI Assistant API Key, Model Selection, and Device Type Support](ai-assistant) — Configuration and usage FAQ
+- [AI Assistant API Key, Model Selection, and Device Type Support](faq/ai-assistant) — Configuration and usage FAQ
 
 ## Contributing
 
-- [How to Submit an Issue or PR](contributing)
+- [How to Submit an Issue or PR](faq/contributing)

@@ -2,7 +2,8 @@
 title: How to configure and use AI Assistant
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import Mermaid from '@theme/Mermaid';
+
 
 :::tip Project Origin
 
@@ -25,7 +26,7 @@ Currently, this feature has been primarily tested with Cisco IOS images that do 
 
 On the project home page, click the three dots at the top right and select `AI Profile` to go to the configuration page.
 
-<img style={{ width: '100%' }} alt="AI Configuration Entry" src={useBaseUrl('img/web-ui/zh/ai-config-menu.jpeg')} />
+![AI Configuration Entry](/img/web-ui/zh/ai-config-menu.jpeg)
 
 ### Admin Configuration
 
@@ -35,11 +36,11 @@ Admins can configure AI Profiles for users or user groups through the `Controlle
 
 On the project home page, click the three dots at the top right, select `Management`, then enter the `Controller Management` page.
 
-<img style={{ width: '100%' }} alt="Controller Management Entry" src={useBaseUrl('img/web-ui/zh/ai-config-management.jpeg')} />
+![Controller Management Entry](/img/web-ui/zh/ai-config-management.jpeg)
 
 Click the `Users` tab to configure `AI Profile` for different users.
 
-<img style={{ width: '100%' }} alt="Users Tab Configuration" src={useBaseUrl('img/web-ui/zh/ai-config-users-tab.jpeg')} />
+![Users Tab Configuration](/img/web-ui/zh/ai-config-users-tab.jpeg)
 
 #### Configure for Groups
 
@@ -47,13 +48,13 @@ Click the `Groups` tab to configure `AI Profile` for different user groups.
 
 After group configuration, regular users who join the group can use the group's `AI Profile` (currently only the default `AI Profile` of the group), or use their own `AI Profile`.
 
-<img style={{ width: '100%' }} alt="Groups Tab Configuration" src={useBaseUrl('img/web-ui/zh/ai-config-groups-tab.jpeg')} />
+![Groups Tab Configuration](/img/web-ui/zh/ai-config-groups-tab.jpeg)
 
 ### Configuration Parameters
 
 - On the `AI Profile` screen, click the `New Configuration` button.
 
-<img style={{ width: '100%' }} alt="New Configuration" src={useBaseUrl('img/web-ui/zh/ai-new-config.jpeg')} />
+![New Configuration](/img/web-ui/zh/ai-new-config.jpeg)
 
 On the `Create LLM Model Configuration` page, select the `Base Models` tab, and enter the following:
 
@@ -84,21 +85,21 @@ After filling in the fields, click the `Create` button.
 - The system only decrypts the key internally when the AI Assistant needs to make an API call
 :::
 
-<img style={{ width: '100%' }} alt="Create Configuration" src={useBaseUrl('img/web-ui/zh/ai-create-config.jpeg')} />
+![Create Configuration](/img/web-ui/zh/ai-create-config.jpeg)
 
 After creation, it will look like the image below.
 
-<img style={{ width: '100%' }} alt="Configuration Ready" src={useBaseUrl('img/web-ui/zh/ai-config-ready.jpeg')} />
+![Configuration Ready](/img/web-ui/zh/ai-config-ready.jpeg)
 
 ## Use the AI Assistant in a Project Topology
 
 - On the project topology page, click the AI button on the left to open the AI Assistant. Next to the input box on the AI Assistant page, you can click to select the configured model and assistant mode.
 
-<img style={{ width: '100%' }} alt="AI Assistant Panel" src={useBaseUrl('img/web-ui/zh/ai-assistant-panel.jpeg')} />
+![AI Assistant Panel](/img/web-ui/zh/ai-assistant-panel.jpeg)
 
 - The sidebar of the AI Assistant shows your chat history.
 
-<img style={{ width: '100%' }} alt="Chat History" src={useBaseUrl('img/web-ui/zh/ai-session-history.jpeg')} />
+![Chat History](/img/web-ui/zh/ai-session-history.jpeg)
 
 ## Emulator Configuration
 
@@ -114,7 +115,7 @@ We mainly test with the following device types:
 For more supported Telnet device types, see: [GNS3 Server - Netmiko Supported Devices](https://github.com/GNS3/gns3-server/blob/ca2004e715cd1f9b860b28bc371fd814b554a93d/docs/gns3-copilot/netmiko_devices.md)
 :::
 
-<img style={{ width: '100%' }} alt="Device Tags Configuration" src={useBaseUrl('img/web-ui/zh/ai-device-tags.png')} />
+![Device Tags Configuration](/img/web-ui/zh/ai-device-tags.png)
 
 ## Usage Scenarios
 
@@ -163,7 +164,38 @@ HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirma
 
 ### Overall Architecture
 
-<img style={{ width: '100%' }} alt="Overall Architecture" src={useBaseUrl('img/web-ui/zh/ai-assistant-overview-en-overall-architecture.svg')} />
+<Mermaid value={`flowchart TB
+    subgraph Client["Client"]
+        A["Web UI"] --> B["SSE Streaming"]
+    end
+
+    subgraph FastAPI["FastAPI Route Layer"]
+        B --> C["POST /chat/stream\nPOST /chat/inject"]
+        C --> D["Auth + LLM Config Loading\nSet ContextVars"]
+    end
+
+    subgraph AgentService["AgentService (Project-level)"]
+        D --> E["LangGraph Agent\nStateGraph"]
+        E --> F["SQLite Checkpointer\ncopilot_checkpoints.db"]
+    end
+
+    subgraph Workflow["LangGraph Workflow"]
+        E --> G["llm_call node\nmodel invocation"]
+        E --> H["tool_node\ntool execution"]
+        E --> I["title_generator_node\nauto title"]
+        E --> J["abort_handler_node\ninterrupt handling"]
+    end
+
+    subgraph Modes["Three Copilot Modes"]
+        G --> K["teaching_assistant\ndiagnostic read-only"]
+        G --> L["lab_automation_assistant\nfull control"]
+        G --> M["troubleshooting_injection\nfault injection"]
+    end
+
+    subgraph Config["LLM Config System"]
+        D --> N["User configs\nGroup config inheritance\nAPI key encryption"]
+    end
+`} />
 
 ### API Endpoints
 
@@ -178,7 +210,37 @@ HITL (Human-in-the-Loop) is not yet implemented, so AI will not perform confirma
 
 ### LangGraph Agent Workflow
 
-<img style={{ width: '100%' }} alt="Agent Workflow" src={useBaseUrl('img/web-ui/zh/ai-assistant-overview-en-langgraph-agent-workflow.svg')} />
+<Mermaid value={`sequenceDiagram
+    participant U as User
+    participant API as FastAPI
+    participant AS as AgentService
+    participant LLM as LLM Node
+    participant Tool as Tool Node
+    participant TGen as Title Node
+
+    U->>API: send message
+    API->>AS: stream_chat()
+    AS->>AS: set ContextVars<br/>(jwt_token, llm_config)
+
+    Note over AS,LLM: llm_call node
+    AS->>LLM: invoke pre-compiled model
+    LLM->>LLM: pre_model_hook<br/>inject topology + trim context
+    LLM-->>AS: AI reply (may include tool_calls)
+
+    opt has tool calls
+        AS->>Tool: execute tools
+        Tool-->>AS: tool results
+        AS->>LLM: continue LLM call
+    end
+
+    opt first turn and no title
+        AS->>TGen: auto-generate title
+        TGen-->>AS: session title
+    end
+
+    AS-->>API: SSE streaming response
+    API-->>U: stream output
+`} />
 
 ### Three Copilot Modes
 
@@ -215,7 +277,14 @@ The mode is selected in the `llm_call` node via `copilot_mode`, which picks the 
 
 ### Context Window Management
 
-<img style={{ width: '100%' }} alt="Context Window Management" src={useBaseUrl('img/web-ui/zh/ai-assistant-overview-en-context-window-management.svg')} />
+<Mermaid value={`flowchart LR
+    A["LLM call triggered"] --> B["pre_model_hook"]
+    B --> C["Inject topology\ninto System Prompt"]
+    B --> D["Estimate tool definition\ntoken cost"]
+    B --> E["trim_messages\nby strategy"]
+    E --> F["conservative 60%\nbalanced 75%\naggressive 85%"]
+    F --> G["Invoke LLM"]
+`} />
 
 - Accurate token counting via tiktoken (`cl100k_base`)
 - Three trimming strategies: conservative / balanced / aggressive
@@ -253,5 +322,5 @@ AI Assistant feature was developed and contributed by [YueGuobin](https://github
 
 ## License
 
-This document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+This document is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (Attribution-NonCommercial-NoDerivatives).
 Author: YueGuobin

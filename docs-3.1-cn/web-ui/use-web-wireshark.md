@@ -5,19 +5,20 @@ title: 如何使用 Web Wireshark
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import Mermaid from '@theme/Mermaid';
+
 
 # 如何使用 Web Wireshark
 
 Web Wireshark 让您直接在浏览器中分析网络数据包，无需安装 Wireshark 软件。它通过 Docker 容器中的 xpra 技术提供完整的 Wireshark 图形界面，支持实时捕获和深度包检测。
 
-<img style={{ width: '100%' }} alt="Web Wireshark界面" src={useBaseUrl('img/web-ui/zh/web-wireshark-hero.jpeg')} />
+![Web Wireshark界面](/img/web-ui/zh/web-wireshark-hero.jpeg)
 
 ## 安装 Web Wireshark
 
 如下图所示，在 GNS3 VM 界面选择 Web Wireshark，然后选择 OK 按钮回车。系统会先尝试从 Docker Hub 拉取 `gns3/web-wireshark:latest` 容器。
 
-<img style={{ width: '100%' }} alt="Web Wireshark安装选择界面" src={useBaseUrl('img/web-ui/zh/web-wireshark-install.jpeg')} />
+![Web Wireshark安装选择界面](/img/web-ui/zh/web-wireshark-install.jpeg)
 
 如果 Docker Hub 拉取失败，会尝试在本地构建 `gns3/web-wireshark:latest` 容器。构建过程中需要从 Docker Hub 拉取 Debian 13 的基础镜像，之后的软件包安装等会自动替换为阿里云的镜像源。
 
@@ -33,33 +34,33 @@ Web Wireshark 让您直接在浏览器中分析网络数据包，无需安装 Wi
 
 在项目拓扑中启动需要抓包的网络设备，然后在链路上右键点击，选择"Start capture"。
 
-<img alt="右键链路启动捕获" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg')} />
+![右键链路启动捕获](/img/web-ui/zh/web-wireshark-right-click-start-capture.jpeg)
 
 
 
 在弹出的"Packet capture"对话框中，勾选"Web Wireshark"选项，然后点击 OK。
 
-<img alt="配置 Web Wireshark 捕获" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg')} />
+![配置 Web Wireshark 捕获](/img/web-ui/zh/web-wireshark-capture-settings-dialog.jpeg)
 
 等待 3-6 秒，系统会自动启动 Web Wireshark 容器。
 
-<img alt="正在启动 Web Wireshark" src={useBaseUrl('img/web-ui/zh/web-wireshark-starting-status.jpeg')} />
+![正在启动 Web Wireshark](/img/web-ui/zh/web-wireshark-starting-status.jpeg)
 
 启动完成后，链路中间会显示一个抓包图标。
 
-<img alt="链路上的抓包图标" src={useBaseUrl('img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg')} />
+![链路上的抓包图标](/img/web-ui/zh/web-wireshark-capture-icon-on-link.jpeg)
 
 **步骤2：打开 Web Wireshark**
 
 在抓包图标上右键点击，选择"Open Web Wireshark(Inline)"选项。
 
-<img alt="右键选择内联模式" src={useBaseUrl('img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg')} />
+![右键选择内联模式](/img/web-ui/zh/web-wireshark-right-click-open-inline.jpeg)
 
 **步骤3：分析数据包**
 
 Web Wireshark 窗口会在拓扑中以悬浮窗口显示。您可以拖动窗口、调整大小或最小化。
 
-<img style={{ width: '100%' }} alt="Web Wireshark 内联窗口" src={useBaseUrl('img/web-ui/zh/web-wireshark-inline-window-display.jpeg')} />
+![Web Wireshark 内联窗口](/img/web-ui/zh/web-wireshark-inline-window-display.jpeg)
 
 现在可以像使用桌面 Wireshark 一样，在搜索框中进行数据包过滤和分析。
 
@@ -144,7 +145,40 @@ network_subnet = 192.168.100.0/22
 
 Web Wireshark 采用容器化架构，将传统桌面应用转换为浏览器服务：
 
-<img style={{ width: '100%' }} alt="Web Wireshark 架构概览" src={useBaseUrl('img/web-ui/zh/web-wireshark-architecture-cn.svg')} />
+<Mermaid value={`graph TD
+    subgraph GNS3Server["GNS3 Server"]
+        WebUI["Web UI<br/>(Browser)"]
+        Controller["GNS3 Controller"]
+        LinkCtrl["Link Controller<br/>(start_capture / stop_capture)"]
+        Manager["WebWiresharkManager<br/>(called directly, not via CLI)"]
+        DockerClient["DockerHTTPClient<br/>(HTTP via Unix Socket)"]
+    end
+
+    subgraph DockerDaemon["Docker Daemon"]
+        Container["gns3-wireshark-{project_id}"]
+        Xvfb["Xvfb (virtual framebuffer)"]
+        Xpra["xpra server"]
+        Wireshark["Wireshark"]
+    end
+
+    ClientBrowser["Client Browser<br/>(HTML5 Client)"]
+
+    ClientBrowser -->|REST API| WebUI
+    WebUI -->|capture/start| Controller
+    Controller --> LinkCtrl
+    LinkCtrl -->|start/stop/restart session| Manager
+    Manager -->|Docker API<br/>/var/run/docker.sock| DockerClient
+    DockerClient -->|container lifecycle| Container
+    Container --- Xvfb
+    Container --- Xpra
+    Container --- Wireshark
+    ClientBrowser -.->|WebSocket proxy| Xpra
+    Xpra -.->|xpra HTML5| ClientBrowser
+
+    style GNS3Server fill:#e8f4fd,stroke:#2196f3
+    style DockerDaemon fill:#fff3e0,stroke:#ff9800
+    style ClientBrowser fill:#e8f5e9,stroke:#4caf50
+`} />
 
 **核心技术：**
 - 容器化隔离：每个项目独立的 Docker 容器（`gns3-wireshark-{project_id}`）

@@ -4,7 +4,6 @@ title: Troubleshoot GNS3
 sidebar_label: Troubleshoot GNS3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Installation Problems
 
@@ -212,7 +211,7 @@ It’s a limitation of VirtualBox. If you want to use KVM in a VM you need VMwar
 ### Error while executing VMware command
 If you see a dialog like that:
 
-<img alt="screenshot" src={useBaseUrl('img/troubleshooting-faq/troubleshoot-gns3/1.jpg')} />
+![screenshot](/img/troubleshooting-faq/troubleshoot-gns3/1.jpg)
 
 This mean GNS3 try to send a command to VMware but it’s doesn’t work due to an issue with your VMware installation.
 

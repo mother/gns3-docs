@@ -6,7 +6,6 @@ title: 如何添加注释
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何添加注释
 
@@ -17,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 **激活工具**
 
 点击项目地图工具栏左侧的铅笔按钮（带有 "create" 铅笔图标）。鼠标光标变为十字线，表示已进入文本添加模式。
-<img style={{ display: 'block', margin: '0 auto' }} alt="工具栏按钮" src={useBaseUrl('img/web-ui/zh/add-note-01-toolbar-button.jpeg')} />
+![工具栏按钮](/img/web-ui/zh/add-note-01-toolbar-button.jpeg)
 
 **选择位置**
 
@@ -35,11 +34,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 如需修改已添加的文本，**右键点击**选择 **Edit text**。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="右键编辑文本" src={useBaseUrl('img/web-ui/zh/add-note-02-edit-right-click.jpeg')} />
+![右键编辑文本](/img/web-ui/zh/add-note-02-edit-right-click.jpeg)
 
 打开 Text Editor 对话框，可以修改以下内容：
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="Text Editor 对话框" src={useBaseUrl('img/web-ui/zh/add-note-03-text-editor-dialog.jpeg')} />
+![Text Editor 对话框](/img/web-ui/zh/add-note-03-text-editor-dialog.jpeg)
 
 **Text Content（文本内容）**
 
@@ -49,7 +48,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 使用颜色选择器设置文本颜色，点击 Fill Color 区域，弹出 Choose a color 对话框，可以选择默认的多种颜色或点击"+"号（截图中的 3 号位置）设置自定义的颜色，然后点击 select 完成设置。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="选择颜色" src={useBaseUrl('img/web-ui/zh/add-note-04-fill-color.jpeg')} />
+![选择颜色](/img/web-ui/zh/add-note-04-fill-color.jpeg)
 
 **Font Family（字体族）**
 

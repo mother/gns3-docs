@@ -4,7 +4,6 @@ title: Importing vMX and vQFX into GNS3
 sidebar_label: Importing vMX and vQFX into GNS3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::caution
 Important edit - see bottom of the document!
@@ -16,23 +15,23 @@ These single-VM versions of vMX include 14.1R1.10, 14.1R3.5, and 14.1R4.8.
 
 First, click **Edit->Qemu VMs->New** in GNS3.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/1.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/1.jpg)
 
 I just called it “vMX”, but you could include the version number in the name, as well.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/2.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/2.jpg)
 
 Next, assign it 1GB of RAM, and select your qemu binary. I happen to be using v2.6.0 in Linux, but the GNS3-VM will have v2.5.0.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/3.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/3.jpg)
 
 Next, choose your image file. By default, these will be called ```“jinstall-vmx-<version>-domesting.img”```.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/4.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/4.jpg)
 
 When you edit the newly created VM, set assign it to the Routers category, and make sure it’s set to use 1GB RAM, 1 “vCPU”, and telnet.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/5.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/5.jpg)
 
 For the network settings, I’ve assigned it 12 adapters. Here’s why:
 
@@ -48,11 +47,11 @@ Thus, if you wanted to connect ge-0/0/0 on two vMX instances to each other, you�
 
 Here are what your final settings should look like, in GNS3:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/6.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/6.jpg)
 
 When you start up one of these legacy images, the login is “root” with no password.  Now, before I proceed, there something you need to be aware of:  Not all the pre-release single-VM images of vMX had the virtual FP enabled.  Here is what you WANT to see, after the vMX instance loads:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/7.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/7.jpg)
 
 If that statement isn’t there, don’t worry. You can manually enable it by running this:
 ```
@@ -62,98 +61,98 @@ Reboot the image, and then it will be enabled.
 
 Something else you know:  Even though the legacy vMX image boots up rather quickly, the virtual FP part of it does NOT. You really need to give it an extra 2-3 minutes, after you see the login prompt, so that everything fully loads up. Here is what you’ll see, if you do not wait:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/8.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/8.jpg)
 
 You may think that looks fine, but the virtual PIC 0 is missing, which means none of the gigabit ethernet interfaces will ever be present.  Once you wait an extra 2-3 minutes, here’s the output we really want to see:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/9.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/9.jpg)
 
 Notice that virtual PIC 0 is Online, and we can see that the 10 ge-0/0/x interfaces I configured the VM to use, are present and “up/up”. That means we can start configuring the system.  Type “edit” (without the quotes) to get into configuration mode.  Now, since we didn’t have a root password when we logged in, the first step we should do is create one. If we don’t, then the commit process will never work, so we’ll be unable to commit our configuration changes.
 
 In the below example, I set a root system password, configured ge-0/0/0 to use an IPv4 address, and successfully committed the changes:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/10.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/10.jpg)
 
 That’s really all it takes to get the legacy single-VM versions of vMX to run via GNS3.  Since they are far more lightweight (resource-wise) than the split VM public releases of vMX, you might want to consider tracking these down. Sure, they are missing features, but they’re perfect if you want to dip your toes in Juniper’s “water”, and you can easily use multiple instances in a topology, like this:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/11.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/11.jpg)
 
 ## Importing the split-VM public releases/trials of VMX
 With the public releases of vMX, Juniper split it up into two VMs: the virtual control-plane (vCP), and the virtual forwarding-plane (vFP). This means we’ll need to create two VMs in GNS3, and connect them together, in order to run a vMX “instance”.   The way to do this, is to request access to the 60-day trial download from Juniper, and download the KVM version.  The reason we’re after the KVM version, is that we’ll need 4 files out of the “images” folder, in order to create and run the VMs. I’ve successfully been able to do this with the 16.1R2.11 and 16.1R3.10 versions.    
 
 When you download the KVM version of vMX, it will come as a roughly 3GB .tgz file. Once you extract that archive, here’s what you’ll find in the resulting folder:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/12.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/12.jpg)
 
 All of these are necessary, if you wanted to run vMX on an Ubuntu server via KVM, but since we’ll be using this with GNS3, we only need 4 files from the images folder:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/13.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/13.jpg)
 
 If you have no intention of running vMX on an Ubuntu server, feel free to delete everything except the files I’ve highlighted. Just be aware that Juniper changes the filenames of the vFPC .img and the vmx .qcow2 file, with the different versions. They may even require we use a different metadata-usb-re.img in later releases.
 
 First, let’s create the vCP virtual machine, so we can run it via Qemu:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/14.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/14.jpg)
 
 I chose to name the VMs “vMX-vCP” and vMX-vFP”, but you can call them whatever you wish.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/15.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/15.jpg)
 
 We need to allocate vCP at least 2GB RAM.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/16.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/16.jpg)
 
 Choose the junos .qcow2 file from the image folder to be used as HDA.  Click finish, and we’ll edit the vMX-vCP vm:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/17.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/17.jpg)
 
 Assign vMX-vCP to the Router category, confirm it’s been assigned 2GB RAM, 1 vCPU, and that we’ll use Telnet. Next, we need to click on the HDD tab, since we must add two more files:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/18.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/18.jpg)
 
 We MUST add vmxhdd.img as HDB, and metadata-usb-re.img as HDC.  Failing to add these, or adding them in the wrong order, will result in this VM either not loading at all, or to load up with issues.  Click on the Network Tab next.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/19.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/19.jpg)
 
-The vMX-vCP VM only needs two adapters. One to connect to an out-of-band mgmt switch, and the other to connect to the vMX-vFP VM as our internal interface.  I’ve see people name the first port “fxp0”, since that’s what the mgmt port is called, and then use em{port1} so that the second interface is called “em1”, which is the name of the internal interface.  You can leave these set as Intel GigE interfaces.  Click finish, and here are what your final settings for the vCP VM should look like:
+The vMX-vCP VM only needs two adapters. One to connect to an out-of-band mgmt switch, and the other to connect to the vMX-vFP VM as our internal interface.  I’ve see people name the first port “fxp0”, since that’s what the mgmt port is called, and then use `em{port1}` so that the second interface is called “em1”, which is the name of the internal interface.  You can leave these set as Intel GigE interfaces.  Click finish, and here are what your final settings for the vCP VM should look like:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/20.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/20.jpg)
 
 Next, we need to create the vFP VM:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/21.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/21.jpg)
 
 Again, I just called this the unimaginative name “vMX-vFP”, but you can call it whatever you want.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/22.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/22.jpg)
 
 Yes, you actually do need to assign the vFP virtual machine 4GB RAM. You could even go as far as assigning it 6GB RAM.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/23.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/23.jpg)
 
 We assign the ```vFPC-<date>.img``` file to be HDA  (we don’t currently need to worry about adding extra disk images for the vFP vm at this time). Go back, and edit the newly created “vMX-vFP” vm, and we’ll make some setting changes:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/24.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/24.jpg)
 
 Set this vm to be part of the Router group, confirm that it’s been assigned 4GB RAM, assign it THREE (3) vCPUs, and that we’ll be using telnet. Next, click on the Network tab:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/25.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/25.jpg)
 
-I have seen folks say not to use more than 9 interfaces, but with the 16.x series, I’ve had pretty good luck with 12.   The first port name was set to “ext”, since that will also connect to the OOB mgmt switch, and the name format was set to Eth{port1}, since Eth1 will be part of our internal interface, and connect to “em1” of the vCP vm.   Now, notice that I set the interface type to “virtio-net-pci”. This is very important. When I tried leaving it set to Intel e1000, it would generate lots of error on boot (and besides, you use those adapter types, when running vMX via KVM on an Ubuntu server any way, so it makes sense).  
+I have seen folks say not to use more than 9 interfaces, but with the 16.x series, I’ve had pretty good luck with 12.   The first port name was set to “ext”, since that will also connect to the OOB mgmt switch, and the name format was set to `Eth{port1}`, since Eth1 will be part of our internal interface, and connect to “em1” of the vCP vm.   Now, notice that I set the interface type to “virtio-net-pci”. This is very important. When I tried leaving it set to Intel e1000, it would generate lots of error on boot (and besides, you use those adapter types, when running vMX via KVM on an Ubuntu server any way, so it makes sense).  
 
 Now, this next part is optional, but you can limit the amount of CPU time that gets allocated to the vFP vm via the Advanced Settings tab:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/26.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/26.jpg)
 
 I haven’t tried this part yet, but I have seen people recommend using this option for both the vFP vm of vMX, as well as the vPFE vm of vQFX, so they don’t peg out the vCPUs they’ve been assigned.
 
 Here are what the final settings of your vMX-vFP vm should look like:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/29.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/29.jpg)
 
 Here’s an example topology, to show you how to connect the two VMs together, as well as connect other VMs to our vMX “device”:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/30.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/30.jpg)
 
 I used a generic ethernet switch to stand in for an actual OOB mgmt switch.  Notice that “fxp0” of the vCP vm and “ext” of the vFP vm connect to it.  Also note that “em1” of vCP and Eth1 of vFP connect to each other, replicating the internal interface found in physical MX devices.
 
@@ -161,11 +160,11 @@ Just like with our legacy single-VM versions of vMX, Eth2 is our ge-0/0/0 interf
 
 Now, let’s boot the vCP and vFP VMs up!  I won’t sugar coat this, they take a while to load up. The vFP vm loads up first, but only to a point. It will sit and wait on the vCP vm to fully load up, before it can fully load up itself.  Here’s a visual hint that the vFP is fully loaded:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/31.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/31.jpg)
 
 Once you see those messages, the vFP vm is loaded up. You can even log into it, by using “root/root”, but you’ll be dropped into Wind River Linux, and not Junos
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/32.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/32.jpg)
 
 Personally, I wouldn’t really recommend tinkering around in Linux directly. Instead, I’d open up the PFE shell via the vCP, using this command:
 
@@ -181,7 +180,7 @@ If you want to read more about this (and MX in general), you can check out the [
 
 Now, when you log into the vCP vm, it’s “root” with no password, and you’ll be dropped into Junos, just like before:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/33.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/33.jpg)
 
 You can see our virtual PIC 0 is Online, and our 10 ge-0/0/x interfaces are “up/up”, but notice that like with vSRX, the virtual PIC 0 doesn’t show how many interfaces that PIC would provide. Weird.
 
@@ -193,7 +192,7 @@ Something I was unable to get working with vMX and GNS3, was having two routing 
 
 This is fairly simple to import into GNS3, even though it is a split VM, just like vMX. There are only currently two versions available:  VMware and Vagrant.  When I requested access to the trial downloads, here are the files Juniper has available:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/34.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/34.jpg)
 
 We only need two files, I just wanted to show that they have two .vmdk files for VMware (we can use them with Qemu/KVM), as well as the same two files, but as Vagrant .box files for Virtualbox.
 
@@ -201,23 +200,23 @@ As you can glean from the filenames, these are virtual versions of Juniper QFX 1
 
 Let’s get started by creating the Routing Engine VM for Qemu:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/35.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/35.jpg)
 
 Again, I used a pretty unimaginative name for it.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/36.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/36.jpg)
 
 I allocated it 1GB RAM, but I’ve heard from a user that he only gave it 512MB RAM, when he runs it in the GNS3-VM. I can confirm that it boots with that amount, but I haven’t really stressed the VMs yet, so I don’t know if it’s going to cause an issue down the road.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/37.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/37.jpg)
 
 Next, select the vqfx10k-re-15.1X53-D60  file. I converted the .vmdk files into .qcow2 disk images, but you can run the .vmdk files directly, without needing this extra step.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/38.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/38.jpg)
 
 When you edit this newly created VM, add it to the Switches category, and assign it 2 vCPUs. Leave console type as telnet. Click the Network tab next.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/39.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/39.jpg)
 
 Unlike with vMX, we’ll actually connect our other topology devices to the Routing Engine (RE)  VM, instead of the Packet Forwarding Engine (PFE) VM, which is why I assigned it 15 interfaces.
 
@@ -231,32 +230,32 @@ Eth14 = xe-0/0/11
 
 Once finished, your final VM settings should resemble this:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/40.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/40.jpg)
 
 Now we create the vPFE VM:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/41.jpg')} />
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/42.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/41.jpg)
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/42.jpg)
 
 I only assigned the PFE VM 1GB RAM, as well.
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/43.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/43.jpg)
 
 Select the vqfx10k-pfe-20160609-2 file. Again, I had converted the .vmdk file to a .qcow2, but you could likely skip that step, and still run this fine.
 
 Now to edit the newly create vQFX-PFE vm:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/44.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/44.jpg)
 
 Assign it to the Switches category, double-check it has 1GB RAM and 1 vCPU, and that the console type is telnet. Next, click the Network tab:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/45.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/45.jpg)
 
 We only need two interfaces, and we don’t need to alter any other settings.  Now, one complaint about vQFX has been that once the PFE vm fully loads, it will peg the vCPU assigned it to 100%. If you click on the Advanced Settings tab, you can limit the percentage of CPU time this VM can use, but it WILL cause it to load even slower than it already does.
 
 Now, let’s fire up our vQFX “device”.  Here’s a sample topology, just to show how to connect the VMs together:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/46.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/46.jpg)
 
 Just like vMX, the Eth0 interfaces connect to the OOB mgmt switch, and Eth1 on each VM connect to each other, to be our “internal interface”.  Now, unlike vMX, not only do other topology devices connect to the RE vm, instead of the PFE vm ( RE is like vCP, and PFE is like vFP), so that’s backwards, but also note that we have to use Eth3 as the first switchport of our vQFX “device”, instead of Eth2, like we would with vMX.  
 
@@ -271,7 +270,7 @@ root > show interfaces xe-* terse.
 ```
 Here’s what it looks like, when we’re ready to go:
 
-<img alt="screenshot" src={useBaseUrl('img/how-to-guides/importing-vmx-and-vqfx-into-gns3/47.jpg')} />
+![screenshot](/img/how-to-guides/importing-vmx-and-vqfx-into-gns3/47.jpg)
 
 Notice that it thinks we’re using the QFX10002-36Q linecard, and PIC 0 claims it supports up to 48  10G ports. I’ve never tried that many, just xe-0/0/0 - xe-0/0/11, which I know work.  
 

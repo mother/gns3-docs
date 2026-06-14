@@ -2,17 +2,16 @@
 title: How to configure Built-in template preferences
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to configure Built-in template preferences
 
 Click the "Built-in" option to enter.
 
-<img style={{ width: '100%' }} alt="Enter Built-in" src={useBaseUrl('img/web-ui/zh/builtin-enter.jpeg')} />
+![Enter Built-in](/img/web-ui/zh/builtin-enter.jpeg)
 
 Built-in templates include these three types of network devices:
 
-<img style={{ width: '100%' }} alt="Built-in categories list" src={useBaseUrl('img/web-ui/zh/builtin-categories.jpeg')} />
+![Built-in categories list](/img/web-ui/zh/builtin-categories.jpeg)
 
 - **Ethernet Hub**
 - **Ethernet Switch**
@@ -51,19 +50,19 @@ These templates already exist in the system by default. You usually do not need 
 :::
 
 1. Click the "Ethernet Hub Templates" option to enter.
-   <img style={{ width: '100%' }} alt="Enter Ethernet Hub" src={useBaseUrl('img/web-ui/zh/hub-create-01-enter.jpeg')} />
+   ![Enter Ethernet Hub](/img/web-ui/zh/hub-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/hub-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/hub-create-02-add.jpeg)
 
 3. Enter the Template Name and Number of Ports, then click "Add Template" to finish.
-   <img style={{ width: '100%' }} alt="Configure template" src={useBaseUrl('img/web-ui/zh/hub-create-03-configure.jpeg')} />
+   ![Configure template](/img/web-ui/zh/hub-create-03-configure.jpeg)
 
 4. After creation, you can see the new template in the list.
-   <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/hub-create-04-created.jpeg')} />
+   ![Creation done](/img/web-ui/zh/hub-create-04-created.jpeg)
 
 5. Click the three-dot button on the right to choose Delete or Edit.
-   <img style={{ width: '100%' }} alt="Action menu" src={useBaseUrl('img/web-ui/zh/hub-create-05-menu.jpeg')} />
+   ![Action menu](/img/web-ui/zh/hub-create-05-menu.jpeg)
 
 6. Click Edit to open the editing screen. You can set these options:
 
@@ -77,7 +76,7 @@ These templates already exist in the system by default. You usually do not need 
     - Usage
 
     After changes, click the "Save" button at the bottom right.
-   <img style={{ width: '100%' }} alt="Edit template" src={useBaseUrl('img/web-ui/zh/hub-create-06-edit.jpeg')} />
+   ![Edit template](/img/web-ui/zh/hub-create-06-edit.jpeg)
 
 
 ## Ethernet Switch
@@ -141,16 +140,16 @@ These templates already exist in the system by default. You usually do not need 
 :::
 
 1. Click the "Ethernet Switch Templates" option to enter.
-   <img style={{ width: '100%' }} alt="Enter Ethernet Switch" src={useBaseUrl('img/web-ui/zh/switch-create-01-enter.jpeg')} />
+   ![Enter Ethernet Switch](/img/web-ui/zh/switch-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/switch-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/switch-create-02-add.jpeg)
 
 3. Enter the Template Name and Number of Ports, then click "Add Template" to finish.
-   <img style={{ width: '100%' }} alt="Configure template" src={useBaseUrl('img/web-ui/zh/switch-create-03-configure.jpeg')} />
+   ![Configure template](/img/web-ui/zh/switch-create-03-configure.jpeg)
 
 4. After creation, you can see the new template in the list.
-   <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/switch-create-04-created.jpeg')} />
+   ![Creation done](/img/web-ui/zh/switch-create-04-created.jpeg)
 
 5. Click Edit to open the editing screen:
 
@@ -163,7 +162,7 @@ These templates already exist in the system by default. You usually do not need 
     - Category
     - Console Type
 
-   <img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/switch-create-05-general.jpeg')} />
+   ![General settings](/img/web-ui/zh/switch-create-05-general.jpeg)
 
     **Port Settings**
     - Port Number
@@ -173,7 +172,7 @@ These templates already exist in the system by default. You usually do not need 
     - Actions
 
     After changes, click the "Save" button at the bottom right.
-   <img style={{ width: '100%' }} alt="Port settings" src={useBaseUrl('img/web-ui/zh/switch-create-06-port-settings.jpeg')} />
+   ![Port settings](/img/web-ui/zh/switch-create-06-port-settings.jpeg)
 
 
 ## Cloud Node
@@ -236,16 +235,16 @@ These templates already exist in the system by default. You usually do not need 
 :::
 
 1. Click the "Cloud Node Templates" option to enter.
-   <img style={{ width: '100%' }} alt="Enter Cloud Node" src={useBaseUrl('img/web-ui/zh/cloud-create-01-enter.jpeg')} />
+   ![Enter Cloud Node](/img/web-ui/zh/cloud-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/cloud-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/cloud-create-02-add.jpeg)
 
 3. Enter the Template Name, then click "Add Template" to finish.
-   <img style={{ width: '100%' }} alt="Configure template" src={useBaseUrl('img/web-ui/zh/cloud-create-03-configure.jpeg')} />
+   ![Configure template](/img/web-ui/zh/cloud-create-03-configure.jpeg)
 
 4. After creation, you can see the new template in the list.
-   <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/cloud-create-04-created.jpeg')} />
+   ![Creation done](/img/web-ui/zh/cloud-create-04-created.jpeg)
 
 5. Click Edit to open the editing screen:
 
@@ -263,13 +262,13 @@ These templates already exist in the system by default. You usually do not need 
     - Console Port
     - Console HTTP Path
 
-   <img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/cloud-create-05-general.jpeg')} />
+   ![General settings](/img/web-ui/zh/cloud-create-05-general.jpeg)
 
 6. Ethernet Interfaces — no data in the template. You need to add a node in the project and then configure it.
-   <img style={{ width: '100%' }} alt="Ethernet interfaces" src={useBaseUrl('img/web-ui/zh/cloud-create-06-ethernet.jpeg')} />
+   ![Ethernet interfaces](/img/web-ui/zh/cloud-create-06-ethernet.jpeg)
 
 7. TAP Interfaces — add TAP interface names.
-   <img style={{ width: '100%' }} alt="TAP interfaces" src={useBaseUrl('img/web-ui/zh/cloud-create-07-tap.jpeg')} />
+   ![TAP interfaces](/img/web-ui/zh/cloud-create-07-tap.jpeg)
 
 8. UDP Tunnels — create a UDP tunnel to connect to a specific port on a remote host.
-   <img style={{ width: '100%' }} alt="UDP tunnels" src={useBaseUrl('img/web-ui/zh/cloud-create-08-udp.jpeg')} />
+   ![UDP tunnels](/img/web-ui/zh/cloud-create-08-udp.jpeg)

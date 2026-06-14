@@ -6,7 +6,6 @@ title: 开发环境搭建
 预计阅读时间: 1 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 开发环境搭建
 

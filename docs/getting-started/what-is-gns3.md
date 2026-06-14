@@ -5,7 +5,6 @@ sidebar_label: What is GNS3?
 slug: /
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Introduction
 
@@ -42,7 +41,7 @@ GNS3-all-in-one:
 
 This is the client part of GNS3 and is graphical user interface (GUI). You install the all-in-one software on your local PC (Windows, MAC, Linux) and create your topologies using this software. This is what you usually see show in screenshots such as the following:
 
-<img alt="screenshot" src={useBaseUrl('img/getting-started/what-is-gns3/1.jpg')} />
+![screenshot](/img/getting-started/what-is-gns3/1.jpg)
 
 Server options:
 
@@ -239,7 +238,7 @@ Additional platforms that can run the GNS3 VM:
 
 ## Supported Appliances
 GNS3 supports multiple operating systems and appliances and emulators.
-[Which emulator should I use?](emulators/which-emulators-should-i-use)
+[Which emulator should I use?](/docs/emulators/which-emulators-should-i-use)
 
 ## Should you use the GNS3 VM?
 The GNS3 VM is recommended for most situations when you are using Windows or Mac OS. The GNS3 development team have worked hard to create a lightweight, robust way of creating GNS3 topologies that avoids multiple common issues experienced when using a local install of GNS3. This includes the lack of proper Qemu support when running VIRL natively on Windows (not recommended).

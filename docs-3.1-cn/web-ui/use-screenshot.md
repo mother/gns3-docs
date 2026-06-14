@@ -6,7 +6,6 @@ title: 如何截图
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何截图
 
@@ -18,11 +17,11 @@ Take a Screenshot（截图）功能可以捕获 GNS3 网络拓扑图的当前状
 
 点击工具栏的相机图标（工具提示："Take a screenshot"），打开截图配置对话框。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="截图按钮" src={useBaseUrl('img/web-ui/zh/screenshot-01-toolbar.jpeg')} />
+![截图按钮](/img/web-ui/zh/screenshot-01-toolbar.jpeg)
 
 **配置截图选项**
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="截图对话框" src={useBaseUrl('img/web-ui/zh/screenshot-02-dialog.jpeg')} />
+![截图对话框](/img/web-ui/zh/screenshot-02-dialog.jpeg)
 
 对话框包含以下设置：
 

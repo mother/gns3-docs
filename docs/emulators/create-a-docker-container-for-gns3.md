@@ -4,17 +4,16 @@ title: Create a docker container for GNS3
 sidebar_label: Create a docker container for GNS3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 This tutorial is for users who never used Docker, and would like to create a Docker container for GNS3.
 
 First, you need to connect to the GNS3 VM and open a shell. Press the Enter key while **< OK >** is highlighted:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/1.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/1.jpg)
 
 On the next screen, press the Down arrow key until Shell is highlighted, and press the Enter key again. This will take you into Bash, which is the default shell used in Ubuntu:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/2.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/2.jpg)
 
 The Docker containers are created using a file called Dockerfile.
 
@@ -33,7 +32,7 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install -y nmap
 ```
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/3.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/3.jpg)
 
 To save the file, press Ctrl+O, and then Ctrl+X to exit nano.
 After, that run:
@@ -50,29 +49,29 @@ Docker will cache each step of the build process.
 
 If the build was successful, you should see a message indicating that at the end of the output.
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/4.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/4.jpg)
 
 (the build time will vary, based on what you’re adding to the container, plus your PC)
 
 Now we can use our container in GNS3. Click **Edit->Preferences->Docker Containers->New**,  like before,  but instead of specifying a **“New Image”**,  you’ll select **“Existing image”**, and then pick the one you just created from the dropdown list, and click **Next>** to continue:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/5.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/5.jpg)
 
 Give the container a name, and click **Next>**:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/6.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/6.jpg)
 
 Specify the number of adapters you want this container to use. As this example is just acting like a simple linux host, we can stick with default of 1 interface, so click **Next>** to continue:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/7.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/7.jpg)
 
 We aren’t going to specify a start command this time, so click Next> to continue:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/8.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/8.jpg)
 
 We’ll leave the console type set to telnet (we don’t need to use VNC/HTTP/HTTPS for this example), so click **Next>** to continue:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/9.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/9.jpg)
 
 We won’t be specifying any environmental variables this time, as the defaults are fine for this example, so click **Finish** to complete this configuration process. Back at the main Preferences screen, click **OK** to exit it.
 
@@ -82,7 +81,7 @@ Prior to the following screenshot, the nmap container was assigned a static IP a
 
 A quick test was run using the ```nmap --script ssh2-enum-algos  target_ip```  command. NMAP checks the target device, to see which SSH key exchange algorithms it supports. There are plenty of other uses for NMAP, but this was just a simple test, to prove that it was functional:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/10.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/10.jpg)
 
 You can replace the shell with a command of your choice using the CMD directive, which causes the container to start with that command/utility running immediately on boot.  
 
@@ -103,7 +102,7 @@ docker build -t joe/nmap .
 
 You will need to remove the container from your topology and add it again, in order to see the change:
 
-<img alt="screenshot" src={useBaseUrl('img/emulators/create-a-docker-container-for-gns3/11.jpg')} />
+![screenshot](/img/emulators/create-a-docker-container-for-gns3/11.jpg)
 
 Instead of seeing a bash prompt, the container automatically launches the HTOP utility.
 

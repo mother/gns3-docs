@@ -6,7 +6,6 @@ title: 如何绘制形状
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何绘制形状
 
@@ -18,21 +17,21 @@ Draw a Rectangle（绘制矩形）和 Draw an Ellipse（绘制椭圆）允许用
 
 如图所示，点击工具栏的矩形图标按钮（工具提示："Draw a rectangle"）。鼠标光标变为十字线，表示进入矩形绘制模式。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="矩形工具栏按钮" src={useBaseUrl('img/web-ui/zh/draw-shape-01-rect-toolbar.jpeg')} />
+![矩形工具栏按钮](/img/web-ui/zh/draw-shape-01-rect-toolbar.jpeg)
 
 **点击地图**
 
 在地图上点击想要放置矩形的位置。矩形会自动创建并显示在点击位置，并自动保存到服务器。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="矩形创建完成" src={useBaseUrl('img/web-ui/zh/draw-shape-02-rect-created.jpeg')} />
+![矩形创建完成](/img/web-ui/zh/draw-shape-02-rect-created.jpeg)
 
 选中矩形时，使用鼠标拖拽红色圆点，可以用来旋转矩形。如下图所示。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="矩形旋转" src={useBaseUrl('img/web-ui/zh/draw-shape-03-rect-rotate.jpeg')} />
+![矩形旋转](/img/web-ui/zh/draw-shape-03-rect-rotate.jpeg)
 
 鼠标在矩形区域右键，选择 **Edit style** 选项，进入 Style editor 对话框。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="矩形样式编辑器" src={useBaseUrl('img/web-ui/zh/draw-shape-04-rect-style-editor.jpeg')} />
+![矩形样式编辑器](/img/web-ui/zh/draw-shape-04-rect-style-editor.jpeg)
 
 可以设置 **Fill Color（填充颜色）**、**Border Color（边框颜色）**、**Border Width（边框宽度）**、**Border Style（边框样式）**、**Width（宽度）**、**Height（高度）**、**Rotation（旋转角度）**、**Corner Radius（圆角半径）**。
 
@@ -42,20 +41,20 @@ Draw a Rectangle（绘制矩形）和 Draw an Ellipse（绘制椭圆）允许用
 
 如图所示，点击工具栏的圆形图标按钮（工具提示："Draw an ellipse"）。鼠标光标变为十字线，表示进入椭圆绘制模式。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="椭圆工具栏按钮" src={useBaseUrl('img/web-ui/zh/draw-shape-05-ellipse-toolbar.jpeg')} />
+![椭圆工具栏按钮](/img/web-ui/zh/draw-shape-05-ellipse-toolbar.jpeg)
 
 **点击地图**
 
 在地图上点击想要放置椭圆的位置。椭圆会自动创建并显示在点击位置，并自动保存到服务器。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="椭圆创建完成" src={useBaseUrl('img/web-ui/zh/draw-shape-06-ellipse-created.jpeg')} />
+![椭圆创建完成](/img/web-ui/zh/draw-shape-06-ellipse-created.jpeg)
 
 选中椭圆时，使用鼠标拖拽红色圆点，可以用来旋转椭圆。如下图所示。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="椭圆旋转" src={useBaseUrl('img/web-ui/zh/draw-shape-07-ellipse-rotate.jpeg')} />
+![椭圆旋转](/img/web-ui/zh/draw-shape-07-ellipse-rotate.jpeg)
 
 鼠标在圆形区域右键，选择 **Edit style** 选项，进入 Style editor 对话框。
 
-<img style={{ display: 'block', margin: '0 auto' }} alt="椭圆样式编辑器" src={useBaseUrl('img/web-ui/zh/draw-shape-08-ellipse-style-editor.jpeg')} />
+![椭圆样式编辑器](/img/web-ui/zh/draw-shape-08-ellipse-style-editor.jpeg)
 
 可以设置 **Fill Color（填充颜色）**、**Border Color（边框颜色）**、**Border Width（边框宽度）**、**Border Style（边框样式）**、**Width（宽度）**、**Height（高度）**、**Rotation（旋转角度）**。

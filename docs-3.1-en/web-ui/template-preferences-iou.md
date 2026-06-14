@@ -2,7 +2,6 @@
 title: How to configure IOU template preferences
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to configure IOU template preferences
 
@@ -11,25 +10,25 @@ IOU is a native Cisco IOS ELF binary (.iol) that runs directly on Linux. It does
 ## Create a Template
 
 1. Click the "IOS on Unix" option to enter.
-   <img style={{ width: '100%' }} alt="Enter IOU" src={useBaseUrl('img/web-ui/zh/iou-create-01-enter.jpeg')} />
+   ![Enter IOU](/img/web-ui/zh/iou-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/iou-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/iou-create-02-add.jpeg)
 
 3. Follow the wizard steps. Click "Name".
-   <img style={{ width: '100%' }} alt="Wizard start" src={useBaseUrl('img/web-ui/zh/iou-create-03-name.jpeg')} />
+   ![Wizard start](/img/web-ui/zh/iou-create-03-name.jpeg)
 
 4. In Name, enter the template name. Then click "Image".
-   <img style={{ width: '100%' }} alt="Enter name" src={useBaseUrl('img/web-ui/zh/iou-create-04-name-input.jpeg')} />
+   ![Enter name](/img/web-ui/zh/iou-create-04-name-input.jpeg)
 
 5. In Image, choose "New Image". Set Type to "L2 Image" or "L3 Image". Then click "Browse" to upload a local image file.
-   <img style={{ width: '100%' }} alt="Upload image" src={useBaseUrl('img/web-ui/zh/iou-create-05-image-new.jpeg')} />
+   ![Upload image](/img/web-ui/zh/iou-create-05-image-new.jpeg)
 
 6. If you already have an uploaded image, choose "Existing Image". Select the Type and image file. Click "Add Template" to finish.
-   <img style={{ width: '100%' }} alt="Choose existing image" src={useBaseUrl('img/web-ui/zh/iou-create-06-image-existing.jpeg')} />
+   ![Choose existing image](/img/web-ui/zh/iou-create-06-image-existing.jpeg)
 
 7. After creation, you can see the new template in the list. Click the three-dot button on the right to choose Delete, Copy, or Edit.
-   <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/iou-create-07-created.jpeg')} />
+   ![Creation done](/img/web-ui/zh/iou-create-07-created.jpeg)
 
 ## Main Differences from Dynamips
 
@@ -54,7 +53,7 @@ IOU is a native Cisco IOS ELF binary (.iol) that runs directly on Linux. It does
 | Field | Type | Use |
 |------|------|------|
 | Template name | Text | Name of the template, shown in the list |
-| Default name format | Text | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Category | Dropdown | Device category, decides grouping in the topology panel |
 | Symbol | Text + button | Icon shown on the topology |
 | Tags | Chip input | Tags for sorting/filtering |
@@ -64,7 +63,7 @@ IOU is a native Cisco IOS ELF binary (.iol) that runs directly on Linux. It does
 For example, on Cisco IOU devices, you need to add a `device_type` tag so that AI Copilot can recognize the device type, for example `device_type:cisco_ios_telnet`. Without the correct tag, AI Copilot cannot work with this device.
 :::
 
-<img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/iou-config-01-general.jpeg')} />
+![General settings](/img/web-ui/zh/iou-config-01-general.jpeg)
 
 ### Configuration Fields
 
@@ -93,4 +92,4 @@ Default values and interface allocation:
 | ethernet_adapters | 2 | 2 | 4 | 8 | Ethernet0/0-3, Ethernet1/0-3 |
 | serial_adapters | 2 | 2 | 4 | 8 | Serial0/0-3, Serial1/0-3 |
 
-<img style={{ width: '100%' }} alt="Network configuration" src={useBaseUrl('img/web-ui/zh/iou-config-02-network.jpeg')} />
+![Network configuration](/img/web-ui/zh/iou-config-02-network.jpeg)

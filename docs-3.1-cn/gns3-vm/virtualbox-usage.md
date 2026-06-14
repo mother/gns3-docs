@@ -6,7 +6,6 @@ title: 如何在 VirtualBox 中使用 GNS3 VM
 预计阅读时间: 5 分钟
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # 如何在 VirtualBox 中使用 GNS3 VM
 
@@ -29,15 +28,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 - 点击"网络"，选择"仅主机（Host-Only）网络"，然后点击"创建"按钮。
 
-<img style={{ width: '100%' }} alt="创建 Host-Only 网络" src={useBaseUrl('img/gns3-vm/virtualbox/zh/01-create-host-only-network.jpeg')} />
+![创建 Host-Only 网络](/img/gns3-vm/virtualbox/zh/01-create-host-only-network.jpeg)
 
 - 选中新创建的网络，选择"DHCP 服务器"。
 
-<img style={{ width: '100%' }} alt="DHCP 服务器设置" src={useBaseUrl('img/gns3-vm/virtualbox/zh/02-dhcp-server-settings.jpeg')} />
+![DHCP 服务器设置](/img/gns3-vm/virtualbox/zh/02-dhcp-server-settings.jpeg)
 
 - 勾选"启用服务器"选项，点击"确定"按钮。
 
-<img style={{ width: '100%' }} alt="启用 DHCP 服务器" src={useBaseUrl('img/gns3-vm/virtualbox/zh/03-enable-dhcp-server.jpeg')} />
+![启用 DHCP 服务器](/img/gns3-vm/virtualbox/zh/03-enable-dhcp-server.jpeg)
 
 ## 步骤 2：导入虚拟机
 
@@ -45,11 +44,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 > `主页` → `导入` → 选择 `GNS3 VM.ova` 文件 → `导入`
 
-<img style={{ width: '100%' }} alt="导入 OVA 文件" src={useBaseUrl('img/gns3-vm/virtualbox/zh/04-import-ova-file.jpeg')} />
+![导入 OVA 文件](/img/gns3-vm/virtualbox/zh/04-import-ova-file.jpeg)
 
 - 导入完成。
 
-<img style={{ width: '100%' }} alt="导入完成" src={useBaseUrl('img/gns3-vm/virtualbox/zh/05-import-complete.jpeg')} />
+![导入完成](/img/gns3-vm/virtualbox/zh/05-import-complete.jpeg)
 
 ## 步骤 3：启动虚拟机
 
@@ -57,17 +56,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 启动后您会看到 GNS3 VM 的控制台界面，其中包含登录信息和 IP 地址。
 
-<img style={{ width: '100%' }} alt="GNS3 VM 控制台显示 IP" src={useBaseUrl('img/gns3-vm/virtualbox/zh/06-vm-console-ip-display.jpeg')} />
+![GNS3 VM 控制台显示 IP](/img/gns3-vm/virtualbox/zh/06-vm-console-ip-display.jpeg)
 
 ## 步骤 4：登录 Web UI
 
 打开浏览器访问 GNS3 Web UI，输入用户名密码 `admin/admin` 登录。
 
-<img style={{ width: '100%' }} alt="Web UI 登录页面" src={useBaseUrl('img/gns3-vm/virtualbox/zh/07-web-ui-login.jpeg')} />
+![Web UI 登录页面](/img/gns3-vm/virtualbox/zh/07-web-ui-login.jpeg)
 
 - 登录成功后的页面。
 
-<img style={{ width: '100%' }} alt="Web UI 概览" src={useBaseUrl('img/gns3-vm/virtualbox/zh/08-dashboard-overview.jpeg')} />
+![Web UI 概览](/img/gns3-vm/virtualbox/zh/08-dashboard-overview.jpeg)
 
 ---
 **文档版本**: 3.1.0

@@ -2,7 +2,6 @@
 title: How to configure Docker template preferences
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to configure Docker template preferences
 
@@ -13,43 +12,43 @@ Docker is a node type in GNS3 based on container technology. Unlike QEMU/Dynamip
 This example uses an Ubuntu container to show how to create a Docker template.
 
 1. Click the "Docker" option to enter.
-   <img style={{ width: '100%' }} alt="Enter Docker" src={useBaseUrl('img/web-ui/zh/docker-create-01-enter.jpeg')} />
+   ![Enter Docker](/img/web-ui/zh/docker-create-01-enter.jpeg)
 
 2. Click the + button at the top right to add a new template.
-   <img style={{ width: '100%' }} alt="Click add" src={useBaseUrl('img/web-ui/zh/docker-create-02-add.jpeg')} />
+   ![Click add](/img/web-ui/zh/docker-create-02-add.jpeg)
 
 3. Follow the wizard steps. Click "Docker Virtual Machine".
-   <img style={{ width: '100%' }} alt="Wizard start" src={useBaseUrl('img/web-ui/zh/docker-create-03-name.jpeg')} />
+   ![Wizard start](/img/web-ui/zh/docker-create-03-name.jpeg)
 
 4. If the image already exists, choose "Existing image" and select it from the list. Then click "Container name".
-   <img style={{ width: '100%' }} alt="Choose existing image" src={useBaseUrl('img/web-ui/zh/docker-create-04-existing-image.jpeg')} />
+   ![Choose existing image](/img/web-ui/zh/docker-create-04-existing-image.jpeg)
 
 5. If the image does not exist, choose "New image". Enter the image name in "Image name" (e.g. `ubuntu:latest`). Then click "Container name".
-   <img style={{ width: '100%' }} alt="Enter new image" src={useBaseUrl('img/web-ui/zh/docker-create-05-new-image.jpeg')} />
+   ![Enter new image](/img/web-ui/zh/docker-create-05-new-image.jpeg)
 
 6. In "Container name", enter the container template name. Then click "Network adapters".
-   <img style={{ width: '100%' }} alt="Container name" src={useBaseUrl('img/web-ui/zh/docker-create-06-container-name.jpeg')} />
+   ![Container name](/img/web-ui/zh/docker-create-06-container-name.jpeg)
 
 7. In "Network adapters", set the number of interfaces. Then click "Start command".
-   <img style={{ width: '100%' }} alt="Network adapters" src={useBaseUrl('img/web-ui/zh/docker-create-07-network-adapters.jpeg')} />
+   ![Network adapters](/img/web-ui/zh/docker-create-07-network-adapters.jpeg)
 
 8. In "Start command", enter the startup parameters. Then click "Console type".
-   <img style={{ width: '100%' }} alt="Start command" src={useBaseUrl('img/web-ui/zh/docker-create-08-start-command.jpeg')} />
+   ![Start command](/img/web-ui/zh/docker-create-08-start-command.jpeg)
 
 9. Choose the console type based on the container type (telnet/vnc, etc.). Then click "Auxiliary console type".
-   <img style={{ width: '100%' }} alt="Console type" src={useBaseUrl('img/web-ui/zh/docker-create-09-console-type.jpeg')} />
+   ![Console type](/img/web-ui/zh/docker-create-09-console-type.jpeg)
 
 10. Set "Auxiliary console type" to "None". Then click "Environment".
-    <img style={{ width: '100%' }} alt="Auxiliary console" src={useBaseUrl('img/web-ui/zh/docker-create-10-aux-console.jpeg')} />
+    ![Auxiliary console](/img/web-ui/zh/docker-create-10-aux-console.jpeg)
 
 11. In "Environment", set the container environment variables. Then click "Add Template" to finish.
-    <img style={{ width: '100%' }} alt="Environment variables" src={useBaseUrl('img/web-ui/zh/docker-create-11-environment.jpeg')} />
+    ![Environment variables](/img/web-ui/zh/docker-create-11-environment.jpeg)
 
 12. After creation, you can see the new template in the list.
-    <img style={{ width: '100%' }} alt="Creation done" src={useBaseUrl('img/web-ui/zh/docker-create-12-created.jpeg')} />
+    ![Creation done](/img/web-ui/zh/docker-create-12-created.jpeg)
 
 13. Click the three-dot button on the right to choose Delete, Copy, or Edit.
-    <img style={{ width: '100%' }} alt="Action menu" src={useBaseUrl('img/web-ui/zh/docker-create-13-menu.jpeg')} />
+    ![Action menu](/img/web-ui/zh/docker-create-13-menu.jpeg)
 
 ## Differences from Other Node Types
 
@@ -70,7 +69,7 @@ This example uses an Ubuntu container to show how to create a Docker template.
 | Field | Type | Unit | Use |
 |------|------|------|------|
 | Template name | Text | -- | Name of the template, shown in the list |
-| Default name format | Text | -- | Auto-naming format for instances, e.g. {name}-{0} |
+| Default name format | Text | -- | Auto-naming format for instances, e.g. `{name}-{0}` |
 | Image | Text | -- | Docker image name (e.g. ubuntu:latest) |
 | Category | Dropdown | -- | Device category |
 | Symbol | Text + button | -- | Topology icon |
@@ -87,7 +86,7 @@ This example uses an Ubuntu container to show how to create a Docker template.
 | Auto start console | Checkbox | -- | Automatically opens the console when enabled |
 | Edit network configuration | Button | -- | Customize NIC MAC addresses |
 
-<img style={{ width: '100%' }} alt="General settings" src={useBaseUrl('img/web-ui/zh/docker-config-01-general.jpeg')} />
+![General settings](/img/web-ui/zh/docker-config-01-general.jpeg)
 
 ### Custom Network Configuration
 
@@ -100,7 +99,7 @@ Click "Edit network configuration" to open the dialog. One NIC per row:
 | MAC address | Text input | MAC address, can be customized. Leave empty for auto-generation |
 | Action | Delete button | Delete this NIC |
 
-<img style={{ width: '100%' }} alt="Custom network" src={useBaseUrl('img/web-ui/zh/docker-config-02-network.jpeg')} />
+![Custom network](/img/web-ui/zh/docker-config-02-network.jpeg)
 
 ### Advanced Settings
 
@@ -150,4 +149,4 @@ database.internal:10.0.0.5
 api.example.com:172.16.0.100
 ```
 
-<img style={{ width: '100%' }} alt="Advanced settings" src={useBaseUrl('img/web-ui/zh/docker-config-03-advanced.jpeg')} />
+![Advanced settings](/img/web-ui/zh/docker-config-03-advanced.jpeg)

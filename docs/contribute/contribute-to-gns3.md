@@ -4,7 +4,6 @@ title: Contribute to GNS3
 sidebar_label: Contribute to GNS3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The GNS3 community welcomes new contributors. Don’t be afraid to make mistakes - we are here to help.
 
@@ -44,11 +43,11 @@ For the first step with the code read this documentation:
 
 You can suggest changes on any documentation by clicking on the Edit this article button on each documentation.
 
-<img alt="screenshot" src={useBaseUrl('img/contribute/contribute-to-gns3/1.jpg')} />
+![screenshot](/img/contribute/contribute-to-gns3/1.jpg)
 
 This will open Google Doc where you can suggest your modifications:
 
-<img alt="screenshot" src={useBaseUrl('img/contribute/contribute-to-gns3/2.jpg')} />
+![screenshot](/img/contribute/contribute-to-gns3/2.jpg)
 
 ### New documentation
 If you want to contribute to the documentation you can send emails to docs@gns3.net with your suggested document. You can also send us a Google Docs document which will make the integration easier. Don’t worry about formatting - just use standard styles (Heading 1, Heading 2, Normal text).

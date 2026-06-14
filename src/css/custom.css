@@ -297,3 +297,14 @@ ol.steps li::before {
 .video-link a:active {
   transform: translateY(0);
 }
+
+/* Medium Zoom image overlay fix */
+.medium-zoom-overlay {
+  z-index: 999;
+}
+.medium-zoom-image--opened {
+  z-index: 1000;
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
