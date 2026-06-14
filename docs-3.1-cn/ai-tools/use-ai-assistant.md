@@ -326,5 +326,5 @@ AI 助手功能由 [YueGuobin](https://github.com/yueguobin) 开发和贡献。
 
 ## License
 
-本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议。
+本文档采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) 许可协议（署名-非商业性使用-禁止演绎）。
 作者: 岳国宾

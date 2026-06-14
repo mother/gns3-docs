@@ -93,5 +93,5 @@ AI Real-time Packet Analysis feature was developed and contributed by [YueGuobin
 
 ## License
 
-This document is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+This document is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (Attribution-NonCommercial-NoDerivatives).
 Author: YueGuobin
