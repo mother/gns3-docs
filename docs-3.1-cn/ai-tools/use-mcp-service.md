@@ -134,15 +134,15 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 
 | 工具 | 说明 | 必需参数 |
 |------|------|---------|
-| `node_list` | 列出项目中所有节点 | `project_id` |
-| `node_get` | 获取节点详情 | `project_id`, `node_id` |
-| `node_create` | 从模板创建节点 | `project_id`, `template_id` |
+| `node_list` | 列出项目中所有节点（`fields` 可过滤列，如 `["name","status"]`） | `project_id` |
+| `node_get` | 获取节点详情（`fields` 可过滤列） | `project_id`, `node_id` |
+| `node_create` | 创建节点——单个用 `template_id`，批量用 `nodes` 数组 | `project_id`, `template_id` |
 | `node_delete` | 删除节点 | `project_id`, `node_id` |
 | `node_update` | 更新节点属性 | `project_id`, `node_id` |
-| `node_start` | 启动节点 | `project_id`, `node_id` |
-| `node_stop` | 停止节点 | `project_id`, `node_id` |
-| `node_reload` | 重启节点 | `project_id`, `node_id` |
-| `node_suspend` | 挂起节点 | `project_id`, `node_id` |
+| `node_start` | 启动节点——支持 `node_id` 或 `node_ids` 数组 | `project_id`, `node_id` |
+| `node_stop` | 停止节点——支持 `node_id` 或 `node_ids` 数组 | `project_id`, `node_id` |
+| `node_reload` | 重启节点——支持 `node_id` 或 `node_ids` 数组 | `project_id`, `node_id` |
+| `node_suspend` | 挂起节点——支持 `node_id` 或 `node_ids` 数组 | `project_id`, `node_id` |
 | `node_console` | 获取控制台 WebSocket 地址 | `project_id`, `node_id` |
 | `node_file_list` | 列出节点目录中的文件 | `project_id`, `node_id` |
 | `node_file_get` | 读取文件（支持偏移/限制） | `project_id`, `node_id`, `path` |
@@ -175,7 +175,7 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 |------|------|---------|
 | `link_list` | 列出项目中所有链路 | `project_id` |
 | `link_get` | 获取链路详情 | `project_id`, `link_id` |
-| `link_create` | 创建链路 | `project_id`, `nodes` |
+| `link_create` | 创建链路——单个用 `nodes`，批量用 `links` 数组 | `project_id`, `nodes` |
 | `link_delete` | 删除链路 | `project_id`, `link_id` |
 | `link_update` | 更新链路（挂起、过滤） | `project_id`, `link_id` |
 | `link_reset` | 重置链路（删除后重建） | `project_id`, `link_id` |
@@ -251,7 +251,7 @@ GNS3 的 SVG 渲染器与标准 SVG 规范存在以下差异：
 
 | 工具 | 说明 | 必需参数 |
 |------|------|---------|
-| `appliance_list` | 列出模板库中的应用模板 | 无 |
+| `appliance_list` | 列出模板库中的应用模板（`fields` 可过滤，如 `["name","category"]`） | 无 |
 | `appliance_get` | 获取应用模板详情 | `appliance_id` |
 | `appliance_install` | 从应用模板创建模板 | `appliance_id` |
 
@@ -280,13 +280,54 @@ GNS3 的 SVG 渲染器与标准 SVG 规范存在以下差异：
 
 | 工具 | 说明 | 必需参数 |
 |------|------|---------|
-| `device_config_send` | 通过控制台推送配置命令到设备（Nornir + Netmiko） | `project_id`, `device_name`, `config_commands` |
-| `device_command_run` | 在设备上执行只读 show 命令 | `project_id`, `device_name`, `commands` |
+| `device_config_send` | 通过控制台推送配置命令到设备（Nornir + Netmiko）。支持 Jinja2 `template` + `vars` | `project_id`, `device_name`, `config_commands` |
+| `device_command_run` | 在设备上执行只读 show 命令。支持 Jinja2 `template` + `vars` | `project_id`, `device_name`, `commands` |
 | `vpcs_config_set` | 配置 VPCS 设备（IP、网关等） | `project_id`, `device_name`, `ip`, `netmask`, `gateway` |
 
 :::note
 设备配置工具需要先启动节点。设备类型会从节点的 `device_type:<type>` 标签自动识别。
 :::
+
+#### Jinja2 模板模式
+
+`device_config_send` 和 `device_command_run` 都支持可选的 `template` 参数。提供时，每个设备的 `vars` 字典会与模板渲染生成命令。相同 `device_name` 的条目会合并到同一个会话。
+
+```python
+# 直接命令（单个/批量）
+device_config_send(project_id, device_configs=[
+    {"device_name": "R1", "config_commands": ["int lo0", "ip add 1.1.1.1 255.255.255.255"]},
+])
+
+# Jinja2 模板（批量时可减少 token 消耗）
+device_config_send(project_id,
+    template="interface lo{{ n }}\nip address {{ ip }} 255.255.255.255",
+    device_configs=[
+        {"device_name": "R1", "vars": {"n": 0, "ip": "1.1.1.1"}},
+        {"device_name": "R2", "vars": {"n": 0, "ip": "2.2.2.2"}},
+    ])
+```
+
+#### 最佳实践
+
+- **批量时优先用模板而非直接命令**——当 ≥2 个节点配置结构相同、仅值不同时，用 `template` + `vars` 替代每个节点写 `config_commands`，可减少 token 消耗和抄写错误。
+- **不要只看 `status: success`**——它只表示命令进入了配置模式。IOS 错误（`% Invalid input`、`% overlaps`、`% Incomplete command`）藏在 `output` 文本里，务必扫描 `%` 开头的行。
+- **先小批量验证再全量**——先在 1-2 台设备上测试 template + vars，确认渲染和语法正确，再扩展到所有节点。
+
+#### 通过文件操作备份配置
+
+IOU 和 Dynamips 节点在执行 `write memory` 后，启动配置会保存为节点目录下的纯文本文件（`startup-config.cfg`）。可通过 `node_file_get` / `node_file_write` 备份和恢复。
+
+```python
+# 在设备上保存配置
+device_command_run(project_id, device_configs=[
+    {"device_name": "R1", "commands": ["write memory"]},
+])
+# 备份
+config = node_file_get(project_id, node_id, "startup-config.cfg")
+# 配置损坏时恢复
+node_file_write(project_id, node_id, "startup-config.cfg", config)
+node_reload(project_id, node_id)
+```
 
 ## 测试报告
 

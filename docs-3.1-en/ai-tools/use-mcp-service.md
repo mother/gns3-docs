@@ -137,15 +137,15 @@ After calling `project_unlock`, the project status query may still show `locked=
 
 | Tool | Description | Required Parameters |
 |------|-------------|-------------------|
-| `node_list` | List all nodes in a project | `project_id` |
-| `node_get` | Get node details | `project_id`, `node_id` |
-| `node_create` | Create a node from template | `project_id`, `template_id` |
+| `node_list` | List all nodes in a project (`fields` to filter columns, e.g. `["name","status"]`) | `project_id` |
+| `node_get` | Get node details (`fields` to filter columns) | `project_id`, `node_id` |
+| `node_create` | Create node(s) — single via `template_id` or batch via `nodes` array | `project_id`, `template_id` |
 | `node_delete` | Delete a node | `project_id`, `node_id` |
 | `node_update` | Update node properties | `project_id`, `node_id` |
-| `node_start` | Start a node | `project_id`, `node_id` |
-| `node_stop` | Stop a node | `project_id`, `node_id` |
-| `node_reload` | Reload a node | `project_id`, `node_id` |
-| `node_suspend` | Suspend a node | `project_id`, `node_id` |
+| `node_start` | Start node(s) — `node_id` or `node_ids` array | `project_id`, `node_id` |
+| `node_stop` | Stop node(s) — `node_id` or `node_ids` array | `project_id`, `node_id` |
+| `node_reload` | Reload node(s) — `node_id` or `node_ids` array | `project_id`, `node_id` |
+| `node_suspend` | Suspend node(s) — `node_id` or `node_ids` array | `project_id`, `node_id` |
 | `node_console` | Get WebSocket console URL | `project_id`, `node_id` |
 | `node_file_list` | List files in node directory | `project_id`, `node_id` |
 | `node_file_get` | Read a file (with offset/limit) | `project_id`, `node_id`, `path` |
@@ -178,7 +178,7 @@ Check node type before using suspend and verify via the status field.
 |------|-------------|-------------------|
 | `link_list` | List all links in a project | `project_id` |
 | `link_get` | Get link details | `project_id`, `link_id` |
-| `link_create` | Create a link between nodes | `project_id`, `nodes` |
+| `link_create` | Create link(s) — single via `nodes` or batch via `links` array | `project_id`, `nodes` |
 | `link_delete` | Delete a link | `project_id`, `link_id` |
 | `link_update` | Update link (suspend, filters) | `project_id`, `link_id` |
 | `link_reset` | Reset link (delete + recreate) | `project_id`, `link_id` |
@@ -254,7 +254,7 @@ Keep these differences in mind when creating custom drawing SVGs.
 
 | Tool | Description | Required Parameters |
 |------|-------------|-------------------|
-| `appliance_list` | List appliances from template library | none |
+| `appliance_list` | List appliances from template library (`fields` to filter, e.g. `["name","category"]`) | none |
 | `appliance_get` | Get appliance details | `appliance_id` |
 | `appliance_install` | Create template from appliance | `appliance_id` |
 
@@ -283,13 +283,54 @@ Before using `image_install`, image files must be manually placed in the `~/GNS3
 
 | Tool | Description | Required Parameters |
 |------|-------------|-------------------|
-| `device_config_send` | Push config commands to devices via console (Nornir + Netmiko) | `project_id`, `device_name`, `config_commands` |
-| `device_command_run` | Run read-only show commands on devices | `project_id`, `device_name`, `commands` |
+| `device_config_send` | Push config commands to devices via console (Nornir + Netmiko). Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `config_commands` |
+| `device_command_run` | Run read-only show commands on devices. Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `commands` |
 | `vpcs_config_set` | Configure VPCS devices (IP, gateway, etc.) | `project_id`, `device_name`, `ip`, `netmask`, `gateway` |
 
 :::note
 Device Config tools require nodes to be started first. Device type is auto-detected from the node's `device_type:<type>` tag.
 :::
+
+#### Jinja2 Template Mode
+
+`device_config_send` and `device_command_run` both support an optional `template` parameter. When provided, each device's `vars` dict is rendered against the template to produce commands. Entries with the same `device_name` are merged into a single session.
+
+```python
+# Direct commands (single/batch)
+device_config_send(project_id, device_configs=[
+    {"device_name": "R1", "config_commands": ["int lo0", "ip add 1.1.1.1 255.255.255.255"]},
+])
+
+# Jinja2 template (reduces token usage for batch)
+device_config_send(project_id,
+    template="interface lo{{ n }}\nip address {{ ip }} 255.255.255.255",
+    device_configs=[
+        {"device_name": "R1", "vars": {"n": 0, "ip": "1.1.1.1"}},
+        {"device_name": "R2", "vars": {"n": 0, "ip": "2.2.2.2"}},
+    ])
+```
+
+#### Best Practices
+
+- **Prefer template over direct commands for batch** — when ≥2 nodes share the same config structure with different values, use `template` + `vars` instead of writing `config_commands` per node. This reduces token usage and transcription errors.
+- **Don't rely on `status: success` alone** — it only means the commands entered config mode. IOS errors (`% Invalid input`, `% overlaps`, `% Incomplete command`) appear inside the `output` text — always scan for `%` lines.
+- **Pilot before full rollout** — test template + vars on 1–2 devices first to verify rendering and syntax, then expand to all nodes.
+
+#### Config Backup via File Operations
+
+IOU and Dynamips nodes save the startup config as a plain text file (`startup-config.cfg`) in the node directory after `write memory`. Back up and restore it via `node_file_get` / `node_file_write`.
+
+```python
+# Save config on the device
+device_command_run(project_id, device_configs=[
+    {"device_name": "R1", "commands": ["write memory"]},
+])
+# Backup
+config = node_file_get(project_id, node_id, "startup-config.cfg")
+# Restore if config breaks
+node_file_write(project_id, node_id, "startup-config.cfg", config)
+node_reload(project_id, node_id)
+```
 
 ## Test Report
 
