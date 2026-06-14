@@ -291,6 +291,44 @@ Before using `image_install`, image files must be manually placed in the `~/GNS3
 Device Config tools require nodes to be started first. Device type is auto-detected from the node's `device_type:<type>` tag.
 :::
 
+#### Device Config Workflow
+
+<Mermaid value={`sequenceDiagram
+    participant AI as AI Agent
+    participant MCP as MCP Handler
+    participant TM as Template Renderer
+    participant DP as Device Discovery
+    participant NR as Nornir
+    participant NM as Netmiko
+    participant D as Device Console
+
+    Note over AI: Decide: template or direct commands?
+
+    alt Direct commands
+        AI->>MCP: device_config_send(config_commands=[...])
+    else Jinja2 template
+        AI->>MCP: device_config_send(template + vars)
+        MCP->>TM: Render template per device
+        TM->>TM: Jinja2.render(**vars)
+        TM-->>MCP: device_configs with rendered commands
+    end
+
+    MCP->>DP: get_device_ports_from_topology()
+    DP-->>MCP: hosts_data (console port, device_type)
+
+    Note over MCP: Prepare Nornir inventory
+
+    MCP->>NR: InitNornir(hosts, threaded runner)
+    par Device 1 to N (parallel, max 10)
+        NR->>NM: netmiko_send_config(commands)
+        NM->>D: telnet/SSH console session
+        D-->>NM: command output
+        NM-->>NR: execution result
+    end
+    NR-->>MCP: aggregated results
+    MCP-->>AI: per-device results with output
+`} />
+
 #### Jinja2 Template Mode
 
 `device_config_send` and `device_command_run` both support an optional `template` parameter. When provided, each device's `vars` dict is rendered against the template to produce commands. Entries with the same `device_name` are merged into a single session.
@@ -347,30 +385,22 @@ Full 82-tool test results are available in the [gns3-api-mcp-test](https://githu
 The sequence diagram below illustrates how a client connects, authenticates, discovers tools, and invokes them:
 
 <Mermaid value={`sequenceDiagram
-    participant Client as Claude Code / Claude Desktop
+    participant Client as Claude Code
     participant MCP as MCP Service
     participant Auth as Auth
     participant GNS3 as GNS3 REST API
 
-    Note over Client: 1. Obtain credential
-    Note over Client: Option A: JWT Token (24h expiry)
-    Client->>GNS3: POST /v3/access/users/authenticate
-    GNS3-->>Client: { access_token: "jwt..." }
-    Note over Client: Option B: API Key (permanent)
-    Client->>GNS3: POST /v3/access/api-keys
-    GNS3-->>Client: { api_key: "gns3_..." }
-
-    Note over Client: 2. Connect with credential
-    Client->>MCP: GET /sse (Authorization: Bearer <jwt_or_api_key>)
-    MCP->>Auth: Validate credential
-    Auth-->>MCP: Valid
+    Note over Client: 1. Connect with credential (JWT or API Key)
+    Client->>MCP: GET /sse (token in header or query)
+    MCP->>Auth: Validate Token
+    Auth-->>MCP: Token Valid
     MCP-->>Client: event: endpoint /messages/?session_id=xxx
 
-    Note over Client: 3. Initialize
+    Note over Client: 2. Initialize
     Client->>MCP: POST /messages/ (initialize)
     MCP-->>Client: event: message (protocolVersion, capabilities)
 
-    Note over Client: 4. List & Call Tools
+    Note over Client: 3. List & Call Tools
     Client->>MCP: POST /messages/ (tools/list)
     MCP-->>Client: event: message (tools list)
 

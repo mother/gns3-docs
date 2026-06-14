@@ -288,6 +288,44 @@ GNS3 的 SVG 渲染器与标准 SVG 规范存在以下差异：
 设备配置工具需要先启动节点。设备类型会从节点的 `device_type:<type>` 标签自动识别。
 :::
 
+#### 设备配置工作流
+
+<Mermaid value={`sequenceDiagram
+    participant AI as AI Agent
+    participant MCP as MCP Handler
+    participant TM as Template Renderer
+    participant DP as Device Discovery
+    participant NR as Nornir
+    participant NM as Netmiko
+    participant D as Device Console
+
+    Note over AI: 决策：用模板还是直接命令？
+
+    alt 直接命令
+        AI->>MCP: device_config_send(config_commands=[...])
+    else Jinja2 模板
+        AI->>MCP: device_config_send(template + vars)
+        MCP->>TM: 按设备渲染模板
+        TM->>TM: Jinja2.render(**vars)
+        TM-->>MCP: 渲染后的 device_configs
+    end
+
+    MCP->>DP: get_device_ports_from_topology()
+    DP-->>MCP: hosts_data（控制台端口、device_type）
+
+    Note over MCP: 准备 Nornir 清单
+
+    MCP->>NR: InitNornir(hosts, threaded runner)
+    par 设备 1 到 N（并行，最多 10 个）
+        NR->>NM: netmiko_send_config(commands)
+        NM->>D: telnet/SSH 控制台会话
+        D-->>NM: 命令输出
+        NM-->>NR: 执行结果
+    end
+    NR-->>MCP: 汇总结果
+    MCP-->>AI: 按设备返回结果（含输出）
+`} />
+
 #### Jinja2 模板模式
 
 `device_config_send` 和 `device_command_run` 都支持可选的 `template` 参数。提供时，每个设备的 `vars` 字典会与模板渲染生成命令。相同 `device_name` 的条目会合并到同一个会话。
@@ -344,37 +382,29 @@ node_reload(project_id, node_id)
 下图展示客户端从连接认证到工具发现与调用的完整交互流程：
 
 <Mermaid value={`sequenceDiagram
-    participant Client as Claude Code / Claude Desktop
+    participant Client as Claude Code
     participant MCP as MCP Service
     participant Auth as Auth
     participant GNS3 as GNS3 REST API
 
-    Note over Client: 1. 获取凭证
-    Note over Client: 方式 A: JWT Token（24h 有效）
-    Client->>GNS3: POST /v3/access/users/authenticate
-    GNS3-->>Client: { access_token: "jwt..." }
-    Note over Client: 方式 B: API Key（永久有效）
-    Client->>GNS3: POST /v3/access/api-keys
-    GNS3-->>Client: { api_key: "gns3_..." }
-
-    Note over Client: 2. 使用凭证连接
-    Client->>MCP: GET /sse (Authorization: Bearer <jwt_or_api_key>)
-    MCP->>Auth: 验证凭证
-    Auth-->>MCP: 有效
+    Note over Client: 1. 使用凭证连接（JWT 或 API Key）
+    Client->>MCP: GET /sse（token 在请求头或查询参数中）
+    MCP->>Auth: 验证 Token
+    Auth-->>MCP: Token 有效
     MCP-->>Client: event: endpoint /messages/?session_id=xxx
 
-    Note over Client: 3. 初始化
-    Client->>MCP: POST /messages/ (initialize)
-    MCP-->>Client: event: message (protocolVersion, capabilities)
+    Note over Client: 2. 初始化
+    Client->>MCP: POST /messages/（initialize）
+    MCP-->>Client: event: message（protocolVersion, capabilities）
 
-    Note over Client: 4. 列出并调用工具
-    Client->>MCP: POST /messages/ (tools/list)
-    MCP-->>Client: event: message (tools list)
+    Note over Client: 3. 列出并调用工具
+    Client->>MCP: POST /messages/（tools/list）
+    MCP-->>Client: event: message（工具列表）
 
-    Client->>MCP: POST /messages/ (tools/call project_list)
+    Client->>MCP: POST /messages/（tools/call project_list）
     MCP->>GNS3: Gns3Connector HTTP 请求
-    GNS3-->>MCP: 返回数据
-    MCP-->>Client: event: message (tool result)
+    GNS3-->>MCP: 项目数据
+    MCP-->>Client: event: message（工具结果）
 `} />
 
 ## 传输安全配置
