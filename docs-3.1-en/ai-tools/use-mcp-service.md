@@ -76,10 +76,6 @@ This API Key is **only shown once**. After closing the dialog, it cannot be disp
 
 ![Delete confirmation dialog](/img/web-ui/zh/mcp-api-key-delete-confirm.jpeg)
 
-### JWT Token
-
-If you prefer to use a JWT Token (24-hour expiry), you can obtain it from the User Info dialog.
-
 
 ## Quick Start
 
@@ -164,6 +160,8 @@ After calling `project_unlock`, the project status query may still show `locked=
 The WebSocket URL returned by `node_console` requires the `websocat` tool to connect. Make sure it is installed on the system running Claude Code. Install via: `cargo install websocat` (requires Rust toolchain) or download a prebuilt binary from [GitHub Releases](https://github.com/vi/websocat/releases).
 :::
 
+The `node_console` tool returns a WebSocket URL for connecting to a node's console. The URL includes a short-lived JWT (**10 minutes**) — reconnect if it expires. This endpoint is protocol-agnostic — it works for **telnet**, **ssh**, and **vnc** console types alike. The WebSocket simply proxies raw byte streams between the client and the compute node; protocol negotiation (e.g. SSH key exchange) happens on the compute side.
+
 :::warning
 `node_suspend` behavior varies by node type:
 - **Docker / Dynamips / QEMU**: Full suspend supported — status changes to `suspended`
@@ -179,12 +177,12 @@ Check node type before using suspend and verify via the status field.
 | `link_list` | List all links in a project | `project_id` |
 | `link_get` | Get link details | `project_id`, `link_id` |
 | `link_create` | Create link(s) — single via `nodes` or batch via `links` array | `project_id`, `nodes` |
-| `link_delete` | Delete a link | `project_id`, `link_id` |
+| `link_delete` | Delete link(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
 | `link_update` | Update link (suspend, filters) | `project_id`, `link_id` |
-| `link_reset` | Reset link (delete + recreate) | `project_id`, `link_id` |
-| `link_capture_start` | Start packet capture on a link | `project_id`, `link_id` |
-| `link_capture_stop` | Stop packet capture | `project_id`, `link_id` |
-| `link_capture_download` | Get PCAP download URL | `project_id`, `link_id`, `capture_file_name` |
+| `link_reset` | Reset link(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
+| `link_capture_start` | Start capture(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
+| `link_capture_stop` | Stop capture(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
+| `link_capture_download` | Get PCAP download URL(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
 
 :::note
 `link_reset` does **not** clear existing filter settings — only the UDP connection is torn down and rebuilt. Node connections and filters are preserved.
@@ -433,9 +431,25 @@ mcp_allowed_origins = http://127.0.0.1:*,http://localhost:*,http://192.168.1.3:*
 :::tip
 With the default configuration, all hosts can connect — suitable for most scenarios. Only enable protection when you need to strictly restrict access sources.
 :::
-- The SSE app is mounted as a Starlette sub-application under `/v3/mcp/transport`
-- JWT token is stored in a `contextvars.ContextVar` - Python ≥ 3.9's `asyncio.to_thread` automatically propagates it to tool handler threads
-- Tool handlers use `Gns3Connector` to call GNS3's own REST API, keeping the MCP layer decoupled
+
+## Internal Implementation
+
+The MCP service is built on FastMCP (Anthropic MCP SDK) and mounted as a Starlette sub-application under `/v3/mcp/transport`; tool handlers call GNS3's own REST API via `Gns3Connector`, keeping the MCP layer decoupled from business logic. JWT tokens are validated by GNS3's existing `auth_service` and propagated to `asyncio.to_thread` (Python ≥ 3.9) worker threads via a `contextvars.ContextVar`.
+
+The WebSocket URL returned by `node_console` is constructed by the server's `_server_url()`, whose host resolution works as follows (affects the reachable address for remote connections):
+
+| `Server.host` value | Resolved host in URL |
+|:---|:---|
+| Specific IP or hostname (e.g. `192.168.1.3`) | Used as-is |
+| `0.0.0.0` (IPv4 any, default) | Detected via default route interface IP |
+| `::` (IPv6 any) | Detected via default route interface IP |
+| Detection failure | Fallback to `127.0.0.1` |
+
+When `Server.host` is `0.0.0.0`, the server discovers the default route interface IP via a UDP socket connect to `8.8.8.8:80` (no data is actually sent), ensuring the returned address is reachable:
+
+```bash
+websocat ws://192.168.1.3:3080/v3/projects/{project_id}/nodes/{node_id}/console/ws?token=<jwt>
+```
 
 ## Frequently Asked Questions
 

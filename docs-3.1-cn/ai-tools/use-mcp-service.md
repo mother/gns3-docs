@@ -161,6 +161,8 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 `node_console` 返回的 WebSocket 地址需要使用 `websocat` 工具连接，请确保在运行 Claude Code 的系统中已安装该工具。安装方法：`cargo install websocat`（需 Rust 环境）或从 [GitHub Releases](https://github.com/vi/websocat/releases) 下载预编译二进制。
 :::
 
+`node_console` 返回的 WebSocket 地址内含一个短期 JWT（有效期 **10 分钟**），过期后需重新调用该工具获取新地址。该地址与协议无关——对 **telnet**、**ssh**、**vnc** 三种控制台类型通用。WebSocket 仅在客户端与计算节点之间透传原始字节流，协议协商（例如 SSH 密钥交换）发生在计算节点侧。
+
 :::warning
 `node_suspend` 的行为因节点类型而异：
 - **Docker / Dynamips / QEMU**：完全支持挂起 — 状态变为 `suspended`
@@ -176,12 +178,12 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 | `link_list` | 列出项目中所有链路 | `project_id` |
 | `link_get` | 获取链路详情 | `project_id`, `link_id` |
 | `link_create` | 创建链路——单个用 `nodes`，批量用 `links` 数组 | `project_id`, `nodes` |
-| `link_delete` | 删除链路 | `project_id`, `link_id` |
+| `link_delete` | 删除链路——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
 | `link_update` | 更新链路（挂起、过滤） | `project_id`, `link_id` |
-| `link_reset` | 重置链路（删除后重建） | `project_id`, `link_id` |
-| `link_capture_start` | 开始抓包 | `project_id`, `link_id` |
-| `link_capture_stop` | 停止抓包 | `project_id`, `link_id` |
-| `link_capture_download` | 获取 PCAP 下载地址 | `project_id`, `link_id`, `capture_file_name` |
+| `link_reset` | 重置链路（删除后重建）——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
+| `link_capture_start` | 开始抓包——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
+| `link_capture_stop` | 停止抓包——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
+| `link_capture_download` | 获取 PCAP 下载地址——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
 
 :::note
 `link_reset` **不会**清除已有的 filter 设置——仅重建 UDP 连接。节点连接和过滤规则保持不变。
@@ -430,9 +432,25 @@ mcp_allowed_origins = http://127.0.0.1:*,http://localhost:*,http://192.168.1.3:*
 :::tip
 默认配置下所有主机均可连接，适合大多数场景。仅在需要严格限制访问来源时启用保护。
 :::
-- SSE 应用作为 Starlette 子应用挂载在 `/v3/mcp/transport` 路径下
-- JWT Token 通过 `contextvars.ContextVar` 存储，Python ≥ 3.9 的 `asyncio.to_thread` 会自动传播到工具处理器线程
-- 工具处理器通过 `Gns3Connector` 调用 GNS3 自身的 REST API，MCP 层保持解耦
+
+## 内部实现机制
+
+MCP 服务基于 FastMCP（Anthropic MCP SDK）实现，以 Starlette 子应用挂载在 `/v3/mcp/transport` 下；工具处理器通过 `Gns3Connector` 调用 GNS3 自身的 REST API，使 MCP 层与业务解耦。JWT Token 经 GNS3 既有 `auth_service` 校验，并通过 `contextvars.ContextVar` 在 `asyncio.to_thread`（Python ≥ 3.9）的工作线程中传递。
+
+`node_console` 返回的 WebSocket 地址由服务端 `_server_url()` 构造，其 host 解析规则如下（影响远程连接时的可达地址）：
+
+| `Server.host` 取值 | URL 中解析出的 host |
+|:---|:---|
+| 具体 IP 或主机名（如 `192.168.1.3`） | 原样使用 |
+| `0.0.0.0`（IPv4 任意，默认） | 经默认路由网卡 IP 探测得到 |
+| `::`（IPv6 任意） | 经默认路由网卡 IP 探测得到 |
+| 探测失败 | 回退到 `127.0.0.1` |
+
+当 `Server.host` 为 `0.0.0.0` 时，服务端通过向 `8.8.8.8:80` 发起 UDP socket 连接来探测默认路由网卡的 IP（不会真正发送数据），从而保证返回的地址可达：
+
+```bash
+websocat ws://192.168.1.3:3080/v3/projects/{project_id}/nodes/{node_id}/console/ws?token=<jwt>
+```
 
 ## 常见问题
 
