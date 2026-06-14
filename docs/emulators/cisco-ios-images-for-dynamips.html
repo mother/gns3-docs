@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-emulators/cisco-ios-images-for-dynamips" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.1">
+<title data-rh="true">Cisco IOS images for Dynamips | GNS3 Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mother.github.io/docs/emulators/cisco-ios-images-for-dynamips"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Cisco IOS images for Dynamips | GNS3 Documentation"><meta data-rh="true" name="description" content="GNS3 offers multiple ways to emulate IOS. For older images, we use and maintain Dynamips; an emulator dedicated to emulate some Cisco hardware. Dynamips can run unmodified IOS images. In the new GNS3 1.4, there is a way to run a second category of switches and routers. These are classified as Routing and Switching virtual machines (or R+Svms) for short. What are the differences? Here are the major differences:"><meta data-rh="true" property="og:description" content="GNS3 offers multiple ways to emulate IOS. For older images, we use and maintain Dynamips; an emulator dedicated to emulate some Cisco hardware. Dynamips can run unmodified IOS images. In the new GNS3 1.4, there is a way to run a second category of switches and routers. These are classified as Routing and Switching virtual machines (or R+Svms) for short. What are the differences? Here are the major differences:"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://mother.github.io/docs/emulators/cisco-ios-images-for-dynamips"><link data-rh="true" rel="alternate" href="https://mother.github.io/docs/emulators/cisco-ios-images-for-dynamips" hreflang="en"><link data-rh="true" rel="alternate" href="https://mother.github.io/docs/emulators/cisco-ios-images-for-dynamips" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://1WIL6RAPZV-dsn.algolia.net" crossorigin="anonymous"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cisco IOS images for Dynamips","item":"https://mother.github.io/docs/emulators/cisco-ios-images-for-dynamips"}]}</script><link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2TYZDQ4ZW"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-D2TYZDQ4ZW",{})</script>
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="GNS3 Documentation" href="/opensearch.xml">
+
+
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://*.googletagmanager.com; frame-src &#39;self&#39; https://player.bilibili.com; img-src &#39;self&#39; data: https: https://*.bilibili.com;"><link rel="stylesheet" href="/assets/css/styles.4f55d124.css">
+<script src="/assets/js/runtime~main.edd15a8d.js" defer="defer"></script>
+<script src="/assets/js/main.63e58916.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","light"),document.documentElement.setAttribute("data-theme-choice","light"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logocolour.png" alt="GNS3 Docs" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logocolour.png" alt="GNS3 Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs">Documentation</a><a class="navbar__item navbar__link" href="/docs-3.1-cn">3.1 文档</a><a class="navbar__item navbar__link" href="/docs-3.1-en">3.1 Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://gns3.com/marketplace/appliances" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Appliances<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://gns3.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Community<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/using-gns3/beginners/the-gns3-gui"><span title="Using GNS3" class="categoryLinkLabel_W154">Using GNS3</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/emulators/which-emulators-should-i-use"><span title="Emulators" class="categoryLinkLabel_W154">Emulators</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/which-emulators-should-i-use"><span title="Which emulator should I use?" class="linkLabel_WmDU">Which emulator should I use?</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/emulators/cisco-ios-images-for-dynamips"><span title="Cisco IOS images for Dynamips" class="linkLabel_WmDU">Cisco IOS images for Dynamips</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/non-native-iou-for-windows-and-osx"><span title="Non-Native IOU for Windows and OSX" class="linkLabel_WmDU">Non-Native IOU for Windows and OSX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/adding-vmware-vms-to-gns3-topologies"><span title="Adding VMware VMs to GNS3 Topologies" class="linkLabel_WmDU">Adding VMware VMs to GNS3 Topologies</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/docker-support-in-gns3"><span title="Docker support in GNS3" class="linkLabel_WmDU">Docker support in GNS3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/create-a-docker-container-for-gns3"><span title="Create a docker container for GNS3" class="linkLabel_WmDU">Create a docker container for GNS3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/vpcs"><span title="VPCS" class="linkLabel_WmDU">VPCS</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/emulators/qemu-system-uuid"><span title="Qemu system UUID" class="linkLabel_WmDU">Qemu system UUID</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/contribute/contribute-to-gns3"><span title="Contribute" class="categoryLinkLabel_W154">Contribute</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/how-to-guides/cisco-asa"><span title="How-to Guides" class="categoryLinkLabel_W154">How-to Guides</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/troubleshooting-faq/troubleshoot-gns3"><span title="Troubleshooting &amp; FAQ" class="categoryLinkLabel_W154">Troubleshooting &amp; FAQ</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Emulators</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Cisco IOS images for Dynamips</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Cisco IOS images for Dynamips</h1></header><p>GNS3 offers multiple ways to emulate IOS. For older images, we use and maintain Dynamips; an emulator dedicated to emulate some Cisco hardware. Dynamips can run unmodified IOS images. In the new GNS3 1.4, there is a way to run a second category of switches and routers. These are classified as Routing and Switching virtual machines (or R+Svms) for short. What are the differences? Here are the major differences:</p>
+<ul>
+<li class="">IOS images are usually run in Dynamips however R+Svms are housed in a virtual machine.</li>
+<li class="">IOS images are lower in cpu and memory so you can fit more of them in one topology.</li>
+<li class="">R+Svms are all vendor Routing and Switching images that are larger in size but can be imported into GNS3 for real world network emulation.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="important-points">Important Points<a href="#important-points" class="hash-link" aria-label="Direct link to Important Points" title="Direct link to Important Points" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="availability">Availability<a href="#availability" class="hash-link" aria-label="Direct link to Availability" title="Direct link to Availability" translate="no">​</a></h3>
+<p>Due to these platforms hitting End of Sale, End of Life, and End of Support status, the images are no longer available for download from Cisco’s support sections. Currently, the c7200 images are the only ones still available for download for those with a support contract.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-15x">IOS 15.x<a href="#ios-15x" class="hash-link" aria-label="Direct link to IOS 15.x" title="Direct link to IOS 15.x" translate="no">​</a></h3>
+<p>Only the c7200 series get newer IOS 15 images. All other platforms are now end-of-life and only support IOS 12.4. Please note that the IOSv appliance is based on IOS 15 and there are IOU (IOS on UNIX) images with IOS 15.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="should-i-use-a-mainline-and-technology-train-image">Should I use a mainline and technology train image?<a href="#should-i-use-a-mainline-and-technology-train-image" class="hash-link" aria-label="Direct link to Should I use a mainline and technology train image?" title="Direct link to Should I use a mainline and technology train image?" translate="no">​</a></h3>
+<p>You will find the technology train images to contain the newest features but it may also contain the most bugs. We recommend Mainline over Technology train if you are interested on stability without the need of new features.Please see <a href="http://www.ciscopress.com/articles/article.asp?p=2106547" target="_blank" rel="noopener noreferrer" class="">Cisco IOS Versions and Naming</a> for more information.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="minimum-memory">Minimum memory<a href="#minimum-memory" class="hash-link" aria-label="Direct link to Minimum memory" title="Direct link to Minimum memory" translate="no">​</a></h3>
+<p>The minimum RAM is the amount of memory needed for IOS to work at maximum capacity with most feature configured and activated. From experience you can usually use a bit less RAM just fine.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-images">Recommended images<a href="#recommended-images" class="hash-link" aria-label="Direct link to Recommended images" title="Direct link to Recommended images" translate="no">​</a></h3>
+<p>We really recommend using the c3640, c3660, c3725, c3745 and c7200 IOS images listed below, they have proven to be the most stable in GNS3 provided you use the right amount of RAM and Idle-PC value.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="idle-pc-value">Idle-PC value<a href="#idle-pc-value" class="hash-link" aria-label="Direct link to Idle-PC value" title="Direct link to Idle-PC value" translate="no">​</a></h3>
+<p>When Dynamips runs an IOS image, a single instance can consume 100% of the processing time for a CPU core or thread. To remedy this, you can supply Dynamips with an Idle-PC value, to consume less CPU. This value will vary between devices/images. To help automate the process of determining a valid Idle-PC value, you can use the Idle-PC finder button when importing a supported IOS image into GNS3:</p>
+<p><img decoding="async" loading="lazy" alt="screenshot" src="/assets/images/1-fc1fad9878a08749dd7d62062a496d12.jpg" width="655" height="491" class="img_ev3q"></p>
+<p>(Idle-PC values are not required with virtual machines or docker containers. They’re only required for use by the Dynamips emulator)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c1700-series">C1700 Series<a href="#c1700-series" class="hash-link" aria-label="Direct link to C1700 Series" title="Direct link to C1700 Series" translate="no">​</a></h2>
+<p>1700s have 1 FastEthernet fixed port (C1700-MB-1ETH) on its motherboard, 2 subslots for WICs (maximum of 2 Ethernet ports or 4 serial ports), and no Network Module slots. Note that interfaces do not use a slot designation (e.g. “f0”)</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c1700-adventerprisek9-mz.124-25d.bin
+MD5: 3ed8d56a8757771105a56070e4147716
+Minimum RAM: 128MB
+Proposed idle-PC value: 0x80358a60</p>
+<p>IOS version 12.4.15T14 (Technology train)
+File name: c1700-adventerprisek9-mz.124-15.T14.bin
+MD5: 351190de8764263e85a2b50718f394fd
+Minimum RAM: 160MB
+Proposed idle-PC value: 0x824a4dc4</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c2600-series">C2600 Series<a href="#c2600-series" class="hash-link" aria-label="Direct link to C2600 Series" title="Direct link to C2600 Series" translate="no">​</a></h2>
+<p>2600s have one or two Ethernet or FastEthernet interfaces on its motherboard, 3 subslots for WICs (maximum of 6 serial ports) and 1 Network Module slot (maximum of 4 Ethernet ports or 16 FastEthernet ports).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline-1">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline-1" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c2600-adventerprisek9-mz.124-25d.bin
+MD5: 8eca1f6fe57dfb3c3cf3568c0e475853
+Minimum RAM: 128MB
+Proposed idle-PC value: 0x80519c48</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12415t14-technology-train">IOS version 12.4.15T14 (Technology train)<a href="#ios-version-12415t14-technology-train" class="hash-link" aria-label="Direct link to IOS version 12.4.15T14 (Technology train)" title="Direct link to IOS version 12.4.15T14 (Technology train)" translate="no">​</a></h3>
+<p>File name: c2600-adventerprisek9-mz.124-15.T14.bin
+MD5: 12b8548b23e2ec593652ae9310ac797f
+Minimum RAM: 256MB
+Proposed idle-PC value: 0x8027ec88</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c3620">C3620<a href="#c3620" class="hash-link" aria-label="Direct link to C3620" title="Direct link to C3620" translate="no">​</a></h2>
+<p>The c3620 supports up to 2 Network Modules (maximum of 8 Ethernet ports, 32 FastEthernet ports or 8 serial ports). Note that tt shouldn’t be used since the latest available IOS image is very old.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12226c">IOS version 12.2.26c<a href="#ios-version-12226c" class="hash-link" aria-label="Direct link to IOS version 12.2.26c" title="Direct link to IOS version 12.2.26c" translate="no">​</a></h3>
+<p>File name: c3620-a3jk8s-mz.122-26c.bin
+MD5: dd34b958ad362ef54ba48b187f4c97b4
+Minimum RAM: 64MB
+Proposed idle-PC value: 0x603a8bac</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c3640">C3640<a href="#c3640" class="hash-link" aria-label="Direct link to C3640" title="Direct link to C3640" translate="no">​</a></h2>
+<p>The c3640 supports up to 4 Network Modules (maximum of 16 Ethernet ports, 32 FastEthernet ports or 16 serial ports).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline-2">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline-2" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c3640-a3js-mz.124-25d.bin
+MD5: db9f63ca1b46d18fb835496bfffe608a
+Minimum RAM: 128MB
+Proposed idle-PC value: 0x6050b114</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c3660">C3660<a href="#c3660" class="hash-link" aria-label="Direct link to C3660" title="Direct link to C3660" translate="no">​</a></h2>
+<p>The c3660 has 2 FastEthernet fixed ports (Leopard-2FE) and supports up to 6 Network Modules (maximum of 24 Ethernet ports, 32 FastEthernet ports or 24 serial ports).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline-3">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline-3" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c3660-a3jk9s-mz.124-25d.bin
+MD5: 4ac7e947f13c189d746149dc74992890
+Minimum RAM: 192MB
+Proposed idle-PC value: 0x606071f8</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12415t14-technology-train-1">IOS version 12.4.15T14 (Technology train)<a href="#ios-version-12415t14-technology-train-1" class="hash-link" aria-label="Direct link to IOS version 12.4.15T14 (Technology train)" title="Direct link to IOS version 12.4.15T14 (Technology train)" translate="no">​</a></h3>
+<p>File name: c3660-a3jk9s-mz.124-15.T14.bin
+MD5: 39950b7a563aa08e94a168260409f1e6
+Minimum RAM: 256MB
+Proposed idle-PC value: 0x6076e0b4</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c2691">C2691<a href="#c2691" class="hash-link" aria-label="Direct link to C2691" title="Direct link to C2691" translate="no">​</a></h2>
+<p>The c2691 has 2 FastEthernet interfaces its motherboard (GT96100-FE), 3 subslots for WICs (maximum of 6 serial ports) and 1 Network Module slot (maximum of 16 FastEthernet ports or 4 serial ports).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline-4">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline-4" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c2691-adventerprisek9-mz.124-25d.bin
+MD5: a8e1f5821d87456595488d6221ce42e5
+Minimum RAM: 192MB
+Proposed idle-PC value: 0x60a48cb8</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12415t14-technology-train-2">IOS version 12.4.15T14 (Technology train)<a href="#ios-version-12415t14-technology-train-2" class="hash-link" aria-label="Direct link to IOS version 12.4.15T14 (Technology train)" title="Direct link to IOS version 12.4.15T14 (Technology train)" translate="no">​</a></h3>
+<p>File name: c2691-adventerprisek9-mz.124-15.T14.bin
+MD5: 91388104d7276ad09204e36d2dfcf52d
+Minimum RAM: 256MB
+Proposed idle-PC value: 0x60bcf9f8</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c3725">C3725<a href="#c3725" class="hash-link" aria-label="Direct link to C3725" title="Direct link to C3725" translate="no">​</a></h2>
+<p>The c3725 has 2 FastEthernet interfaces on its motherboard (GT96100-FE), 3 subslots for WICs (maximum of 6 serial ports) and 2 Network Module slots (maximum of 32 FastEthernet ports or 8 serial ports).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline-5">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline-5" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c3725-adventerprisek9-mz.24-25d.bin
+MD5: ac3d313d3caff5beeee244b81d2c024c
+Minimum RAM: 128MB
+Proposed idle-PC value: 0x602467a4</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12415t14-technology-train-3">IOS version 12.4.15T14 (Technology train)<a href="#ios-version-12415t14-technology-train-3" class="hash-link" aria-label="Direct link to IOS version 12.4.15T14 (Technology train)" title="Direct link to IOS version 12.4.15T14 (Technology train)" translate="no">​</a></h3>
+<p>File name: c3725-adventerprisek9-mz.124-15.T14.bin
+MD5: 42baf17af10d9a1471bf542f0bfd07c7
+Minimum RAM: 256MB
+Proposed idle-PC value: 0x60c09aa0</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c3745">C3745<a href="#c3745" class="hash-link" aria-label="Direct link to C3745" title="Direct link to C3745" translate="no">​</a></h2>
+<p>The c3745 has 2 FastEthernet interfaces on its motherboard (GT96100-FE), 3 subslots for WICs (maximum of 6 serial ports) and 4 Network Module slots (maximum of 32 FastEthernet ports or 16 serial ports).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12425d-mainline-6">IOS version 12.4.25d (Mainline)<a href="#ios-version-12425d-mainline-6" class="hash-link" aria-label="Direct link to IOS version 12.4.25d (Mainline)" title="Direct link to IOS version 12.4.25d (Mainline)" translate="no">​</a></h3>
+<p>File name: c3745-adventerprisek9-mz.124-25d.bin
+MD5: 563797308a3036337c3dee9b4ab54649
+Minimum RAM: 256MB
+Proposed idle-PC value: 0x60aa1da0</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-version-12415t14-technology-train-4">IOS version 12.4.15T14 (Technology train)<a href="#ios-version-12415t14-technology-train-4" class="hash-link" aria-label="Direct link to IOS version 12.4.15T14 (Technology train)" title="Direct link to IOS version 12.4.15T14 (Technology train)" translate="no">​</a></h3>
+<p>File name: c3745-adventerprisek9-mz.124-15.T14.bin
+MD5: a696619869a972ec3a27742d38031b6a
+Minimum RAM: 256 RAM
+Proposed idle-PC value: 0x602701e4</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="c7200-series">C7200 SERIES<a href="#c7200-series" class="hash-link" aria-label="Direct link to C7200 SERIES" title="Direct link to C7200 SERIES" translate="no">​</a></h2>
+<p>7200s have a different architecture. Only the 7206 is supported, it has 6 Port Adapters (PA) slots. VXR chassis, NPE-400 and C7200-IO-FE are the default settings in GNS3.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-15-mainline">IOS 15 (Mainline)<a href="#ios-15-mainline" class="hash-link" aria-label="Direct link to IOS 15 (Mainline)" title="Direct link to IOS 15 (Mainline)" translate="no">​</a></h3>
+<p>This router series is still getting new IOS 15.x versions.
+The last one at this date is:
+File name: c7200-adventerprisek9-mz.152-4.M8.bin
+Minimum RAM: 512MB</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-12425g-mainline">IOS 12.4.25g (Mainline)<a href="#ios-12425g-mainline" class="hash-link" aria-label="Direct link to IOS 12.4.25g (Mainline)" title="Direct link to IOS 12.4.25g (Mainline)" translate="no">​</a></h3>
+<p>MD5: 3a78cb61831b3ef1530f7402f5986556
+File name: c7200-a3jk9s-mz.124-25g.bin
+Minimum RAM: 256MB</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-12424t5-technology-train">IOS 12.4.24T5 (Technology train)<a href="#ios-12424t5-technology-train" class="hash-link" aria-label="Direct link to IOS 12.4.24T5 (Technology train)" title="Direct link to IOS 12.4.24T5 (Technology train)" translate="no">​</a></h3>
+<p>This one is not the latest 12.4 version but it is easier to find.
+MD5: 3c4148f62acf56602ce3b371ebae60c9
+File name: c7200-adventerprisek9-mz.124-24.T5
+Minimum RAM: 256MB
+Proposed idle-PC value: 0x606df838</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cisco-catalyst-switches">Cisco Catalyst Switches<a href="#cisco-catalyst-switches" class="hash-link" aria-label="Direct link to Cisco Catalyst Switches" title="Direct link to Cisco Catalyst Switches" translate="no">​</a></h2>
+<p>Dynamips is incapable of running IOS images from Catalyst Switches, as it’s unable to  emulate the ASICs used in those type of devices.</p>
+<p>For switching, you can use an IOU L2 binary image, or an IOSvL2 virtual disk image with Qemu.</p>
+<p>However, if you want to use Dynamips you can use the EtherSwitch module with 2600s, 3600s and 3700s Series. Keep in mind that this module works differently (it uses the vlan database etc.) and does NOT support the following features:</p>
+<ul>
+<li class="">Access Switch Device Manager (SDM) Template</li>
+<li class="">ACL – Improved Merging Algorithm</li>
+<li class="">ARP Optimization</li>
+<li class="">BGP Increased Support of Numbered as-path Access Lists to 500</li>
+<li class="">BGP Restart Neighbor Session After max-prefix Limit Reached</li>
+<li class="">BGP Route-Map Continue Support for Outbound Policy</li>
+<li class="">Clear Counters Per Port</li>
+<li class="">DHCP Snooping</li>
+<li class="">DHCP Snooping Counters</li>
+<li class="">Diagnostics Options on bootup</li>
+<li class="">ErrDisable Reactivation Per Port</li>
+<li class="">ErrDisable timeout</li>
+<li class="">EtherChannel – Flexible PAgP</li>
+<li class="">Etherchannel Guard</li>
+<li class="">Fallback Bridging</li>
+<li class="">Flex Link Bi-directional Fast Convergence</li>
+<li class="">Flex Link VLAN Load-Balancing</li>
+<li class="">Flex Links Interface Preemption</li>
+<li class="">GOLD – Generic Online Diagnostics</li>
+<li class="">IEEE 802.1ab, Link Layer Discovery Protocol</li>
+<li class="">IEEE 802.1s – Multiple Spanning Tree (MST) Standard Compliance</li>
+<li class="">IEEE 802.1s VLAN Multiple Spanning Trees</li>
+<li class="">IEEE 802.1t</li>
+<li class="">IEEE 802.1W Spanning Tree Rapid Reconfiguration</li>
+<li class="">IEEE 802.1x – Auth Fail Open</li>
+<li class="">IEEE 802.1x – Auth Fail VLAN</li>
+<li class="">IEEE 802.1x – VLAN Assignment</li>
+<li class="">IEEE 802.1x – Wake on LAN Support</li>
+<li class="">IEEE 802.1X Multi-Domain Authentication</li>
+<li class="">IEEE 802.1x RADIUS Accounting</li>
+<li class="">IEEE 802.1x with Port Security</li>
+<li class="">IEEE 802.3ad Link Aggregation (LACP)</li>
+<li class="">IEEE 802.3af Power over Ethernet</li>
+<li class="">IGMP Fast Leave</li>
+<li class="">IGMP Version 1</li>
+<li class="">IGRP</li>
+<li class="">IP Phone Detection Enhancements</li>
+<li class="">IP Phone Enhancement – PHY Loop Detection</li>
+<li class="">IPSG (IP Source Guard)</li>
+<li class="">Jumbo Frames</li>
+<li class="">L2PT – Layer 2 Protocol Tunneling</li>
+<li class="">MAC Authentication Bypass</li>
+<li class="">MLD Snooping</li>
+<li class="">Multicast Etherchannel Load Balancing</li>
+<li class="">NAC – L2 IEEE 802.1x</li>
+<li class="">NAC – L2 IP</li>
+<li class="">NAC – L2 IP with Auth Fail Open</li>
+<li class="">Packet-Based Storm Control</li>
+<li class="">Per Port Per VLAN Policing</li>
+<li class="">Port Security</li>
+<li class="">Port Security on Private VLAN Ports</li>
+<li class="">Private VLANs</li>
+<li class="">QoS Policy Propagation via Border Gateway Protocol (QPPB)</li>
+<li class="">Rapid-Per-VLAN-Spanning Tree (Rapid-PVST)</li>
+<li class="">Reduced MAC Address Usage</li>
+<li class="">Remote SPAN (RSPAN)</li>
+<li class="">Smart Port</li>
+<li class="">Spanning Tree Protocol (STP) – Loop Guard</li>
+<li class="">Spanning Tree Protocol (STP) – PortFast BPDU Filtering</li>
+<li class="">Spanning Tree Protocol (STP) – Portfast Support for Trunks</li>
+<li class="">Spanning Tree Protocol (STP) – Root Guard</li>
+<li class="">Spanning Tree Protocol (STP) – Uplink Load Balancing</li>
+<li class="">SRR (Shaped Round Robin)</li>
+<li class="">Standby Supervisor Port Usage</li>
+<li class="">STP Syslog Messages</li>
+<li class="">Switching Database Manager (SDM)</li>
+<li class="">Trunk Failover</li>
+<li class="">Trusted boundary (extended trust for CDP devices)</li>
+<li class="">Unicast Mac Filtering</li>
+<li class="">UniDirectional Link Detection (UDLD)</li>
+<li class="">VLAN Access Control List (VACL)</li>
+<li class="">VLAN Aware Port Security</li>
+<li class="">Weighted Tail Drop (WTD)</li>
+<li class="">Routing and Switching Virtual machines from Vendors</li>
+</ul>
+<p>To recap: You can import many images using Virtualbox or VMWare. ASIC based models like the Cisco Catalyst switches are impossible to import as a Routing and Switching image.</p>
+<p>If you require more switching features, it is recommended to use larger Virtual Machine Switches and Routers (like the ones from VIRL) that run inside your choice of Qemu, Virtualbox or VMWare. For advanced switching IOSv and/or IOU is recommended.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/mother/gns3-docs/blob/master/docs/emulators/cisco-ios-images-for-dynamips.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/emulators/which-emulators-should-i-use"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Which emulator should I use?</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/emulators/non-native-iou-for-windows-and-osx"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Non-Native IOU for Windows and OSX</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#important-points" class="table-of-contents__link toc-highlight">Important Points</a><ul><li><a href="#availability" class="table-of-contents__link toc-highlight">Availability</a></li><li><a href="#ios-15x" class="table-of-contents__link toc-highlight">IOS 15.x</a></li><li><a href="#should-i-use-a-mainline-and-technology-train-image" class="table-of-contents__link toc-highlight">Should I use a mainline and technology train image?</a></li><li><a href="#minimum-memory" class="table-of-contents__link toc-highlight">Minimum memory</a></li><li><a href="#recommended-images" class="table-of-contents__link toc-highlight">Recommended images</a></li><li><a href="#idle-pc-value" class="table-of-contents__link toc-highlight">Idle-PC value</a></li></ul></li><li><a href="#c1700-series" class="table-of-contents__link toc-highlight">C1700 Series</a><ul><li><a href="#ios-version-12425d-mainline" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li></ul></li><li><a href="#c2600-series" class="table-of-contents__link toc-highlight">C2600 Series</a><ul><li><a href="#ios-version-12425d-mainline-1" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li><li><a href="#ios-version-12415t14-technology-train" class="table-of-contents__link toc-highlight">IOS version 12.4.15T14 (Technology train)</a></li></ul></li><li><a href="#c3620" class="table-of-contents__link toc-highlight">C3620</a><ul><li><a href="#ios-version-12226c" class="table-of-contents__link toc-highlight">IOS version 12.2.26c</a></li></ul></li><li><a href="#c3640" class="table-of-contents__link toc-highlight">C3640</a><ul><li><a href="#ios-version-12425d-mainline-2" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li></ul></li><li><a href="#c3660" class="table-of-contents__link toc-highlight">C3660</a><ul><li><a href="#ios-version-12425d-mainline-3" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li><li><a href="#ios-version-12415t14-technology-train-1" class="table-of-contents__link toc-highlight">IOS version 12.4.15T14 (Technology train)</a></li></ul></li><li><a href="#c2691" class="table-of-contents__link toc-highlight">C2691</a><ul><li><a href="#ios-version-12425d-mainline-4" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li><li><a href="#ios-version-12415t14-technology-train-2" class="table-of-contents__link toc-highlight">IOS version 12.4.15T14 (Technology train)</a></li></ul></li><li><a href="#c3725" class="table-of-contents__link toc-highlight">C3725</a><ul><li><a href="#ios-version-12425d-mainline-5" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li><li><a href="#ios-version-12415t14-technology-train-3" class="table-of-contents__link toc-highlight">IOS version 12.4.15T14 (Technology train)</a></li></ul></li><li><a href="#c3745" class="table-of-contents__link toc-highlight">C3745</a><ul><li><a href="#ios-version-12425d-mainline-6" class="table-of-contents__link toc-highlight">IOS version 12.4.25d (Mainline)</a></li><li><a href="#ios-version-12415t14-technology-train-4" class="table-of-contents__link toc-highlight">IOS version 12.4.15T14 (Technology train)</a></li></ul></li><li><a href="#c7200-series" class="table-of-contents__link toc-highlight">C7200 SERIES</a><ul><li><a href="#ios-15-mainline" class="table-of-contents__link toc-highlight">IOS 15 (Mainline)</a></li><li><a href="#ios-12425g-mainline" class="table-of-contents__link toc-highlight">IOS 12.4.25g (Mainline)</a></li><li><a href="#ios-12424t5-technology-train" class="table-of-contents__link toc-highlight">IOS 12.4.24T5 (Technology train)</a></li></ul></li><li><a href="#cisco-catalyst-switches" class="table-of-contents__link toc-highlight">Cisco Catalyst Switches</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs">Documentation</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Visit Us</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://gns3.com/community" target="_blank" rel="noopener noreferrer" class="footer__link-item">GNS3 Community<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://academy.gns3.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">GNS3 Academy<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://gns3.com/training" target="_blank" rel="noopener noreferrer" class="footer__link-item">GNS3 Certification<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Galaxy Technologies LLC.</div></div></div></footer></div>
+</body>
+</html>

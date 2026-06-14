@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-docs-310-en docs-version-current docs-doc-page docs-doc-id-web-ui/template-preferences-builtin" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.1">
+<title data-rh="true">How to configure Built-in template preferences | GNS3 Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://mother.github.io/docs-3.1-en/web-ui/template-preferences-builtin"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-docs-310-en-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-docs-310-en-current"><meta data-rh="true" property="og:title" content="How to configure Built-in template preferences | GNS3 Documentation"><meta data-rh="true" name="description" content="Click the &quot;Built-in&quot; option to enter."><meta data-rh="true" property="og:description" content="Click the &quot;Built-in&quot; option to enter."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://mother.github.io/docs-3.1-en/web-ui/template-preferences-builtin"><link data-rh="true" rel="alternate" href="https://mother.github.io/docs-3.1-en/web-ui/template-preferences-builtin" hreflang="en"><link data-rh="true" rel="alternate" href="https://mother.github.io/docs-3.1-en/web-ui/template-preferences-builtin" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://1WIL6RAPZV-dsn.algolia.net" crossorigin="anonymous"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Configuring Templates","item":"https://mother.github.io/docs-3.1-en/web-ui/template-preferences"},{"@type":"ListItem","position":2,"name":"How to configure Built-in template preferences","item":"https://mother.github.io/docs-3.1-en/web-ui/template-preferences-builtin"}]}</script><link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2TYZDQ4ZW"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-D2TYZDQ4ZW",{})</script>
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="GNS3 Documentation" href="/opensearch.xml">
+
+
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://*.googletagmanager.com; frame-src &#39;self&#39; https://player.bilibili.com; img-src &#39;self&#39; data: https: https://*.bilibili.com;"><link rel="stylesheet" href="/assets/css/styles.4f55d124.css">
+<script src="/assets/js/runtime~main.edd15a8d.js" defer="defer"></script>
+<script src="/assets/js/main.63e58916.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","light"),document.documentElement.setAttribute("data-theme-choice","light"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logocolour.png" alt="GNS3 Docs" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logocolour.png" alt="GNS3 Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs">Documentation</a><a class="navbar__item navbar__link" href="/docs-3.1-cn">3.1 文档</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs-3.1-en">3.1 Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://gns3.com/marketplace/appliances" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Appliances<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://gns3.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Community<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs-3.1-en"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs-3.1-en/new-features-3.1/intro"><span title="New Features in 3.1" class="linkLabel_WmDU">New Features in 3.1</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs-3.1-en/gns3-vm/gns3-vm-usage"><span title="GNS3 VM" class="categoryLinkLabel_W154">GNS3 VM</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs-3.1-en/web-ui/project-management"><span title="Managing Projects" class="categoryLinkLabel_W154">Managing Projects</span></a><button aria-label="Expand sidebar category &#x27;Managing Projects&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs-3.1-en/web-ui/new-template"><span title="Creating Templates" class="categoryLinkLabel_W154">Creating Templates</span></a><button aria-label="Expand sidebar category &#x27;Creating Templates&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs-3.1-en/web-ui/template-preferences"><span title="Configuring Templates" class="categoryLinkLabel_W154">Configuring Templates</span></a><button aria-label="Collapse sidebar category &#x27;Configuring Templates&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs-3.1-en/web-ui/template-preferences-builtin"><span title="How to configure Built-in template preferences" class="linkLabel_WmDU">How to configure Built-in template preferences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs-3.1-en/web-ui/template-preferences-dynamips"><span title="How to configure Dynamips template preferences" class="linkLabel_WmDU">How to configure Dynamips template preferences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs-3.1-en/web-ui/template-preferences-iou"><span title="How to configure IOU template preferences" class="linkLabel_WmDU">How to configure IOU template preferences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs-3.1-en/web-ui/template-preferences-vpcs"><span title="How to configure VPCS template preferences" class="linkLabel_WmDU">How to configure VPCS template preferences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs-3.1-en/web-ui/template-preferences-qemu"><span title="How to configure QEMU template preferences" class="linkLabel_WmDU">How to configure QEMU template preferences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs-3.1-en/web-ui/template-preferences-docker"><span title="How to configure Docker template preferences" class="linkLabel_WmDU">How to configure Docker template preferences</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs-3.1-en/web-ui/manage-images"><span title="Managing Resources" class="categoryLinkLabel_W154">Managing Resources</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs-3.1-en/web-ui/manage-users"><span title="Managing Users" class="categoryLinkLabel_W154">Managing Users</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs-3.1-en/ai-tools/use-ai-assistant"><span title="AI Tools" class="categoryLinkLabel_W154">AI Tools</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs-3.1-en/faq"><span title="FAQ" class="categoryLinkLabel_W154">FAQ</span></a><button aria-label="Expand sidebar category &#x27;FAQ&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs-3.1-en/web-ui/template-preferences"><span>Configuring Templates</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">How to configure Built-in template preferences</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>How to configure Built-in template preferences</h1></header>
+<p>Click the &quot;Built-in&quot; option to enter.</p>
+<p><img decoding="async" loading="lazy" alt="Enter Built-in" src="/assets/images/builtin-enter-e6036fdedeb949e4d9caaea918e7cd87.jpeg" width="1275" height="558" class="img_ev3q"></p>
+<p>Built-in templates include these three types of network devices:</p>
+<p><img decoding="async" loading="lazy" alt="Built-in categories list" src="/assets/images/builtin-categories-844685757158b4e239566234bbf8b17e.jpeg" width="1276" height="414" class="img_ev3q"></p>
+<ul>
+<li class=""><strong>Ethernet Hub</strong></li>
+<li class=""><strong>Ethernet Switch</strong></li>
+<li class=""><strong>Cloud Node</strong></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ethernet-hub">Ethernet Hub<a href="#ethernet-hub" class="hash-link" aria-label="Direct link to Ethernet Hub" title="Direct link to Ethernet Hub" translate="no">​</a></h2>
+<p>Ethernet Hub is a built-in node type in GNS3. It simulates a simple physical layer (Layer 1) repeater Hub.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-features">Main Features<a href="#main-features" class="hash-link" aria-label="Direct link to Main Features" title="Direct link to Main Features" translate="no">​</a></h3>
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td>Category</td><td>switch</td></tr><tr><td>Default name format</td><td><code>Hub{0}</code></td></tr><tr><td>Default number of ports</td><td>8 (Ethernet0 ~ Ethernet7)</td></tr><tr><td>Symbol</td><td>hub</td></tr><tr><td>Start/Stop</td><td>No (created and running, builtin node)</td></tr><tr><td>Console</td><td>Not supported</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-it-works">How It Works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works" translate="no">​</a></h3>
+<ul>
+<li class="">Actual implementation: uses the Dynamips nio_bridge hypervisor command</li>
+<li class="">All ports are flat: no adapter concept, 8 ports are numbered 0-7 directly</li>
+<li class="">Port behavior: when the Hub receives data, it sends the data out through all ports except the incoming port (pure physical layer broadcast)</li>
+<li class="">Supports PCAP capture: you can start and stop packet capture on a single port</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uses">Uses<a href="#uses" class="hash-link" aria-label="Direct link to Uses" title="Direct link to Uses" translate="no">​</a></h3>
+<p>Ethernet Hub is mainly used for teaching and network experiments. It simulates the behavior of old Ethernet Hubs (shared bandwidth, collision domain). Compared to Ethernet Switch, it helps students understand concepts like collision domains and CSMA/CD. For most users, it works out of the box, no need to add it manually.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-a-template">Create a Template<a href="#create-a-template" class="hash-link" aria-label="Direct link to Create a Template" title="Direct link to Create a Template" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>These templates already exist in the system by default. You usually do not need to create them manually.</p></div></div>
+<ol>
+<li class="">
+<p>Click the &quot;Ethernet Hub Templates&quot; option to enter.
+<img decoding="async" loading="lazy" alt="Enter Ethernet Hub" src="/assets/images/hub-create-01-enter-bcc360dc78e546873c54174ff6efc6f2.jpeg" width="1283" height="395" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click the + button at the top right to add a new template.
+<img decoding="async" loading="lazy" alt="Click add" src="/assets/images/hub-create-02-add-8b12060201702808c4ca9b2825232561.jpeg" width="1276" height="360" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Enter the Template Name and Number of Ports, then click &quot;Add Template&quot; to finish.
+<img decoding="async" loading="lazy" alt="Configure template" src="/assets/images/hub-create-03-configure-84b468dcf1b96dd0cf0ae87e13da8269.jpeg" width="1279" height="534" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>After creation, you can see the new template in the list.
+<img decoding="async" loading="lazy" alt="Creation done" src="/assets/images/hub-create-04-created-50c5cc1e0af1a941701695a62dcef7da.jpeg" width="1278" height="367" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click the three-dot button on the right to choose Delete or Edit.
+<img decoding="async" loading="lazy" alt="Action menu" src="/assets/images/hub-create-05-menu-b5281b8fcf7f351b2b3d756f9ece132f.jpeg" width="1276" height="385" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click Edit to open the editing screen. You can set these options:</p>
+<ul>
+<li class="">Template Name</li>
+<li class="">Default Name Format</li>
+<li class="">Symbol (device icon)</li>
+<li class="">Choose Symbol</li>
+<li class="">Tags</li>
+<li class="">Category</li>
+<li class="">Number of Ports</li>
+<li class="">Usage</li>
+</ul>
+<p>After changes, click the &quot;Save&quot; button at the bottom right.
+<img decoding="async" loading="lazy" alt="Edit template" src="/assets/images/hub-create-06-edit-ea6a3693afdf10dcbb42ab8171e5ffe8.jpeg" width="1275" height="1169" class="img_ev3q"></p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ethernet-switch">Ethernet Switch<a href="#ethernet-switch" class="hash-link" aria-label="Direct link to Ethernet Switch" title="Direct link to Ethernet Switch" translate="no">​</a></h2>
+<p>Ethernet Switch is a built-in Layer 2 switch node in GNS3. It uses the Dynamips hypervisor ethsw command. It supports VLANs and port mode configuration.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="differences-from-ethernet-hub">Differences from Ethernet Hub<a href="#differences-from-ethernet-hub" class="hash-link" aria-label="Direct link to Differences from Ethernet Hub" title="Direct link to Differences from Ethernet Hub" translate="no">​</a></h3>
+<table><thead><tr><th>Feature</th><th>Hub</th><th>Switch</th></tr></thead><tbody><tr><td>Layer</td><td>Physical layer (L1)</td><td>Data link layer (L2)</td></tr><tr><td>VLAN</td><td>Not supported</td><td>Supports Access / dot1q / QinQ</td></tr><tr><td>MAC learning</td><td>Broadcast to all ports</td><td>Dynamips keeps a MAC table inside</td></tr><tr><td>Collision domain</td><td>Shared (one collision domain)</td><td>Each port has its own collision domain</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="default-configuration">Default Configuration<a href="#default-configuration" class="hash-link" aria-label="Direct link to Default Configuration" title="Direct link to Default Configuration" translate="no">​</a></h3>
+<ul>
+<li class="">Number of ports: 8 (Ethernet0 ~ Ethernet7)</li>
+<li class="">Port type: all access, VLAN 1</li>
+<li class="">Name format: <code>Switch{0}</code></li>
+<li class="">Type: builtin node, created and running, cannot be stopped or started</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="port-modes">Port Modes<a href="#port-modes" class="hash-link" aria-label="Direct link to Port Modes" title="Direct link to Port Modes" translate="no">​</a></h3>
+<p>You can set the behavior of each port with ports_mapping. Three modes are supported:</p>
+<p><strong>1. Access Port</strong></p>
+<p>Belongs to a single VLAN. Usually connects end devices (PCs, servers).</p>
+<p><strong>2. dot1q Port (802.1Q trunk port)</strong></p>
+<p>Lets multiple VLANs pass through. Sets a native VLAN.</p>
+<p><strong>3. QinQ Port (802.1ad provider trunk)</strong></p>
+<p>Double-layer VLAN tagging. Used in provider networks. You can set the outer ethertype.</p>
+<p>Supported ethertype values:</p>
+<table><thead><tr><th>Value</th><th>Standard</th></tr></thead><tbody><tr><td>0x8100</td><td>Standard 802.1Q (default)</td></tr><tr><td>0x88A8</td><td>Provider 802.1ad (QinQ)</td></tr><tr><td>0x9100</td><td>Old QinQ</td></tr><tr><td>0x9200</td><td>Old QinQ</td></tr></tbody></table>
+<p>Port settings are applied to the Dynamips hypervisor automatically when a link is created (NIO binding).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="limitations">Limitations<a href="#limitations" class="hash-link" aria-label="Direct link to Limitations" title="Direct link to Limitations" translate="no">​</a></h3>
+<ol>
+<li class="">Cannot start/stop/suspend/restart — builtin node, created and running</li>
+<li class="">Console not available — although there is a console_type property, telnet will say it is not available</li>
+<li class="">Layer 2 only — does not support Layer 3 routing, STP, or other advanced switch features</li>
+<li class="">Port configuration is on the compute side — the controller only sees a flat port list. VLAN/type information only works on the Dynamips level</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-a-template-1">Create a Template<a href="#create-a-template-1" class="hash-link" aria-label="Direct link to Create a Template" title="Direct link to Create a Template" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>These templates already exist in the system by default. You usually do not need to create them manually.</p></div></div>
+<ol>
+<li class="">
+<p>Click the &quot;Ethernet Switch Templates&quot; option to enter.
+<img decoding="async" loading="lazy" alt="Enter Ethernet Switch" src="/assets/images/switch-create-01-enter-b33898a99b321e39f6a8eccc596e66aa.jpeg" width="1279" height="387" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click the + button at the top right to add a new template.
+<img decoding="async" loading="lazy" alt="Click add" src="/assets/images/switch-create-02-add-8aceed10dfd00803375bd5299eb24471.jpeg" width="1275" height="281" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Enter the Template Name and Number of Ports, then click &quot;Add Template&quot; to finish.
+<img decoding="async" loading="lazy" alt="Configure template" src="/assets/images/switch-create-03-configure-3a929379fca1c15abf6f84aebdbe3faa.jpeg" width="1280" height="548" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>After creation, you can see the new template in the list.
+<img decoding="async" loading="lazy" alt="Creation done" src="/assets/images/switch-create-04-created-68fec36939ab584cc43a92b19d4893de.jpeg" width="1277" height="308" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click Edit to open the editing screen:</p>
+<p><strong>General Settings</strong></p>
+<ul>
+<li class="">Template Name</li>
+<li class="">Default Name Format</li>
+<li class="">Symbol</li>
+<li class="">Choose Symbol</li>
+<li class="">Tags</li>
+<li class="">Category</li>
+<li class="">Console Type</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="General settings" src="/assets/images/switch-create-05-general-551295613f974af245227d43e3e87998.jpeg" width="1276" height="1061" class="img_ev3q"></p>
+<p><strong>Port Settings</strong></p>
+<ul>
+<li class="">Port Number</li>
+<li class="">VLAN (VLAN ID)</li>
+<li class="">Type (port type)</li>
+<li class="">EtherType</li>
+<li class="">Actions</li>
+</ul>
+<p>After changes, click the &quot;Save&quot; button at the bottom right.
+<img decoding="async" loading="lazy" alt="Port settings" src="/assets/images/switch-create-06-port-settings-f8ad0c2d0bae33151029ef3d540e732a.jpeg" width="1280" height="1054" class="img_ev3q"></p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloud-node">Cloud Node<a href="#cloud-node" class="hash-link" aria-label="Direct link to Cloud Node" title="Direct link to Cloud Node" translate="no">​</a></h2>
+<p>Cloud node is a built-in node in GNS3 that bridges to the host machine network. It belongs to the guest category. Name format is <code>Cloud{0}</code>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-purpose">Main Purpose<a href="#main-purpose" class="hash-link" aria-label="Direct link to Main Purpose" title="Direct link to Main Purpose" translate="no">​</a></h3>
+<p>Cloud lets virtual devices in your topology talk to the host network (or the host itself). It is a network bridge point. It maps links in the topology to real network interfaces on the host machine.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="three-port-types">Three Port Types<a href="#three-port-types" class="hash-link" aria-label="Direct link to Three Port Types" title="Direct link to Three Port Types" translate="no">​</a></h3>
+<p>Cloud supports three port mapping methods for different connection scenarios:</p>
+<p><strong>1. Ethernet Port (most common)</strong></p>
+<p>Directly binds to a physical or virtual network card on the host.</p>
+<p><strong>2. TAP Port</strong></p>
+<p>Binds to a TAP virtual interface on the host.</p>
+<p><strong>3. UDP Port</strong></p>
+<p>Directly sets a UDP tunnel endpoint (rarely used).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="auto-discovery-of-interfaces">Auto Discovery of Interfaces<a href="#auto-discovery-of-interfaces" class="hash-link" aria-label="Direct link to Auto Discovery of Interfaces" title="Direct link to Auto Discovery of Interfaces" translate="no">​</a></h3>
+<p>When you create a Cloud node without setting port mappings, the system fills in non-special interfaces from the host automatically. It excludes these types:</p>
+<ul>
+<li class=""><code>lo</code>, <code>vmnet*</code>, <code>vboxnet*</code>, <code>docker*</code>, <code>lxcbr*</code>, <code>virbr*</code></li>
+<li class=""><code>ovs-system</code>, <code>veth*</code>, <code>fw*</code>, <code>p2p*</code>, <code>bridge*</code></li>
+<li class=""><code>vmware*</code>, <code>virtualbox*</code>, <code>gns3*</code>, <code>*-nic</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="differences-from-nat-node">Differences from NAT Node<a href="#differences-from-nat-node" class="hash-link" aria-label="Direct link to Differences from NAT Node" title="Direct link to Differences from NAT Node" translate="no">​</a></h3>
+<table><thead><tr><th>Feature</th><th>Cloud</th><th>NAT</th></tr></thead><tbody><tr><td>Bridges to</td><td>Any host interface</td><td>Default virbr0 (Linux)</td></tr><tr><td>Number of ports</td><td>Configurable, many</td><td>Fixed single nat0 port</td></tr><tr><td>Interface customization</td><td>Free to choose</td><td>Fixed</td></tr><tr><td>Port mapping can be changed</td><td>Yes</td><td>Read-only</td></tr><tr><td>Use</td><td>Flexible bridge to a specific network</td><td>Quick NAT internet access</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="limitations-1">Limitations<a href="#limitations-1" class="hash-link" aria-label="Direct link to Limitations" title="Direct link to Limitations" translate="no">​</a></h3>
+<ol>
+<li class="">Does not support Stop/Suspend — builtin node, can only Start (actually created and running)</li>
+<li class="">Cloud-to-Cloud direct connection is not allowed — controller/link.py blocks this type of connection</li>
+<li class="">Needs privileges — Ethernet type on Linux needs root permission for raw sockets or TAP devices</li>
+<li class="">macOS does not support Wi-Fi adapter bridging</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloud-node-console">Cloud Node Console<a href="#cloud-node-console" class="hash-link" aria-label="Direct link to Cloud Node Console" title="Direct link to Cloud Node Console" translate="no">​</a></h3>
+<p>The Cloud node itself cannot be operated through a console (it is not a router/switch). Although the Schema has <code>remote_console_*</code> fields (like <code>remote_console_type</code>, <code>remote_console_host</code>, <code>remote_console_port</code>), the database stores them, and the API sends them, the server does not actually use these fields. They are like reserved placeholder fields or old unused properties. The Cloud console is not available.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-a-template-2">Create a Template<a href="#create-a-template-2" class="hash-link" aria-label="Direct link to Create a Template" title="Direct link to Create a Template" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>These templates already exist in the system by default. You usually do not need to create them manually.</p></div></div>
+<ol>
+<li class="">
+<p>Click the &quot;Cloud Node Templates&quot; option to enter.
+<img decoding="async" loading="lazy" alt="Enter Cloud Node" src="/assets/images/cloud-create-01-enter-493defbf5b371db0025e0ffb6092edc6.jpeg" width="1274" height="403" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click the + button at the top right to add a new template.
+<img decoding="async" loading="lazy" alt="Click add" src="/assets/images/cloud-create-02-add-241c4a5bfaae2d4b70c8c32c9c4bc567.jpeg" width="1279" height="402" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Enter the Template Name, then click &quot;Add Template&quot; to finish.
+<img decoding="async" loading="lazy" alt="Configure template" src="/assets/images/cloud-create-03-configure-aff6edc470900557c6a54c74fce399b0.jpeg" width="1277" height="457" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>After creation, you can see the new template in the list.
+<img decoding="async" loading="lazy" alt="Creation done" src="/assets/images/cloud-create-04-created-199aec6c380e6b45fb132a30fa107335.jpeg" width="1279" height="279" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Click Edit to open the editing screen:</p>
+<p><strong>General Settings</strong></p>
+<ul>
+<li class="">Template Name</li>
+<li class="">Default Name Format</li>
+<li class="">Symbol</li>
+<li class="">Choose Symbol</li>
+<li class="">Tags</li>
+<li class="">Category</li>
+</ul>
+<p><strong>these fields are not actually used</strong></p>
+<ul>
+<li class="">Console Type</li>
+<li class="">Console Host</li>
+<li class="">Console Port</li>
+<li class="">Console HTTP Path</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="General settings" src="/assets/images/cloud-create-05-general-9d49cf5028d3be352c55f9ba587c9574.jpeg" width="1275" height="1128" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Ethernet Interfaces — no data in the template. You need to add a node in the project and then configure it.
+<img decoding="async" loading="lazy" alt="Ethernet interfaces" src="/assets/images/cloud-create-06-ethernet-1f3ecef8cce4ec22d80cadeed0605d0d.jpeg" width="1276" height="496" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>TAP Interfaces — add TAP interface names.
+<img decoding="async" loading="lazy" alt="TAP interfaces" src="/assets/images/cloud-create-07-tap-d856bdcc2ffa3af196ffd7db036ce16c.jpeg" width="1276" height="562" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>UDP Tunnels — create a UDP tunnel to connect to a specific port on a remote host.
+<img decoding="async" loading="lazy" alt="UDP tunnels" src="/assets/images/cloud-create-08-udp-2dc70d11bb21cdb7a809eaf86304d94e.jpeg" width="1283" height="776" class="img_ev3q"></p>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/mother/gns3-docs/blob/master/docs-3.1-en/web-ui/template-preferences-builtin.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs-3.1-en/web-ui/template-preferences"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">How to configure templates</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs-3.1-en/web-ui/template-preferences-dynamips"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">How to configure Dynamips template preferences</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#ethernet-hub" class="table-of-contents__link toc-highlight">Ethernet Hub</a><ul><li><a href="#main-features" class="table-of-contents__link toc-highlight">Main Features</a></li><li><a href="#how-it-works" class="table-of-contents__link toc-highlight">How It Works</a></li><li><a href="#uses" class="table-of-contents__link toc-highlight">Uses</a></li><li><a href="#create-a-template" class="table-of-contents__link toc-highlight">Create a Template</a></li></ul></li><li><a href="#ethernet-switch" class="table-of-contents__link toc-highlight">Ethernet Switch</a><ul><li><a href="#differences-from-ethernet-hub" class="table-of-contents__link toc-highlight">Differences from Ethernet Hub</a></li><li><a href="#default-configuration" class="table-of-contents__link toc-highlight">Default Configuration</a></li><li><a href="#port-modes" class="table-of-contents__link toc-highlight">Port Modes</a></li><li><a href="#limitations" class="table-of-contents__link toc-highlight">Limitations</a></li><li><a href="#create-a-template-1" class="table-of-contents__link toc-highlight">Create a Template</a></li></ul></li><li><a href="#cloud-node" class="table-of-contents__link toc-highlight">Cloud Node</a><ul><li><a href="#main-purpose" class="table-of-contents__link toc-highlight">Main Purpose</a></li><li><a href="#three-port-types" class="table-of-contents__link toc-highlight">Three Port Types</a></li><li><a href="#auto-discovery-of-interfaces" class="table-of-contents__link toc-highlight">Auto Discovery of Interfaces</a></li><li><a href="#differences-from-nat-node" class="table-of-contents__link toc-highlight">Differences from NAT Node</a></li><li><a href="#limitations-1" class="table-of-contents__link toc-highlight">Limitations</a></li><li><a href="#cloud-node-console" class="table-of-contents__link toc-highlight">Cloud Node Console</a></li><li><a href="#create-a-template-2" class="table-of-contents__link toc-highlight">Create a Template</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs">Documentation</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Visit Us</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://gns3.com/community" target="_blank" rel="noopener noreferrer" class="footer__link-item">GNS3 Community<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://academy.gns3.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">GNS3 Academy<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://gns3.com/training" target="_blank" rel="noopener noreferrer" class="footer__link-item">GNS3 Certification<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Galaxy Technologies LLC.</div></div></div></footer></div>
+</body>
+</html>
