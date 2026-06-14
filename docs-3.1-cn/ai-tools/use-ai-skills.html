@@ -16,7 +16,7 @@
 
 
 <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://*.googletagmanager.com; frame-src &#39;self&#39; https://player.bilibili.com; img-src &#39;self&#39; data: https: https://*.bilibili.com;"><link rel="stylesheet" href="/assets/css/styles.4f55d124.css">
-<script src="/assets/js/runtime~main.edd15a8d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.b7681613.js" defer="defer"></script>
 <script src="/assets/js/main.8dc7db5f.js" defer="defer"></script>
 </head>
 <body>
@@ -42,7 +42,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="使用方式">使用方式<a href="#使用方式" class="hash-link" aria-label="Direct link to 使用方式" title="Direct link to 使用方式" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="使用官方仓库">使用官方仓库<a href="#使用官方仓库" class="hash-link" aria-label="Direct link to 使用官方仓库" title="Direct link to 使用官方仓库" translate="no">​</a></h3>
-<p>GNS3-Skills 由 GNS3 Copilot 自动加载，无需手动配置。默认使用官方仓库，GNS3 服务器启动时会自动检查更新，也可在设置页面手动更新，请查阅<a class="" href="/docs-3.1-cn/web-ui/configure-settings#3-updates">如何使用设置页面</a>。技能文件通过 LangChain 工具暴露给 LLM，支持热更新。</p>
+<p>GNS3-Skills 由 GNS3 Copilot 自动加载，无需手动配置。默认使用官方仓库，GNS3 服务器启动时会自动检查更新，也可在设置页面手动更新，请查阅<a class="" href="/docs-3.1-cn/web-ui/configure-settings#3-updates%E6%9B%B4%E6%96%B0%E6%A3%80%E6%9F%A5">如何使用设置页面</a>。技能文件通过 LangChain 工具暴露给 LLM，支持热更新。</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="使用自定义技能库">使用自定义技能库<a href="#使用自定义技能库" class="hash-link" aria-label="Direct link to 使用自定义技能库" title="Direct link to 使用自定义技能库" translate="no">​</a></h3>
 <p>如果您的企业或团队需要使用定制的技能库，只需确保您的仓库内容格式与 GNS3-Skills 保持一致（格式规则请查阅官方仓库文档），然后在 <code>gns3_server.conf</code> 文件中配置：</p>
 <div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">[Server]</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"># 自定义技能库仓库地址</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">skills_repo_url = https://github.com/your-org/your-custom-skills.git</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"># 仓库分支（默认：main）</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">skills_repo_branch = main</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"># 是否自动更新技能库（默认：true）</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">skills_auto_update = true</span><br></div></code></pre></div></div>
