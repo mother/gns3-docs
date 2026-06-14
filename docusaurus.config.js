@@ -109,7 +109,7 @@ module.exports = {
                ]
             }
          ],
-         copyright: `Copyright © ${new Date().getFullYear()} Galaxy Technologies LLC.`
+         copyright: `Copyright © ${new Date().getFullYear()} GNS3 Technologies Inc.`
       }
    },
    presets: [
