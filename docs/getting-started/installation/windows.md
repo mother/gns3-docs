@@ -52,7 +52,7 @@ The following are the recommended requirements for a Windows GNS3 environment:
 | Processor | 4 or more Logical cores - AMD-V / RVI Series or Intel VT-X / EPT |
 | Virtualization | Virtualization extensions required. You may need to enable this via your computer's BIOS. |
 | Memory | 16 GB RAM |
-| Storage | Solid-state Drive (SDD) with 35 GB available space
+| Storage | Solid-State Drive (SSD) with 35 GB available space
 | Additional Notes | Virtualizing devices is processor and memory intensive. More is better but properly configured device trumps RAM and Processing power. |
 
 :::important
@@ -71,7 +71,7 @@ The following are the optimal requirements for a Windows GNS3 environment:
 | Processor | Core i7 or i9 Intel CPU / R7 or R9 AMD CPU / 8 or more Logical cores - AMD-V / RVI Series or Intel VT-X / EPT |
 | Virtualization | Virtualization extensions required. You will need to enable this via your computer's BIOS. |
 | Memory | 32 GB RAM |
-| Storage | Solid-state Drive (SDD) with 80 GB available space |
+| Storage | Solid-State Drive (SSD) with 80 GB available space |
 | Additional Notes | Virtualizing devices is processor and memory intensive. More is better, but a properly configured device trumps RAM and processing power. |
 
 
