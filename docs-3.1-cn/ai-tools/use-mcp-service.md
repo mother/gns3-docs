@@ -136,7 +136,7 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 |------|------|---------|
 | `node_list` | 列出项目中所有节点（`fields` 可过滤列，如 `["name","status"]`） | `project_id` |
 | `node_get` | 获取节点详情（`fields` 可过滤列） | `project_id`, `node_id` |
-| `node_create` | 创建节点——单个用 `template_id`，批量用 `nodes` 数组 | `project_id`, `template_id` |
+| `node_create` | 创建节点——单个用 `template_id`，批量用 `nodes` 数组。批量时顶层 `template_id` 作为默认值，各条目可用 `name` 自定义名称；坐标原点为画布中心，X 向右为正、Y 向下为正 | `project_id`, `template_id` |
 | `node_delete` | 删除节点 | `project_id`, `node_id` |
 | `node_update` | 更新节点属性 | `project_id`, `node_id` |
 | `node_start` | 启动节点——支持 `node_id` 或 `node_ids` 数组 | `project_id`, `node_id` |
@@ -177,7 +177,7 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 |------|------|---------|
 | `link_list` | 列出项目中所有链路 | `project_id` |
 | `link_get` | 获取链路详情 | `project_id`, `link_id` |
-| `link_create` | 创建链路——单个用 `nodes`，批量用 `links` 数组 | `project_id`, `nodes` |
+| `link_create` | 创建链路——单个用 `nodes`，批量用 `links` 数组。节点支持紧凑格式 `[id, ad, pt, id, ad, pt]`（即 node_id、adapter_number、port_number） | `project_id`, `nodes` |
 | `link_delete` | 删除链路——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
 | `link_update` | 更新链路（挂起、过滤） | `project_id`, `link_id` |
 | `link_reset` | 重置链路（删除后重建）——支持 `link_id` 或 `link_ids` 数组 | `project_id`, `link_id`/`link_ids` |
@@ -193,7 +193,7 @@ MCP 服务提供 **82 个工具**，分为 12 大类：
 
 | 工具 | 说明 | 必需参数 |
 |------|------|---------|
-| `template_list` | 列出所有模板 | 无 |
+| `template_list` | 列出所有模板（`fields` 可过滤列） | 无 |
 | `template_get` | 获取模板详情 | `template_id` 或 `name` |
 | `template_create` | 创建模板（Docker 需要 `image`） | `name`, `template_type` |
 | `template_update` | 更新模板 | `template_id` 或 `name` |
