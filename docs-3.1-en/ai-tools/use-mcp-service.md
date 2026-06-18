@@ -135,7 +135,7 @@ After calling `project_unlock`, the project status query may still show `locked=
 |------|-------------|-------------------|
 | `node_list` | List all nodes in a project (`fields` to filter columns, e.g. `["name","status"]`) | `project_id` |
 | `node_get` | Get node details (`fields` to filter columns) | `project_id`, `node_id` |
-| `node_create` | Create node(s) — single via `template_id` or batch via `nodes` array | `project_id`, `template_id` |
+| `node_create` | Create node(s) — single via `template_id` or batch via `nodes` array. In batch mode the top-level `template_id` is the default and each entry can set `name`; coordinates use a canvas-center origin (X right-positive, Y down-positive) | `project_id`, `template_id` |
 | `node_delete` | Delete a node | `project_id`, `node_id` |
 | `node_update` | Update node properties | `project_id`, `node_id` |
 | `node_start` | Start node(s) — `node_id` or `node_ids` array | `project_id`, `node_id` |
@@ -176,7 +176,7 @@ Check node type before using suspend and verify via the status field.
 |------|-------------|-------------------|
 | `link_list` | List all links in a project | `project_id` |
 | `link_get` | Get link details | `project_id`, `link_id` |
-| `link_create` | Create link(s) — single via `nodes` or batch via `links` array | `project_id`, `nodes` |
+| `link_create` | Create link(s) — single via `nodes` or batch via `links` array. Nodes support a compact format `[id, ad, pt, id, ad, pt]` (i.e. node_id, adapter_number, port_number) | `project_id`, `nodes` |
 | `link_delete` | Delete link(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
 | `link_update` | Update link (suspend, filters) | `project_id`, `link_id` |
 | `link_reset` | Reset link(s) — `link_id` or `link_ids` array | `project_id`, `link_id`/`link_ids` |
@@ -192,7 +192,7 @@ Check node type before using suspend and verify via the status field.
 
 | Tool | Description | Required Parameters |
 |------|-------------|-------------------|
-| `template_list` | List all templates | none |
+| `template_list` | List all templates (`fields` to filter columns) | none |
 | `template_get` | Get template details | `template_id` or `name` |
 | `template_create` | Create a template (Docker needs `image`) | `name`, `template_type` |
 | `template_update` | Update a template | `template_id` or `name` |
@@ -282,7 +282,7 @@ Before using `image_install`, image files must be manually placed in the `~/GNS3
 | Tool | Description | Required Parameters |
 |------|-------------|-------------------|
 | `device_config_send` | Push config commands to devices via console (Nornir + Netmiko). Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `config_commands` |
-| `device_command_run` | Run read-only show commands on devices. Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `commands` |
+| `device_show_run` | Run read-only show commands on devices. Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `commands` |
 | `vpcs_config_set` | Configure VPCS devices (IP, gateway, etc.) | `project_id`, `device_name`, `ip`, `netmask`, `gateway` |
 
 :::note
@@ -329,7 +329,7 @@ You must start the node before you can configure the device. Device type is auto
 
 #### Jinja2 Template Mode
 
-`device_config_send` and `device_command_run` both support an optional `template` parameter. When provided, each device's `vars` dict is rendered against the template to produce commands. Entries with the same `device_name` are merged into a single session.
+`device_config_send` and `device_show_run` both support an optional `template` parameter. When provided, each device's `vars` dict is rendered against the template to produce commands. Entries with the same `device_name` are merged into a single session.
 
 ```python
 # Direct commands (single/batch)
@@ -358,7 +358,7 @@ IOU and Dynamips nodes save the startup config as a plain text file (`startup-co
 
 ```python
 # Save config on the device
-device_command_run(project_id, device_configs=[
+device_show_run(project_id, device_configs=[
     {"device_name": "R1", "commands": ["write memory"]},
 ])
 # Backup
