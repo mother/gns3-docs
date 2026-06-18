@@ -282,7 +282,7 @@ Before using `image_install`, image files must be manually placed in the `~/GNS3
 | Tool | Description | Required Parameters |
 |------|-------------|-------------------|
 | `device_config_send` | Push config commands to devices via console (Nornir + Netmiko). Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `config_commands` |
-| `device_command_run` | Run read-only show commands on devices. Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `commands` |
+| `device_show_run` | Run read-only show commands on devices. Supports Jinja2 `template` + `vars` | `project_id`, `device_name`, `commands` |
 | `vpcs_config_set` | Configure VPCS devices (IP, gateway, etc.) | `project_id`, `device_name`, `ip`, `netmask`, `gateway` |
 
 :::note
@@ -329,7 +329,7 @@ You must start the node before you can configure the device. Device type is auto
 
 #### Jinja2 Template Mode
 
-`device_config_send` and `device_command_run` both support an optional `template` parameter. When provided, each device's `vars` dict is rendered against the template to produce commands. Entries with the same `device_name` are merged into a single session.
+`device_config_send` and `device_show_run` both support an optional `template` parameter. When provided, each device's `vars` dict is rendered against the template to produce commands. Entries with the same `device_name` are merged into a single session.
 
 ```python
 # Direct commands (single/batch)
@@ -358,7 +358,7 @@ IOU and Dynamips nodes save the startup config as a plain text file (`startup-co
 
 ```python
 # Save config on the device
-device_command_run(project_id, device_configs=[
+device_show_run(project_id, device_configs=[
     {"device_name": "R1", "commands": ["write memory"]},
 ])
 # Backup
