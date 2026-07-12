@@ -15,7 +15,7 @@ It’s useful when you need to download things from the internet, like packages,
 
 The NAT node requires either the GNS3 VM,  or a Linux computer with libvirt installed. Libvirt is necessary, to create a virbr0 interface for this node to function.
 
-By default, the NAT node runs a DHCP server with a predefined pool in the 192.168.122.0/24 range. It’s located in the End devices category:
+By default, the NAT node runs a DHCP server with a predefined pool in the 192.168.122.0/24 range or in the 192.168.42.0/24 range as defined in `/etc/libvirt/qemu/networks/gns3.xml` in recent versions of the GNS3 VM. It’s located in the End devices category:
 
 ![screenshot](/img/using-gns3/advanced/the-nat-node/1.jpg)
 
