@@ -116,7 +116,7 @@ cd dynamips
 mkdir build
 cd build
 cmake ..
-make install
+sudo make install
 ```
 
 Finally, launch with `gns3`.
