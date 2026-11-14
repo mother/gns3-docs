@@ -61,6 +61,6 @@ Log in with the default username **admin** and password **admin**.
 
 After logging in, the **Projects** page opens. From here you can create a new project or manage images and templates from the menu on the left.
 
-<img width="1920" height="1032" alt="05-dashboard-overview" src="https://github.com/user-attachments/assets/b95a99a8-1bdf-4fc8-9242-b79c6975decd" />
+<img width="1920" height="1032" alt="05-projects-page" src="https://github.com/user-attachments/assets/b95a99a8-1bdf-4fc8-9242-b79c6975decd" />
 
 ---
