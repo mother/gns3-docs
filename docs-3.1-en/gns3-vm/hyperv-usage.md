@@ -53,7 +53,7 @@ Wait about 2-3 minutes for the VM to boot. Note the **IP address** shown on the 
 
 ## Step 4: Log in to the Web UI
 
-Open a browser and go to `http://<IP address>`, using the address from the VM console.
+Open a browser and go to either `http://gns3vm.local` or `http://<IP address>`, using the address from the VM console.
 
 Log in with the default username **admin** and password **admin**.
 
